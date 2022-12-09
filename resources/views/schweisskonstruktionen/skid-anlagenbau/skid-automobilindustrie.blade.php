@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', __("welding-fabrications.skid-construction.skid-automotive.title"))
+@section('title', trans_fb("welding-fabrications.skid-construction.skid-automotive.title"))
 
 @if (app()->getLocale() == "de")
     @section('keywords','irion, irion gmbh, Entwicklung, Konstruktion, Konstruktionsoptimierung, Berechnung,
@@ -28,7 +28,7 @@
 <section class="page-banner"
     style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/zuschnitt2.webp');">
     <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">
-        {{ __("welding-fabrications.skid-construction.skid-automotive.h1") }}</h1>
+        {{ trans_fb("welding-fabrications.skid-construction.skid-automotive.h1") }}</h1>
 </section>
 
 <section class="container">
@@ -36,7 +36,7 @@
         <div class="row align-items-center rounded-0 border shadow-lg ">
             <div class="col-lg-12 p-5 center">
                 <p style="text-align:center">
-                    {!! __("welding-fabrications.skid-construction.skid-automotive.seo") !!}
+                    {!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seo") !!}
                 </p>
             </div>
         </div>
