@@ -291,6 +291,108 @@ foreach ($langs as $lang) {
         });
 
         Route::post("/$lang/send", [ContactController::class, 'send']);
+
+
+        // schweisskonstruktionen
+        Route::get('/welding-fabrications', function () {
+            return view('schweisskonstruktionen.schweisskonstruktionen');
+        });
+
+        Route::get('/welding-fabrications/conveyor-accessories-spare-parts', function () {
+            return view('schweisskonstruktionen.ersatzteile-und-zubehoer.foerdertechnik-zubehoer-ersatzteile');
+        });
+
+        Route::get('/welding-fabrications/transportation-systems', function () {
+            return view('schweisskonstruktionen.transportsysteme.transportsysteme-produktion');
+        });
+        Route::get('/welding-fabrications/transportation-systems/mobile-lifting-platforms', function () {
+            return view('schweisskonstruktionen.transportsysteme.buehnenwagen');
+        });
+        Route::get('/welding-fabrications/transportation-systems/heavy-duty-platform-trolley', function () {
+            return view('schweisskonstruktionen.transportsysteme.schwerlast-plattformwagen');
+        });
+        Route::get('/welding-fabrications/transportation-systems/electric-monorail', function () {
+            return view('schweisskonstruktionen.transportsysteme.elektrohaengebahn-hersteller');
+        });
+        Route::get('/welding-fabrications/transportation-systems/power-and-free-conveyors', function () {
+            return view('schweisskonstruktionen.transportsysteme.power-and-free-foerderer');
+        });
+        Route::get('/welding-fabrications/transportation-systems/chain-conveyor-parts', function () {
+            return view('schweisskonstruktionen.transportsysteme.kreiskettenfoerderer');
+        });
+        Route::get('/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor', function () {
+            return view('schweisskonstruktionen.transportsysteme.unterflurschleppkettenfoerderer');
+        });
+        Route::get('/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers', function () {
+            return view('schweisskonstruktionen.transportsysteme.fahrerlose-transportsysteme-hersteller');
+        });
+
+        Route::get('/welding-fabrications/welded-steel-construction', function () {
+            return view('schweisskonstruktionen.maschinenbau.maschinenbau');
+        });
+        Route::get('/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers', function () {
+            return view('schweisskonstruktionen.maschinenbau.scherenhubtische-hersteller');
+        });
+        Route::get('/welding-fabrications/welded-steel-construction/welded-racks', function () {
+            return view('schweisskonstruktionen.maschinenbau.schweissgestelle');
+        });
+        Route::get('/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies', function () {
+            return view('schweisskonstruktionen.maschinenbau.fahrzeugaufbauten-hersteller');
+        });
+        Route::get('/welding-fabrications/welded-steel-construction/product-conveyor-system', function () {
+            return view('schweisskonstruktionen.maschinenbau.werkstuecktraegersysteme');
+        });
+    
+        Route::get('/welding-fabrications/skid-construction', function () {
+            return view('schweisskonstruktionen.skid-anlagenbau.skid-anlagenbau');
+        });
+        Route::get('/welding-fabrications/skid-construction/skid-automotive', function () {
+            return view('schweisskonstruktionen.skid-anlagenbau.skid-automobilindustrie');
+        });
+        Route::get('/welding-fabrications/skid-construction/conveyor-systems-automotive', function () {
+            return view('schweisskonstruktionen.skid-anlagenbau.foerdertechnik-automobilindustrie');
+        });
+        Route::get('/welding-fabrications/skid-construction/special-load-carriers', function () {
+            return view('schweisskonstruktionen.skid-anlagenbau.hersteller-sonderladungstraeger');
+        });
+    
+    
+        Route::get('/welding-fabrications/lifting-equipment-manufacturer', function () {
+            return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.lastaufnahmemittel-hersteller');
+        });
+        Route::get('/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers', function () {
+            return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlastpaletten-stahl');
+        });
+        Route::get('/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins', function () {
+            return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.industriebehaelter-metall');
+        });
+        Route::get('/welding-fabrications/lifting-equipment-manufacturer/transport-bins', function () {
+            return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.transportbehaelter-metall');
+        });
+        Route::get('/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams', function () {
+            return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlasttraversen');
+        });
+        Route::get('/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands', function () {
+            return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlastboecke');
+        });
+        Route::get('/welding-fabrications/lifting-equipment-manufacturer/post-pallets', function () {
+            return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.rungengestelle-hersteller');
+        });
+        Route::get('/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks', function () {
+            return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.stapelgestelle-hersteller');
+        });
+
+
+
+
+
+
+
+
+
+
+
+
     });
 }
 
