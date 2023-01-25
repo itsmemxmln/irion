@@ -23,7 +23,11 @@
     your request.')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/welding-fabrications/skid-construction/special-load-carriers" />
+@endsection
 
 @section('content')
 <section class="page-banner"

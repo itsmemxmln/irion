@@ -8,6 +8,14 @@
     @section('description','Are you looking for a new challenge? We offer many opportunities for novices as well as experts. With us, you have an opportunity to work on interesting tasks and find solutions autonomously. We help developing potentials.')
 @endif
 
+@section('head')
+<meta name="robots" content="noindex, follow">
+<!-- Lang -->
+<link rel="alternate" hreflang="x-default" href="https://irion.de/en/career" />
+<link rel="alternate" hreflang="de" href="https://irion.de/karriere" />
+<link rel="alternate" hreflang="en" href="https://irion.de/en/career" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/career" />
+@endsection
 
 @section('content')
 <section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/bg-2.webp');">

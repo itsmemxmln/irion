@@ -13,6 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="https://irion.de/en/company" />
 <link rel="alternate" hreflang="de" href="https://irion.de/unternehmen" />
 <link rel="alternate" hreflang="en" href="https://irion.de/en/company" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/company" />
 @endsection
 
 @section('content')

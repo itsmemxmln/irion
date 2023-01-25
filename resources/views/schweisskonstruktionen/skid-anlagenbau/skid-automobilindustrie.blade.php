@@ -22,7 +22,11 @@
     your request.')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/welding-fabrications/skid-construction/skid-automotive" />
+@endsection
 
 @section('content')
 <section class="page-banner"

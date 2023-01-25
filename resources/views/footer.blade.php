@@ -5,13 +5,13 @@
                 <img class="" src="/assets/img/logo.png" alt="Irion Logo" style="max-height: 70px; max-width: 80%;">
                 <p class="mt-4 footer-slogan">{{ __("Präzise Schweißgruppen") }} {{ __("ab 30 Stück") }} {{ __("in hoher Qualität zu attraktiven Preisen!") }}</p>
                 <div class="d-flex">
-                    <a href="{{ url("/us") }}" style="margin-right: 15px">
+                    <a href="{{ url("/us") }}" class="lang-btn en-US" style="margin-right: 15px">
                         <img src="{{ url('assets/img/flags/us.webp') }}" height="20px" alt="us american">
                     </a>
-                    <a href="{{ url("/en") }}" style="margin-right: 15px">
+                    <a href="{{ url("/en") }}" class="lang-btn en" style="margin-right: 15px">
                         <img src="{{ url('assets/img/flags/en.webp') }}" height="20px" alt="english">
                     </a>
-                    <a href="{{ url("/") }}">
+                    <a href="{{ url("/") }}" class="lang-btn de">
                         <img src="{{ url('assets/img/flags/de.webp') }}" height="20px" alt="german">
                     </a>
                 </div>

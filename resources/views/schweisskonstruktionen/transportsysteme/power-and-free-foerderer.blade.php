@@ -23,7 +23,11 @@
     your request.')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/schweisskonstruktionen/transportsysteme-produktion/power-and-free-foerderer" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/welding-fabrications/transportation-systems/power-and-free-conveyors" />
+@endsection
 
 @section('content')
 <section class="page-banner"

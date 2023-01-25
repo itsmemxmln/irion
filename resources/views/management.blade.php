@@ -10,11 +10,12 @@
 
 
 @section('head')
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex, follow">
 <!-- Lang -->
 <link rel="alternate" hreflang="x-default" href="https://irion.de/en/management" />
 <link rel="alternate" hreflang="de" href="https://irion.de/management" />
 <link rel="alternate" hreflang="en" href="https://irion.de/en/management" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/management" />
 @endsection
 
 

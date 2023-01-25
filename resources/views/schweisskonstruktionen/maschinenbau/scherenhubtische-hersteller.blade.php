@@ -15,7 +15,11 @@
     your request.')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers" />
+@endsection
 
 @section('content')
 <section class="page-banner"

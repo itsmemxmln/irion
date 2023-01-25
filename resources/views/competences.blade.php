@@ -12,9 +12,11 @@
 
 @section('head')
 <!-- Lang -->
-<link rel="alternate" hreflang="x-default" href="https://irion.de/en/competences" />
-<link rel="alternate" hreflang="de" href="https://irion.de/kompetenzen" />
-<link rel="alternate" hreflang="en" href="https://irion.de/en/competences" />
+<link rel="alternate" hreflang="x-default" href=https://irion.de/en/competences />
+<link rel="alternate" hreflang="de" href=https://irion.de/kompetenzen />
+<link rel="alternate" hreflang="en" href=https://irion.de/en/competences />
+<link rel="alternate" hreflang="en-US" href=https://irion.de/us/competences />
+
 @endsection
 
 

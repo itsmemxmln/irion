@@ -3,7 +3,7 @@
 @section('description','Dem Betreiber dieser Webseite ist der Schutz Ihrer personenbezogenen Daten sehr wichtig. Ihre personenbezogenen Daten werden stets vertraulich und entsprechend der aktuellen gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung behandelt.')
 
 @section('head')
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, follow">
 @endsection
 
 @section('content')

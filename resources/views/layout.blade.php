@@ -230,7 +230,27 @@
         css.type = "text/css";
         css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
         document.body.appendChild(css);
+
+
+        // SET LANGUAGE BUTTON LINKS
+        let btns = document.getElementsByClassName("lang-btn");
+        let listBtn = Array.prototype.slice.call(btns);
+            listBtn.forEach(element => {element.style.display = "none";})
+
+        let links = document.getElementsByTagName("link");
+        let list = Array.prototype.slice.call(links);
+            list.forEach(element => {
+                if (element.href != null){
+                    if (['de', 'en', 'en-US'].indexOf(element.hreflang) != -1){
+                        let btn = document.getElementsByClassName("lang-btn " + element.hreflang)[0];
+                        btn.style.display = "block";
+                        btn.setAttribute('href', element.href)
+                    }
+                }
+            });
     };
+
+    
     </script>
 </body>
 

@@ -23,7 +23,8 @@
     your request.')
 @endif
 
-
+<link rel="alternate" hreflang="de" href="https://irion.de/schweisskonstruktionen/skid-anlagenbau/foerdertechnik-automobilindustrie" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/welding-fabrications/skid-construction/conveyor-systems-automotive" />
 
 @section('content')
 <section class="page-banner"

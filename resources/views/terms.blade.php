@@ -5,7 +5,7 @@
 @section('description','AGBs der Irion GmbH, Ihrem Partner für Schweißgruppen und CNC Technik.')
 
 @section('head')
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="noindex, follow">
 @endsection
 
 @section('content')

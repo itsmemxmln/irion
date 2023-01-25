@@ -23,7 +23,11 @@
     your request.')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/schweisskonstruktionen/maschinenbau/fahrzeugaufbauten-hersteller" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies" />
+@endsection
 
 @section('content')
 <section class="page-banner"

@@ -23,7 +23,11 @@
     your request.')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/schweisskonstruktionen/transportsysteme-produktion/unterflurschleppkettenfoerderer" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor" />
+@endsection
 
 @section('content')
 <section class="page-banner"

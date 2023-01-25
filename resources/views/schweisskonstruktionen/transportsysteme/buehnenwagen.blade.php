@@ -23,7 +23,11 @@
     your request.')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/schweisskonstruktionen/transportsysteme-produktion/buehnenwagen" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/welding-fabrications/transportation-systems/mobile-lifting-platforms" />
+@endsection
 
 @section('content')
 <section class="page-banner"
