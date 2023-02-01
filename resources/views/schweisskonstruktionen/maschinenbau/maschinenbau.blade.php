@@ -51,6 +51,14 @@
                         <li><a href="{{ url('schweisskonstruktionen/maschinenbau/fahrzeugaufbauten-hersteller')}}">Fahrzeugaufbauten</a></li>
                         <li><a href="{{ url('schweisskonstruktionen/maschinenbau/werkstuecktraegersysteme')}}">Werkstückträgersysteme</a></li>
                     </ul>
+                @elseif (app()->getLocale() == "en-US")
+                    <strong>Mechanical engineering</strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers')}}">Scissor lift tables</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/welded-steel-construction/welded-racks')}}">Welded racks</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies')}}">Commercial vehicle bodies</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/welded-steel-construction/product-conveyor-system')}}">Product conveyor system</a></li>
+                    </ul>
                 @endif
             </div>
         </div>

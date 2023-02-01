@@ -54,6 +54,17 @@
                         <li><a href="{{ url('schweisskonstruktionen/lastaufnahmemittel-hersteller/rungengestelle-hersteller')}}">Rungengestelle</a></li>
                         <li><a href="{{ url('schweisskonstruktionen/lastaufnahmemittel-hersteller/stapelgestelle-hersteller')}}">Stapelgestelle</a></li>
                     </ul>
+                @elseif(app()->getLocale() == "en-US")
+                    <strong>Examples</strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers')}}">Heavy duty steel pallets</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins')}}">Industrial bins</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/transport-bins')}}">Transport bins</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams')}}">Steel cross beams</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands')}}">Heavy duty stands</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/post-pallets')}}">Post pallets</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks')}}">Metal stacking racks</a></li>
+                    </ul>
                 @endif
             </div>
         </div>

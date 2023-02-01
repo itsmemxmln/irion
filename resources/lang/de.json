@@ -11,10 +11,32 @@
     "welding-fabrications.skid-construction.skid-automotive.title":"Skid Automobilindustrie – Skid Fördertechnik Automotive",
     "welding-fabrications.skid-construction.skid-automotive.h1":"Skid Automobilindustrie",
     "welding-fabrications.skid-construction.skid-automotive.seo":"Irion bietet Skid Systeme für die Automobilindustrie. Die Karosserietransportgestelle sind beispielsweise für die spezifischen Anforderungen im Automobil Rohbau und in Lackstraßen ausgelegt. Beipspiele wären Rohbauskids, Tauchskids zur KTL Lackierung, Lackierskids oder eine Skidprüfelehre. <br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Skid Fördertechnik für Automotive von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.1": "Fertigung unter Berücksichtigung mechanischer und metallurgischer Aspekte",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.2": "Verschmutzungsresistenz",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.3": "Temperaturbeständigkeit",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.4": "Lasten > 1.000 kg",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.5": "getaktete Montage, Demontage, Wartung",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.6": "Einzelteileanzahl bis ca. 150 Positionen",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.7": "Größe > 5 m",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.8": "Genauigkeit +/- 0,1 mm",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.9": "Eindeutige Identifizierung",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.10": "Mechanisch und elektronisch",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.11": "Fertigungslose bis über 1.000 Stück",
 
     "welding-fabrications.skid-construction.conveyor-systems-automotive.title": "Fördertechnik Automobilindustrie – Transfersysteme",
     "welding-fabrications.skid-construction.conveyor-systems-automotive.h1": "Fördertechnik Automobilindustrie",
     "welding-fabrications.skid-construction.conveyor-systems-automotive.seo": "Irion bietet Fördertechnik Systeme für die Automobilindustrie. Beispiele für diese Werkstückträger Transportsysteme sind Sitzgehänge, Türskids, Pendelförderer EHB oder Inline Werkstückträger für HV-Batterien. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Transfersysteme für Automotive von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.1": "Fertigung unter Berücksichtigung mechanischer und metallurgischer Aspekte (auch Beschichtung)",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.2": "Verschmutzungsresistenz",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.3": "Temperaturbeständigkeit",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.4": "Lasten ~ 300 kg",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.5": "getaktete Montage, Demontage, Wartung",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.6": "Einzelteileanzahl bis ca. 300 Positionen",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.7": "Größe ca. 2-5m",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.8": "Genauigkeit +/- 0,1 mm",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.9": "Eindeutige Identifizierung",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.10": "Mechanisch und elektronisch",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.11": "Fertigungslose bis ca. 3.000 Stück",
 
     "welding-fabrications.skid-construction.special-load-carriers.title":"Maßgeschneiderte Sonderladungsträger vom Hersteller",
     "welding-fabrications.skid-construction.special-load-carriers.h1":"Sonderladungsträger",
@@ -106,6 +128,74 @@
 
     "welding-fabrications.conveyor-accessories-spare-parts.title":"Fördertechnik Zubehör und Ersatzteile vom Hersteller",
     "welding-fabrications.conveyor-accessories-spare-parts.h1":"Fördertechnik Zubehör und Ersatzteile – Mechanische Teile Hersteller",
-    "welding-fabrications.conveyor-accessories-spare-parts.seo":"Irion ist ein Hersteller für hochwertiges Fördertechnik Zubehör und Ersatzteile aus Stahl. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision."
+    "welding-fabrications.conveyor-accessories-spare-parts.seo":"Irion ist ein Hersteller für hochwertiges Fördertechnik Zubehör und Ersatzteile aus Stahl. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    
+    "steel-processing.title": "Stahlverarbeitung in Deutschland seit 1926 – Firma Irion",
+    "steel-processing.h1": "Stahlverarbeitung",
+    "steel-processing.seo": "Die Firma Irion bietet seit 1926 präzise Stahlverarbeitung in Deutschland. An unserem Standort im Schwarzwald können Stahlteile im Volumen von 100 bis 500.000 im Projektgeschäft produziert werden. Dabei bieten wir industrielle Stahlbearbeitung nach Maß bis hin zur Möglichkeit Stahlteile in gleichbleibend hoher Qualität lasern zu lassen.",
+
+    "steel-processing.laser-cut.title": "Stahlteile lasern lassen – Laserteile aus Stahl",
+    "steel-processing.laser-cut.h1": "Stahlteile lasern lassen",
+    "steel-processing.laser-cut.seo": "Irion bietet hochwertige Industrie Laserteile aus Stahl. <br><br> Sie können Stahlteile lasern lassen, wie Stahlblech, Stahlplatten, Edelstahl, Schwarzblech, Grobblech, Federstahl, Werkzeugstahl, Winkelstahl oder Elektroblech. <br><br> Wir lasern Stahl im Projektgeschäft ab 100 bis 500.000 Stück in konstant hoher Qualität. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+
+    "steel-processing.laser-cut.steel-sheet.title": "Stahlblech Zuschnitt nach Maß – Stahlblech lasern lassen",
+    "steel-processing.laser-cut.steel-sheet.h1": "Stahlblech Zuschnitt",
+    "steel-processing.laser-cut.steel-sheet.seo": "Irion bietet einen hochwertigen Stahlblech Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Stahlblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Stahlblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+
+    "steel-processing.laser-cut.steel-plate.title": "Stahlplatten Zuschnitt – Stahlplatten lasern lassen",
+    "steel-processing.laser-cut.steel-plate.h1": "Stahlplatten Zuschnitt",
+    "steel-processing.laser-cut.steel-plate.seo": "Irion bietet einen hochwertigen Stahlplatten Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Stahlplatten gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Stahlplatten in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.stainless-steel.title": "Edelstahl Zuschnitt nach Maß – Edelstahl lasern lassen",
+    "steel-processing.laser-cut.stainless-steel.h1": "Edelstahl Zuschnitt",
+    "steel-processing.laser-cut.stainless-steel.seo": "Irion bietet einen hochwertigen Edelstahl Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Edelstahl gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Edelstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.black-sheet-metal.title": "Schwarzblech Zuschnitt – Schwarzblech lasern lassen",
+    "steel-processing.laser-cut.black-sheet-metal.h1": "Schwarzblech Zuschnitt",
+    "steel-processing.laser-cut.black-sheet-metal.seo": "Irion bietet einen hochwertigen Schwarzblech Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Schwarzblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Schwarzblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.thick-sheet.h1": "Grobblech Zuschnitt nach Maß – Grobblech lasern lassen",
+    "steel-processing.laser-cut.thick-sheet.title": "Grobblech Zuschnitt",
+    "steel-processing.laser-cut.thick-sheet.seo": "Irion bietet einen hochwertigen Grobblech Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Grobblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Grobblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.spring-steel.title": "Federstahl Zuschnitt nach Maß – Federstahl lasern lassen",
+    "steel-processing.laser-cut.spring-steel.h1": "Federstahl Zuschnitt",
+    "steel-processing.laser-cut.spring-steel.seo": "Irion bietet einen hochwertigen Federstahl Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Federstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Federstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.tool-steel.title": "Werkzeugstahl Zuschnitt – Werkzeugstahl lasern lassen",
+    "steel-processing.laser-cut.tool-steel.h1": "Werkzeugstahl Zuschnitt",
+    "steel-processing.laser-cut.tool-steel.seo": "Irion bietet einen hochwertigen Werkzeugstahl Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Werkzeugstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Werkzeugstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.angle-cutting.title": "Winkelstahl Zuschnitt – Winkelstahl lasern lassen",
+    "steel-processing.laser-cut.angle-cutting.h1": "Winkelstahl Zuschnitt",
+    "steel-processing.laser-cut.angle-cutting.seo": "Irion bietet einen hochwertigen Winkelstahl Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Winkelstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Winkelstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.electrical-cutting.title": "Elektroblech Zuschnitt – Elektroblech lasern lassen",
+    "steel-processing.laser-cut.electrical-cutting.h1": "Elektroblech Zuschnitt",
+    "steel-processing.laser-cut.electrical-cutting.seo": "Irion bietet einen hochwertigen Elektroblech Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Elektroblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Elektroblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+
+    "steel-processing.steel-machining.title": "Stahlbearbeitung in Deutschland seit 1926 – Firma Irion",
+    "steel-processing.steel-machining.h1": "Stahlbearbeitung",
+    "steel-processing.steel-machining.seo": "Die Firma Irion bietet seit 1926 präzise Stahlbearbeitung in Deutschland. Sie können Stahlteile in großer Fertigungstiefe bearbeiten lassen, wie schweißen, schneiden, biegen, fräsen oder abkanten in Lohnfertigung. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Benötigen Sie darüber hinaus weitere Metallbearbeitung oder Oberflächenveredelung kümmern wir uns um eine zufriedenstellende Lösung mit ausgewählten Kooperationspartnern.",
+        
+    "steel-processing.steel-machining.welding-business.title": "Stahl schweißen lassen – Schweißbetrieb aus Deutschland",
+    "steel-processing.steel-machining.welding-business.h1": "Stahl schweißen lassen",
+    "steel-processing.steel-machining.welding-business.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Schweißbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl schweißen lassen ab 30 bis 5000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+        
+    "steel-processing.steel-machining.steel-cutting-services.title": "Stahl schneiden lassen – Laserschneidbetrieb Deutschland",
+    "steel-processing.steel-machining.steel-cutting-services.h1": "Stahl schneiden lassen",
+    "steel-processing.steel-machining.steel-cutting-services.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Laserschneidbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl schneiden lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+        
+    "steel-processing.steel-machining.steel-bending-services.title": "Stahl biegen lassen – Biegebetrieb aus Deutschland",
+    "steel-processing.steel-machining.steel-bending-services.h1": "Stahl biegen lassen",
+    "steel-processing.steel-machining.steel-bending-services.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Biegebetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl biegen lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+        
+    "steel-processing.steel-machining.steel-miling.title": "Stahl fräsen lassen – Zerspanungsbetrieb aus Deutschland",
+    "steel-processing.steel-machining.steel-miling.h1": "Stahl fräsen lassen",
+    "steel-processing.steel-machining.steel-miling.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Zerspanungsbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl fräsen lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+        
+    "steel-processing.steel-machining.brake-forming.title": "Stahl kanten lassen – Kantbetrieb aus Deutschland",
+    "steel-processing.steel-machining.brake-forming.h1": "Stahl kanten lassen",
+    "steel-processing.steel-machining.brake-forming.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Kantbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl kanten lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!"
 
 }

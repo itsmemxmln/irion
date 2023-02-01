@@ -1,25 +1,27 @@
 @extends('layout')
 
-@section('title', __("Stahl kanten lassen – Kantbetrieb aus Deutschland"))
+@section('title', __("steel-processing.steel-machining.brake-forming.title"))
 
 @if (app()->getLocale() == "de")
 
 @section('description','Stahl kanten lassen ✓ 100 bis 500.000 Stück ☆ Konstant hohe Qualität ☆ Verantwortungsbewusst ☆
 Präzise ➨ Kantbetrieb aus Deutschland!')
-@else
+@elseif(app()->getLocale() == "en-US")
 
-@section('description','Our value network - a guarantee for your high-performance product! Competent consultation is the
-very beginning of our cooperation. Tell us about your project and we will find a flexible and tailor-made solution to
-your request.')
+@section('description','Press brake metal forming ✓ 100 to 500,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ From Germany since 1926')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/steel-processing-company/steel-machining/press-brake-metal-forming" />
+@endsection
 
 @section('content')
 <section class="page-banner"
     style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/zuschnitt2.webp');">
     <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">
-        {{ __("Stahl kanten lassen") }}</h1>
+        {{ __("steel-processing.steel-machining.brake-forming.h1") }}</h1>
 </section>
 
 <section class="container">
@@ -27,12 +29,8 @@ your request.')
         <div class="row align-items-center rounded-0 border shadow-lg ">
             <div class="col-lg-12 p-5 center">
                 <p style="text-align:center">
-                    Irion gibt es bereits seit 1926. Wir sind ein erfahrener Kantbetrieb aus Deutschland, genauer gesagt
-                    aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart,
-                    Pforzheim und Tübingen.
-                    <br><br>
-                    Bei uns können Sie Stahl kanten lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst
-                    und legen wert auf präzises Arbeiten und konstant hohe Qualität!
+                    {!! __("steel-processing.steel-machining.brake-forming.seo") !!}
+                    
                 </p>
             </div>
         </div>

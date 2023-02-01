@@ -51,7 +51,7 @@
             <a class="dropdown-item dropdown-toggle"
                 href="/us/welding-fabrications/lifting-equipment-manufacturer" id="navbarDropdown2"
                 role="button2" data-bs-toggle="dropdown2" aria-expanded="false">
-                Load handling attachment
+                Lifting equipment
             </a>
             <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown2">
                 <li><a class="dropdown-item {{ Request::is('/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers') ? 'active' : '' }}"
@@ -152,6 +152,93 @@
     </ul>
     </li>
     <!-- Schweißkonstruktionen END -->
+
+<!-- Stahlverarbeitung START -->
+<li class="nav-item mx-2 dropdown">
+    <a class="nav-link fw-bold dropdown-toggle {{ Request::is('steel-processing-company*') ? 'active' : '' }}" href="/us/steel-processing-company" id="navbarDropdown"
+        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Steel processing
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li>
+            <a class="dropdown-item {{ Request::is('steel-processing-company') ? 'active' : '' }}"
+                href="/us/steel-processing-company">Steel processing</a>
+        </li>
+    
+        <li class="nav-item mx-2 dropdown">
+            <a class="dropdown-item dropdown-toggle" href="/us/steel-processing-company/laser-cut-steel-parts"
+                id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                aria-expanded="false">
+                Laser cut steel parts
+            </a>
+            <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                <li><a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting">Steel sheet cutting</a></li>
+                <li><a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting">Steel plate cutting</a></li>
+                <li>
+                    <a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel">Stainless steel cutting</a>
+                </li>
+                <li>
+                    <a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size">Black sheet metal cutting</a>
+                </li>
+                <li>
+                    <a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal">Thick sheet metal cutting</a>
+                </li>
+                <li>
+                    <a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size">Spring steel cutting</a>
+                </li>
+                <li>
+                    <a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size">Tool steel cutting</a>
+                </li>
+                <li>
+                    <a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size">Angle iron cutting</a>
+                </li>
+                <li>
+                    <a class="dropdown-item {{ Request::is('/us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting">Electrical steel cutting</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item mx-2 dropdown">
+            <a class="dropdown-item dropdown-toggle"
+                href="/us/steel-processing-company/steel-machining" id="navbarDropdown2"
+                role="button2" data-bs-toggle="dropdown2" aria-expanded="false">
+                Steel machining
+            </a>
+            <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item {{ Request::is('/us/steel-processing-company/steel-machining/welding-business') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/steel-machining/welding-business">Welding business</a>
+                </li>
+    
+                <li><a class="dropdown-item {{ Request::is('/us/steel-processing-company/steel-machining/laser-steel-cutting-services') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/steel-machining/laser-steel-cutting-services">Steel cutting services</a>
+                </li>
+                <li>
+                    <a class="dropdown-item {{ Request::is('/us/steel-processing-company/steel-machining/steel-bending-services') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/steel-machining/steel-bending-services">Steel bending services</a>
+                </li>
+                <li><a class="dropdown-item {{ Request::is('/us/steel-processing-company/steel-machining/steel-milling') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/steel-machining/steel-milling">Steel milling</a>
+                </li>
+                <li><a class="dropdown-item {{ Request::is('/us/steel-processing-company/steel-machining/press-brake-metal-forming') ? 'active' : '' }}"
+                        href="/us/steel-processing-company/steel-machining/press-brake-metal-forming">Brake forming</a>
+                </li>
+    
+    
+            </ul>
+        </li>
+
+    </li>
+    {{-- Stahlverarbeitung ENDE --}}
+</ul>
 
 
 <li class="nav-item mx-2"><a href="{{ url('us/company') }}"

@@ -49,6 +49,13 @@
                         <li><a href="{{ url('schweisskonstruktionen/skid-anlagenbau/foerdertechnik-automobilindustrie')}}">Fördertechnik Automobilindustrie</a></li>
                         <li><a href="{{ url('schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger')}}">Sonderladungsträger</a></li>
                     </ul>
+                @elseif(app()->getLocale() == "en-US")
+                    <strong>Examples:</strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/skid-construction/skid-automotive')}}">Skid Automotive</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/skid-construction/conveyor-systems-automotive')}}">Conveyor Systems Automotive</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/skid-construction/special-load-carriers')}}">Special load carriers</a></li>
+                    </ul>
                 @endif
             </div>
         </div>

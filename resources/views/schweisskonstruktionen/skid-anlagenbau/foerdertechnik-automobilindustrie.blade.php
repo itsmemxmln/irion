@@ -50,18 +50,17 @@
             <div class="col-lg-12 p-5 center">
                 <p style="text-align:center">
                 <ul>
-                    <li>Fertigung unter Berücksichtigung mechanischer und metallurgischer Aspekte (auch Beschichtung)
-                    </li>
-                    <li>Verschmutzungsresistenz</li>
-                    <li>Temperaturbeständigkeit</li>
-                    <li>Lasten ~ 300 kg</li>
-                    <li>getaktete Montage, Demontage, Wartung</li>
-                    <li>Einzelteileanzahl bis ca. 300 Positionen</li>
-                    <li>Größe ca. 2-5m</li>
-                    <li>Genauigkeit +/- 0,1 mm</li>
-                    <li>Eindeutige Identifizierung</li>
-                    <li>Mechanisch und elektronisch</li>
-                    <li>Fertigungslose bis ca. 3.000 Stück</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.1") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.2") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.3") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.4") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.5") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.6") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.7") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.8") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.9") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.10") !!}</li>
+                    <li>{!! trans_fb("welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.11") !!}</li>
                 </ul>
                 </p>
             </div>

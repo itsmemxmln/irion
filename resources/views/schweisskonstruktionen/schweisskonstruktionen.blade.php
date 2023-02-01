@@ -82,6 +82,44 @@
                     <ul>
                         <li><a href="{{ url('schweisskonstruktionen/foerdertechnik-zubehoer-ersatzteile')}}">Zubehör und Ersatzteile</a></li>
                     </ul>
+                @elseif(app()->getLocale() == "en-US")
+                    <strong><a href="{{ url('us/welding-fabrications/skid-construction')}}">Skid construction</a></strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/skid-construction/skid-automotive')}}">Skid Automotive</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/skid-construction/conveyor-systems-automotive')}}">Conveyor Systems Automotive</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/skid-construction/special-load-carriers')}}">Special load carriers</a></li>
+                    </ul>
+                    <strong><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer')}}">Lifting equipment </a></strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers')}}">Heavy duty steel pallets</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins')}}">Industrial bins</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/transport-bins')}}">Transport bins</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams')}}">Steel cross beams</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands')}}">Heavy duty stands</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/post-pallets')}}">Post pallets</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks')}}">Metal stacking racks</a></li>
+                    </ul>
+                    <strong><a href="{{ url('us/welding-fabrications/welded-steel-construction')}}">Mechanical engineering</a></strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers')}}">Scissor lift tables</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/welded-steel-construction/welded-racks')}}">Welded racks</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies')}}">Commercial vehicle bodies</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/welded-steel-construction/product-conveyor-system')}}">Product conveyor system</a></li>
+                    </ul>
+                    <strong><a href="{{ url('us/welding-fabrications/transportation-systems')}}">Transportation systems</a></strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/mobile-lifting-platforms')}}">Mobile lifting platforms</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/heavy-duty-platform-trolley')}}">Heavy duty platform trolley</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/electric-monorail')}}">Electric monorail </a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/power-and-free-conveyors')}}">Power and free conveyors</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/chain-conveyor-parts')}}">Chain conveyor</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor')}}">Underfloor drag chain conveyor</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers')}}">Automated guided vehicle</a></li>
+                    </ul>
+                    <strong><a href="{{ url('us/welding-fabrications/conveyor-accessories-spare-parts')}}">Spare parts and accessories</a></strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/conveyor-accessories-spare-parts')}}">Spare parts and accessories</a></li>
+                    </ul>
                 @endif
             </div>
         </div>

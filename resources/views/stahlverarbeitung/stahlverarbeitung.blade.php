@@ -1,25 +1,27 @@
 @extends('layout')
 
-@section('title', __("Stahlverarbeitung in Deutschland seit 1926 – Firma Irion"))
+@section('title', trans_fb("steel-processing.title"))
 
 @if (app()->getLocale() == "de")
 
 @section('description','Stahlverarbeitung in Deutschland ✓ 100 bis 500.000 Stück ☆ Stahlteile lasern lassen ☆
 Stahlbearbeitung ☆ Präzise ➨ Qualität seit 1926!')
-@else
+@elseif(app()->getLocale() == "en-US")
 
-@section('description','Our value network - a guarantee for your high-performance product! Competent consultation is the
-very beginning of our cooperation. Tell us about your project and we will find a flexible and tailor-made solution to
-your request.')
+@section('description','Steel processing company from Germany ✓ 100 to 500,000 pieces ☆ Lasered steel parts ☆ Precise ➨ Consistently high quality since 1926!')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/stahlverarbeitung" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/steel-processing-company/" />
+@endsection
 
 @section('content')
 <section class="page-banner"
     style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/zuschnitt2.webp');">
     <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">
-        {{ __("Stahlverarbeitung") }}</h1>
+         {{ trans_fb("steel-processing.h1") }}</h1>
 </section>
 
 <section class="container">
@@ -27,9 +29,11 @@ your request.')
         <div class="row align-items-center rounded-0 border shadow-lg ">
             <div class="col-lg-12 p-5 center">
                 <p style="text-align:center">
-                    Die Firma Irion bietet seit 1926 präzise Stahlverarbeitung in Deutschland. An unserem Standort im Schwarzwald können Stahlteile im Volumen von 100 bis 500.000 im Projektgeschäft produziert werden.
-                    Dabei bieten wir industrielle Stahlbearbeitung nach Maß bis hin zur Möglichkeit Stahlteile in gleichbleibend hoher Qualität lasern zu lassen.
+                    {{ trans_fb("steel-processing.seo") }}
+                    
                 </p>
+                
+                @if (app()->getLocale() == "de")
                 <strong><a href="{{ url('stahlverarbeitung/stahlteile-lasern-lassen')}}">Stahlteile lasern lassen</a></strong>
                 <ul>
                     <li><a href="{{ url('stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt')}}">Stahlblech Zuschnitt</a></li>
@@ -50,6 +54,31 @@ your request.')
                     <li><a href="{{ url('stahlverarbeitung/stahlbearbeitung/stahl-fraesen-lassen')}}">Stahl fräsen lassen</a></li>
                     <li><a href="{{ url('stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen')}}">Stahl kanten lassen</a></li>
                 </ul>
+
+                @elseif(app()->getLocale() == "en-US")
+
+                <strong><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts')}}">Laser cut steel parts</a></strong>
+                <ul>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting')}}">Steel sheet cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting')}}">Steel plate cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless steel')}}">Stainless steel cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size')}}">Black sheet metal cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal')}}">Thick sheet metal cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size')}}">Spring steel cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size')}}">Tool steel cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size')}}">Angle iron cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting')}}">Electrical steel cutting</a></li>
+                </ul>
+                <strong><a href="{{ url('us/steel-processing-company/steel-machining')}}">Steel machining</a></strong>
+                <ul>
+                    <li><a href="{{ url('us/steel-processing-company/steel-machining/welding-business')}}">Welding business</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/steel-machining/laser-steel-cutting services')}}">Steel cutting services</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/steel-machining/steel-bending-services')}}">Steel bending services</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/steel-machining/steel-milling')}}">Steel milling</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/steel-machining/press-brake-metal-forming')}}">Brake forming</a></li>
+                </ul>
+
+                @endif
             </div>
         </div>
     </div>

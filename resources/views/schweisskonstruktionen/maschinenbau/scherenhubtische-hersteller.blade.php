@@ -6,9 +6,7 @@
     @section('description','Scherenhubtische Hersteller ✓ 30 bis 5000 Stück ☆ Konstant hohe Qualität ☆ Verantwortungsbewusst
     ☆ Präzise ➨ Schwerlasthubtische aus Stahl!')
 @elseif(app()->getLocale() == "en-US")
-    @section('description','Our value network - a guarantee for your high-performance product! Competent consultation is the
-    very beginning of our cooperation. Tell us about your project and we will find a flexible and tailor-made solution to
-    your request.')
+    @section('description','Scissor lift table manufacturers ✓ Consistently high quality ☆ Responsible ☆ Precise ➨ Heavy duty lift tables made in Germany!')
 @else
     @section('description','Our value network - a guarantee for your high-performance product! Competent consultation is the
     very beginning of our cooperation. Tell us about your project and we will find a flexible and tailor-made solution to

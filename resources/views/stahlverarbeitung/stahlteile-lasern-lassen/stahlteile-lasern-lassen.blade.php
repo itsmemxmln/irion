@@ -1,25 +1,28 @@
 @extends('layout')
 
-@section('title', __("Stahlteile lasern lassen – Laserteile aus Stahl"))
+@section('title', trans_fb("steel-processing.laser-cut.title"))
 
 @if (app()->getLocale() == "de")
 
 @section('description','Stahlteile lasern lassen ✓ Stahlbleche ☆ Stahlplatten ☆ Edelstahl ☆ Schwarzblech ☆ Grobblech ☆
 uvm. ➨ Industrie Laserteile aus Stahl!')
-@else
+@elseif(app()->getLocale() == "en-US")
 
-@section('description','Our value network - a guarantee for your high-performance product! Competent consultation is the
-very beginning of our cooperation. Tell us about your project and we will find a flexible and tailor-made solution to
-your request.')
+@section('description','Laser cut steel parts ✓ Steel sheets ☆ Steel plates ☆ Stainless steel ☆ Black plate ☆ and more ➨ Industrial steel laser parts')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/stahlverarbeitung/stahlteile-lasern-lassen" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/steel-processing-company/laser-cut-steel-parts" />
+@endsection
 
 @section('content')
 <section class="page-banner"
     style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/zuschnitt2.webp');">
     <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">
-        {{ __("Stahlteile lasern lassen") }}</h1>
+        {{ trans_fb("steel-processing.laser-cut.h1") }}</h1>
+
 </section>
 
 <section class="container">
@@ -27,14 +30,11 @@ your request.')
         <div class="row align-items-center rounded-0 border shadow-lg ">
             <div class="col-lg-12 p-5 center">
                 <p style="text-align:center">
-                    Irion bietet hochwertige Industrie Laserteile aus Stahl.
-                    <br><br>
-                    Sie können Stahlteile lasern lassen, wie Stahlblech, Stahlplatten, Edelstahl, Schwarzblech,
-                    Grobblech, Federstahl, Werkzeugstahl, Winkelstahl oder Elektroblech.
-                    <br><br>
-                    Wir lasern Stahl im Projektgeschäft ab 100 bis 500.000 Stück in konstant hoher Qualität. Die
-                    mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.
+                    {!! trans_fb("steel-processing.laser-cut.seo") !!}
+                    
                 </p>
+                
+                @if(app()->getLocale() == "de")
                 <strong>Beispiele</strong>
                 <ul>
                     <li><a href="{{ url('stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt')}}">Stahlblech Zuschnitt</a></li>
@@ -47,6 +47,21 @@ your request.')
                     <li><a href="{{ url('stahlverarbeitung/stahlteile-lasern-lassen/winkelstahl-zuschnitt')}}">Winkelstahl Zuschnitt</a></li>
                     <li><a href="{{ url('stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt')}}">Elektroblech Zuschnitt</a></li>
                 </ul>
+
+                @elseif(app()->getLocale() == "en-US")
+                <strong>Examples</strong>
+                <ul>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting')}}">Steel sheet cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting')}}">Steel plate cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless steel')}}">Stainless steel cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size')}}">Black sheet metal cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal')}}">Thick sheet metal cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size')}}">Spring steel cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size')}}">Tool steel cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size')}}">Angle iron cutting</a></li>
+                    <li><a href="{{ url('us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting')}}">Electrical steel cutting</a></li>
+                </ul>
+                @endif
             </div>
         </div>
     </div>

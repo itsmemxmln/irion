@@ -296,7 +296,7 @@ foreach ($langs as $lang) {
 
 
 // en-US ONLY:
-Route::group(['prefix' => 'en-US'], function () {
+Route::group(['prefix' => 'us'], function () {
 
     // schweisskonstruktionen
     Route::get('/welding-fabrications', function () {
@@ -385,6 +385,62 @@ Route::group(['prefix' => 'en-US'], function () {
     });
     Route::get('/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks', function () {
         return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.stapelgestelle-hersteller');
+    });
+
+
+    // Stahlverarbeitung
+    Route::get('steel-processing-company', function () {
+        return view('stahlverarbeitung.stahlverarbeitung');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlteile-lasern-lassen');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlblech-zuschnitt');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/steel-plate-cutting', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlplatten-zuschnitt');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.edelstahl-zuschnitt');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.schwarzblech-zuschnitt');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.grobblech-zuschnitt');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.federstahl-zuschnitt');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.werkzeugstahl-zuschnitt');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.winkelstahl-zuschnitt');
+    });
+    Route::get('steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting', function () {
+        return view('stahlverarbeitung.stahlteile-lasern-lassen.elektroblech-zuschnitt');
+    });
+
+
+    Route::get('steel-processing-company/steel-machining', function () {
+        return view('stahlverarbeitung.stahlbearbeitung.stahlbearbeitung');
+    });
+    Route::get('steel-processing-company/steel-machining/welding-business', function () {
+        return view('stahlverarbeitung.stahlbearbeitung.stahl-schweissen-lassen');
+    });
+    Route::get('steel-processing-company/steel-machining/laser-steel-cutting-services', function () {
+        return view('stahlverarbeitung.stahlbearbeitung.stahl-schneiden-lassen');
+    });
+    Route::get('steel-processing-company/steel-machining/steel-bending-services', function () {
+        return view('stahlverarbeitung.stahlbearbeitung.stahl-biegen-lassen');
+    });
+    Route::get('steel-processing-company/steel-machining/steel-milling', function () {
+        return view('stahlverarbeitung.stahlbearbeitung.stahl-fraesen-lassen');
+    });
+    Route::get('steel-processing-company/steel-machining/press-brake-metal-forming', function () {
+        return view('stahlverarbeitung.stahlbearbeitung.stahl-kanten-lassen');
     });
 });
 

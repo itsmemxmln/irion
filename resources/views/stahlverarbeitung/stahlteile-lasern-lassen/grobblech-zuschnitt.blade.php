@@ -1,25 +1,27 @@
 @extends('layout')
 
-@section('title', __("Grobblech Zuschnitt nach Maß – Grobblech lasern lassen"))
+@section('title', trans_fb("steel-processing.laser-cut.thick-sheet.title"))
 
 @if (app()->getLocale() == "de")
 
 @section('description','Grobblech Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0
 m ➨ Grobblech lasern lassen!')
-@else
+@elseif(app()->getLocale() == "en-US")
 
-@section('description','Our value network - a guarantee for your high-performance product! Competent consultation is the
-very beginning of our cooperation. Tell us about your project and we will find a flexible and tailor-made solution to
-your request.')
+@section('description','Cutting thick sheet metal ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 ☆ Size 59 x 118 inch ➨ Top quality from Germany')
 @endif
 
-
+@section('head')
+<!-- Lang -->
+<link rel="alternate" hreflang="de" href="https://irion.de/stahlverarbeitung/stahlteile-lasern-lassen/grobblech-zuschnitt" />
+<link rel="alternate" hreflang="en-US" href="https://irion.de/us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal" />
+@endsection
 
 @section('content')
 <section class="page-banner"
     style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/zuschnitt2.webp');">
     <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">
-        {{ __("Grobblech Zuschnitt") }}</h1>
+        {{ trans_fb("steel-processing.laser-cut.thick-sheet.h1") }}</h1>
 </section>
 
 <section class="container">
@@ -27,17 +29,7 @@ your request.')
         <div class="row align-items-center rounded-0 border shadow-lg ">
             <div class="col-lg-12 p-5 center">
                 <p style="text-align:center">
-                    Irion bietet einen hochwertigen Grobblech Zuschnitt nach Maß.
-                    <br><br>
-                    Nicht nur beim Laserzuschnitt von Grobblechen gehen wir gerne auf Ihre individuellen Wünsche ein.
-                    Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
-                    <br><br>
-                    Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität,
-                    Verantwortungsbewusstsein und Präzision.
-                    <br><br>
-                    Bei Irion können Sie Grobblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab
-                    100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der
-                    Metallfläche beträgt 1,5 m x 3,0 m.
+                    {!! trans_fb("steel-processing.laser-cut.thick-sheet.seo") !!}
                 </p>
             </div>
         </div>

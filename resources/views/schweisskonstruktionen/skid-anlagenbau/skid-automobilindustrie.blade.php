@@ -12,7 +12,7 @@
     @section('keywords','irion, irion gmbh, Construction, Construction optimization, Calculation, CE documentation, FMEAMAG
     / MIG, CNC milling, Conventional cutting, Laser cutting, Flame cutting, Waterjet cutting, Bending / Edging, CNC turning,
     All proportions, 3-/4-/5-axis machining, WIG, Robotic applications, Weld inspection, Therm. / mech. straightening')
-    @section('description','Skid automotive ✓ 30 to 5000 pieces ☆ Constant high quality ☆ Responsible ☆ Precise ➨ Skid technology made in Germany!')
+    @section('description','Welding fabrications ✓ Skids ☆ Mechanical engineering ☆ Transport systems ☆ Industry spare parts ➨ Get more information now!')
 @else
     @section('keywords','irion, irion gmbh, Construction, Construction optimization, Calculation, CE documentation, FMEAMAG
     / MIG, CNC milling, Conventional cutting, Laser cutting, Flame cutting, Waterjet cutting, Bending / Edging, CNC turning,
@@ -52,20 +52,20 @@
             <div class="col-lg-12 p-5 center">
                 <p style="text-align:center">
 
-                <ul>
-                    <li>Fertigung unter Berücksichtigung mechanischer und metallurgischer Aspekte</li>
-                    <li>Verschmutzungsresistenz</li>
-                    <li>Temperaturbeständigkeit</li>
-                    <li>Lasten > 1.000 kg</li>
-                    <li>getaktete Montage, Demontage, Wartung</li>
-                    <li>Einzelteileanzahl bis ca. 150 Positionen</li>
-                    <li>Größe > 4 m</li>
-                    <li>Genauigkeit +/- 0,1 mm</li>
-                    <li>Eindeutige Identifizierung</li>
-                    <li>Mechanisch und elektronisch</li>
-                    <li>Fertigungslose bis über 1.000 Stück</li>
+                    <ul>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.1") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.2") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.3") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.4") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.5") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.6") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.7") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.8") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.9") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.10") !!}</li>
+                        <li>{!! trans_fb("welding-fabrications.skid-construction.skid-automotive.seoLower.11") !!}</li>
+                    </ul>
 
-                </ul>
                 </p>
             </div>
         </div>

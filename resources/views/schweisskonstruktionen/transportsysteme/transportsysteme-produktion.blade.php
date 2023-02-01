@@ -13,7 +13,7 @@
     @section('keywords','irion, irion gmbh, Construction, Construction optimization, Calculation, CE documentation, FMEAMAG
     / MIG, CNC milling, Conventional cutting, Laser cutting, Flame cutting, Waterjet cutting, Bending / Edging, CNC turning,
     All proportions, 3-/4-/5-axis machining, WIG, Robotic applications, Weld inspection, Therm. / mech. straightening')
-    @section('description','Steel product conveyor system ✓ Consistently high quality ☆ Precise ➨ Workpiece carrier Transport system manufacturer!')
+    @section('description','Transportation systems production ✓ Stage & transport trolleys ☆ Mechanical parts for conveyors ➨ Intralogistics conveyor technology!')
 @else
     @section('keywords','irion, irion gmbh, Construction, Construction optimization, Calculation, CE documentation, FMEAMAG
     / MIG, CNC milling, Conventional cutting, Laser cutting, Flame cutting, Waterjet cutting, Bending / Edging, CNC turning,
@@ -52,6 +52,17 @@
                         <li><a href="{{ url('schweisskonstruktionen/transportsysteme-produktion/kreiskettenfoerderer')}}">Kreiskettenförderer</a></li>
                         <li><a href="{{ url('schweisskonstruktionen/transportsysteme-produktion/unterflurschleppkettenfoerderer')}}">Unterflurschleppkettenförderer</a></li>
                         <li><a href="{{ url('schweisskonstruktionen/transportsysteme-produktion/fahrerlose-transportsysteme-hersteller')}}">Fahrerlose Transportsysteme</a></li>
+                    </ul>
+                @elseif(app()->getLocale() == "en-US")
+                    <strong>Transportation systems</strong>
+                    <ul>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/mobile-lifting-platforms')}}">Mobile lifting platforms</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/heavy-duty-platform-trolley')}}">Heavy duty platform trolley</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/electric-monorail')}}">Electric monorail </a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/power-and-free-conveyors')}}">Power and free conveyors</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/chain-conveyor-parts')}}">Chain conveyor</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor')}}">Underfloor drag chain conveyor</a></li>
+                        <li><a href="{{ url('us/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers')}}">Automated guided vehicle</a></li>
                     </ul>
                 @endif
             </div>
