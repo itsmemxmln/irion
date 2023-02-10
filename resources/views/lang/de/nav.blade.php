@@ -2,19 +2,22 @@
     class="fw-bold nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page">Home</a>
 </li>
 <li class="nav-item mx-2 dropdown">
-<a class="nav-link fw-bold dropdown-toggle {{ Request::is('kompetenzen') || Request::is('entwicklung') || Request::is('zuschnitt') || Request::is('zerspanung') || Request::is('schweissen') || Request::is('reinigung') || Request::is('waermebehandlung') || Request::is('oberflaeche') || Request::is('montage') ? 'active' : '' }}"
-    href="kompetenzen" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+<a class="nav-link fw-bold dropdown-toggle {{ Request::is('praezisionsfertigung') || Request::is('entwicklung') || Request::is('zuschnitt') || Request::is('zerspanung') || Request::is('schweissen') || Request::is('reinigung') || Request::is('waermebehandlung') || Request::is('oberflaeche') || Request::is('montage') ? 'active' : '' }}"
+    href="praezisionsfertigung" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
     aria-expanded="false">
-    Kompetenzen
+    Präzisionsfertigung
 </a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <li><a class="dropdown-item {{ Request::is('kompetenzen') ? 'active' : '' }}"
-            href="/kompetenzen">Übersicht</a></li>
+    <li><a class="dropdown-item {{ Request::is('praezisionsfertigung') ? 'active' : '' }}"
+            href="/praezisionsfertigung">Übersicht</a></li>
     <li>
         <hr class="dropdown-divider my-0">
     </li>
-    <li><a class="dropdown-item {{ Request::is('entwicklung') ? 'active' : '' }}"
-            href="/entwicklung">Entwicklung</a></li>
+    
+    <li><a class="dropdown-item {{ Request::is('/praezisionsfertigung/mechanische-konstruktion') ? 'active' : '' }}"
+            href="/praezisionsfertigung/mechanische-konstruktion">Mechanische Konstruktion</a></li>
+    <li><a class="dropdown-item {{ Request::is('/praezisionsfertigung/roboterschweissen') ? 'active' : '' }}"
+            href="/praezisionsfertigung/roboterschweissen">Roboterschweißen</a></li>
     <li><a class="dropdown-item {{ Request::is('zuschnitt') ? 'active' : '' }}"
             href="/zuschnitt">Zuschnitt</a></li>
     <li><a class="dropdown-item {{ Request::is('zerspanung') ? 'active' : '' }}"
@@ -280,7 +283,7 @@ class="fw-bold nav-link {{ Request::is('unternehmen') ? 'active' : '' }}">Untern
 </li>
 <li class="nav-item mx-2 dropdown">
 <a class="nav-link fw-bold dropdown-toggle {{ Request::is('qualitaetspolitik') || Request::is('zertifikate') ? 'active' : '' }}"
-href="kompetenzen" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+href="praezisionsfertigung" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
 aria-expanded="false">
 Qualität
 </a>

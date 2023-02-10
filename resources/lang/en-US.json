@@ -7,13 +7,13 @@
     "management" : "management",
     "unternehmen" : "company",
     "zertifikate" : "certificates",
-    "kompetenzen" : "competences",
+    "präzisionsfertigung" : "competences",
 
 
 
 
     "Startseite" : "Home",
-    "Kompetenzen" : "Competences",
+    "Präzisionsfertigung" : "Competences",
     "Leistungen" : "Services",
     "Zertifikate" : "Certificates",
     "Karriere" : "Career Opportunities",
@@ -115,7 +115,7 @@
 
 
 
-    "Kompetenzen / Leistungen der Irion GmbH" : "Competences / Services of Irion GmbH",
+    "competences.title" : "Competences / Services of Irion GmbH",
     "Unsere Kompetenzen" : "Our competences",
     "Unser Wertschöpfungsnetzwerk" : "Our value network",
     "die Garantie für Ihr Hochleistungsprodukt" : "a guarantee for your high-performance product",

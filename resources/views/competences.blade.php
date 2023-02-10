@@ -1,9 +1,9 @@
 @extends('layout')
 
-@section('title', __("Kompetenzen / Leistungen der Irion GmbH"))
+@section('title', __("competences.title"))
 
 @if (app()->getLocale() == "de")
-    @section('description','Unser Wertschöpfungsnetzwerk - die Garantie für Ihr Hochleistungsprodukt! Kompetente Beratung steht bei uns am Beginn der Zusammenarbeit. Stellen Sie uns Ihr Projekt vor und wir suchen und finden flexibel und maßgeschneidert die Lösung für Ihr Anliegen.')
+    @section('description','Präzisionsfertigung von Hochleistungsprodukten seit 1926! ✓ Von der Entwicklung bis zur Montage ➨ Alle unsere Kompetenzen kennenlernen')
 @elseif (app()->getLocale() == "en-US")
     @section('description','Our value network - a guarantee for your high-performance product! Competent consultation is the very beginning of our cooperation. Tell us about your project and we will find a flexible and tailor-made solution to your request.')
 @else
@@ -13,7 +13,7 @@
 @section('head')
 <!-- Lang -->
 <link rel="alternate" hreflang="x-default" href=https://irion.de/en/competences />
-<link rel="alternate" hreflang="de" href=https://irion.de/kompetenzen />
+<link rel="alternate" hreflang="de" href=https://irion.de/praezisionsfertigung />
 <link rel="alternate" hreflang="en" href=https://irion.de/en/competences />
 <link rel="alternate" hreflang="en-US" href=https://irion.de/us/competences />
 
@@ -22,7 +22,18 @@
 
 @section('content')
 <section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/home/skids/3.webp');">
-    <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">{{ __("Kompetenzen") }}</h1>
+    <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">{{ __("Präzisionsfertigung") }}</h1>
+</section>
+<section class="container">
+    <div class="container my-5">
+        <div class="row align-items-center rounded-0 border shadow-lg ">
+            <div class="col-lg-12 p-5 center">
+                <p style="text-align:center">
+                    {!! trans_fb("competences.seo") !!}
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 <section class="container">
     <h2 class="h2 mt-5 text-center">{{ __("Unser Wertschöpfungsnetzwerk")}}<br>- {{ __("die Garantie für Ihr Hochleistungsprodukt")}}!</h2>
@@ -30,7 +41,7 @@
         <div class="row justify-content-center mt-5">
             <div class="card col-md-3 mb-5">
                 <img src="{{ url('assets/img/dev.webp') }}" class="card-img-top" alt="Konstruktion, Entwicklung, Berechnung, FMEA">
-                <span class="card-header h5">{{ __("Entwicklung") }}</span>
+                <span class="card-header h5">{{ __("Mechanische Konstruktion") }}</span>
                 <div class="card-body">
                     <ul>
                         <li>{{ __("Konstruktion") }}</li>
@@ -43,7 +54,7 @@
                 @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="entwicklung">{{ __("Mehr erfahren") }}</a>
+                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/mechanische-konstruktion">{{ __("Mehr erfahren") }}</a>
                     </div>
                 </div>
                 @endif
@@ -56,7 +67,6 @@
                         <li>{{ __("Konventioneller Zuschnitt") }}</li>
                         <li>{{ __("Laserschnitt") }}</li>
                         <li>{{ __("Brennschnitt") }}</li>
-                        <li>{{ __("Wasserstrahl") }}</li>
                         <li>{{ __("Biegen / Kanten") }}</li>
                     </ul>
                 </div>

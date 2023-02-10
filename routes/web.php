@@ -25,7 +25,7 @@ Route::group(['prefix' => '/'], function () {
 
     Route::get('/', [HomeController::class, 'de']);
 
-    Route::get('/kompetenzen', function () {
+    Route::get('/praezisionsfertigung', function () {
         return view('competences');
     });
 
@@ -64,8 +64,11 @@ Route::group(['prefix' => '/'], function () {
     });
 
 
-    Route::get('/entwicklung', function () {
+    Route::get('/praezisionsfertigung/mechanische-konstruktion', function () {
         return view('leistungen.entwicklung');
+    });
+    Route::get('/praezisionsfertigung/roboterschweissen', function () {
+        return view('leistungen.roboterschweissen');
     });
     Route::get('/zuschnitt', function () {
         return view('leistungen.zuschnitt');

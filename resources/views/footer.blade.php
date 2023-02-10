@@ -20,10 +20,10 @@
 
             @if (app()->getLocale() == "de")
             <div class="col-12 col-md-3 d-none d-md-block">
-                <p class="h5">{{ __("Kompetenzen") }}</p>
+                <p class="h5">{{ __("Präzisionsfertigung") }}</p>
                 <ul class="list-unstyled text-small">
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="/#services">{{ __("Leistungen") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="kompetenzen">{{ __("Kompetenzen") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="praezisionsfertigung">{{ __("Präzisionsfertigung") }}</a></li>
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="zertifikate">{{ __("Zertifikate") }}</a></li>
                 </ul>
             </div>
@@ -47,10 +47,10 @@
             @else
 
             <div class="col-12 col-md-3 d-none d-md-block">
-                <p class="h5">{{ __("Kompetenzen") }}</p>
+                <p class="h5">{{ __("Präzisionsfertigung") }}</p>
                 <ul class="list-unstyled text-small">
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}#services">{{ __("Leistungen") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("kompetenzen") }}">{{ __("Kompetenzen") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("praezisionsfertigung") }}">{{ __("Präzisionsfertigung") }}</a></li>
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("zertifikate") }}">{{ __("Zertifikate") }}</a></li>
                 </ul>
             </div>
