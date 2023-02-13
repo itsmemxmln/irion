@@ -1,13 +1,12 @@
 @extends('layout')
 
 @section('title', isset($meta_title) ? $meta_title : "")
-@section('description', isset($meta_title) ? $meta_title : "")
-
+@section('description', isset($meta_description) ? $meta_description : "")
 
 @section('head')
-@if (isset($hreflanf))
-    <!-- Lang -->
-    {{$hreflang}}
+@if (isset($hreflang))
+    {{-- LANG --}}
+    {!!$hreflang!!}
 @endif
 
 @endsection
@@ -27,10 +26,12 @@
             <div class="col-lg-12 p-5 center">
                 <p style="text-align:center">
                     @if (isset($seo1))
-                        {{$seo1}}
-                    @endif
-                    
-                </p>        
+                        {!!$seo1!!}
+                    @endif                    
+                </p>      
+
+                @if (isset($submenu))
+                    {!!$submenu!!}
                 @endif
             </div>
         </div>

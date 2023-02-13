@@ -108,7 +108,7 @@
             </div>
         </div>
     </div>
-    @include('footer')
+    @include('lang.'.app()->getLocale().'.footer') 
     <script src="{{ url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}" crossorigin="anonymous"></script>
     <script src="{{ url('assets/cookie-consent/cookie-consent.js') }}"></script>
     <script>

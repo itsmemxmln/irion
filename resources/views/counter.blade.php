@@ -33,4 +33,4 @@
     </div>
 </section>
 
-<script src="{{ url('assets/js/counter.js') }}"></script>
+<script src="{{ asset('assets/js/counter.js') }}"></script>

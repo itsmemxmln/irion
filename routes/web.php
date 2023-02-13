@@ -1,456 +1,1220 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\App;
-use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Route;
+    use Illuminate\Support\Facades\App;
+    use Illuminate\Http\Request;
+    
+    use App\Http\Controllers\HomeController;
+    use App\Http\Controllers\ContactController;
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Web Routes
+    |--------------------------------------------------------------------------
+    |
+    | Here is where you can register web routes for your application. These
+    | routes are loaded by the RouteServiceProvider within a group which
+    | contains the 'web' middleware group. Now create something great!
+    |
+    */
+    
+    Route::get('/', function () {
+                return view('templates.home')->with(['meta_title' => 'Schweißbaugruppen Hersteller – Irion Qualität seit 1926', 'meta_description' => 'Schweißbaugruppen Hersteller ✓ 30 bis 5.000 Stück ☆ Konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Irion Qualität seit 1926!', 'h1' => 'Schweißbaugruppen Hersteller Irion', 'seo1' => 'Irion besteht seit 1929 und ist der Schweißbaugruppen Hersteller aus dem Schwarzwald. Unser zertifizierter Schweißfachbetrieb ist auf hochwertige Schweißbaugruppen von 30 bis 5.000 Stück spezialisiert. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/ />
+<link rel="alternate" hreflang="en-US" href=/us />
+', 'submenu' => '']);
+            });
+Route::get('/us', function () {
+                return view('templates.home')->with(['meta_title' => 'Welding fabrication shop – Irion  quality since 1926', 'meta_description' => 'Welding fabrication shop ✓ 30 to 5,000 parts ☆ Consistently high quality ☆ Responsible-minded ☆ Precision ➨ Irion quality since 1926!', 'h1' => 'Welding fabrication shop Irion ', 'seo1' => 'Irion was founded in 1929 and is the welding fabrication shop from the Black Forest in Germany. Our certified welding company is specialised on welded assemblies and industrial metal fabrication from 30 to 5,000 parts. We put consistently high quality first, along with responsible-minded people and precision.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/ />
+<link rel="alternate" hreflang="en-US" href=/us />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Präzisionsfertigung – Präzisionsbearbeitung von Metall', 'meta_description' => 'Präzisionsfertigung von Hochleistungsprodukten seit 1926! ✓ Von der Entwicklung bis zur Montage ➨ Alle unsere Kompetenzen kennenlernen', 'h1' => 'Präzisionsfertigung', 'seo1' => 'IRION steht für Präzisionsfertigung in der Metallverarbeitung. Von der Entwicklung bis zur Montage nutzen wir zahlreiche Kompetenzen, um Ihr Hochleistungsprodukt herzustellen. Informieren Sie sich hier über die verschiedenen Prozesse in unserem Wertschöpfungsnetzwerk.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer />
+', 'submenu' => '<strong><a href="/praezisionsfertigung/mechanische-konstruktion">Mechanische Konstruktion </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/roboterschweissen">Roboterschweißen </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/praezisionsschneiden">Präzisionsschneiden </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/praezisionszerspanung">Präzisionszerspanung </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/praezisionsschweissen">Präzisionsschweißen </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/industrielle-teilereinigung-dienstleistung">Industrielle Teilereinigung </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/industrielle-waermebehandlung">Industrielle Wärmebehandlung </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/oberflaechenbeschichtung-stahl">Oberflächenbeschichtung </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/pvc-tauchbeschichtung">PVC Tauchbeschichtung </a></strong>
+                                <ul></ul><strong><a href="/praezisionsfertigung/baugruppenmontage-maschinenbau">Baugruppenmontage </a></strong>
+                                <ul></ul>']);
+            });
+Route::get('/us/precision-manufacturer', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Precision manufacturer – Metal machining since 1926!', 'meta_description' => 'Precision manufacturer ✓ High-performance products made in Germany since 1926 ☆ From development to assembly ➨ All our competencies', 'h1' => 'Precision manufacturer ', 'seo1' => 'Irion is a precision manufacturer in metal processing. From development to assembly, we use numerous competencies to manufacture your high-performance product. Find out here about the various processes in our value network.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer />
+', 'submenu' => '<strong><a href="/us/precision-manufacturer/mechanical-construction">Mechanical construction</a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/robot-welding ">Robot welding </a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/precision-cutting-metal">Precision cutting metal</a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/high-precision-machining">High precision machining</a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/precision-welding">Precision welding</a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/industrial-parts-cleaning-service">Industrial parts cleaning service</a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/industrial-heat-treatment">Industrial heat treatment</a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/surface-treatment-steel">Surface treatment steel</a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/pvc-dip-coating">PVC dip coating</a></strong>
+                                <ul></ul><strong><a href="/us/precision-manufacturer/assembly-of-components">Assembly of components</a></strong>
+                                <ul></ul>']);
+            });
+Route::get('/praezisionsfertigung/mechanische-konstruktion', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Mechanische Konstruktion – CAD Konstruktion bei Irion', 'meta_description' => 'Mechanische Konstruktion bei Irion seit 1926 ✓ 3D Konstruktion ☆ 2D Ableitung von Werkstattzeichnungen ➨ Zur CAD Konstruktion', 'h1' => 'Mechanische Konstruktion', 'seo1' => '<p>Für die mechanische Konstruktion verwenden wir bei IRION seit Jahren CAD Werkzeuge, um unsere Schweißbaugruppen, Schweißkonstruktionen, Schweißkonsolen und Zeichnungsteile gemeinsam mit unseren Kunden und Partnern zu entwickeln.</p> <p>Wir sind der Überzeugung, dass Kosten in der Serie zu einem sehr großen Teil in der Konstruktion entstehen. Deshalb legen wir bei der mechanischen Konstruktion großes Augenmerk in die Entwicklung unserer Schweißbaugruppen, Schweißteile, Schweißkonstruktionen, Schweißkonsolen und Zeichnungsteile, die wir im Übrigen gerne mit Ihnen feinjustieren bzw. produktionstechnisch optimieren. </p> <p>Wir setzen für die 3D Konstruktion Autodesk Inventor und Autodesk AutoCAD ein und sind gleichzeitig in der Lage, in weitere Systeme wie Siemens NX, Catia, Solid Edge, Solid Works, Creo Elements oder Microstation zu konvertieren. Des Weiteren bedienen wir uns auch der offenen Formate, wie zum Beispiel Step Dateien, dxf oder dwg.</p> <p>Die Absicherung unserer geschweißten Teile, Schweißbaugruppen, Schweißkonstruktionen und Schweißkonsolen erfolgt in FEM Programmen. Im ersten Schritt über den integrierten Nastran Postprozessor. Bei weiteren Untersuchungen greifen wir auf Ansys und Abaqus zurück.</p> <p>In der CAD Konstruktion arbeitet 5 Mitarbeiter, die durch externe Ressourcen mit jahrzehntelanger Erfahrung im Entwicklungs- und Konstruktionsbereich aufwarten können. Gerade mit Schwerpunkt geschweißte Bauteile, Schweißkonsolen, Schweißkonstruktionen wie Maschinenteile, Fassadenhalter, Betriebsmittel, etc für unsere Partner aus der Erdbewegung, Agrarindustrie, Fassadenbau, Automobilindustrie, Bauindustrie, Maschinenbau, Lackiertechnik, Kunst und Kultur sowie viele mehr!</p> <p>Irion beherrscht neben Frästeilen, Schweißteilen und gefrästen Schweißteilen sowie Schweißkonsolen, Schweißbaugruppen und Schweißkonstruktionen auch die vor allem mechanische, aber auch elektrische Installation und Inbetriebnahme im Haus sowie beim Kunden vor Ort. Abgerundet werden unsere Serviceleistungen durch mechanische Konstruktion, Konstruktionsoptimierung, FEM Berechnung, statische Berechnung, und FMEA Risikountersuchung sowie die CE-Kennzeichnung nach erfolgter CE-Dokumentation. Selbstverständlich sind wir bei IRION nach IPMA Projektmanagement zertifiziert.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/mechanische-konstruktion />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/mechanical-construction />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/mechanical-construction', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Mechanical construction – CAD construction at Irion ', 'meta_description' => 'Mechanical construction at Irion  since 1926 ✓ 3D construction ☆ 2D derivation of shop drawings ➨ To CAD design', 'h1' => 'Mechanical construction', 'seo1' => '<p>For mechanical construction, we at Irion  have been using CAD tools for years to develop our welded assemblies, welded structures, welded brackets and drawing parts together with our customers and partners.
+</p><p>
+</p><p>We are convinced that costs in series production arise to a very large extent in the construction. That is why we pay great attention to the mechanical construction of our welded assemblies, welded parts, welded constructions, welded brackets and drawing parts in the mechanical design, which we are also happy to fine-tune with you or optimize in terms of production technology. 
+</p><p>
+</p><p>We use Autodesk Inventor and Autodesk AutoCAD for 3D construction and at the same time we are able to convert to other systems such as Siemens NX, Catia, Solid Edge, Solid Works, Creo Elements or Microstation. Furthermore, we also make use of open formats, such as step files, dxf or dwg.
+</p><p>
+</p><p>The safeguarding of our welded parts, welded assemblies, welded constructions and welded consoles is done in FEM programs. In the first step via the integrated Nastran postprocessor. For further investigations we use Ansys and Abaqus.
+</p><p>
+</p><p>In the CAD construction works 5 employees, who can offer decades of experience in the development and construction area by external resources. Especially with focus on welded components, welded brackets, welded constructions such as machine parts, facade brackets, operating equipment, etc for our partners in earthmoving, agricultural industry, facade construction, automotive industry, construction industry, mechanical engineering, painting technology, art and culture and many more!
+</p><p>
+</p><p>Irion masters not only milled parts, welded parts and milled welded parts as well as welded brackets, welded assemblies and welded constructions but also the mainly mechanical but also electrical installation and commissioning in-house as well as at the customer\'s site. Our services are rounded off by mechanical construction, design optimization, FEM calculation, static calculation, and FMEA risk analysis as well as CE marking after CE documentation has been completed.
+</p><p>Of course, we at Irion  are certified according to IPMA project management.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/mechanische-konstruktion />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/mechanical-construction />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/roboterschweissen', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Roboterschweißen – Automatisiertes Schweißen bei Irion', 'meta_description' => 'Roboterschweißen bei Irion ✓ High-Tech-Robotern mit bis zu 9 interpolierenden Achsen ☆ Made in Germany ➨ Irion Qualität seit 1926 ', 'h1' => 'Roboterschweißen', 'seo1' => '<p>Bei IRION schweißen wir stückzahlenintensive Schweißbaugruppen durch automatisiertes Schweißen.
+</p><p>Roboterschweißen erfolgt bei uns durch die Verwendung von High-Tech-Robotern mit bis zu 9 interpolierenden Achsen.
+</p><p>
+</p><p>Verwendung finden beim Roboterschweißen:
+</p><p>
+</p><p>•	6 Achs Schweißroboter
+</p><p>•	7 Achs Schweißroboter
+</p><p>•	8 Achs Schweißroboter
+</p><p>•	9 Achs Schweißroboter
+</p><p>
+</p><p>Made in Germany und gleichzeitig konkurrenzfähig. Dies wird möglich durch die computergesteuerte offline Robotersimulation unseres geschulten und hochmotivierten Personals. </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/roboterschweissen />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/robot-welding  />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/robot-welding ', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Robot welding – automated welding services from Germany ', 'meta_description' => 'Robot welding at Irion  ✓ High-tech robots with up to 9 interpolating axes ☆ Automated welding in Germany ➨ Irion  quality since 1926', 'h1' => 'Robot welding ', 'seo1' => '<p>At Irion, we weld high volume welded assemblies through automated welding.
+</p><p>
+</p><p>Robot welding is done by us by using high-tech robots with up to 9 interpolating axes.
+</p><p>
+</p><p>Used for robot welding are:
+</p><p>
+</p><p>• 6 axis welding robots
+</p><p>• 7 axis welding robots
+</p><p>• 8 axis welding robots
+</p><p>• 9 axes welding robot
+</p><p>
+</p><p>Made in Germany and competitive at the same time. This is made possible by the computerized offline robot simulation of our trained and highly motivated staff. </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/roboterschweissen />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/robot-welding  />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/praezisionsschneiden', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Präzisionsschneiden in der Metallverarbeitung seit 1926 ', 'meta_description' => 'Präzisionsschneiden für Ihr Hochleistungsprodukt ✓ Verschiedene Materialien ☆ Zahlreiche Techniken ➨ Jetzt Informieren!', 'h1' => 'Präzisionsschneiden in der Metallverarbeitung', 'seo1' => '<p>Die Basis unserer Produkte ist das Präzisionsschneiden von Metallteilen aus Stahl und Edelstahl, sowie CADCAM gefräste Stahl- und Edelstahlteile. Ebenso gesägte Profile aus Stahl und Edelstahl. Wir erstellen Laserteile, Biegeteile, Laserbiegeteile, Kantteile oder Laserkantteile. </p> <p>Je nach Dicke und Wärmeeinbringung verarbeiten wir wie folgt: <ul> <li>Konventioneller Zuschnitt / Sägen / gesägte Profile bis 250mm</li> <li>Laserschneiden bis 25mm</li> <li>Biegeteile bis 25mm</li> <li>Laserbiegeteile bis 25mm</li> <li>Laserkantteile bis 25mm</li> <li>Kantteile bis 25mm</li> </ul> </p> <p>Die Basisdimensionen der Teile, hergestellt aus Laserschneiden, Biegen, Kanten, Laserkantteile und Laserbiegeteile sind Rohlinge aus 6m x 4m mit einer Dicke von bis zu 150 mm. Die übliche Dicke beträgt 40mm.</p> <p>Durch unsere Schweißkompetenz, gewährleistet durch unsere hausinternen Schweißfachingenieure, als auch Schweißfachpersonen, bearbeiten wir mit unserem jährlich zertifizierten Fachpersonal nach ISO 3834, ISO 1090 ECX-2 & EXC-3 (Execution Class 2 und Execution Class 3) auch Feinkornbaustahl S460, S690, S960 und viele mehr.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/praezisionsschneiden />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/precision-cutting-metal />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/precision-cutting-metal', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Precision cutting metal – At Irion  in Germany since 1926', 'meta_description' => 'Precision cutting metal for your high-performance product ✓ Various materials ☆ Numerous techniques ➨ All information here!', 'h1' => 'Precision cutting metal', 'seo1' => '<p>The basis of our products is precision cutting metal of steel and stainless steel parts, as well as CADCAM milled steel and stainless steel parts. Also sawed profiles made of steel and stainless steel. We create laser parts, bent parts, laser bent parts, edged parts or laser edged parts.
+</p><p>
+</p><p>Depending on the thickness and heat input, we process as follows:
+</p><p>•	Conventional cutting / sawing / sawn profiles up to 250mm.
+</p><p>•	Laser cutting up to 25mm
+</p><p>•	bent parts up to 25mm
+</p><p>•	Laser bent parts up to 25mm
+</p><p>•	Laser edged parts up to 25mm
+</p><p>•	edged parts up to 25mm
+</p><p>
+</p><p>The basic dimensions of the parts made from laser cutting, bending, edging, laser edging parts and laser bending parts are blanks of 6m x 4m with thickness up to 150mm. The usual thickness is 40mm.
+</p><p>
+</p><p>Due to our welding competence, guaranteed by our in-house welding engineers, as well as welding specialists, we also process fine-grained structural steel S460, S690, S960 and many more with our annually certified specialists according to ISO 3834, ISO 1090 ECX-2 & EXC-3 (Execution Class 2 and Execution Class 3).</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/praezisionsschneiden />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/precision-cutting-metal />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/praezisionszerspanung', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Präzisionszerspanung – Fräsen von Stahl & Edelstahl', 'meta_description' => 'Präzisionszerspanung ✓ Computergesteuertes Fräsen ☆ Stahl ☆ Edelstahl ☆ Verschiedene Dimensionen ➨ Irion Qualität seit 1926!', 'h1' => 'Präzisionszerspanung', 'seo1' => '<p>Eine Herzensangelegenheit unseres langjährigen Schweißfachbetriebs ist die Präzisionszerspanung durch computergesteuertes Fräsen von Teilen aus Stahl und Edelstahl. </p> <p>Großteils offline programmiert durch CAM, laufen unsere 3-Achs, 4-Achs und 5 Achs CNC Maschinen bzw. Bearbeitungszentren und fertigen Teile mit Dimensionen bis zu 2m x 1m x 1m mit Hilfe unserer Postprozessoren, die in der Lage sind, auch unsere Low Cost Maschinen zu bespielen.</p> <p>Weitere Dimensionen ermöglicht unsere verlängerte Werkbank, basierend auf langjährigen Partnern aus der Umgebung. Erweiterte Dimensionen sind 30m x 6m x 4m auf Portalfräszentren, ebenfalls ausgelegt für Stahl und Edelstahl.</p> <p>Zeichnungsteile mit keinerlei Konstruktionsaufwand stellen wir in langjähriger Kooperation in Best Cost Countries mit direktem Zugriff auf die Produktionskapazitäten her, um Ihnen attraktivste Preise zu garantieren. Unser Qualitätsmanagement garantiert eine fehlerfreie Auslieferung.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/praezisionszerspanung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/high-precision-machining />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/high-precision-machining', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'High precision machining – Steel milling since 1926!', 'meta_description' => 'High precision machining ✓ Computer-controlled milling ☆ Steel ☆ Stainless steel ☆ Various dimensions ➨ Irion quality since 1926', 'h1' => 'High precision machining', 'seo1' => '<p>A matter of the heart of our long-standing welding store is high precision machining by computer-controlled milling of parts made of steel and stainless steel. 
+</p><p>
+</p><p>Largely programmed offline by CAM, our 3-axis, 4-axis and 5-axis CNC machines or machining centers run and produce parts with dimensions up to 2m x 1m x 1m with the help of our post-processors, which are also capable of running our low cost machines.
+</p><p>
+</p><p>Further dimensions are made possible by our extended workbench, based on long-term partners from the surrounding area. Extended dimensions are 30m x 6m x 4m on portal milling centers, also designed for steel and stainless steel.
+</p><p>
+</p><p>Drawing parts with no construction effort we produce in long term cooperation in best cost countries with direct access to production capacities to guarantee you most attractive prices. Our quality management guarantees a faultless delivery.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/praezisionszerspanung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/high-precision-machining />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/praezisionsschweissen', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Präzisionsschweißen von Stahl & Edelstahl', 'meta_description' => 'Präzisionsschweißen ist unsere Passion & Kernkompetenz ✓ High-End-Schweißequipment ➨ Lichtbogenschweißen seit mehr als 2 Dekaden  ', 'h1' => 'Präzisionsschweißen', 'seo1' => '<p>Da kommen wir her und da gehören wir hin, SCHWEISSEN ist unsere Religion! Unsere Kernkompetenz neben der CNC Bearbeitung von Stahl und Edelstahl ist das Präzisionsschweißen selbiger Materialien. Seit mehr als 2 Dekaden beherrschen wir das Lichtbogenschweißen von Stahl und Edelstahl mit unserem High-End-Schweißequipment von Cloos made in Germany!</p> <p>Präzisionsschweißen bedeutet für uns nicht nur Teile zusammenzufügen. Wir nehmen uns das Thema zu Herzen und gehen dabei täglich an unsere Grenzen. Ein Schwerpunkt unseres Schaffens liegt im Bereich zwischen additiver Fertigung (3D Druck) und Stahlguss. Als ihr Partner für Schweißbaugruppen, Schweißteile, Schweißkonstruktionen und Schweißkonsolen fertigen wir wiederholgenau und repetitiv kritische Projektserien ab 30 bis mehrere tausend Stück für Sie.</p> <p>Über 20 hochmotivierte und zertifizierte Schweißer sind verantwortlich für Ihre anspruchsvollen Schweißteile, Konsolen, Schweißkonstruktionen, unbeweglich (starr) sowie beweglich (Kulissen, Raster, etc.). Bei IRION schweißen wir manuell und stückzahlenintensive Schweißbaugruppen robotisch mit High-tech-Robotern mit bis zu 9 interpolierenden Achsen. Dimensionen unserer Schweißbaugruppen, Schweißteile, Schweißkonstruktionen und Schweißkonsolen sind bis zu 8m x 4m x 2,5m groß. Wir beginnen bei Dimensionen ab 20mm x 20mm x 1 mm.</p> <p>Made in Germany und gleichzeitig konkurrenzfähig zu sein. Dies wird möglich durch computergesteuerte offline Robotersimulation unseres geschulten und hochmotivierten Personals. Stolz sind wir dabei auf unsere AZUBI Quote von nahezu 15%. Nur so schaffen wir es, dem Fachkräftemangel entgegenzusteuern. Ausbildungsberufe, die wir in unserem Hause anbieten, sind Industriemechaniker, Zerspanungsmechaniker und Fachkraft für Metallberufe, zu dem auch der Lehrberuf des Schweißers gehört.</p> <p>Wir schweißen Stahl und  Edelstahl. Nehmen Sie gerne mit uns Kontakt auf! Wir gehen auf Ihre Anforderungen ein und unterstützen Sie bei Ihrem Vorhaben. Schweißkompetenz im Hause IRION: <ul> <li>MAG Schweißen von Stahl / Edelstahl </li> <li>MIG Schweißen von Stahl / Edelstahl </li> <li>Roboter Schweißen mit 6 Achs Schweißrobotern / 7 Achs Schweißrobotern / 8 Achs Schweißrobotern / 9 Achs Schweißrobotern</li> <li>WIG Schweißen von Stahl / Edelstahl </li> </ul> </p> <p>Unser Spektrum liegt zwischen Einzelteilen und langjährigen Serien. Kritische Massen sind sogenannte Projektserien, die einmalig abgerufen werden und wiederholgenau in Stückzahlen ab 30 Stück bis zu 3.000 Stück und mehr in präzisen Dimensionen mit Abweichungen von 0,5mm auf Längen von bis zu 5m gefertigt werden. Geschweißte Skids (Förderschlitten), geschweißte Maschinenrahmen, geschweißte Betriebsmittel, geschweißte Konsolen für Ihre Maschinen, Baumaschinen, Agrarmaschinen, Erdbewegungsmaschinen, Hebemittel wie Krane sowie Lackierhilfsmittel wie Traversen, Warenträger, Bauteilträger und vieles mehr in der Welt des Schweißens und gefrästen Schweißens.</p> <p>Ein Garant für Ihre intelligente Schweißbaugruppe ist unsere auf jahrelanger Erfahrung basierte Kompetenz der Antizipation der Wärmeveränderung von geschweißten Bauteilen. Wir richten kalt bzw. mechanisch und warm bzw. thermisch. Bevorzugt setzen wir auf unseren bewährten Vorrichtungsbau, der in der Lage ist, Ihre Teile nach dem Schweißen ohne weitere Bearbeitung in die korrekte Position zu bekommen. Dabei schaffen wir es, eine kostenintensive Nachbearbeitung mittels CNC zu vermeiden.</p> <p>Komplettiert wird unsere Schweißkompetenz durch erfahrene Qualitätsmanager, die sich der gängigen Schweißprüfverfahren bedienen. Wir beherrschen Validierungsprozesse der Eindringprüfung, optische Prüfung (visuelles Schweißprüfverfahren), in externer Ausführung auch das Röntgenschweißprüfverfahren und das Ultraschallschweißprüfverfahren, um unseren und vor allem Ihren maximalen Qualitätsansprüchen gerecht zu werden.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/praezisionsschweissen />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/precision-welding />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/precision-welding', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Precision welding of steel & stainless steel', 'meta_description' => 'Precision welding is our passion & core competence ✓ High-end welding equipment ☆ Arc welding for more than 2 decades ➨ Inform now! ', 'h1' => 'Precision welding', 'seo1' => '<p>That\'s where we come from and that\'s where we belong, WELDING is our religion! Our core competence besides the CNC processing of steel and stainless steel is the precision welding of the same materials. For more than 2 decades we have mastered the arc welding of steel and stainless steel with our high-end welding equipment from Cloos made in Germany!
+</p><p>
+</p><p>Precision welding means more to us than just joining parts together. We take it to heart and push it to our limits every day. One focus of our work is in the area between additive manufacturing (3D printing) and steel casting. As your partner for welded assemblies, welded parts, welded structures and welded brackets, we manufacture repeatable and repetitive critical project series from 30 to several thousand pieces for you.
+</p><p>
+</p><p>More than 20 highly motivated and certified welders are responsible for your demanding welded parts, brackets, welded structures, immovable (rigid) as well as movable (baffles, louvers, etc.). At Irion, we weld manually and piece-intensive welded assemblies robotically using high-tech robots with up to 9 interpolating axes.
+</p><p>Dimensions of our welded assemblies, weldments, welded structures and welded brackets are up to 8m x 4m x 2.5m. We start with dimensions from 20mm x 20mm x 1mm.
+</p><p>
+</p><p>Made in Germany and being competitive at the same time. This is made possible by computer controlled offline robot simulation of our trained and highly motivated staff. We are proud of our trainee quota of almost 15%. This is the only way we manage to counteract the shortage of skilled workers. Apprenticed professions that we offer in our company are industrial mechanic, metal cutting mechanic and specialist for metal professions, which also includes the apprenticed profession of welder.
+</p><p>
+</p><p>We weld steel and stainless steel. Please feel free to contact us! We will respond to your requirements and support you in your project. Welding competence at Irion:
+</p><p>
+</p><p>•	MAG welding of steel / stainless steel 
+</p><p>•	MIG welding of steel / stainless steel 
+</p><p>•	Robot welding with 6 axis welding robots / 7 axis welding robots / 8 axis welding robots / 9 axis welding robots
+</p><p>•	TIG welding of steel / stainless steel 
+</p><p>
+</p><p>Our spectrum lies between single parts and long-time series. Critical masses are so-called project series, which are called off once and are manufactured repeatedly in quantities from 30 pieces up to 3,000 pieces and more in precise dimensions with deviations of 0.5mm on lengths of up to 5m. Welded skids (conveyor slides), welded machine frames, welded operating equipment, welded consoles for your machines, construction machinery, agricultural machinery, earthmoving machinery, lifting equipment such as cranes as well as painting aids such as cross beams, goods carriers, component carriers and much more in the world of welding and milled welding.
+</p><p>
+</p><p>A guarantor for your intelligent welding assembly is our expertise, based on years of experience, of anticipating the heat changes of welded components. We straighten cold or mechanically and hot or thermally. Preferably, we rely on our proven fixture construction, which is able to get your parts in the correct position after welding without further processing. In doing so, we manage to avoid cost-intensive post-processing by means of CNC.
+</p><p>
+</p><p>Our welding expertise is completed by experienced quality managers who use standard welding inspection procedures. We master validation processes of penetrant testing, optical testing (visual welding inspection process), in external execution also the X-ray welding inspection process and the ultrasonic welding inspection process to meet our and especially your maximum quality requirements.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/praezisionsschweissen />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/precision-welding />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/industrielle-teilereinigung-dienstleistung', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Industrielle Teilereinigung Dienstleistung – seit 1926', 'meta_description' => 'Industrielle Teilereinigung Dienstleistung ✓ Reinigungsprozesse die Qualität gewährleisten ☆ Diverse Techniken ➨ Jetzt informieren ', 'h1' => 'Teilereinigung als industrielle Dienstleistung', 'seo1' => '<p>Unsere Dienstleistung der industriellen Teilereinigung gewährleistet die Qualität für unsere Schweißteile, Schweißkonsolen, Schweißbaugruppen und gefrästen Schweißteile, wie Betriebsmittel etc. vor dem eigentlichen Bearbeitungsprozess des Schweißens bzw. vor der Oberflächenbehandlung wie Lackierung, Brünieren, Härten, Galvanisieren, Feuerverzinken, etc.</p> <p>Oberflächenreinigung, Kantenbruch, Entfettung, Befreiung von Zunder, zur Schweißnahtvorbereitung, Lackiervorbereitung, Entgraten, Instandsetzung und Entlackung. Wir bedienen uns der Techniken des Sandstrahlen, Gleitschleifen und Trowalisieren, um die entsprechende industrielle Teilereinigung im gewünschten Maße zu erzielen.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/industrielle-teilereinigung-dienstleistung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/industrial-parts-cleaning-service />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/industrial-parts-cleaning-service', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Industrial parts cleaning service – In Germany since 1926', 'meta_description' => 'Industrial parts cleaning service ✓ Cleaning processes that guarantee quality ☆ Various techniques ➨ Find out more here!', 'h1' => 'Industrial parts cleaning service', 'seo1' => '<p>Our industrial parts cleaning service ensures the quality for our welded parts, welding brackets, welded assemblies and milled welded parts, such as operating equipment, etc., before the actual machining process of welding or surface treatment such as painting, burnishing, hardening, galvanizing, hot-dip galvanizing, etc.
+</p><p>
+</p><p>Surface cleaning, edge breaking, degreasing, freeing from scale, for weld preparation, paint preparation, deburring, repair and paint stripping. We use the techniques of sandblasting, vibratory grinding and barrel finishing to achieve the appropriate industrial parts cleaning to the desired degree.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/industrielle-teilereinigung-dienstleistung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/industrial-parts-cleaning-service />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/industrielle-waermebehandlung', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Industrielle Wärmebehandlung – Produkthärte erhöhen ', 'meta_description' => 'Industrielle Wärmebehandlung ✓ Hohe Härte- bzw. Entspannungsgrade von geschweißten und gefrästen Produkten ➨ Jetzt informieren!', 'h1' => 'Industrielle Wärmebehandlung', 'seo1' => '<p>Werkstückberührende Teile unserer geschweißten und gefrästen Produkte erhalten eine industrielle Wärmebehandlung, um erhöhte Härte- bzw. Entspannungsgrade zu erreichen. Je nach Verwendung unserer Schweißbauteile, Schweißbaugruppen, Schweißkonstruktionen und Schweißkonsolen kommen diverse Wärmebehandlungen zum Einsatz.</p> <p>Je nach Härtegrad und Härtetiefe sind wir langjährig erfahren mit den Prozessen des: <ul> <li>Carbonitrieren</li> <li>Nitrocarburieren</li> <li>Plasmanitrieren</li> <li>Einsatzhärten</li> <li>Gasnitrieren</li> <li>Weichglühen </li> </ul></p> <p>samt dem Prozsesswissen, welches Verfahren wann zur Anwendung kommt. <ul> <li>Haltezeiten</li> <li>Härtegrade</li> <li>Entspannungsgrade</li> </ul> </p> <p>um für Sie das optimale Ergebnis aus Kosten, Termin und Qualität zu erzielen. Benötigen Sie alternative Wärmebehandlungsverfahren für Ihre Schweißbaugruppen, Schweißteile, Schweißkonstruktionen und Schweißkonsolen und geschweißten Zeichnungsteile? Kontaktieren Sie uns gerne - wir finden die ideale Lösung für Ihr Produkt.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/industrielle-waermebehandlung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/industrial-heat-treatment />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/industrial-heat-treatment', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Industrial heat treatment - Increase product hardness', 'meta_description' => 'Industrial heat treatment ✓ High degrees of hardness or stress relief of welded and milled products ➨ Get more information here!', 'h1' => 'Industrial heat treatment', 'seo1' => '<p>Workpiece-contacting parts of our welded and milled products receive industrial heat treatment to achieve increased degrees of hardness or stress relief. Depending on the use of our welded components, welded assemblies, welded structures and welded brackets, various heat treatments are applied.
+</p><p>
+</p><p>We have many years of experience with the processes of:
+</p><p>
+</p><p>•	Carbonitriding
+</p><p>•	Nitrocarburizing
+</p><p>•	Plasma nitriding
+</p><p>•	Case hardening
+</p><p>•	Gas nitriding
+</p><p>•	Soft annealing
+</p><p>
+</p><p>Including the process knowledge, which process is used when it comes to:
+</p><p>
+</p><p>•	Holding times
+</p><p>•	Degrees of hardening
+</p><p>•	Degrees of stress relief
+</p><p>
+</p><p>In order to achieve the optimum result for you in terms of cost, deadline and quality.
+</p><p>
+</p><p>Do you need alternative heat treatment processes for your welded assemblies, welded parts, welded constructions and welded brackets and welded drawing parts? Feel free to contact us - we will find the ideal solution for your product.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/industrielle-waermebehandlung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/industrial-heat-treatment />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/oberflaechenbeschichtung-stahl', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Oberflächenbeschichtung Stahl – Veredelung und Schutz', 'meta_description' => 'Oberflächenbeschichtung von Stahl ✓ Von Korrosionsschutz bis zur Mehrschichtlackierung ☆ Zahlreiche Verfahren ➨ Jetzt Informieren! ', 'h1' => 'Oberflächenbeschichtung von Stahl', 'seo1' => '<p>Die Oberflächenbeschichtung von Stahl ist in vielen Fällen das Gesicht unserer Schweißbaugruppen, Schweißkonsolen, Schweißteile und Schweißkonstruktionen. Die Veredelung unserer geschweißten Produkte reicht von Korrosionsschutz über Grundierungen bis hin zu Mehrschichtlackierung mit 2K Lack.</p> <p>Langjährige Partnerschaften mit unseren Lacklieferanten und Equipment-Lieferanten sowie interne Erfahrung mit dem Thema Oberflächenbeschichtung ermöglichen es uns, optimale Prozesse mit exakten Schichtdicken und geringem Materialaufwand bei optimaler Oberflächenbeschaffenheit zu erzielen.</p> <p>Weitere Oberflächenbeschichtungen, die wir für unsere Schweißprodukte anbieten, sind die Pulverbeschichtung, Gummierung, Brünieren, Galvanisieren, das Feuerverzinken, Eloxieren sowie die KTL-Beschichtung, Schutzwachs und Öl.</p> <p>Wir bieten Ihnen die komplette Palette an RAL Tönen sowie spezielle Farbmischungen aus CMYK Werten und RGB Werten. Gerne ermöglichen wir auch Ihre Sonderwünsche.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/oberflaechenbeschichtung-stahl />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/surface-treatment-steel />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/surface-treatment-steel', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Surface treatment steel – Finishing and protection ', 'meta_description' => 'Surface treatment of steel ✓ From corrosion protection to multi-layer coating ☆ Numerous processes ➨ Get more information here! ', 'h1' => 'Surface treatment of steel', 'seo1' => '<p>Surface treatment of steel is in many cases the face of our welded assemblies, welded brackets, welded parts and welded structures.
+</p><p>The finishing of our welded products ranges from corrosion protection to primers and multi-layer coating with 2K paint.
+</p><p>
+</p><p>Long-standing partnerships with our paint suppliers and equipment suppliers, as well as internal experience with surface treatment of steel, enable us to achieve optimal processes with exact coating thicknesses and low material costs with optimal surface finishes.
+</p><p>
+</p><p>Other surface treatments we offer for our welding products are powder coating, rubber coating, burnishing, galvanizing, hot-dip galvanizing, anodizing as well as KTL coating, protective wax and oil.
+</p><p>
+</p><p>We offer the complete range of RAL colors as well as special color mixtures from CMYK values and RGB values. We are also happy to accommodate your special requests.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/oberflaechenbeschichtung-stahl />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/surface-treatment-steel />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/pvc-tauchbeschichtung', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'PVC Tauchbeschichtung – Kunststoffbeschichtung Metall', 'meta_description' => 'PVC Tauchbeschichtung ✓ Kunststoffbeschichtung für Metallteile ☆ Individuelle maßgeschneiderte Lösungen ➨ Jetzt Informieren! ', 'h1' => 'PVC Tauchbeschichtung', 'seo1' => '<p>Eine hochwertige PVC Tauchbeschichtung erhalten Sie bei IRION für verschiede Metallteile. Zum Beispiel können Sie Werkzeuggriffe gummieren lassen.
+</p><p>
+</p><p>Nicht nur bei der bei der Kunststoffbeschichtung von Metall gehen wir auf Ihre persönlichen Anforderungen ein. Sprechen Sie uns gerne an, zusammen finden wir eine maßgeschneiderte Lösung für Ihre individuelle PVC Beschichtung.
+</p><p>
+</p><p>Auch bei der PVC Tauchbeschichtung erfüllen wir die speziellen Anforderungen der Industrie mit konstant hoher Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/pvc-tauchbeschichtung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/pvc-dip-coating />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/pvc-dip-coating', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'PVC dip coating – Plastic coating metal', 'meta_description' => 'PVC dip coating ✓ Plastic coating for metal parts ☆ Individual customized solutions ➨ Get more information here!', 'h1' => 'PVC dip coating', 'seo1' => '<p>Irion offers high-quality PVC dip coating for various metal parts. For example, you can have tool handles rubberized.
+</p><p>
+</p><p>Not only for the plastic coating of metal we respond to your personal requirements. Please contact us, together we will find a tailor-made solution for your individual PVC coating.
+</p><p>
+</p><p>Also in the case of PVC dip coating, we meet the special requirements of the industry with consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/pvc-tauchbeschichtung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/pvc-dip-coating />
+', 'submenu' => '']);
+            });
+Route::get('/praezisionsfertigung/baugruppenmontage-maschinenbau', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Baugruppenmontage Maschinenbau – Präzision seit 1926!', 'meta_description' => 'Baugruppenmontage im Maschinenbau ✓ Wiederholgenau von 30 bis 3.000 und mehr Stück ☆ Große Produktvielfalt ➨ Jetzt informieren!', 'h1' => 'Baugruppenmontage im Maschinenbau', 'seo1' => '<p>Bei der Baugruppenmontage im Maschinenbau ermöglicht unser exzellenter Vorrichtungsbau es, durch unsere intern ausgebildeten Zerspanungsmechaniker, Industriemechaniker und Metallfacharbeiter, die geschweißten Bauteile, geschweißten Konsolen, geschweißten Konstruktionen und geschweißten Baugruppen wiederholgenau in Stückzahlen ab 30 bis hin zu 3.000 und mehr Stück für Sie zu fertigen. </p> <p>Nach der Oberflächenbeschichtung sind wir bei der Baugruppenmontage im Maschinenbau in der Lage, unter Zuhilfenahme moderner Prozess- und Qualitätswerkzeuge und Überwachungssystemen sowie unseren eigenverantwortlichen Teams mechanische, elektrische und elektronische Montage und Installationen vorzunehmen, um aus unseren geschweißten und gefrästen sowie lackierten Teilen ein Gesamtprodukt entstehen zu lassen. </p> <p>Unter Zuhilfenahme von modernsten Digitalwerkzeugen ermöglichen wir Änderungen und Optimierungen im Zuge von Simultaneous Engineering. In Echtzeit übermitteln wir diese auf die digitalen Anzeigensysteme unseres Fachpersonals. </p> <p>So verlassen uns täglich Produkte wie: <ul> <li>Hochvoltspeicher Warenträger inkl. Spezialbeschichtung für Batterie berührende Teile</li> <li>EBB Fahrzeuge (elektrische Bodenbahnfahrzeuge)</li> <li>AGV/FTS Chassis</li> <li>EHB Gehänge</li> <li>Lastaufnahmemittel</li> <li>Schwerlastgehänge</li> <li>Fahrzeugaufnahmen</li> <li>Werkstückpaletten</li> <li>Skids / Transportschlitten/ Lackierschlitten / Montageschlitten / Skid Adapter</li> <li>Lackiertraversen / Crossbars</li> <li>Montagetraversen</li> <li>Achspaletten / Achsskids</li> <li>Montagewerkstückträger</li> <li>Cockpitvormontagevorrichtungen</li> <li>Cockpittrolleys</li> <li>EHB Weichen</li> <li>Wagenzüge</li> <li>Lackfixturen</li> <li>Türenmontageaufnahmen (L-Bügel, C-Rahmen)</li> <li>Lackiertraversen</li> <li>Lackiertrolleys</li> <li>Pendelgehänge</li> <li>Scherenrahmen inkl. Scheren für Schwerlastgehänge</li> <li>Unterbodenschutz Drehgehänge</li> <li>Schubplattformen / Skillets</li> <li>Karosserieaufnahmen</li> <li>Teleskoparme für Fahrzeugaufnahmen</li> <li>Betriebsmittelersatzteile</li> <li>KTL Verriegelungen</li> <li>Fahrwägen, C-Bügel / Dehnstöße / zerspante Vahle Schienen</li> <li>FTS Tablare / FTS Adapter</li> </ul> </p> <p>Neben der internen Montage und Inbetriebnahme, vorrangig unserer Schweißbaugruppen und Schweißkonstruktionen, warten wir die Fördertechnikanlagen unserer Kunden im Zuge der vorbeugenden Instandhaltung. Auch in diesem Bereich sorgen unsere fest angestellten Industriemechaniker, Zerspanungsmechaniker und Metallfacharbeiter für die Umsetzung höchster Ansprüche. </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/baugruppenmontage-maschinenbau />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/assembly-of-components />
+', 'submenu' => '']);
+            });
+Route::get('/us/precision-manufacturer/assembly-of-components', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Assembly of components in mechanical engineering since 1926', 'meta_description' => 'Assembly of components in mechanical engineering ✓ Repeatability from 30 to 3,000 and more pieces ☆ Large product variety ➨ Inform now', 'h1' => 'Assembly of components in mechanical engineering', 'seo1' => '<p>In the case of assembly of components in mechanical engineering, our excellent fixture construction enables our internally trained cutting machine operators, industrial mechanics and skilled metal workers to manufacture the welded components, welded brackets, welded constructions and welded subassemblies for you with repeat accuracy in quantities from 30 to 3,000 and more pieces.
+</p><p>
+</p><p>After the surface coating, we are able to carry out mechanical, electrical and electronic assembly and installations in the assembly of components, with the help of modern process and quality tools and monitoring systems, as well as our own responsible teams, in order to create a complete product from our welded and milled as well as painted parts.
+</p><p>
+</p><p>With the help of the latest digital tools, we enable changes and optimizations to be made in the course of simultaneous engineering. We transmit them in real time to the digital display systems of our specialized personnel.
+</p><p>
+</p><p>In this way, products such as:
+</p><p>
+</p><p>•	High-voltage storage systems Goods carriers incl. special coating for parts in contact with the battery
+</p><p>•	EBB vehicles (electric ground track vehicles)
+</p><p>•	AGV/FTS chassis
+</p><p>•	EHB hangers
+</p><p>•	Load suspension devices
+</p><p>•	Heavy duty hangers
+</p><p>•	Vehicle mounts
+</p><p>•	Workpiece pallets
+</p><p>•	Skids / transport skids / painting skids / assembly skids / skid adapters
+</p><p>•	Painting traverses / Crossbars
+</p><p>•	Assembly traverses
+</p><p>•	Axle pallets / Axle skids
+</p><p>•	Assembly workpiece carriers
+</p><p>•	Cockpit pre-assembly fixtures
+</p><p>•	Cockpit trolleys
+</p><p>•	EHB turnouts
+</p><p>•	Carriage trains
+</p><p>•	Paint fixtures
+</p><p>•	Door mounting fixtures (L-frame, C-frame)
+</p><p>•	Painting traverses
+</p><p>•	Painting trolleys
+</p><p>•	Pendulum hangers
+</p><p>•	Scissor frames incl. scissors for heavy duty hangers
+</p><p>•	Underbody protection swivel hangers
+</p><p>•	Pushing platforms / Skillets
+</p><p>•	Car body mounts
+</p><p>•	Telescopic arms for vehicle mounts
+</p><p>•	Spare parts for operating equipment
+</p><p>•	KTL locks
+</p><p>•	Carriages, C-frame / expansion joints / machined Vahle rails
+</p><p>•	FTS trays / FTS adapters
+</p><p>
+</p><p>In addition to internal assembly and commissioning, primarily of our welded assemblies and welded constructions, we maintain our customers\' conveyor systems in the course of preventive maintenance. In this area, too, our permanently employed industrial mechanics, cutting machine operators and skilled metal workers ensure that the highest standards are met.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/baugruppenmontage-maschinenbau />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/assembly-of-components />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Schweißkonstruktionen – Schweißteile Fertigung seit 1926', 'meta_description' => 'Schweißkonstruktionen ✓ Skids ☆ Lastaufnahmemittel ☆ Maschinenbau ☆ Transportsysteme ☆ Ersatzteile ➨ Schweißteile Fertigung seit 1926!', 'h1' => 'Schweißkonstruktionen', 'seo1' => 'Irion steht seit 1926 für Schweißkonstruktionen in konstant hoher Qualität wie Skids, Lastaufnahmemittel, Maschinenbau- und Stahlbaukonstruktionen sowie Transportsysteme für die Produktion und Industrie Ersatzteile. Unsere Schweißteile Fertigung ist dabei spezialisiert auf das Projektgeschäft von 30 bis 5.000 Stück.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications />
+', 'submenu' => '<strong><a href="/schweisskonstruktionen/skid-anlagenbau">Skid Anlagenbau</a></strong>
+                                <ul><li><a href="/schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie">Skid Automobilindustrie</a></li><li><a href="/schweisskonstruktionen/skid-anlagenbau/foerdertechnik-automobilindustrie">Fördertechnik Automobilindustrie</a></li><li><a href="/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger">Sonderladungsträger</a></li></ul><strong><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller">Lastaufnahmemittel</a></strong>
+                                <ul><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastpaletten-stahl">Schwerlastpaletten</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/industriebehaelter-metall">Industriebehälter</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/transportbehaelter-metall">Transportbehälter</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlasttraversen">Schwerlasttraversen</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastboecke">Schwerlastböcke</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/rungengestelle-hersteller">Rungengestelle</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/stapelgestelle-hersteller">Stapelgestelle</a></li></ul><strong><a href="/schweisskonstruktionen/maschinenbau">Maschinenbau</a></strong>
+                                <ul><li><a href="/schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller">Scherenhubtische</a></li><li><a href="/schweisskonstruktionen/maschinenbau/schweissgestelle">Schweißgestelle</a></li><li><a href="/schweisskonstruktionen/maschinenbau/fahrzeugaufbauten-hersteller">Fahrzeugaufbauten</a></li><li><a href="/schweisskonstruktionen/maschinenbau/werkstuecktraegersysteme">Werkstückträgersysteme</a></li></ul><strong><a href="/schweisskonstruktionen/transportsysteme-produktion">Transportsysteme</a></strong>
+                                <ul><li><a href="/schweisskonstruktionen/transportsysteme-produktion/buehnenwagen">Bühnenwagen</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/schwerlast-plattformwagen">Schwerlast Plattformwagen</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/elektrohaengebahn-hersteller">Elektrohängebahn</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/power-and-free-foerderer">Power and Free Förderer</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/kreiskettenfoerderer">Kreiskettenförderer</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/unterflurschleppkettenfoerderer">Unterflurschleppkettenförderer</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/fahrerlose-transportsysteme-hersteller">Fahrerlose Transportsysteme</a></li></ul><strong><a href="/schweisskonstruktionen/foerdertechnik-zubehoer-ersatzteile">Ersatzteile und Zubehör</a></strong>
+                                <ul></ul>']);
+            });
+Route::get('/us/welding-fabrications', function () {
+                return view('templates.basic')->with(['meta_title' => 'Welding fabrications – Quality made in Germany since 1926', 'meta_description' => 'Welding fabrications ✓ Skids ☆ Mechanical engineering ☆ Transport systems ☆ Industry spare parts ➨ Get more information now!', 'h1' => 'Welding fabrications', 'seo1' => 'Since 1926, Irion  has stood for consistently high quality welded constructions such as skids, load handling devices, mechanical engineering and steel constructions as well as transport systems for production and industrial spare parts. Our welded parts production is specialised in the project business from 30 to 5,000 pieces.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications />
+', 'submenu' => '<strong><a href="/us/welding-fabrications/skid-construction">Skid construction</a></strong>
+                                <ul><li><a href="/us/welding-fabrications/skid-construction/skid-automotive">Skid Automotive</a></li><li><a href="/us/welding-fabrications/skid-construction/conveyor-systems-automotive">Conveyor Systems Automotive</a></li><li><a href="/us/welding-fabrications/skid-construction/special-load-carriers">Special load carriers</a></li></ul><strong><a href="/us/welding-fabrications/lifting-equipment-manufacturer">Lifting equipment </a></strong>
+                                <ul><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers">Heavy duty steel pallets</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins">Industrial bins</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/transport-bins">Transport bins</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams">Steel cross beams</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands">Heavy duty stands</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/post-pallets">Post pallets</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks">Metal stacking racks</a></li></ul><strong><a href="/us/welding-fabrications/welded-steel-construction">Welded steel construction</a></strong>
+                                <ul><li><a href="/us/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers">Scissor lift tables</a></li><li><a href="/us/welding-fabrications/welded-steel-construction/welded-racks">Welded racks</a></li><li><a href="/us/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies">Commercial vehicle bodies</a></li><li><a href="/us/welding-fabrications/welded-steel-construction/product-conveyor-system">Product conveyor system</a></li></ul><strong><a href="/us/welding-fabrications/transportation-systems">Transportation systems</a></strong>
+                                <ul><li><a href="/us/welding-fabrications/transportation-systems/mobile-lifting-platforms">Mobile lifting platforms</a></li><li><a href="/us/welding-fabrications/transportation-systems/heavy-duty-platform-trolley">Heavy duty platform trolley</a></li><li><a href="/us/welding-fabrications/transportation-systems/electric-monorail">Electric monorail </a></li><li><a href="/us/welding-fabrications/transportation-systems/power-and-free-conveyors">Power and free conveyors</a></li><li><a href="/us/welding-fabrications/transportation-systems/chain-conveyor-parts">Chain conveyor</a></li><li><a href="/us/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor">Underfloor drag chain conveyor</a></li><li><a href="/us/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers">Automated guided vehicle</a></li></ul><strong><a href="/us/welding-fabrications/conveyor-accessories-spare-parts">Spare parts and accessories</a></strong>
+                                <ul></ul>']);
+            });
+Route::get('/schweisskonstruktionen/skid-anlagenbau', function () {
+                return view('templates.basic')->with(['meta_title' => 'Skid Anlagenbau – Skid System Fertigung für die Industrie', 'meta_description' => 'Skid Anlagenbau ✓ 30 bis 5.000 Stück ☆ Automobilindustrie ☆ Transfersysteme ☆ Sonderladungsträger ➨ Skid Systeme für die Industrie!', 'h1' => 'Skid Anlagenbau', 'seo1' => 'Irion bietet den Skid Anlagenbau für die Automobilindustrie sowie individuelle Transfersysteme und Sonderladungsträger für die Industrie. Wir fertigen Ihr maßgeschneidertes Skid System im Projektgeschäft von 30 bis 5.000 Stück in konstant hoher Qualität.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction />
+', 'submenu' => '<strong>Beispiele</strong><ul><li><a href="/schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie">Skid Automobilindustrie</a></li><li><a href="/schweisskonstruktionen/skid-anlagenbau/foerdertechnik-automobilindustrie">Fördertechnik Automobilindustrie</a></li><li><a href="/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger">Sonderladungsträger</a></li></ul>']);
+            });
+Route::get('/us/welding-fabrications/skid-construction', function () {
+                return view('templates.basic')->with(['meta_title' => 'Skid construction – Skid system manufacturing in Germany', 'meta_description' => 'Skid construction ✓ 30 to 5,000 pieces ☆ Automotive industry ☆ Transfer systems ☆ Special load carriers ➨ Skid systems for industry!', 'h1' => 'Skid construction', 'seo1' => 'Irion offers skid system construction for the automotive industry as well as individual transfer systems and special load carriers for industry. We manufacture your customized skid system in the project business from 30 to 5,000 pieces in consistently high quality.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction />
+', 'submenu' => '<strong>Examples</strong><ul><li><a href="/us/welding-fabrications/skid-construction/skid-automotive">Skid Automotive</a></li><li><a href="/us/welding-fabrications/skid-construction/conveyor-systems-automotive">Conveyor Systems Automotive</a></li><li><a href="/us/welding-fabrications/skid-construction/special-load-carriers">Special load carriers</a></li></ul>']);
+            });
+Route::get('/schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie', function () {
+                return view('templates.basic')->with(['meta_title' => 'Skid Automobilindustrie – Skid Fördertechnik Automotive', 'meta_description' => 'Skid Automobilindustrie ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Skid Fördertechnik für Automotive!', 'h1' => 'Skid Automobilindustrie', 'seo1' => '<p>Irion bietet Skid Systeme für die Automobilindustrie.
+</p><p>Die Karosserietransportgestelle sind beispielsweise für die spezifischen Anforderungen im Automobil Rohbau und in Lackstraßen ausgelegt. Beipspiele wären Rohbauskids, Tauchskids zur KTL Lackierung, Lackierskids oder eine Skidprüfelehre.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Skid Fördertechnik für Automotive von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '<p>- Fertigung unter Berücksichtigung mechanischer und metallurgischer Aspekte
+</p><p>- Verschmutzungsresistenz
+</p><p>- Temperaturbeständigkeit
+</p><p>- Lasten > 1.000 kg
+</p><p>- getaktete Montage, Demontage, Wartung
+</p><p>- Einzelteileanzahl bis ca. 150 Positionen
+</p><p>- Größe > 4 m
+</p><p>- Genauigkeit +/- 0,1 mm
+</p><p>- Eindeutige Identifizierung
+</p><p>- Mechanisch und elektronisch
+</p><p>- Fertigungslose bis über 1.000 Stück</p>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction/skid-automotive />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/skid-construction/skid-automotive', function () {
+                return view('templates.basic')->with(['meta_title' => 'Skid Automotive – Conveyor technology for car industry ', 'meta_description' => 'Skid automotive ✓ 30 to 5,000 pieces ☆ Constant high quality ☆ Responsible ☆ Precise ➨ Skid technology made in Germany!', 'h1' => 'Skid automotive', 'seo1' => '<p>Irion offers skid systems for the automotive industry.
+</p><p>For example, the car body transport racks are designed for the specific requirements in the automotive body shop and in paint lines. Examples would be body-in-white skids, dipping skids for KTL painting, painting skids or a skid testing gauge.
+</p><p>
+</p><p>Our certified welding company manufactures customized skid conveyor technology for automotive from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '<p>- Manufacturing under consideration of mechanical and metallurgical aspects
+</p><p>- Resistance to contamination
+</p><p>- Temperature resistance
+</p><p>- Loads > 2,200 lbs
+</p><p>- Clocked assembly, disassembly, maintenance
+</p><p>- Number of individual parts up to approx. 150 positions
+</p><p>- Size > 16 ft
+</p><p>- Accuracy +/- 0.04 inch
+</p><p>- Unique identification
+</p><p>- Mechanical and electronic
+</p><p>- Production lots up to more than 1,000 pieces</p>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction/skid-automotive />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/skid-anlagenbau/foerdertechnik-automobilindustrie', function () {
+                return view('templates.basic')->with(['meta_title' => 'Fördertechnik Automobilindustrie – Transfersysteme', 'meta_description' => 'Fördertechnik Automobilindustrie ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Transfersysteme für Automotive!', 'h1' => 'Fördertechnik Automobilindustrie', 'seo1' => '<p>Irion bietet Fördertechnik Systeme für die Automobilindustrie.
+</p><p>Beispiele für diese Werkstückträger Transportsysteme sind Sitzgehänge, Türskids, Pendelförderer EHB oder Inline Werkstückträger für HV-Batterien.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Transfersysteme für Automotive von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '<p>- Fertigung unter Berücksichtigung mechanischer und metallurgischer Aspekte (auch Beschichtung)
+</p><p>- Verschmutzungsresistenz
+</p><p>- Temperaturbeständigkeit
+</p><p>- Lasten ~ 300 kg
+</p><p>- getaktete Montage, Demontage, Wartung
+</p><p>- Einzelteileanzahl bis ca. 300 Positionen
+</p><p>- Größe ca. 2-5m
+</p><p>- Genauigkeit +/- 0,1 mm
+</p><p>- Eindeutige Identifizierung
+</p><p>- Mechanisch und elektronisch
+</p><p>- Fertigungslose bis ca. 3.000 Stück</p>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau/foerdertechnik-automobilindustrie />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction/conveyor-systems-automotive />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/skid-construction/conveyor-systems-automotive', function () {
+                return view('templates.basic')->with(['meta_title' => 'Conveyor systems automotive – Industry transfer technology', 'meta_description' => 'Conveyor systems automotive ✓ 30 to 5,000 pieces ☆ Contant high quality ☆ Responsible ☆ Precise ➨ Transfer systems for automotive!', 'h1' => 'Conveyor systems automotive', 'seo1' => '<p>Irion offers conveyor systems for the automotive industry.
+</p><p>Examples of these workpiece carrier transport systems are seat hangers, door skids, pendulum conveyors EHB or inline workpiece carriers for HV batteries.
+</p><p>
+</p><p>Our certified welding company manufactures customized transfer systems for automotive from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '<p>- Manufacturing taking into account mechanical and metallurgical aspects (also coating).
+</p><p>- Resistance to contamination
+</p><p>- Temperature resistance
+</p><p>- Loads ~ 660 lbs
+</p><p>- Clocked assembly, disassembly, maintenance
+</p><p>- Number of parts up to approx. 300 positions
+</p><p>- Size approx. 6.5 - 16.4 ft
+</p><p>- Accuracy +/-  0.04 inch
+</p><p>- Unique identification
+</p><p>- Mechanical and electronic
+</p><p>- Production lots up to approx. 3,000 pieces</p>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau/foerdertechnik-automobilindustrie />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction/conveyor-systems-automotive />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger', function () {
+                return view('templates.basic')->with(['meta_title' => 'Maßgeschneiderte Sonderladungsträger vom Hersteller', 'meta_description' => 'Hersteller Sonderladungsträger ✓ 30 bis 5.000 Stück ☆ Automobilindustrie ☆ Logistik ☆ Produktion ➨ Maßgeschneiderte Ladungsträger!', 'h1' => 'Sonderladungsträger ', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Sonderladungsträger.
+</p><p>Unsere Ladungsträger und Montageträger sind spezielle Industrietechnik Transportgestelle für die Automobilindustrie oder werden in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Sonderladungsträger von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction/special-load-carriers />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/skid-construction/special-load-carriers', function () {
+                return view('templates.basic')->with(['meta_title' => 'Customized special load carriers from the manufacturer', 'meta_description' => 'Special load carriers manufacturer ✓ 30 to 5,000 pieces ☆ Automotive industry ☆ Logistics ☆ Production ➨ Customized load carriers	', 'h1' => 'Special load carriers', 'seo1' => '<p>Irion is a manufacturer for high quality special load carriers.
+</p><p>Our load carriers and assembly carriers are special industrial technology transport racks for the automotive industry or are used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding store manufactures customized special load carriers from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction/special-load-carriers />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller', function () {
+                return view('templates.basic')->with(['meta_title' => 'Lastaufnahmemittel Hersteller und Behälterbau mit Stahl', 'meta_description' => 'Lastaufnahmemittel Hersteller ✓ Schwerlast ☆ Paletten ☆ Gestelle ☆  Traversen ☆ Behälter ➨ Lastaufnahmemittel und Behälterbau mit Stahl!', 'h1' => 'Lastaufnahmemittel Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Lastaufnahmemittel bis hin zum Behälterbau.
+</p><p>Unsere Spezialitäten sind Stahlkonstruktionen für Schwerlast wie Paletten, Behälter, Traversen, Unterstellböcke oder Gestelle für die Industrie. Wir fertigen Ihr maßgeschneidertes Lastaufnahmemittel im Projektgeschäft von 30 bis 5.000 Stück in konstant hoher Qualität.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer />
+', 'submenu' => '<strong>Beispiele</strong><ul><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastpaletten-stahl">Schwerlastpaletten</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/industriebehaelter-metall">Industriebehälter</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/transportbehaelter-metall">Transportbehälter</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlasttraversen">Schwerlasttraversen</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastboecke">Schwerlastböcke</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/rungengestelle-hersteller">Rungengestelle</a></li><li><a href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/stapelgestelle-hersteller">Stapelgestelle</a></li></ul>']);
+            });
+Route::get('/us/welding-fabrications/lifting-equipment-manufacturer', function () {
+                return view('templates.basic')->with(['meta_title' => 'Lifting equipment manufacturer and container construction', 'meta_description' => 'Lifting equipment manufacturer ✓ Pallets ☆ Racks ☆ Cross beams ➨ Load handling equipment and container construction with steel!', 'h1' => 'Lifting equipment manufacturer', 'seo1' => '<p>Irion is a lifting equipment manufacturer of high quality load handling equipment and container construction.
+</p><p>Our specialities are steel constructions for heavy loads such as pallets, containers, cross beams, trestles or frames for industry. We manufacture your customized load handling equipment in project business from 30 to 5,000 pieces in consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer />
+', 'submenu' => '<strong>Examples</strong><ul><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers">Heavy duty steel pallets</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins">Industrial bins</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/transport-bins">Transport bins</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams">Steel cross beams</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands">Heavy duty stands</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/post-pallets">Post pallets</a></li><li><a href="/us/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks">Metal stacking racks</a></li></ul>']);
+            });
+Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastpaletten-stahl', function () {
+                return view('templates.basic')->with(['meta_title' => 'Schwerlastpaletten aus Stahl – Stahlpaletten Hersteller', 'meta_description' => 'Schwerlastpaletten Stahl ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Stahlpaletten vom Hersteller!', 'h1' => 'Schwerlastpaletten aus Stahl', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Schwerlastpaletten aus Stahl.
+</p><p>Unsere Stahlpaletten erfüllen die speziellen Anforderungen der Industrie und werden in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Schwerlastpaletten von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastpaletten-stahl />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers', function () {
+                return view('templates.basic')->with(['meta_title' => 'Heavy duty steel pallets manufacturers!', 'meta_description' => 'Heavy duty steel pallets manufacturers ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Precise ➨ Made in Germany since 1926!', 'h1' => 'Heavy duty steel pallets manufacturers', 'seo1' => '<p>Irion is a manufacturer of high quality heavy duty steel pallets.
+</p><p>Our steel pallets meet the special requirements of industry and are used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding specialist manufactures customized heavy-duty pallets from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastpaletten-stahl />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/industriebehaelter-metall', function () {
+                return view('templates.basic')->with(['meta_title' => 'Industriebehälter Metall – Industriecontainer Hersteller', 'meta_description' => 'Industriebehälter Metall ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Industriecontainer vom Hersteller!', 'h1' => 'Industriebehälter aus Metall', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Industriebehälter aus Metall.
+</p><p>Unsere Behältertechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Industriecontainer aus Stahl von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/industriebehaelter-metall />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins', function () {
+                return view('templates.basic')->with(['meta_title' => 'Industrial metal bins – Made in Germany since 1926!', 'meta_description' => 'Industrial metal bins ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Precise ➨ Industrial containers from the manufacturer!', 'h1' => 'Industrial metal bins', 'seo1' => '<p>Irion is a manufacturer of high quality industrial bins made of metal.
+</p><p>Our container technology meets the special requirements of industry and is used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding company manufactures customized industrial containers made of steel from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/industriebehaelter-metall />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/transportbehaelter-metall', function () {
+                return view('templates.basic')->with(['meta_title' => 'Transportbehälter Metall – Lagerbehälter Hersteller', 'meta_description' => 'Transportbehälter Metall ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Lagerbehälter vom Hersteller!', 'h1' => 'Transportbehälter aus Metall', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Transportbehälter aus Metall.
+</p><p>Unsere Behältertechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Lagerbehälter aus Stahl von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/transportbehaelter-metall />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/transport-bins />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/lifting-equipment-manufacturer/transport-bins', function () {
+                return view('templates.basic')->with(['meta_title' => 'Transport bins – Made for industry in Germany since 1926!', 'meta_description' => 'Metal transport bins ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ For logistics, maintenance & production ➨ Information here!', 'h1' => 'Transport bins', 'seo1' => '<p>Irion is a manufacturer of high quality metal transport bins.
+</p><p>Our container technology meets the special requirements of industry and is used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding company manufactures customized steel storage bins from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/transportbehaelter-metall />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/transport-bins />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlasttraversen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Schwerlasttraversen – Hebetechnik Hersteller', 'meta_description' => 'Schwerlasttraversen ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Hebetechnik vom Hersteller!', 'h1' => 'Schwerlasttraversen', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Schwerlasttraversen aus Stahl.
+</p><p>Unsere Hebetechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Traversen aus Stahl von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlasttraversen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams', function () {
+                return view('templates.basic')->with(['meta_title' => 'Steel cross beams – Made in Germany since 1926!', 'meta_description' => 'Steel cross beams ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Lifting technology from the manufacturer!', 'h1' => 'Steel cross beams', 'seo1' => '<p>Irion is a manufacturer of high quality steel cross beams.
+</p><p>Our lifting technology meets the special requirements of industry and is used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding company manufactures customized steel cross beams from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision. </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlasttraversen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastboecke', function () {
+                return view('templates.basic')->with(['meta_title' => 'Schwerlastböcke Hersteller – Schwerlast Unterstellböcke', 'meta_description' => 'Schwerlastböcke für die Industrie ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Schwerlast Unterstellböcke vom Hersteller!', 'h1' => 'Schwerlastböcke', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Schwerlastböcke aus Stahl.
+</p><p>Unsere Fertigungstechnik erfüllt anspruchsvolle Anforderungen und wird im Maschinenbau und Anlagenbau eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Schwerlast Unterstellböcke für die Industrie von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastboecke />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands', function () {
+                return view('templates.basic')->with(['meta_title' => 'Heavy duty stands – Metal trestles for industry!', 'meta_description' => 'Heavy duty stands ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Made in Germany since 1926!', 'h1' => 'Heavy duty stands', 'seo1' => '<p>Irion is a manufacturer of high quality heavy duty stands.
+</p><p>Our manufacturing technology meets demanding requirements and is used in mechanical engineering and plant construction.
+</p><p>
+</p><p>Our certified welding company manufactures customized metal trestles for industry from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastboecke />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/rungengestelle-hersteller', function () {
+                return view('templates.basic')->with(['meta_title' => 'Rungengestelle Hersteller – Rungenpaletten aus Metall', 'meta_description' => 'Rungengestelle Hersteller ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Rungenpaletten aus Metall!', 'h1' => 'Rungengestelle Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Rungengestelle aus Metall.
+</p><p>Unsere Fertigungstechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Lagerhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Rungenpaletten aus Stahl von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/rungengestelle-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/post-pallets />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/lifting-equipment-manufacturer/post-pallets', function () {
+                return view('templates.basic')->with(['meta_title' => 'Post pallets – Steel racks made in Germany since 1926!', 'meta_description' => 'Post pallets for industry! ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Custom metal pallets!', 'h1' => 'Post pallets', 'seo1' => '<p>Irion is a manufacturer of high quality steel post pallets.
+</p><p>Our manufacturing technology meets the special requirements of the industry and is used in logistics, warehousing and production.
+</p><p>
+</p><p>Our certified welding store manufactures custom metal stake pallets from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/rungengestelle-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/post-pallets />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/stapelgestelle-hersteller', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stapelgestelle Hersteller – Stapelpaletten aus Metall', 'meta_description' => 'Stapelgestelle Hersteller ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Stapelpaletten aus Metall!', 'h1' => 'Stapelgestelle Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Stapelgestelle aus Metall.
+</p><p>Unsere Fertigungstechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Lagerhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Stapelpaletten aus Stahl von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/stapelgestelle-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks', function () {
+                return view('templates.basic')->with(['meta_title' => 'Metal stacking racks – Made in Germany since 1926!', 'meta_description' => 'Industrial metal stacking racks ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Custom steel racks!', 'h1' => 'Metal stacking racks', 'seo1' => '<p>Irion is a manufacturer of high quality metal stacking racks. Our manufacturing technology meets the special requirements of industry and is used in logistics, warehousing and production.
+</p><p>
+</p><p>Our certified welding store manufactures custom steel stacking racks from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/lastaufnahmemittel-hersteller/stapelgestelle-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/maschinenbau', function () {
+                return view('templates.basic')->with(['meta_title' => 'Schweißkonstruktionen Maschinenbau – Stahlbaukonstruktionen', 'meta_description' => 'Schweißkonstruktionen Maschinenbau ✓ Scherenhubtische ☆ Schweißgestelle ☆ Aufbauten ☆ Werkstückträger ➨ Industrie Stahlbaukonstruktionen!', 'h1' => 'Schweißkonstruktionen für den Maschinenbau', 'seo1' => '<p>Irion bietet hochwertige Schweißkonstruktionen für den Maschinenbau und Anlagenbau.
+</p><p>Unsere Spezialitäten sind Scherenhubtische, Schweißgestelle, Grundrahmen oder Fahrzeugaufbauten und Werkstückträgersysteme für die Industrie. Wir fertigen maßgeschneiderte Stahlbaukonstruktionen im Projektgeschäft von 30 bis 5.000 Stück in konstant hoher Qualität.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction />
+', 'submenu' => '<strong>Beispiele</strong><ul><li><a href="/schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller">Scherenhubtische</a></li><li><a href="/schweisskonstruktionen/maschinenbau/schweissgestelle">Schweißgestelle</a></li><li><a href="/schweisskonstruktionen/maschinenbau/fahrzeugaufbauten-hersteller">Fahrzeugaufbauten</a></li><li><a href="/schweisskonstruktionen/maschinenbau/werkstuecktraegersysteme">Werkstückträgersysteme</a></li></ul>']);
+            });
+Route::get('/us/welding-fabrications/welded-steel-construction', function () {
+                return view('templates.basic')->with(['meta_title' => 'Welded steel construction – Made in Germany since 1926!', 'meta_description' => 'Welded steel construction ✓ Mechanical engineering welding technology ☆ Industrial steel structures! ➨ View our specialties here!', 'h1' => 'Welded steel construction', 'seo1' => '<p>Irion offers high quality welded steel constructions for mechanical engineering and plant construction.
+</p><p>Our specialties are scissor lift tables, welded frames, base frames or vehicle superstructures and workpiece carrier systems for industry. We manufacture customized steel structures in the project business from 30 to 5,000 pieces in consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction />
+', 'submenu' => '<strong>Examples</strong><ul><li><a href="/us/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers">Scissor lift tables</a></li><li><a href="/us/welding-fabrications/welded-steel-construction/welded-racks">Welded racks</a></li><li><a href="/us/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies">Commercial vehicle bodies</a></li><li><a href="/us/welding-fabrications/welded-steel-construction/product-conveyor-system">Product conveyor system</a></li></ul>']);
+            });
+Route::get('/schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller', function () {
+                return view('templates.basic')->with(['meta_title' => 'Scherenhubtische Hersteller – Schwerlasthubtische', 'meta_description' => 'Scherenhubtische Hersteller ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Schwerlasthubtische aus Stahl!', 'h1' => 'Scherenhubtische Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Scherenhubtische aus Stahl.
+</p><p>Unsere Hubtische erfüllen die speziellen Anforderungen der Industrie wie unterschiedliche Gewichtsklassen wie 1.000 kg, 2.000 kg oder mehr als auch fahrbare Varianten.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Schwerlasthubtische von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers', function () {
+                return view('templates.basic')->with(['meta_title' => 'Scissor lift table manufacturers – Heavy duty lift tables', 'meta_description' => 'Scissor lift table manufacturers ✓ Consistently high quality ☆ Responsible ☆ Precise ➨ Heavy duty lift tables made in Germany!', 'h1' => 'Scissor lift table manufacturers', 'seo1' => '<p>Irion is a manufacturer for high quality industrial scissor lift tables.
+</p><p>Our scissor lift tables meet the special requirements of the industry such as different weight classes like 2,200 lbs, 4,400 lbs or more as well as mobile versions.
+</p><p>
+</p><p>Our certified welding store manufactures customized heavy duty lift tables from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/maschinenbau/schweissgestelle', function () {
+                return view('templates.basic')->with(['meta_title' => 'Schweißgestelle – Stahlrahmenkonstruktionen Hersteller', 'meta_description' => 'Schweißgestelle aus Stahl ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Stahlrahmenkonstruktionen Hersteller!', 'h1' => 'Schweißgestelle', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Schweißgestelle aus Stahl.
+</p><p>Unsere Stahlgestelle erfüllen die speziellen Anforderungen der Industrie und werden in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Stahlrahmenkonstruktionen von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau/schweissgestelle />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction/welded-racks />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/welded-steel-construction/welded-racks', function () {
+                return view('templates.basic')->with(['meta_title' => 'Welded racks – Steel frame construction manufacturer', 'meta_description' => 'Welded racks for industry ✓ Consistently high quality ☆ Responsible ☆ Precise ➨ Steel frame structures made in Germany since 1926!', 'h1' => 'Welded racks', 'seo1' => '<p>Irion is a manufacturer of high quality welded steel racks.
+</p><p>Our welded racks meet the special requirements of industry and are used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding store manufactures custom steel frame structures from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau/schweissgestelle />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction/welded-racks />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/maschinenbau/fahrzeugaufbauten-hersteller', function () {
+                return view('templates.basic')->with(['meta_title' => 'Fahrzeugaufbauten Hersteller – Nutzfahrzeugaufbauten', 'meta_description' => 'Fahrzeugaufbauten Hersteller ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Nutzfahrzeugaufbauten aus Stahl!', 'h1' => 'Fahrzeugaufbauten Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Fahrzeugaufbauten aus Stahl. Wir bieten Spezialaufbauten als auch typische Aufbauten, wie den Pritschenaufbau, Kofferaufbau, Kipperaufbau oder Kranaufbau.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Nutzfahrzeugaufbauten. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau/fahrzeugaufbauten-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies', function () {
+                return view('templates.basic')->with(['meta_title' => 'Commercial vehicle bodies – Made in Germany since 1926', 'meta_description' => 'Commercial vehicle bodies manufacturer ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Inform now!', 'h1' => 'Commercial vehicle bodies', 'seo1' => '<p>Irion is a manufacturer of high quality commercial vehicle bodies. We offer special bodies as well as typical bodies, such as the flatbed body, box body, tipper body or crane body.
+</p><p>
+</p><p>Our certified welding store manufactures customized commercial vehicle bodies. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau/fahrzeugaufbauten-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/maschinenbau/werkstuecktraegersysteme', function () {
+                return view('templates.basic')->with(['meta_title' => 'Werkstückträgersysteme – Werkstückträger Transportsystem', 'meta_description' => 'Werkstückträgersysteme aus Stahl ✓ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Werkstückträger Transportsystem Hersteller!', 'h1' => 'Werkstückträgersysteme', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Werkstückträgersysteme aus Stahl.
+</p><p>Unsere Transportsysteme erfüllen die speziellen Anforderungen der Industrie und werden in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb liefert Ihr maßgeschneidertes Werkstückträger Transportsystem. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau/werkstuecktraegersysteme />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction/product-conveyor-system />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/welded-steel-construction/product-conveyor-system', function () {
+                return view('templates.basic')->with(['meta_title' => 'Product conveyor system – Made in Germany since 1926!', 'meta_description' => 'Steel product conveyor system ✓ Consistently high quality ☆ Precise ➨ Workpiece carrier Transport system manufacturer!', 'h1' => 'Product conveyor system', 'seo1' => '<p>Irion is a manufacturer of high quality steel product conveyor systems.
+</p><p>Our transport systems meet the special requirements of industry and are used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding store delivers your customized workpiece carrier conveyor systems. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/maschinenbau/werkstuecktraegersysteme />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/welded-steel-construction/product-conveyor-system />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/transportsysteme-produktion', function () {
+                return view('templates.basic')->with(['meta_title' => 'Transportsysteme Produktion – Intralogistik Fördertechnik', 'meta_description' => 'Transportsysteme Produktion ✓ Bühnen- & Transportwagen ☆ Mechanische Teile für Förderer & Transportsysteme ➨ Intralogistik Fördertechnik!', 'h1' => 'Transportsysteme Produktion', 'seo1' => '<p>Irion bietet hochwertige Transportsysteme für Produktionsbetriebe.
+</p><p>Unsere Spezialitäten sind Bühnenwagen, Schwerlast Transportwagen sowie mechanische Teile für eine Elektrohängebahn, Power and Free Förderer, Kreiskettenförderer, Unterflurschleppkettenförderer oder fahrerlose Transportsysteme für die Industrie. Wir liefern maßgeschneiderte Intralogistik Fördertechnik in konstant hoher Qualität.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems />
+', 'submenu' => '<strong>Beispiele</strong><ul><li><a href="/schweisskonstruktionen/transportsysteme-produktion/buehnenwagen">Bühnenwagen</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/schwerlast-plattformwagen">Schwerlast Plattformwagen</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/elektrohaengebahn-hersteller">Elektrohängebahn</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/power-and-free-foerderer">Power and Free Förderer</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/kreiskettenfoerderer">Kreiskettenförderer</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/unterflurschleppkettenfoerderer">Unterflurschleppkettenförderer</a></li><li><a href="/schweisskonstruktionen/transportsysteme-produktion/fahrerlose-transportsysteme-hersteller">Fahrerlose Transportsysteme</a></li></ul>']);
+            });
+Route::get('/us/welding-fabrications/transportation-systems', function () {
+                return view('templates.basic')->with(['meta_title' => 'Transportation systems – Made in Germany since 1926!', 'meta_description' => 'Transportation systems production ✓ Stage & transport trolleys ☆ Mechanical parts for conveyors ➨ Intralogistics conveyor technology!', 'h1' => 'Transportation systems', 'seo1' => '<p>Irion provides high quality transportation systems for manufacturing companies.
+</p><p>Our specialties include stage trolleys, heavy-duty transport trolleys as well as mechanical parts for an overhead electric conveyor, power and free conveyors, circular chain conveyors, underfloor drag chain conveyors or driverless transport systems for industry. We supply customized intralogistics conveyor technology in consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems />
+', 'submenu' => '<strong>Examples</strong><ul><li><a href="/us/welding-fabrications/transportation-systems/mobile-lifting-platforms">Mobile lifting platforms</a></li><li><a href="/us/welding-fabrications/transportation-systems/heavy-duty-platform-trolley">Heavy duty platform trolley</a></li><li><a href="/us/welding-fabrications/transportation-systems/electric-monorail">Electric monorail </a></li><li><a href="/us/welding-fabrications/transportation-systems/power-and-free-conveyors">Power and free conveyors</a></li><li><a href="/us/welding-fabrications/transportation-systems/chain-conveyor-parts">Chain conveyor</a></li><li><a href="/us/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor">Underfloor drag chain conveyor</a></li><li><a href="/us/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers">Automated guided vehicle</a></li></ul>']);
+            });
+Route::get('/schweisskonstruktionen/transportsysteme-produktion/buehnenwagen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Bühnenwagen – Fahrbare Hebebühnen Hersteller', 'meta_description' => 'Bühnenwagen aus Stahl ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Fahrbare Hebebühnen Hersteller!', 'h1' => 'Bühnenwagen', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Bühnenwagen aus Stahl.
+</p><p>Unsere Wagen erfüllen die speziellen Anforderungen der Industrie und werden in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte fahrbare Hebebühnen von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/buehnenwagen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/mobile-lifting-platforms />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/transportation-systems/mobile-lifting-platforms', function () {
+                return view('templates.basic')->with(['meta_title' => 'Mobile lifting platforms – Made in Germany since 1926!', 'meta_description' => 'Mobile lifting platforms manufacturer ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Inform now!', 'h1' => 'Mobile lifting platforms', 'seo1' => '<p>Irion is a manufacturer of high quality steel mobile lifting platforms.
+</p><p>Our lifting platforms meet the special requirements of industry and are used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding store manufactures customized mobile lifting platforms from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/buehnenwagen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/mobile-lifting-platforms />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/transportsysteme-produktion/schwerlast-plattformwagen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Schwerlast Plattformwagen – Transportwagen Industrie', 'meta_description' => 'Schwerlast Plattformwagen aus Stahl ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ➨  Industrie Transportwagen vom Hersteller!', 'h1' => 'Schwerlast Plattformwagen', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Schwerlast Plattformwagen aus Stahl.
+</p><p>Unsere Wagen erfüllen anspruchsvolle Anforderungen und werden in der Logistik, Instandhaltung und Produktion eingesetzt.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Industrie Transportwagen von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/schwerlast-plattformwagen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/heavy-duty-platform-trolley />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/transportation-systems/heavy-duty-platform-trolley', function () {
+                return view('templates.basic')->with(['meta_title' => 'Heavy duty platform trolley – Made in Germany since 1926', 'meta_description' => 'Heavy duty platform trolley production ✓ 30 to 5,000 pieces ☆ Constant high quality ➨ Industrial transport truck from manufacturer!', 'h1' => 'Heavy duty platform trolley', 'seo1' => '<p>Irion is a manufacturer of high quality heavy duty platform trolleys.
+</p><p>Our trolleys meet demanding requirements and are used in logistics, maintenance and production.
+</p><p>
+</p><p>Our certified welding store manufactures customized industrial heavy duty platform trucks from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/schwerlast-plattformwagen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/heavy-duty-platform-trolley />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/transportsysteme-produktion/elektrohaengebahn-hersteller', function () {
+                return view('templates.basic')->with(['meta_title' => 'Elektrohängebahn Komponenten – Mechanische Teile Hersteller', 'meta_description' => 'Elektrohängebahn Komponenten ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Mechanische Teile vom Hersteller!', 'h1' => 'Elektrohängebahn Komponenten – Mechanische Teile Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Elektrohängebahn Komponenten aus Stahl.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/elektrohaengebahn-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/electric-monorail />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/transportation-systems/electric-monorail', function () {
+                return view('templates.basic')->with(['meta_title' => 'Electric monorail – System components manufacturer!', 'meta_description' => 'Electric monorail components ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Made in Germany since 1926', 'h1' => 'Electric monorail system components manufacturer', 'seo1' => '<p>Irion is a manufacturer of high quality steel electric monorail components.
+</p><p>
+</p><p>Our certified welding store manufactures customized mechanical parts in intralogistics from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/elektrohaengebahn-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/electric-monorail />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/transportsysteme-produktion/power-and-free-foerderer', function () {
+                return view('templates.basic')->with(['meta_title' => 'Power and Free Förderer Komponenten – Teile Hersteller', 'meta_description' => 'Power and Free Förderer Komponenten ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Mechanische Teile vom Hersteller!', 'h1' => 'Power and Free Förderer Komponenten – Mechanische Teile Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Power and Free Förderer Komponenten aus Stahl.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/power-and-free-foerderer />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/power-and-free-conveyors />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/transportation-systems/power-and-free-conveyors', function () {
+                return view('templates.basic')->with(['meta_title' => 'Power and free conveyor components – Parts manufacturer', 'meta_description' => 'Power and free conveyor components ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Precise ➨ Made in Germany since 1926!', 'h1' => 'Power and free conveyor components manufacturer', 'seo1' => '<p>Irion is a manufacturer of high quality power and free conveyor steel components.
+</p><p>
+</p><p>Our certified welding store manufactures customized mechanical parts in intralogistics from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/power-and-free-foerderer />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/power-and-free-conveyors />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/transportsysteme-produktion/kreiskettenfoerderer', function () {
+                return view('templates.basic')->with(['meta_title' => 'Kreiskettenförderer Komponenten – Teile Hersteller', 'meta_description' => 'Kreiskettenförderer Komponenten ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Mechanische Teile vom Hersteller!', 'h1' => 'Kreiskettenförderer Komponenten – Mechanische Teile Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Kreiskettenförderer Komponenten aus Stahl.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile für Kreisförderer in der Intralogistik von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/kreiskettenfoerderer />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/chain-conveyor-parts />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/transportation-systems/chain-conveyor-parts', function () {
+                return view('templates.basic')->with(['meta_title' => 'Chain conveyor parts – Made in Germany since 1926!', 'meta_description' => 'Circular chain conveyor parts ✓ Consistently high quality ☆ Responsible ☆ Precise ➨ Mechanical parts from the manufacturer!', 'h1' => 'Chain conveyor parts manufacturer', 'seo1' => '<p>Irion is a manufacturer for high quality circular chain conveyor parts made of steel.
+</p><p>
+</p><p>Our certified welding store manufactures customized mechanical parts for circular conveyors in intralogistics from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/kreiskettenfoerderer />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/chain-conveyor-parts />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/transportsysteme-produktion/unterflurschleppkettenfoerderer', function () {
+                return view('templates.basic')->with(['meta_title' => 'Unterflurschleppkettenförderer Komponenten – Hersteller', 'meta_description' => 'Unterflurschleppkettenförderer Komponenten ✓ 30 bis 5.000 Stk ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Mechanische Teile!', 'h1' => 'Unterflurschleppkettenförderer Komponenten – Mechanische Teile Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Unterflurschleppkettenförderer Komponenten aus Stahl.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/unterflurschleppkettenfoerderer />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor', function () {
+                return view('templates.basic')->with(['meta_title' => 'Underfloor drag chain conveyor components – Manufacturer', 'meta_description' => 'Underfloor drag chain conveyor components ✓ 30 to 5,000 pcs ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Mechanical parts', 'h1' => 'Underfloor drag chain conveyor components', 'seo1' => '<p>Irion is a manufacturer of high quality steel underfloor drag chain conveyor components.
+</p><p>
+</p><p>Our certified welding store manufactures customized mechanical parts in intralogistics from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/unterflurschleppkettenfoerderer />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/transportsysteme-produktion/fahrerlose-transportsysteme-hersteller', function () {
+                return view('templates.basic')->with(['meta_title' => 'Fahrerlose Transportsysteme Komponenten – Mechanische Teile Hersteller', 'meta_description' => 'Fahrerlose Transportsysteme Komponenten ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Mechanische Teile vom Hersteller!', 'h1' => 'Fahrerlose Transportsysteme Komponenten – Mechanische Teile Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertige Komponenten für fahrerlose Transportsysteme aus Stahl.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/fahrerlose-transportsysteme-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers', function () {
+                return view('templates.basic')->with(['meta_title' => 'Automated guided vehicle manufacturers – Steel Parts!', 'meta_description' => 'Automated guided vehicle parts manufacturers ✓ Consistently high quality ☆ Responsible ☆ Precise ➨ Made in Germany since 1926!', 'h1' => 'Automated guided vehicle manufacturers', 'seo1' => '<p>Irion is a manufacturer of high quality steel parts for automated guided vehicles.
+</p><p>
+</p><p>Our certified welding store manufactures customized mechanical components in intralogistics from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/transportsysteme-produktion/fahrerlose-transportsysteme-hersteller />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers />
+', 'submenu' => '']);
+            });
+Route::get('/schweisskonstruktionen/foerdertechnik-zubehoer-ersatzteile', function () {
+                return view('templates.basic')->with(['meta_title' => 'Fördertechnik Zubehör und Ersatzteile vom Hersteller', 'meta_description' => 'Fördertechnik Zubehör und Ersatzteile ✓ 30 bis 5.000 Stück ☆ konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Mechanische Teile vom Hersteller!', 'h1' => 'Fördertechnik Zubehör und Ersatzteile – Mechanische Teile Hersteller', 'seo1' => '<p>Irion ist ein Hersteller für hochwertiges Fördertechnik Zubehör und Ersatzteile aus Stahl.
+</p><p>
+</p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/foerdertechnik-zubehoer-ersatzteile />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/conveyor-accessories-spare-parts />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-fabrications/conveyor-accessories-spare-parts', function () {
+                return view('templates.basic')->with(['meta_title' => 'Conveyor accessories and spare parts from the manufacturer', 'meta_description' => 'Conveyor accessories and spare parts ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Precise ➨ Made in Germany since 1926!', 'h1' => 'Conveyor accessories and spare parts', 'seo1' => '<p>Irion is a manufacturer of high quality steel conveyor accessories and spare parts.
+</p><p>
+</p><p>Our certified welding company manufactures customized mechanical components in intralogistics from 30 to 5,000 pieces. We stand for consistently high quality, responsibility and precision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/foerdertechnik-zubehoer-ersatzteile />
+<link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/conveyor-accessories-spare-parts />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahlverarbeitung in Deutschland seit 1926 – Firma Irion', 'meta_description' => 'Stahlverarbeitung in Deutschland ✓ 100 bis 500.000 Stück ☆ Stahlteile lasern lassen ☆ Stahlbearbeitung ☆ Präzise ➨ Qualität seit 1926!', 'h1' => 'Stahlverarbeitung', 'seo1' => '<p>Die Firma Irion bietet seit 1926 präzise Stahlverarbeitung in Deutschland. An unserem Standort im Schwarzwald können Stahlteile im Volumen von 100 bis 500.000 im Projektgeschäft produziert werden.
+</p><p>Dabei bieten wir industrielle Stahlbearbeitung nach Maß bis hin zur Möglichkeit Stahlteile in gleichbleibend hoher Qualität lasern zu lassen.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company />
+', 'submenu' => '<strong><a href="/stahlverarbeitung/stahlteile-lasern-lassen">Stahlteile lasern lassen</a></strong>
+                                <ul><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt">Stahlblech Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/stahlplatten-zuschnitt">Stahlplatten Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/edelstahl-zuschnitt">Edelstahl Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/schwarzblech-zuschnitt">Schwarzblech Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/grobblech-zuschnitt">Grobblech Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/federstahl-zuschnitt">Federstahl Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/werkzeugstahl-zuschnitt">Werkzeugstahl Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/winkelstahl-zuschnitt">Winkelstahl Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt">Elektroblech Zuschnitt</a></li></ul><strong><a href="/stahlverarbeitung/stahlbearbeitung">Stahlbearbeitung</a></strong>
+                                <ul><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-schweissen-lassen">Stahl schweißen lassen</a></li><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-schneiden-lassen">Stahl schneiden lassen</a></li><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-biegen-lassen">Stahl biegen lassen</a></li><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-fraesen-lassen">Stahl fräsen lassen</a></li><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen">Stahl kanten lassen</a></li></ul>']);
+            });
+Route::get('/us/steel-processing-company', function () {
+                return view('templates.basic')->with(['meta_title' => 'Steel processing company – In Germany since 1926!', 'meta_description' => 'Steel processing company from Germany ✓ 100 to 500,000 pieces ☆ Lasered steel parts ☆ Precise ➨ Consistently high quality since 1926!', 'h1' => 'Steel processing company', 'seo1' => '<p>Our company Irion  has been offering precise steel processing in Germany since 1926. At our location in the Black Forest, steel parts can be produced in volumes from 100 to 500,000 in the project business.
+</p><p>In doing so, we offer industrial steel processing made to measure up to the possibility of having steel parts lasered in consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company />
+', 'submenu' => '<strong><a href="/us/steel-processing-company/laser-cut-steel-parts">Laser cut steel parts</a></strong>
+                                <ul><li><a href="/us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting">Steel sheet cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting">Steel plate cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel">Stainless steel cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size">Black sheet metal cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal">Thick sheet metal cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size">Spring steel cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size">Tool steel cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size">Angle iron cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting">Electrical steel cutting</a></li></ul><strong><a href="/us/steel-processing-company/steel-machining">Steel machining</a></strong>
+                                <ul><li><a href="/us/steel-processing-company/steel-machining/welding-business">Welding business</a></li><li><a href="/us/steel-processing-company/steel-machining/laser-steel-cutting-services">Steel cutting services</a></li><li><a href="/us/steel-processing-company/steel-machining/steel-bending-services">Steel bending services</a></li><li><a href="/us/steel-processing-company/steel-machining/steel-milling">Steel milling</a></li><li><a href="/us/steel-processing-company/steel-machining/press-brake-metal-forming">Brake forming</a></li></ul>']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahlteile lasern lassen – Laserteile aus Stahl', 'meta_description' => 'Stahlteile lasern lassen ✓ Stahlbleche ☆ Stahlplatten ☆ Edelstahl ☆ Schwarzblech ☆ Grobblech ☆ uvm. ➨ Industrie Laserteile aus Stahl!', 'h1' => 'Stahlteile lasern lassen', 'seo1' => '<p>Irion bietet hochwertige Industrie Laserteile aus Stahl.
+</p><p>
+</p><p>Sie können Stahlteile lasern lassen, wie Stahlblech, Stahlplatten, Edelstahl, Schwarzblech, Grobblech, Federstahl, Werkzeugstahl, Winkelstahl oder Elektroblech.
+</p><p>
+</p><p>Wir lasern Stahl im Projektgeschäft ab 100 bis 500.000 Stück in konstant hoher Qualität. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts />
+', 'submenu' => '<strong>Beispiele</strong><ul><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt">Stahlblech Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/stahlplatten-zuschnitt">Stahlplatten Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/edelstahl-zuschnitt">Edelstahl Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/schwarzblech-zuschnitt">Schwarzblech Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/grobblech-zuschnitt">Grobblech Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/federstahl-zuschnitt">Federstahl Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/werkzeugstahl-zuschnitt">Werkzeugstahl Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/winkelstahl-zuschnitt">Winkelstahl Zuschnitt</a></li><li><a href="/stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt">Elektroblech Zuschnitt</a></li></ul>']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts', function () {
+                return view('templates.basic')->with(['meta_title' => 'Laser cut steel parts – Steel components made in Germany', 'meta_description' => 'Laser cut steel parts ✓ Steel sheets ☆ Steel plates ☆ Stainless steel ☆ Black plate ☆ and more ➨ Industrial steel laser parts', 'h1' => 'Laser cut steel parts', 'seo1' => '<p>Irion offers high quality laser cut steel parts.
+</p><p>
+</p><p>You can have steel parts lasered, such as steel sheet, steel plate, stainless steel, black plate, heavy plate, spring steel, tool steel, angle steel or electrical steel.
+</p><p>
+</p><p>We laser steel in project business from 100 to 500,000 pieces in constant high quality. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts />
+', 'submenu' => '<strong>Examples</strong><ul><li><a href="/us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting">Steel sheet cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting">Steel plate cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel">Stainless steel cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size">Black sheet metal cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal">Thick sheet metal cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size">Spring steel cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size">Tool steel cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size">Angle iron cutting</a></li><li><a href="/us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting">Electrical steel cutting</a></li></ul>']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahlblech Zuschnitt nach Maß – Stahlblech lasern lassen', 'meta_description' => 'Stahlblech Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Stahlblech lasern lassen!', 'h1' => 'Stahlblech Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Stahlblech Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Stahlblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Stahlblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting', function () {
+                return view('templates.basic')->with(['meta_title' => 'Steel sheet cutting – Laser cutting for industry!', 'meta_description' => 'Steel sheet cutting ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 inch ☆ Size 59 x 118 inch ➨ Top quality from Germany!', 'h1' => 'Steel sheet cutting', 'seo1' => '<p>Irion offers high-quality steel sheet cutting to measure.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting of steel sheets. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion  you can have sheet steel laser cutting in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/stahlplatten-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahlplatten Zuschnitt – Stahlplatten lasern lassen', 'meta_description' => 'Stahlplatten Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Stahlplatten lasern lassen!', 'h1' => 'Stahlplatten Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Stahlplatten Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Stahlplatten gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Stahlplatten in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/stahlplatten-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting', function () {
+                return view('templates.basic')->with(['meta_title' => 'Steel plate cutting – Laser cutting for industry!', 'meta_description' => 'Steel plate cutting ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 inch ☆ Size 59 x 118 inch ➨ Top quality from Germany!', 'h1' => 'Steel plate cutting', 'seo1' => '<p>Irion offers high-quality steel plate cutting to measure.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting of steel plates. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion , you can have steel plate laser cutting in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/stahlplatten-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/steel-plate-cutting />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/edelstahl-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Edelstahl Zuschnitt nach Maß – Edelstahl lasern lassen', 'meta_description' => 'Edelstahl Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Edelstahl lasern lassen!', 'h1' => 'Edelstahl Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Edelstahl Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Edelstahl gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Edelstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/edelstahl-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel', function () {
+                return view('templates.basic')->with(['meta_title' => 'Cutting of stainless steel – Laser cutting for industry', 'meta_description' => 'Cutting of stainless steel ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 inch ☆ Size 59 x 118 inch ➨ Top quality from Germany ', 'h1' => 'Cutting of stainless steel', 'seo1' => '<p>Irion offers high-quality cutting of stainless steel to measure.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting for stainless steel. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion , you can have laser cutting for stainless steel in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch. </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/edelstahl-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/schwarzblech-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Schwarzblech Zuschnitt – Schwarzblech lasern lassen', 'meta_description' => 'Schwarzblech Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Schwarzblech lasern lassen!', 'h1' => 'Schwarzblech Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Schwarzblech Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Schwarzblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Schwarzblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/schwarzblech-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size', function () {
+                return view('templates.basic')->with(['meta_title' => 'Black metal sheet cut to size – Industrial laser cutting', 'meta_description' => 'Black metal sheet cut to size ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 inch ☆ Size 59 x 118 inch ➨ Top quality from Germany', 'h1' => 'Black metal sheet cut to size', 'seo1' => '<p>Irion offers high-quality black metal sheet cut to size.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting for black sheet metal. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion , you can have laser cutting for black sheet metal in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/schwarzblech-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/grobblech-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Grobblech Zuschnitt nach Maß – Grobblech lasern lassen', 'meta_description' => 'Grobblech Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Grobblech lasern lassen!', 'h1' => 'Grobblech Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Grobblech Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Grobblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Grobblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/grobblech-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal', function () {
+                return view('templates.basic')->with(['meta_title' => 'Cutting thick sheet metal – Industrial laser cutting!', 'meta_description' => 'Cutting thick sheet metal ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 ☆ Size 59 x 118 inch ➨ Top quality from Germany', 'h1' => 'Cutting thick sheet metal', 'seo1' => '<p>Irion offers cutting thick sheet metal to size in highest quality.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting for thick sheet metal. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion , you can have laser cutting for thick sheet metal in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/grobblech-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/federstahl-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Federstahl Zuschnitt nach Maß – Federstahl lasern lassen', 'meta_description' => 'Federstahl Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Federstahl lasern lassen!', 'h1' => 'Federstahl Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Federstahl Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Federstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Federstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/federstahl-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size', function () {
+                return view('templates.basic')->with(['meta_title' => 'Spring steel cut to size – Industrial laser cutting', 'meta_description' => 'Spring steel cut to size ✓ 100 to 500,000 pieces ☆ Thickness 0,04 to 0,98 inch ☆ Size 59 x 118 inch ➨ Top quality from Germany!', 'h1' => 'Spring steel cut to size', 'seo1' => '<p>Irion offers high-quality spring steel cut to size.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting for spring steel. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion , you can have laser cutting for spring steel in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/federstahl-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/werkzeugstahl-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Werkzeugstahl Zuschnitt – Werkzeugstahl lasern lassen', 'meta_description' => 'Werkzeugstahl Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Werkzeugstahl lasern lassen!', 'h1' => 'Werkzeugstahl Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Werkzeugstahl Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Werkzeugstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Werkzeugstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/werkzeugstahl-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size', function () {
+                return view('templates.basic')->with(['meta_title' => 'Tool steel cut to size – Industrial laser cutting', 'meta_description' => 'Tool steel cut to size ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 inch ☆ Size 59 x 118 inch ➨ Top quality from Germany!', 'h1' => 'Tool steel cut to size', 'seo1' => '<p>Irion offers high-quality tool steel cut to size.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting for tool steel. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion , you can have laser cutting for tool steel in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/werkzeugstahl-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/winkelstahl-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Winkelstahl Zuschnitt – Winkelstahl lasern lassen', 'meta_description' => 'Winkelstahl Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Winkelstahl lasern lassen!', 'h1' => 'Winkelstahl Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Winkelstahl Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Winkelstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Winkelstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/winkelstahl-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size', function () {
+                return view('templates.basic')->with(['meta_title' => 'Angle iron cut to size – Industrial laser cutting', 'meta_description' => 'Angle iron cut to size ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 inch ☆ Size 59 x 118 inch ➨ Top quality from Germany!', 'h1' => 'Angle iron cut to size', 'seo1' => '<p>Irion offers high-quality angle iron cut to size.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting for angle iron. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion , you can have laser cutting for angle iron in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/winkelstahl-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt', function () {
+                return view('templates.basic')->with(['meta_title' => 'Elektroblech Zuschnitt – Elektroblech lasern lassen', 'meta_description' => 'Elektroblech Zuschnitt nach Maß ✓ 100 bis 500.000 Stück ☆ Dicke 1 mm bis 25 mm ☆ Größe 1,5 m x 3,0 m ➨ Elektroblech lasern lassen!', 'h1' => 'Elektroblech Zuschnitt', 'seo1' => '<p>Irion bietet einen hochwertigen Elektroblech Zuschnitt nach Maß.
+</p><p>
+</p><p>Nicht nur beim Laserzuschnitt von Elektroblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Bei Irion können Sie Elektroblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting', function () {
+                return view('templates.basic')->with(['meta_title' => 'Electrical steel cutting – Industrial laser cutting', 'meta_description' => 'Electrical steel cutting ✓ 100 to 500,000 pieces ☆ Thickness 0.04 to 0.98 inch ☆ Size 59 x 118 inch ➨ Top quality from Germany!', 'h1' => 'Electrical steel cutting', 'seo1' => '<p>Irion offers high-quality electrical steel cutting.
+</p><p>
+</p><p>We are happy to meet your individual requirements not only when it comes to laser cutting for electrical steel. You can also have welding, bending, edging and milling done in house.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with consistently high quality, responsibility and precision.
+</p><p>
+</p><p>AtIrion , you can have laser cutting for electrical steel in large quantities. We work in project business from 100 to 500,000 pieces. The possible thickness is 0.04 inch to 0.98 inch. The maximum size of the metal surface is 59 inch x 118 inch.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlbearbeitung', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahlbearbeitung in Deutschland seit 1926 – Firma Irion', 'meta_description' => 'Stahlbearbeitung in Deutschland ✓ Qualität seit 1926 ☆ Schweißen ☆ Schneiden ☆ Biegen ☆ Fräsen ☆ Kanten ➨ Stahlteile bearbeiten lassen!', 'h1' => 'Stahlbearbeitung', 'seo1' => '<p>Die Firma Irion bietet seit 1926 präzise Stahlbearbeitung in Deutschland.
+</p><p>Sie können Stahlteile in großer Fertigungstiefe bearbeiten lassen, wie schweißen, schneiden, biegen, fräsen oder abkanten in Lohnfertigung.
+</p><p>
+</p><p>Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.
+</p><p>
+</p><p>Benötigen Sie darüber hinaus weitere Metallbearbeitung oder Oberflächenveredelung kümmern wir uns um eine zufriedenstellende Lösung mit ausgewählten Kooperationspartnern. 
+</p><p>
+</p><p></p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining />
+', 'submenu' => '<strong>Beispiele</strong><ul><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-schweissen-lassen">Stahl schweißen lassen</a></li><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-schneiden-lassen">Stahl schneiden lassen</a></li><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-biegen-lassen">Stahl biegen lassen</a></li><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-fraesen-lassen">Stahl fräsen lassen</a></li><li><a href="/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen">Stahl kanten lassen</a></li></ul>']);
+            });
+Route::get('/us/steel-processing-company/steel-machining', function () {
+                return view('templates.basic')->with(['meta_title' => 'Steel machining in Germany since 1926 – Irion  Company', 'meta_description' => 'Steel machining in Germany ✓ Quality since 1926 ☆ Welding ☆ Cutting ☆ Bending ☆ Milling ☆ Edging ➨ Have steel parts processed!', 'h1' => 'Steel machining', 'seo1' => '<p>Irion has been offering precise steel machining in Germany since 1926.
+</p><p>You can have steel parts machined with a large vertical range of manufacture, such as welding, cutting, bending, milling or brake forming in contract manufacturing.
+</p><p>
+</p><p>Our production meets the special requirements of the industry with constant high quality, responsibility and precision.
+</p><p>
+</p><p>If you also require further metalworking or surface finishing, we will take care of a satisfactory solution with selected cooperation partners.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining />
+', 'submenu' => '<strong>Examples</strong><ul><li><a href="/us/steel-processing-company/steel-machining/welding-business">Welding business</a></li><li><a href="/us/steel-processing-company/steel-machining/laser-steel-cutting-services">Steel cutting services</a></li><li><a href="/us/steel-processing-company/steel-machining/steel-bending-services">Steel bending services</a></li><li><a href="/us/steel-processing-company/steel-machining/steel-milling">Steel milling</a></li><li><a href="/us/steel-processing-company/steel-machining/press-brake-metal-forming">Brake forming</a></li></ul>']);
+            });
+Route::get('/stahlverarbeitung/stahlbearbeitung/stahl-schweissen-lassen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahl schweißen lassen – Schweißbetrieb aus Deutschland', 'meta_description' => 'Stahl schweißen lassen ✓ 30 bis 5.000 Stück ☆ Konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Schweißbetrieb aus Deutschland!', 'h1' => 'Stahl schweißen lassen', 'seo1' => '<p>Irion gibt es bereits seit 1926. Wir sind ein erfahrener Schweißbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen.
+</p><p>
+</p><p>Bei uns können Sie Stahl schweißen lassen ab 30 bis 5.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-schweissen-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/welding-business />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/steel-machining/welding-business', function () {
+                return view('templates.basic')->with(['meta_title' => 'Welding business – Have steel welded in Germany', 'meta_description' => 'Welding business ✓ 30 to 5,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Welding company from Germany!', 'h1' => 'Welding business', 'seo1' => '<p>Irion has been around since 1926. We are an experienced welding business from Southern Germany in Central Europe.
+</p><p>
+</p><p>We work according to the highest quality criteria, and also meet international industry standards.
+</p><p>
+</p><p>With us you can have steel welded from 30 to 5,000 pieces. We act responsibly and value precise work and consistently top quality! </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-schweissen-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/welding-business />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlbearbeitung/stahl-schneiden-lassen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahl schneiden lassen – Laserschneidbetrieb Deutschland', 'meta_description' => 'Stahl schneiden lassen ✓ 100 bis 500.000 Stück ☆ Konstant hohe Qualität ☆ Präzise ➨ Laserschneidbetrieb aus Deutschland!', 'h1' => 'Stahl schneiden lassen', 'seo1' => '<p>Irion gibt es bereits seit 1926. Wir sind ein erfahrener Laserschneidbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen.
+</p><p>
+</p><p>Bei uns können Sie Stahl schneiden lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-schneiden-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/laser-steel-cutting-services />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/steel-machining/laser-steel-cutting-services', function () {
+                return view('templates.basic')->with(['meta_title' => 'Laser steel cutting services – German steel company!', 'meta_description' => 'Laser steel cutting services ✓ 100 to 500,000 pieces ☆ Consistently high quality ☆ Precise ➨ Laser cutting company from Germany', 'h1' => 'Laser steel cutting services', 'seo1' => '<p>Irion has been around since 1926. We are an experienced machining company from Southern Germany in Central Europe and offer you professional laser steel cutting services. 
+</p><p>
+</p><p>We work according to the highest quality criteria, and also meet international industry standards.
+</p><p>
+</p><p>With us you can have steel cut from 100 to 500,000 pieces. We act responsibly and value precise work and consistently high quality!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-schneiden-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/laser-steel-cutting-services />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlbearbeitung/stahl-biegen-lassen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahl biegen lassen – Biegebetrieb aus Deutschland', 'meta_description' => 'Stahl biegen lassen ✓ 100 bis 500.000 Stück ☆ Konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Biegebetrieb aus Deutschland!', 'h1' => 'Stahl biegen lassen', 'seo1' => '<p>Irion gibt es bereits seit 1926. Wir sind ein erfahrener Biegebetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen.
+</p><p>
+</p><p>Bei uns können Sie Stahl biegen lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-biegen-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/steel-bending-services />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/steel-machining/steel-bending-services', function () {
+                return view('templates.basic')->with(['meta_title' => 'Steel bending services – German steel company	', 'meta_description' => 'Steel bending services ✓ 100 to 500,000 pieces ☆ Consistently high quality ☆ Precise ➨ Top quality from Germany since 1926!', 'h1' => 'Steel bending services', 'seo1' => '<p>Irion has been around since 1926. We are an experienced machining company from Southern Germany in Central Europe and offer you professional steel bending services. 
+</p><p>
+</p><p>We work according to the highest quality criteria, and also meet international industry standards.
+</p><p>
+</p><p>With us you can have steel bending from 100 to 500,000 pieces. We act responsibly and value precise work and consistently high quality!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-biegen-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/steel-bending-services />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlbearbeitung/stahl-fraesen-lassen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahl fräsen lassen – Zerspanungsbetrieb aus Deutschland', 'meta_description' => 'Stahl fräsen lassen ✓ 100 bis 500.000 Stück ☆ Konstant hohe Qualität ☆ Verantwortungsvoll ☆ Präzise ➨ Zerspanungsbetrieb aus Deutschland!', 'h1' => 'Stahl fräsen lassen', 'seo1' => '<p>Irion gibt es bereits seit 1926. Wir sind ein erfahrener Zerspanungsbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen.
+</p><p>
+</p><p>Bei uns können Sie Stahl fräsen lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-fraesen-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/steel-milling />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/steel-machining/steel-milling', function () {
+                return view('templates.basic')->with(['meta_title' => 'Steel milling – Machining company from Germany!', 'meta_description' => 'Steel milling services ✓ 100 to 500,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Made in Germany since 1926', 'h1' => 'Steel milling services', 'seo1' => '<p>Irion has been around since 1926. We are an experienced machining company from Southern Germany in Central Europe and offer you professional steel milling services.
+</p><p>
+</p><p>We work according to the highest quality criteria, and also meet international industry standards.
+</p><p>
+</p><p>With us you can have steel milled from 100 to 500,000 pieces. We act responsibly and value precise work and consistently top quality!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-fraesen-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/steel-milling />
+', 'submenu' => '']);
+            });
+Route::get('/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Stahl kanten lassen – Kantbetrieb aus Deutschland', 'meta_description' => 'Stahl kanten lassen ✓ 100 bis 500.000 Stück ☆ Konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Kantbetrieb aus Deutschland!', 'h1' => 'Stahl kanten lassen', 'seo1' => '<p>Irion gibt es bereits seit 1926. Wir sind ein erfahrener Kantbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen.
+</p><p>
+</p><p>Bei uns können Sie Stahl kanten lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/press-brake-metal-forming />
+', 'submenu' => '']);
+            });
+Route::get('/us/steel-processing-company/steel-machining/press-brake-metal-forming', function () {
+                return view('templates.basic')->with(['meta_title' => 'Press brake metal forming – German machining company!', 'meta_description' => 'Press brake metal forming ✓ 100 to 500,000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ From Germany since 1926', 'h1' => 'Press brake metal forming', 'seo1' => '<p>Irion has been around since 1926. We are an experienced machining company from Southern Germany in Central Europe and offer you professional press brake metal forming.
+</p><p>
+</p><p>We work according to the highest quality criteria, and also meet international industry standards.
+</p><p>
+</p><p>With us you can have brake forming from 100 to 500,000 pieces. We act responsibly and value precise work and consistently top quality!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen />
+<link rel="alternate" hreflang="en-US" href=/us/steel-processing-company/steel-machining/press-brake-metal-forming />
+', 'submenu' => '']);
+            });
+Route::get('/schweissunternehmen', function () {
+                return view('templates.unternehmen')->with(['meta_title' => 'Schweißunternehmen – Qualität von IRION seit 1926!', 'meta_description' => 'Das Schweißunternehmen seit 1926 ✓ Unsere Partner ☆ Referenzen ☆ Historie ☆ Zahlen, Daten, Fakten ➨ Jetzt informieren!', 'h1' => 'Das Schweißunternehmen IRION', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-company />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-company', function () {
+                return view('templates.unternehmen')->with(['meta_title' => 'Welding company Irion  – Quality from Germany since 1926! ', 'meta_description' => 'The welding company since 1926 ✓ Our partners ☆ References ☆ History ☆ Figures, data, facts ➨ Get all information here!', 'h1' => 'Welding company Irion ', 'seo1' => '<p>For many years our welding company has been trusted…
+</p><p>
+</p><p>•	Selected partners of the automotive industry
+</p><p>•	Renowned steel and mechanical engineering companies
+</p><p>•	Public institutions from art and culture
+</p><p>•	Premium manufacturers from plant engineering & materials handling
+</p><p>•	Leading manufacturers of agricultural and construction machinery
+</p><p>
+</p><p>
+</p><p>History
+</p><p>
+</p><p>The welding company was founded in 1926 by Mr. Matthäus Irion. In 1978, the Hahn family acquired Matthäus Irion  GmbH & Co. KG. From 1986, Eberhardt Hahn, who studied mechanical engineering, managed the company, and in 2018 the two industrial engineers and aeronautical engineers Bernd Fleissinger and Stefan Tschirk took over the welding company.
+</p><p>
+</p><p>From 1979, the business area developed towards the production of transport and storage containers, primarily for the automotive industry. From the beginning of the 80s, the supply of the materials handling industry with components for their plants was added. Today, Irion  serves customers from the automotive, construction, agricultural, cultural, logistics, medical and food technology sectors with demanding welding-milling combinations in quantities ranging from 30 to 1,000 pieces.
+</p><p>
+</p><p>
+</p><p>References
+</p><p>
+</p><p>Due to a consistently high level of quality, professional order processing and on-time delivery, we are always the first choice for our customers compared to our competitors.
+</p><p>An excerpt from our customer list, which includes many companies of distinction, is available upon request.
+</p><p>
+</p><p>Numbers, data, facts
+</p><p>
+</p><p>Currently Irion  GmbH employs 40 motivated people in administration and production. The production area is about 3500 sqm.
+</p><p>The machinery consists of welding robots as well as semi-mechanical welding machines for different arc welding processes, CNC controlled machines for drilling and milling, lathes, press brakes, bending machines and sawing machines as well as numerous manipulation machines.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-company />
+', 'submenu' => '']);
+            });
+Route::get('#', function () {
+                return view('templates.basic')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
+', 'submenu' => '<strong><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></strong>
+                                <ul></ul><strong><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></strong>
+                                <ul></ul><strong><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></strong>
+                                <ul></ul>']);
+            });
+Route::get('/schweissunternehmen/en-1090-zertifizierte-betriebe', function () {
+                return view('templates.basic')->with(['meta_title' => 'EN 1090 zertifizierte Betrieb – Klasse EXC3 Stahlbau', 'meta_description' => 'EN 1090 zertifizierte Betrieb ✓ Ausführungsklasse EXC3 nach EN 1090-2 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'EN 1090 zertifizierter Betrieb', 'seo1' => '<p>IRION ist ein nach EN 1090, Ausführungsklasse EXC3 zertifizierter Betrieb. 
+</p><p>
+</p><p>Das Schweißzertifikat WECE-STAHL-1090-2.00093.GSIFe.2019.002 wurde in Übereinstimmung mit EN 1090-1, Tabelle B.1 zum Schweißen von Stahltragwerken nach DIN EN 1090-2 vergeben.
+</p><p>
+</p><p>Technische Spezifikation: EN 1090-2:2018
+</p><p>
+</p><p>Ausführungsklasse: EXC3 nach EN 1090-2
+</p><p>
+</p><p>Referenznummer für Schweißprozesse nach DIN EN ISO 40531: 135
+</p><p>
+</p><p>Werkstoffgruppen: 1.1, 1.2, 2.1 nach CEN ISO/TR 15608 und EN 1090-2 (2018), Tabelle 2 und 3
+</p><p>
+</p><p>Auf Grundlage der Bestimmungen der oben genannten technischen Spezifikation wurden alle Anforderungen an das Schweißen erfüllt.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/en-1090-zertifizierte-betriebe />
+', 'submenu' => '']);
+            });
+Route::get('/schweissunternehmen/konstante-schweissqualitaet', function () {
+                return view('templates.basic')->with(['meta_title' => 'Konstante Schweißqualität – Nach DIN EN ISO 3834-2:2021', 'meta_description' => 'Konstante Schweißqualität ✓ Zertifiziert nach DIN EN ISO 3834-2:2021 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'Konstante Schweißqualität zertifiziert nach DIN EN ISO 3834-2:2021', 'seo1' => '<p>IRION steht für konstante Schweißqualität, zertifiziert durch DVS ZERT.
+</p><p>
+</p><p>
+</p><p>Zertifikat: D-ZE-16083-01-00-IS03834-2019.0005.002
+</p><p>
+</p><p>Nachweis der schweißtechnischen Qualitätsanforderungen erbracht nach: DIN EN ISO 3834-2:2021
+</p><p>
+</p><p>Anwendungsbereich: Schweißbaugruppen für die Fördertechnik und den Maschinenbau
+</p><p>
+</p><p>Schweißprozesse: 135, 141 nach DIN EN ISO 4063
+</p><p>
+</p><p>Grundwerkstoffe: 1.1, 1.2, 2.1, 8.1 nach CEN ISO/TR 15608</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/konstante-schweissqualitaet />
+', 'submenu' => '']);
+            });
+Route::get('/schweissunternehmen/qualitaetssicherung-schweissen', function () {
+                return view('templates.basic')->with(['meta_title' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'meta_description' => 'IRION steht für Qualitätssicherung beim Schweißen ✓ TÜV-zertifiziert nach ISO 9001:2015 ➨ Qualität von IRION seit 1926!', 'h1' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'seo1' => '<p>IRION steht für Qualitätssicherung beim Schweißen, zertifiziert durch den TÜV.
+</p><p>
+</p><p>Bescheinigt durch: Die Zertifizierungsstelle der TÜV SÜD Management Service GmbH
+</p><p>
+</p><p>Bescheinigt wird: Die Einführung eines Qualitätsmanagementsystems
+</p><p>
+</p><p>Zertifiziert nach: ISO 9001:2015
+</p><p>
+</p><p>Geltungsbereich: Herstellung und Vertrieb von Sonderanlagen, Vorrichtungen und Schweißkonstruktionen</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/qualitaetssicherung-schweissen />
+', 'submenu' => '']);
+            });
+Route::get('/management', function () {
+                return view('templates.management')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
+<link rel="alternate" hreflang="en-US" href=/us/management />
+', 'submenu' => '']);
+            });
+Route::get('/us/management', function () {
+                return view('templates.management')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
+<link rel="alternate" hreflang="en-US" href=/us/management />
+', 'submenu' => '']);
+            });
+Route::get('/karriere', function () {
+                return view('templates.karriere')->with(['meta_title' => 'Ihre Karriere bei der Irion GmbH', 'meta_description' => 'Wir arbeiten mit Leidenschaft an der Sache. Leidenschaft ist unser Antrieb und die Wurzel für Innovationen. Wir lieben was wir tun und bilden deshalb unsere Mitarbeiter selbst aus. Im technischen Detail liegt oft der Schlüssel zum Erfolg – wir meistern es und setzen es um.', 'h1' => 'Karriere', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/karriere />
+', 'submenu' => '']);
+            });
+Route::get('/schweissberatung', function () {
+                return view('templates.kontakt')->with(['meta_title' => 'Schweißberatung – Kostenloses Erstgespräch bei IRION', 'meta_description' => 'Schweißberatung von IRION ✓ 30 Minuten kostenlose Schweißberatung ☆ Qualität von IRION seit 1926 ➨ Nehmen Sie jetzt Kontakt auf!', 'h1' => '30 Minuten kostenlose Schweißberatung', 'seo1' => 'Sie haben Fragen zum Thema Schweißen oder anderen Fachgebieten? Wir bieten Ihnen eine kostenlose Schweißberatung an. Nehmen Sie gleich Kontakt auf!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
+<link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
+', 'submenu' => '']);
+            });
+Route::get('/us/welding-consulting', function () {
+                return view('templates.kontakt')->with(['meta_title' => 'Welding consulting – Free initial consultation at Irion ', 'meta_description' => 'Welding consulting from Irion  ✓ 30 minutes free welding advice ☆ Quality from Irion  since 1926 ➨ Get in touch now!', 'h1' => '30 minutes free welding consulting 	', 'seo1' => 'Do you have questions about welding or other specialties? We offer you free welding consulting. Contact us right away!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
+<link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
+', 'submenu' => '']);
+            });
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ContactController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-
-Route::group(['prefix' => '/'], function () {
-
-    // App::setLocale("de");
-
-    Route::get('/', [HomeController::class, 'de']);
-
-    Route::get('/praezisionsfertigung', function () {
-        return view('competences');
-    });
-
-    Route::get('/unternehmen', function () {
-        return view('company');
-    });
-
-    Route::get('/zertifikate', function () {
-        return view('quality.certificates');
-    });
-
-    Route::get('/qualitaetspolitik', function () {
-        return view('quality.quality-policy');
-    });
-
-    Route::get('/management', function () {
-        return view('management');
-    });
-
-    Route::get('/karriere', function () {
-        return view('career');
-    });
-
-    Route::get('/kontakt', function () {
-        return view('contact');
-    });
-
-    Route::get('/impressum', function () {
+    Route::get('/en/imprint', function () {
         return view('imprint');
     });
-    Route::get('/datenschutz', function () {
+    Route::get('/en/privacy', function () {
         return view('privacy');
     });
-    Route::get('/agb', function () {
+    Route::get('/en/terms', function () {
         return view('terms');
     });
+    Route::get('/us/imprint', function () {
+        return view('imprint');
+    });
+    Route::get('/us/privacy', function () {
+        return view('privacy');
+    });
+    Route::get('/us/terms', function () {
+        return view('terms');
+    });
+    Route::post('/en/send', [ContactController::class, 'send']);
+    Route::post('/us/send', [ContactController::class, 'send']);
 
+    Route::post('/send', [ContactController::class, 'send']);
 
-    Route::get('/praezisionsfertigung/mechanische-konstruktion', function () {
-        return view('leistungen.entwicklung');
-    });
-    Route::get('/praezisionsfertigung/roboterschweissen', function () {
-        return view('leistungen.roboterschweissen');
-    });
-    Route::get('/zuschnitt', function () {
-        return view('leistungen.zuschnitt');
-    });
-    Route::get('/zerspanung', function () {
-        return view('leistungen.zerspanung');
-    });
-    Route::get('/schweissen', function () {
-        return view('leistungen.schweissen');
-    });
-    Route::get('/reinigung', function () {
-        return view('leistungen.reinigung');
-    });
-    Route::get('/waermebehandlung', function () {
-        return view('leistungen.waermebehandlung');
-    });
-    Route::get('/oberflaeche', function () {
-        return view('leistungen.oberflaeche');
-    });
-    Route::get('/montage', function () {
-        return view('leistungen.montage');
+    Route::fallback(function (Request $request) {
+        return view('/404');
     });
 
-    /* NEU */
-
-
-    Route::get('/schweisskonstruktionen', function () {
-        return view('schweisskonstruktionen.schweisskonstruktionen');
-    });
-    Route::get('/schweisskonstruktionen/foerdertechnik-zubehoer-ersatzteile', function () {
-        return view('schweisskonstruktionen.ersatzteile-und-zubehoer.foerdertechnik-zubehoer-ersatzteile');
-    });
-    Route::get('/schweisskonstruktionen/transportsysteme-produktion', function () {
-        return view('schweisskonstruktionen.transportsysteme.transportsysteme-produktion');
-    });
-    Route::get('/schweisskonstruktionen/transportsysteme-produktion/buehnenwagen', function () {
-        return view('schweisskonstruktionen.transportsysteme.buehnenwagen');
-    });
-    Route::get('/schweisskonstruktionen/transportsysteme-produktion/schwerlast-plattformwagen', function () {
-        return view('schweisskonstruktionen.transportsysteme.schwerlast-plattformwagen');
-    });
-    Route::get('/schweisskonstruktionen/transportsysteme-produktion/elektrohaengebahn-hersteller', function () {
-        return view('schweisskonstruktionen.transportsysteme.elektrohaengebahn-hersteller');
-    });
-    Route::get('/schweisskonstruktionen/transportsysteme-produktion/power-and-free-foerderer', function () {
-        return view('schweisskonstruktionen.transportsysteme.power-and-free-foerderer');
-    });
-    Route::get('/schweisskonstruktionen/transportsysteme-produktion/kreiskettenfoerderer', function () {
-        return view('schweisskonstruktionen.transportsysteme.kreiskettenfoerderer');
-    });
-    Route::get('/schweisskonstruktionen/transportsysteme-produktion/unterflurschleppkettenfoerderer', function () {
-        return view('schweisskonstruktionen.transportsysteme.unterflurschleppkettenfoerderer');
-    });
-    Route::get('/schweisskonstruktionen/transportsysteme-produktion/fahrerlose-transportsysteme-hersteller', function () {
-        return view('schweisskonstruktionen.transportsysteme.fahrerlose-transportsysteme-hersteller');
-    });
-    Route::get('/schweisskonstruktionen/maschinenbau', function () {
-        return view('schweisskonstruktionen.maschinenbau.maschinenbau');
-    });
-    Route::get('/schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller', function () {
-        return view('schweisskonstruktionen.maschinenbau.scherenhubtische-hersteller');
-    });
-    Route::get('/schweisskonstruktionen/maschinenbau/schweissgestelle', function () {
-        return view('schweisskonstruktionen.maschinenbau.schweissgestelle');
-    });
-    Route::get('/schweisskonstruktionen/maschinenbau/fahrzeugaufbauten-hersteller', function () {
-        return view('schweisskonstruktionen.maschinenbau.fahrzeugaufbauten-hersteller');
-    });
-    Route::get('/schweisskonstruktionen/maschinenbau/werkstuecktraegersysteme', function () {
-        return view('schweisskonstruktionen.maschinenbau.werkstuecktraegersysteme');
-    });
-
-    Route::get('/schweisskonstruktionen/skid-anlagenbau', function () {
-        return view('schweisskonstruktionen.skid-anlagenbau.skid-anlagenbau');
-    });
-    Route::get('/schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie', function () {
-        return view('schweisskonstruktionen.skid-anlagenbau.skid-automobilindustrie');
-    });
-    Route::get('/schweisskonstruktionen/skid-anlagenbau/foerdertechnik-automobilindustrie', function () {
-        return view('schweisskonstruktionen.skid-anlagenbau.foerdertechnik-automobilindustrie');
-    });
-    Route::get('/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger', function () {
-        return view('schweisskonstruktionen.skid-anlagenbau.hersteller-sonderladungstraeger');
-    });
-
-
-    Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.lastaufnahmemittel-hersteller');
-    });
-    Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastpaletten-stahl', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlastpaletten-stahl');
-    });
-    Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/industriebehaelter-metall', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.industriebehaelter-metall');
-    });
-    Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/transportbehaelter-metall', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.transportbehaelter-metall');
-    });
-    Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlasttraversen', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlasttraversen');
-    });
-    Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastboecke', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlastboecke');
-    });
-    Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/rungengestelle-hersteller', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.rungengestelle-hersteller');
-    });
-    Route::get('/schweisskonstruktionen/lastaufnahmemittel-hersteller/stapelgestelle-hersteller', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.stapelgestelle-hersteller');
-    });
-
-
-
-
-    // Stahlverarbeitung
-    Route::get('stahlverarbeitung', function () {
-        return view('stahlverarbeitung.stahlverarbeitung');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlteile-lasern-lassen');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlblech-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/stahlplatten-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlplatten-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/edelstahl-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.edelstahl-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/schwarzblech-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.schwarzblech-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/grobblech-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.grobblech-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/federstahl-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.federstahl-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/werkzeugstahl-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.werkzeugstahl-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.elektroblech-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/winkelstahl-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.winkelstahl-zuschnitt');
-    });
-    Route::get('stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.elektroblech-zuschnitt');
-    });
-
-
-    Route::get('stahlverarbeitung/stahlbearbeitung', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahlbearbeitung');
-    });
-    Route::get('stahlverarbeitung/stahlbearbeitung/stahl-schweissen-lassen', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-schweissen-lassen');
-    });
-    Route::get('stahlverarbeitung/stahlbearbeitung/stahl-schneiden-lassen', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-schneiden-lassen');
-    });
-    Route::get('stahlverarbeitung/stahlbearbeitung/stahl-biegen-lassen', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-biegen-lassen');
-    });
-    Route::get('stahlverarbeitung/stahlbearbeitung/stahl-fraesen-lassen', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-fraesen-lassen');
-    });
-    Route::get('stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-kanten-lassen');
-    });
-
-
-
-});
-
-
-
-$langs = [
-    'en', 'us'
-];
-
-// en and en-US
-foreach ($langs as $lang) {
-    Route::group(['prefix' => $lang], function () use ($lang) {
-
-        // App::setLocale("en");
-
-        Route::get('/', [HomeController::class, $lang]);
-
-        Route::get('/competences', function () {
-            return view('competences');
-        });
-
-        Route::get('/company', function () {
-            return view('company');
-        });
-
-        Route::get('/certificates', function () {
-            return view('quality.certificates');
-        });
-
-        Route::get('/management', function () {
-            return view('management');
-        });
-
-        Route::get('/career', function () {
-            return view('career');
-        });
-
-        Route::get('/contact', function () {
-            return view('contact');
-        });
-
-        Route::get('/imprint', function () {
-            return view('imprint');
-        });
-        Route::get('/privacy', function () {
-            return view('privacy');
-        });
-        Route::get('/terms', function () {
-            return view('terms');
-        });
-
-        Route::post("/$lang/send", [ContactController::class, 'send']);
-    });
-}
-
-
-// en-US ONLY:
-Route::group(['prefix' => 'us'], function () {
-
-    // schweisskonstruktionen
-    Route::get('/welding-fabrications', function () {
-        return view('schweisskonstruktionen.schweisskonstruktionen');
-    });
-
-    Route::get('/welding-fabrications/conveyor-accessories-spare-parts', function () {
-        return view('schweisskonstruktionen.ersatzteile-und-zubehoer.foerdertechnik-zubehoer-ersatzteile');
-    });
-
-    Route::get('/welding-fabrications/transportation-systems', function () {
-        return view('schweisskonstruktionen.transportsysteme.transportsysteme-produktion');
-    });
-    Route::get('/welding-fabrications/transportation-systems/mobile-lifting-platforms', function () {
-        return view('schweisskonstruktionen.transportsysteme.buehnenwagen');
-    });
-    Route::get('/welding-fabrications/transportation-systems/heavy-duty-platform-trolley', function () {
-        return view('schweisskonstruktionen.transportsysteme.schwerlast-plattformwagen');
-    });
-    Route::get('/welding-fabrications/transportation-systems/electric-monorail', function () {
-        return view('schweisskonstruktionen.transportsysteme.elektrohaengebahn-hersteller');
-    });
-    Route::get('/welding-fabrications/transportation-systems/power-and-free-conveyors', function () {
-        return view('schweisskonstruktionen.transportsysteme.power-and-free-foerderer');
-    });
-    Route::get('/welding-fabrications/transportation-systems/chain-conveyor-parts', function () {
-        return view('schweisskonstruktionen.transportsysteme.kreiskettenfoerderer');
-    });
-    Route::get('/welding-fabrications/transportation-systems/underfloor-drag-chain-conveyor', function () {
-        return view('schweisskonstruktionen.transportsysteme.unterflurschleppkettenfoerderer');
-    });
-    Route::get('/welding-fabrications/transportation-systems/automated-guided-vehicle-manufacturers', function () {
-        return view('schweisskonstruktionen.transportsysteme.fahrerlose-transportsysteme-hersteller');
-    });
-
-    Route::get('/welding-fabrications/welded-steel-construction', function () {
-        return view('schweisskonstruktionen.maschinenbau.maschinenbau');
-    });
-    Route::get('/welding-fabrications/welded-steel-construction/scissor-lift-table-manufacturers', function () {
-        return view('schweisskonstruktionen.maschinenbau.scherenhubtische-hersteller');
-    });
-    Route::get('/welding-fabrications/welded-steel-construction/welded-racks', function () {
-        return view('schweisskonstruktionen.maschinenbau.schweissgestelle');
-    });
-    Route::get('/welding-fabrications/welded-steel-construction/commercial-vehicle-bodies', function () {
-        return view('schweisskonstruktionen.maschinenbau.fahrzeugaufbauten-hersteller');
-    });
-    Route::get('/welding-fabrications/welded-steel-construction/product-conveyor-system', function () {
-        return view('schweisskonstruktionen.maschinenbau.werkstuecktraegersysteme');
-    });
-
-    Route::get('/welding-fabrications/skid-construction', function () {
-        return view('schweisskonstruktionen.skid-anlagenbau.skid-anlagenbau');
-    });
-    Route::get('/welding-fabrications/skid-construction/skid-automotive', function () {
-        return view('schweisskonstruktionen.skid-anlagenbau.skid-automobilindustrie');
-    });
-    Route::get('/welding-fabrications/skid-construction/conveyor-systems-automotive', function () {
-        return view('schweisskonstruktionen.skid-anlagenbau.foerdertechnik-automobilindustrie');
-    });
-    Route::get('/welding-fabrications/skid-construction/special-load-carriers', function () {
-        return view('schweisskonstruktionen.skid-anlagenbau.hersteller-sonderladungstraeger');
-    });
-
-
-    Route::get('/welding-fabrications/lifting-equipment-manufacturer', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.lastaufnahmemittel-hersteller');
-    });
-    Route::get('/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-steel-pallets-manufacturers', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlastpaletten-stahl');
-    });
-    Route::get('/welding-fabrications/lifting-equipment-manufacturer/industrial-metal-bins', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.industriebehaelter-metall');
-    });
-    Route::get('/welding-fabrications/lifting-equipment-manufacturer/transport-bins', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.transportbehaelter-metall');
-    });
-    Route::get('/welding-fabrications/lifting-equipment-manufacturer/steel-cross-beams', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlasttraversen');
-    });
-    Route::get('/welding-fabrications/lifting-equipment-manufacturer/heavy-duty-stands', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.schwerlastboecke');
-    });
-    Route::get('/welding-fabrications/lifting-equipment-manufacturer/post-pallets', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.rungengestelle-hersteller');
-    });
-    Route::get('/welding-fabrications/lifting-equipment-manufacturer/metal-stacking-racks', function () {
-        return view('schweisskonstruktionen.lastaufnahmemittel-hersteller.stapelgestelle-hersteller');
-    });
-
-
-    // Stahlverarbeitung
-    Route::get('steel-processing-company', function () {
-        return view('stahlverarbeitung.stahlverarbeitung');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlteile-lasern-lassen');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/steel-sheet-cutting', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlblech-zuschnitt');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/steel-plate-cutting', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.stahlplatten-zuschnitt');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/cutting-of-stainless-steel', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.edelstahl-zuschnitt');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/black-metal-sheet-cut-to-size', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.schwarzblech-zuschnitt');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/cutting-thick-sheet-metal', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.grobblech-zuschnitt');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/spring-steel-cut-to-size', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.federstahl-zuschnitt');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/tool-steel-cut-to-size', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.werkzeugstahl-zuschnitt');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/angle-iron-cut-to-size', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.winkelstahl-zuschnitt');
-    });
-    Route::get('steel-processing-company/laser-cut-steel-parts/electrical-steel-cutting', function () {
-        return view('stahlverarbeitung.stahlteile-lasern-lassen.elektroblech-zuschnitt');
-    });
-
-
-    Route::get('steel-processing-company/steel-machining', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahlbearbeitung');
-    });
-    Route::get('steel-processing-company/steel-machining/welding-business', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-schweissen-lassen');
-    });
-    Route::get('steel-processing-company/steel-machining/laser-steel-cutting-services', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-schneiden-lassen');
-    });
-    Route::get('steel-processing-company/steel-machining/steel-bending-services', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-biegen-lassen');
-    });
-    Route::get('steel-processing-company/steel-machining/steel-milling', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-fraesen-lassen');
-    });
-    Route::get('steel-processing-company/steel-machining/press-brake-metal-forming', function () {
-        return view('stahlverarbeitung.stahlbearbeitung.stahl-kanten-lassen');
-    });
-});
-
-
-
-Route::post('/send', [ContactController::class, 'send']);
-
-Route::fallback(function (Request $request) {
-    return response()->view("/404")->setStatusCode(404);
-});
+    

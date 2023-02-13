@@ -20,23 +20,32 @@ class Localization
         // Get browser lang
         // $browser_lang = $request->server('HTTP_ACCEPT_LANGUAGE');
         // $browser_lang = substr($browser_lang, 0, 2);
-
     
-        $prefix = $request->route()->getPrefix();
-    
-        if ($prefix == "/") {
-            app()->setLocale("de");
-            session()->put('locale', "de");
-        }
-        else if ($prefix == "/en") {
-            app()->setLocale("en");
-            session()->put('locale', "en");
-        }
-        else if ($prefix == "/us") {
+        // $prefix = $request->route()->getPrefix();
+        // dd($request->route());
+        // if ($prefix == "/") {
+        //     app()->setLocale("de");
+        //     session()->put('locale', "de");
+        // }
+        // else if ($prefix == "/en") {
+        //     app()->setLocale("en");
+        //     session()->put('locale', "en");
+        // }
+        // else if ($prefix == "/us") {
+        //     app()->setLocale("en-US");
+        //     session()->put('locale', "en-US");
+        // }
+        // else {
+        //     app()->setLocale("de");
+        //     session()->put('locale', "de");
+        // }
+        if ($request->is('us') || $request->is('us/*')){
             app()->setLocale("en-US");
             session()->put('locale', "en-US");
-        }
-        else {
+        }else if ($request->is('en') || $request->is('en/*')){
+            app()->setLocale("en");
+            session()->put('locale', "en");
+        }else {
             app()->setLocale("de");
             session()->put('locale', "de");
         }
