@@ -12,7 +12,11 @@ h1 {
     font-display: swap;
     letter-spacing: 0.2em !important;
 }
-
+span.span-h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24pt;
+}
 *:focus {
     outline: 0 none !important;
     border-color: inherit;

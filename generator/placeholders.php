@@ -47,7 +47,7 @@
     Route::post('/send', [ContactController::class, 'send']);
 
     Route::fallback(function (Request \$request) {
-        return view('/404');
+        return response()->view('/404')->setStatusCode(404);
     });
 
     ";

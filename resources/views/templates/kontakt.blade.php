@@ -24,7 +24,7 @@
         </div>
         @endif
         <div class="col-lg-6 p-5 animate__animated animate__fadeInLeft">
-            <h2>{{ __("Treten Sie mit uns in Kontakt") }}</h2>
+            <span class="span-h2">{{ __("Treten Sie mit uns in Kontakt") }}</span>
             @if ($errors->any())
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <h4 class="alert-heading"><i class="fa fa-check" aria-hidden="true"></i> Error!</h4>

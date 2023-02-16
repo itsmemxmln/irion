@@ -206,6 +206,21 @@
         }
         private function sanitize_string($string){
             $w_breaks = $string;
+            if(strpos($w_breaks, "\r\n•") > 0){
+                $first = strpos($w_breaks, "\r\n•");
+                $last = strrpos($w_breaks, "\r\n•");
+                $end_ul = strpos($w_breaks, "\n", $last + 9);
+                $w_breaks = substr($w_breaks, 0, $first)."<ul><li>".str_replace("\r\n•", "</li><li>", substr($w_breaks, $first + 5, ($last-$first) + 1)).substr($w_breaks, $last + 5, $end_ul - ($last + 5))."</li></ul>".substr($w_breaks,$end_ul);
+            }
+            if (strpos($w_breaks, "\r\n-") > 0){
+                $first = strpos($w_breaks, "\r\n-");
+                $last = strrpos($w_breaks, "\r\n-");
+                $end_ul = strpos($w_breaks, "\n", $last + 9);
+                if (!$end_ul){
+                    $end_ul = strlen($w_breaks);
+                }
+                $w_breaks = substr($w_breaks, 0, $first)."<ul><li>".str_replace("\r\n-", "</li><li>", substr($w_breaks, $first + 3, ($last-$first) + 1)).substr($w_breaks, $last + 3, $end_ul - ($last + 3))."</li></ul>".substr($w_breaks,$end_ul);
+            }
             if (strpos($w_breaks, "\n") > 0){
                 $w_breaks = "<p>".str_replace("\n", "</p><p>", $w_breaks)."</p>";
             }

@@ -39,7 +39,19 @@
 </section>
 
 
-
+@if (isset($seo2) && $seo2 != null)
+<section class="container">
+    <div class="container my-5">
+        <div class="row align-items-center rounded-0 border shadow-lg ">
+            <div class="col-lg-12 p-5 center">
+                <p style="text-align:center">
+                    {!!$seo2!!}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+@endif 
 
 <!-- @include('contact-now') -->
 @include('conversion-contact')
