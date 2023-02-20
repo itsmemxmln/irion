@@ -1020,7 +1020,7 @@ Route::get('#', function () {
                                 <ul></ul>']);
             });
 Route::get('/schweissunternehmen/en-1090-zertifizierte-betriebe', function () {
-                return view('templates.basic')->with(['meta_title' => 'EN 1090 zertifizierte Betrieb – Klasse EXC3 Stahlbau', 'meta_description' => 'EN 1090 zertifizierte Betrieb ✓ Ausführungsklasse EXC3 nach EN 1090-2 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'EN 1090 zertifizierter Betrieb', 'seo1' => '<p>IRION ist ein nach EN 1090, Ausführungsklasse EXC3 zertifizierter Betrieb. 
+                return view('templates.certificates')->with(['meta_title' => 'EN 1090 zertifizierte Betrieb – Klasse EXC3 Stahlbau', 'meta_description' => 'EN 1090 zertifizierte Betrieb ✓ Ausführungsklasse EXC3 nach EN 1090-2 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'EN 1090 zertifizierter Betrieb', 'seo1' => '<p>IRION ist ein nach EN 1090, Ausführungsklasse EXC3 zertifizierter Betrieb. 
 </p><p>
 </p><p>Das Schweißzertifikat WECE-STAHL-1090-2.00093.GSIFe.2019.002 wurde in Übereinstimmung mit EN 1090-1, Tabelle B.1 zum Schweißen von Stahltragwerken nach DIN EN 1090-2 vergeben.
 </p><p>
@@ -1036,7 +1036,7 @@ Route::get('/schweissunternehmen/en-1090-zertifizierte-betriebe', function () {
 ', 'submenu' => '']);
             });
 Route::get('/schweissunternehmen/konstante-schweissqualitaet', function () {
-                return view('templates.basic')->with(['meta_title' => 'Konstante Schweißqualität – Nach DIN EN ISO 3834-2:2021', 'meta_description' => 'Konstante Schweißqualität ✓ Zertifiziert nach DIN EN ISO 3834-2:2021 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'Konstante Schweißqualität zertifiziert nach DIN EN ISO 3834-2:2021', 'seo1' => '<p>IRION steht für konstante Schweißqualität, zertifiziert durch DVS ZERT.
+                return view('templates.certificates')->with(['meta_title' => 'Konstante Schweißqualität – Nach DIN EN ISO 3834-2:2021', 'meta_description' => 'Konstante Schweißqualität ✓ Zertifiziert nach DIN EN ISO 3834-2:2021 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'Konstante Schweißqualität zertifiziert nach DIN EN ISO 3834-2:2021', 'seo1' => '<p>IRION steht für konstante Schweißqualität, zertifiziert durch DVS ZERT.
 </p><p>
 </p><p>
 </p><p>Zertifikat: D-ZE-16083-01-00-IS03834-2019.0005.002
@@ -1051,7 +1051,7 @@ Route::get('/schweissunternehmen/konstante-schweissqualitaet', function () {
 ', 'submenu' => '']);
             });
 Route::get('/schweissunternehmen/qualitaetssicherung-schweissen', function () {
-                return view('templates.basic')->with(['meta_title' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'meta_description' => 'IRION steht für Qualitätssicherung beim Schweißen ✓ TÜV-zertifiziert nach ISO 9001:2015 ➨ Qualität von IRION seit 1926!', 'h1' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'seo1' => '<p>IRION steht für Qualitätssicherung beim Schweißen, zertifiziert durch den TÜV.
+                return view('templates.certificates')->with(['meta_title' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'meta_description' => 'IRION steht für Qualitätssicherung beim Schweißen ✓ TÜV-zertifiziert nach ISO 9001:2015 ➨ Qualität von IRION seit 1926!', 'h1' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'seo1' => '<p>IRION steht für Qualitätssicherung beim Schweißen, zertifiziert durch den TÜV.
 </p><p>
 </p><p>Bescheinigt durch: Die Zertifizierungsstelle der TÜV SÜD Management Service GmbH
 </p><p>

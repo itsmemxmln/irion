@@ -11,7 +11,10 @@
         // "/zertifikate" => "templates.zertifikate",
         "/management" => "templates.management",
         "/karriere" => "templates.karriere",
-        "/schweissberatung" => "templates.kontakt"
+        "/schweissberatung" => "templates.kontakt",
+        "/schweissunternehmen/en-1090-zertifizierte-betriebe" => "templates.certificates",
+        "/schweissunternehmen/konstante-schweissqualitaet" => "templates.certificates",
+        "/schweissunternehmen/qualitaetssicherung-schweissen" => "templates.certificates", 
     ];
     $nav_submenu_text = [
         "de" => "Übersicht",
@@ -308,7 +311,8 @@
             foreach($site->children as $subsite){
                 $subsite->create_submenus();
                 foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
-                    $routes .= create_route($subsite->$lang, $subsite->hreflang, $site->blade); # bug used as feature (blade from site not subsubsite)
+                    $blade = ($subsite->blade == "templates.certificates") ? $subsite->blade : $site->blade;
+                    $routes .= create_route($subsite->$lang, $subsite->hreflang, $blade); # bug used as feature (blade from site not subsubsite)
                 }
                 if (isset($subsite->children))
                 foreach($subsite->children as $subsubsite){
