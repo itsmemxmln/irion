@@ -40,11 +40,11 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     @endif
-    @if (session()->get('locale') == "de" && strpos(substr(Request::server('HTTP_ACCEPT_LANGUAGE'), 0, 5), "en") !==
+    @if (session()->get('locale') == "de" && strpos(substr(Request::server('HTTP_ACCEPT_LANGUAGE'), 0, 8), "en-US") !==
     false)
     <div class="alert alert-secondary alert-dismissible fade show rounded-0 mb-0 text-center" role="alert">
-        <img src="{{ url('assets/img/flags/en.webp') }}" height="19px" class="mx-1" alt="en"><strong>Our website is also
-            available in English!</strong> <a href="{{ url("/en") }}" class="alert-link text-primary">To the English
+        <img src="{{ url('assets/img/flags/us.webp') }}" height="19px" class="mx-1" alt="en"><strong>Our website is also
+            available in English!</strong> <a href="{{ url("/us") }}" class="alert-link text-primary">To the English
             version</a>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>

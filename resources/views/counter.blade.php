@@ -26,7 +26,7 @@
     <div class="col-md-3">
         <div class="counter-element">
             <div class="d-block text-center text-white">
-                <p class="scroll-counter" data-counter-time="2000" data-count="2000" data-presentation={{__("2.000")}}>0</p>
+                <p class="scroll-counter" data-counter-time="2000" data-count={{__("weldingWirePerYear")}} data-presentation={{__("2.000")}}>0</p>
                 <p class="lead">{{ __("km Schweißdraht pro Jahr") }} <br>({{ __("entspricht 12 Tonnen Schweißdraht") }})</p>
             </div>
         </div>

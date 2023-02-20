@@ -36,14 +36,22 @@
     "Erfahrung" : "of experience",
     "Schweißnähte mit in Summe 200.000 m Länge Schweißnaht" : "Welding seams with a total length of 200,000 yd",
     "5.000.000": "5,000,000",
-    "km Schweißdraht pro Jahr" : "km of welding wire per year",
+    "km Schweißdraht pro Jahr" : "mi of welding wire per year",
     "entspricht 12 Tonnen Schweißdraht" : "which equates to 13 short tons of welding wire",
-    "2.000": "2,000",
+    "2.000": "1,200",
+    "weldingWirePerYear": "1200",
 
     "Über Irion" : "About Irion",
     "Über das Management" : "About our management",
 
-
+    "/praezisionsfertigung/mechanische-konstruktion": "/us/precision-manufacturer/mechanical-construction",
+    "/praezisionsfertigung/praezisionsschneiden": "/us/precision-manufacturer/precision-cutting-metal",
+    "/praezisionsfertigung/praezisionszerspanung": "/us/precision-manufacturer/high-precision-machining",
+    "/praezisionsfertigung/praezisionsschweissen": "/us/precision-manufacturer/precision-welding",
+    "/praezisionsfertigung/industrielle-teilereinigung-dienstleistung":"/us/precision-manufacturer/industrial-parts-cleaning-service",
+    "/praezisionsfertigung/industrielle-waermebehandlung": "/us/precision-manufacturer/industrial-heat-treatment",
+    "/praezisionsfertigung/oberflaechenbeschichtung-stahl": "/us/precision-manufacturer/surface-treatment-steel",
+    "/praezisionsfertigung/baugruppenmontage-maschinenbau": "/us/precision-manufacturer/assembly-of-components",
 
 
     "Mehr erfahren" : "Learn more",

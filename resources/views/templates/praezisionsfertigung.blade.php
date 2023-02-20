@@ -43,13 +43,11 @@
                         <li>{{ __("FMEA") }}</li>
                     </ul>
                 </div>
-                @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/mechanische-konstruktion">{{ __("Mehr erfahren") }}</a>
+                        <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/mechanische-konstruktion')}}">{{ __("Mehr erfahren") }}</a>
                     </div>
                 </div>
-                @endif
             </div>
             <div class="card col-md-3 mb-5">
                 <img src="{{ url('assets/img/zuschnitt2.webp') }}" class="card-img-top" alt="CNC Schweißen">
@@ -62,13 +60,11 @@
                         <li>{{ __("Biegen / Kanten") }}</li>
                     </ul>
                 </div>
-                @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/praezisionsschneiden">{{ __("Mehr erfahren") }}</a>
+                        <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/praezisionsschneiden')}}">{{ __("Mehr erfahren") }}</a>
                     </div>
                 </div>
-                @endif
             </div>
             <div class="card col-md-3 mb-5">
                 <img src="{{ url('assets/img/bg-5.webp') }}" class="card-img-top" alt="CNC Schweißen">
@@ -81,13 +77,11 @@
                         <li>{{ __("3-/4-/5-Achsenbearbeitung") }}</li>
                     </ul>
                 </div>
-                @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/praezisionszerspanung">{{ __("Mehr erfahren") }}</a>
+                        <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/praezisionszerspanung')}}">{{ __("Mehr erfahren") }}</a>
                     </div>
                 </div>
-                @endif
             </div>
             <div class="card col-md-3 mb-5">
                 <img src="{{ url('assets/img/home/schweissbaugruppen/0.webp') }}" class="card-img-top" alt="MAG / MIG, WIG, Roboteranwendungen, Schweißnahtprüfung, Therm. / mech. Richten">
@@ -101,13 +95,11 @@
                         <li>{{ __("Therm. / mech. Richten") }}</li>
                     </ul>
                 </div>
-                @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/praezisionsschweissen">{{ __("Mehr erfahren") }}</a>
+                            <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/praezisionsschweissen')}}">{{ __("Mehr erfahren") }}</a>
                     </div>
                 </div>
-                @endif
             </div>
             <div class="card col-md-3 mb-5">
                 <img src="{{ url('assets/img/clean.webp') }}" class="card-img-top" alt="CNC Schweißen">
@@ -119,13 +111,11 @@
                         <li>{{ __("Gleitschleifen / Trowalisieren") }}</li>
                     </ul>
                 </div>
-                @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/industrielle-teilereinigung-dienstleistung">{{ __("Mehr erfahren") }}</a>
+                        <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/industrielle-teilereinigung-dienstleistung')}}">{{ __("Mehr erfahren") }}</a>
                     </div>
                 </div>
-                @endif
             </div>
             <div class="card col-md-3 mb-5">
                 <img src="{{ url('assets/img/gluehen.webp') }}" class="card-img-top" alt="CNC Schweißen">
@@ -138,13 +128,11 @@
                         <li>{{ __("Vergüten") }}</li>
                     </ul>
                 </div>
-                @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/industrielle-waermebehandlung">{{ __("Mehr erfahren") }}</a>
+                        <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/industrielle-waermebehandlung')}}">{{ __("Mehr erfahren") }}</a>
                     </div>
-                </div>
-                @endif
+                </div>                
             </div>
             <div class="card col-md-3 mb-5">
                 <img src="{{ url('assets/img/home/oberflaechen/1.webp') }}" class="card-img-top" alt="CNC Schweißen">
@@ -158,13 +146,11 @@
                         <li>{{ __("Schutzwachs") }}</li>
                     </ul>
                 </div>
-                @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/oberflaechenbeschichtung-stahl">{{ __("Mehr erfahren") }}</a>
+                        <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/oberflaechenbeschichtung-stahl')}}">{{ __("Mehr erfahren") }}</a>
                     </div>
                 </div>
-                @endif
             </div>
             <div class="card col-md-3 mb-5">
                 <img src="{{ url('assets/img/home/foerdertechnik/0.webp') }}" class="card-img-top" alt="Vorrichtungsbau, Projektspezifische, getaktete Flusslinien, Pressen, Elektrik, Pneumatik">
@@ -178,13 +164,11 @@
                         <li>{{ __("Elektrik, Pneumatik") }}</li>
                     </ul>
                 </div>
-                @if (app()->getLocale() == "de")
                 <div class="card-footer">
                     <div class="text-center">
-                        <a class="btn btn-primary my-2 stretched-link" href="/praezisionsfertigung/baugruppenmontage-maschinenbau">{{ __("Mehr erfahren") }}</a>
+                        <a class="btn btn-primary my-2 stretched-link" href={{ __("/praezisionsfertigung/baugruppenmontage-maschinenbau") }}>{{ __("Mehr erfahren") }}</a>
                     </div>
                 </div>
-                @endif
             </div>
         </div>
     </div>
