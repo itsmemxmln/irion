@@ -161,6 +161,9 @@
         public $seo2;
         public $meta_title;
         public $meta_description;
+        public $img_src;
+        public $img_title;
+        public $img_alt;
         private $submenu;
         // Delete Substrings in Menu
         private $delete_substring = [
@@ -176,6 +179,9 @@
             $this->seo2 = isset($item["SEO-Text unten anfügen"]) ? $this->sanitize_string($item["SEO-Text unten anfügen"]) : null;
             $this->meta_title = $item["Meta Title\r\n<=57 Zeichen"];
             $this->meta_description = $item["Meta Description\r\n<=137 Zeichen"]; 
+            $this->img_src = $item["Bild Dateiname"];
+            $this->img_title = $item["Bild Image-Title"];
+            $this->img_alt = $item["Bild Alt-Text"];
         }
         function get_menu($item) {
             if (isset($item["Menü 1. Ebene"])) {
@@ -251,7 +257,7 @@
         if ($item->url != ""){
             return 
             "Route::get('".$item->url."', function () {
-                return view('".$blade."')->with(['meta_title' => '".$item->meta_title."', 'meta_description' => '".$item->meta_description."', 'h1' => '".$item->h1."', 'seo1' => '".$item->seo1."', 'seo2' => '".$item->seo2."', 'hreflang' => '".$hreflang."', 'submenu' => '".$item->get_submenu()."']);
+                return view('".$blade."')->with(['meta_title' => '".$item->meta_title."', 'meta_description' => '".$item->meta_description."', 'h1' => '".$item->h1."', 'seo1' => '".$item->seo1."', 'seo2' => '".$item->seo2."', 'hreflang' => '".$hreflang."', 'submenu' => '".$item->get_submenu()."', 'img_src' => '".$item->img_src."', 'img_title' => '".$item->img_title."', 'img_alt' => '".$item->img_alt."']);
             });\n";            
         }
         return "";

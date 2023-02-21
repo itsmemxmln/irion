@@ -30,9 +30,9 @@
             </p>    
         </div>
             <div class="card col-md-3 col-6 mb-5 animate__animated animate__fadeIn">
-                <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('assets/certificates/'.str_replace([' ',':'], '_', $h1).'.pdf') }}">
+                <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('assets/certificates/'.$img_src.'.pdf') }}">
                     <i class="bi bi-eye"></i>
-                    <img src="{{ url('assets/certificates/'.str_replace([' ',':'], '_', $h1).'.webp') }}" class="card-img-top cert-preview" alt="CNC Schweißen">
+                    <img src="{{ url('assets/certificates/'.$img_src) }}" class="card-img-top cert-preview" alt="{{$img_alt}}" title="{{$img_title}}">
                 </a>
             </div>
         
