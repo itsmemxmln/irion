@@ -22,24 +22,24 @@
                 <p class="h5">{{ __("Präzisionsfertigung") }}</p>
                 <ul class="list-unstyled text-small">
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="/#services">{{ __("Leistungen") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="praezisionsfertigung">{{ __("Präzisionsfertigung") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="zertifikate">{{ __("Zertifikate") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/praezisionsfertigung">{{ __("Präzisionsfertigung") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/schweissunternehmen/zertifikate">{{ __("Zertifikate") }}</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3">
                 <p class="h5">{{ __("Unternehmen") }}</p>
                 <ul class="list-unstyled text-small">
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="unternehmen">{{ __("Über Irion") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="management">{{ __("Über das Management") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="karriere">{{ __("Karriere") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/schweissunternehmen">{{ __("Über Irion") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/management">{{ __("Über das Management") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/karriere">{{ __("Karriere") }}</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3">
                 <p class="h5">{{ __("Rechtliches") }}</p>
                 <ul class="list-unstyled text-small">
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="impressum">{{ __("Impressum") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="datenschutz">{{ __("Datenschutz") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="agb">{{ __("AGB") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/impressum">{{ __("Impressum") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/datenschutz">{{ __("Datenschutz") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/agb">{{ __("AGB") }}</a></li>
                 </ul>
             </div>
         </div>

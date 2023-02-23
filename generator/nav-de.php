@@ -221,12 +221,26 @@
                                         Qualität
                                     </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item {{ Request::is('schweissunternehmen/en-1090-zertifizierte-betriebe') ? 'active' : '' }}"
-                                href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li>
-                            <li><a class="dropdown-item {{ Request::is('schweissunternehmen/konstante-schweissqualitaet') ? 'active' : '' }}"
-                                href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></li>
-                            <li><a class="dropdown-item {{ Request::is('schweissunternehmen/qualitaetssicherung-schweissen') ? 'active' : '' }}"
-                                href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></li></ul></li>
+                            <li class="nav-item mx-2 dropdown">
+                                <a class="dropdown-item dropdown-toggle  {{ Request::is('schweissunternehmen/zertifikate') || Request::is('schweissunternehmen/zertifikate/*') ? 'active' : '' }}" href="/schweissunternehmen/zertifikate"
+                                    id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                    aria-expanded="false">
+                                    Zertifikate
+                                </a>
+                                <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                            
+                                <li><a class="dropdown-item {{ Request::is('schweissunternehmen/en-1090-zertifizierte-betriebe') ? 'active' : '' }}"
+                                        href="/schweissunternehmen/en-1090-zertifizierte-betriebe">
+                                        DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li>
+                                <li><a class="dropdown-item {{ Request::is('schweissunternehmen/konstante-schweissqualitaet') ? 'active' : '' }}"
+                                        href="/schweissunternehmen/konstante-schweissqualitaet">
+                                        DIN EN ISO 3834-2:2021</a></li>
+                                <li><a class="dropdown-item {{ Request::is('schweissunternehmen/qualitaetssicherung-schweissen') ? 'active' : '' }}"
+                                        href="/schweissunternehmen/qualitaetssicherung-schweissen">
+                                        ISO 9001:2015</a></li></ul>
+                                    </li>
+                            <li><a class="dropdown-item {{ Request::is('schweissunternehmen/qualitaetspolitik') ? 'active' : '' }}"
+                                href="/schweissunternehmen/qualitaetspolitik">Qualitätspolitik</a></li></ul></li>
                 <li class="nav-item mx-2"><a href="/management"
                 class="fw-bold nav-link {{ Request::is('management') ? 'active' : '' }}" aria-current="page">Management</a>
                 </li>

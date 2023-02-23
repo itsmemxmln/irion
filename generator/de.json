@@ -1018,7 +1018,12 @@
     },
     {
       "INDEX": 60100,
-      "Menü 2. Ebene": "DIN EN 1090-2:2018 EXC3 nach EN 1090-2",
+      "Menü 2. Ebene": "Zertifikate",
+      "URL": "/schweissunternehmen/zertifikate"
+    },
+    {
+      "INDEX": 60101,
+      "Menü 3. Ebene": "DIN EN 1090-2:2018 EXC3 nach EN 1090-2",
       "Suchbegriff": "EN 1090 zertifizierte betriebe",
       "Suchvolumen": 80,
       "Verwandter Suchbegriff": "EXC3 Stahlbau",
@@ -1035,8 +1040,8 @@
       "Bild Alt-Text": "EN 1090 zertifizierte Betriebe"
     },
     {
-      "INDEX": 60200,
-      "Menü 2. Ebene": "DIN EN ISO 3834-2:2021",
+      "INDEX": 60102,
+      "Menü 3. Ebene": "DIN EN ISO 3834-2:2021",
       "Suchbegriff": "konstante Schweißqualität",
       "Suchvolumen": 60,
       "URL": "/schweissunternehmen/konstante-schweissqualitaet",
@@ -1051,8 +1056,8 @@
       "Bild Alt-Text": "konstante Schweißqualität"
     },
     {
-      "INDEX": 60300,
-      "Menü 2. Ebene": "ISO 9001:2015",
+      "INDEX": 60103,
+      "Menü 3. Ebene": "ISO 9001:2015",
       "Suchbegriff": "Qualitätssicherung Schweißen",
       "Suchvolumen": 10,
       "URL": "/schweissunternehmen/qualitaetssicherung-schweissen",
@@ -1065,6 +1070,11 @@
       "Bild Dateiname": "qualitaetssicherung-schweissen.webp",
       "Bild Image-Title": "Qualitätssicherung Schweißen",
       "Bild Alt-Text": "Qualitätssicherung Schweißen"
+    },
+    {
+      "INDEX": 60100,
+      "Menü 2. Ebene": "Qualitätspolitik",
+      "URL": "/schweissunternehmen/qualitaetspolitik"
     },
     {
       "INDEX": 70000,

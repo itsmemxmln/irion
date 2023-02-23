@@ -7,11 +7,11 @@
         "/" => "templates.home",
         "/praezisionsfertigung" => "templates.praezisionsfertigung",
         "/schweissunternehmen" => "templates.unternehmen",
-        // "/qualitaetspolitik" => "templates.qualitaetspolitik",
-        // "/zertifikate" => "templates.zertifikate",
         "/management" => "templates.management",
         "/karriere" => "templates.karriere",
         "/schweissberatung" => "templates.kontakt",
+        "/schweissunternehmen/zertifikate" => "templates.certificates-index",
+        "/schweissunternehmen/qualitaetspolitik" => "templates.quality-policy",
         "/schweissunternehmen/en-1090-zertifizierte-betriebe" => "templates.certificates",
         "/schweissunternehmen/konstante-schweissqualitaet" => "templates.certificates",
         "/schweissunternehmen/qualitaetssicherung-schweissen" => "templates.certificates", 
@@ -148,8 +148,10 @@
             $this->template_mapping = $mapping;
         }
         private function update_blade(){
-            if (isset($this->template_mapping) && isset($this->template_mapping[$this->de->url])){
+            echo "<br>".$this->de->url;
+            if (isset($this->template_mapping) && isset($this->template_mapping[$this->de->url])){                
                 $this->blade = $this->template_mapping[$this->de->url];
+                echo " ==> ".$this->blade;
             }
         }
     }
@@ -317,12 +319,13 @@
             foreach($site->children as $subsite){
                 $subsite->create_submenus();
                 foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
-                    $blade = ($subsite->blade == "templates.certificates") ? $subsite->blade : $site->blade;
+                    $blade = (in_array($subsite->blade, ["templates.certificates-index", "templates.quality-policy"])) ? $subsite->blade : $site->blade;
                     $routes .= create_route($subsite->$lang, $subsite->hreflang, $blade); # bug used as feature (blade from site not subsubsite)
                 }
                 if (isset($subsite->children))
                 foreach($subsite->children as $subsubsite){
                     foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
+                        $blade = ($subsubsite->blade == "templates.certificates") ? $subsite->blade : $site->blade;
                         $routes .= create_route($subsubsite->$lang, $subsubsite->hreflang, $site->blade); # bug used as feature (blade from site not subsubsite)
                     }
                 } 

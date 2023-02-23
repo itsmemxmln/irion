@@ -624,22 +624,29 @@ Route::get('/us/welding-company', function () {
             });
 Route::get('#', function () {
                 return view('templates.basic')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
-', 'submenu' => '<strong><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></strong>
-                                <ul></ul><strong><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></strong>
-                                <ul></ul><strong><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></strong>
+', 'submenu' => '<strong><a href="/schweissunternehmen/zertifikate">Zertifikate</a></strong>
+                                <ul><li><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li><li><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></li><li><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></li></ul><strong><a href="/schweissunternehmen/qualitaetspolitik">Qualitätspolitik</a></strong>
                                 <ul></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
+Route::get('/schweissunternehmen/zertifikate', function () {
+                return view('templates.certificates-index')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/zertifikate />
+', 'submenu' => '<strong>Beispiele</strong><ul><li><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li><li><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></li><li><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></li></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
 Route::get('/schweissunternehmen/en-1090-zertifizierte-betriebe', function () {
-                return view('templates.certificates')->with(['meta_title' => 'EN 1090 zertifizierte Betrieb – Klasse EXC3 Stahlbau', 'meta_description' => 'EN 1090 zertifizierte Betrieb ✓ Ausführungsklasse EXC3 nach EN 1090-2 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'EN 1090 zertifizierter Betrieb', 'seo1' => '<p>IRION ist ein nach EN 1090, Ausführungsklasse EXC3 zertifizierter Betrieb. </p><p></p><p>Das Schweißzertifikat WECE-STAHL-1090-2.00093.GSIFe.2019.002 wurde in Übereinstimmung mit EN 1090-1, Tabelle B.1 zum Schweißen von Stahltragwerken nach DIN EN 1090-2 vergeben.</p><p></p><p>Technische Spezifikation: EN 1090-2:2018</p><p></p><p>Ausführungsklasse: EXC3 nach EN 1090-2</p><p></p><p>Referenznummer für Schweißprozesse nach DIN EN ISO 40531: 135</p><p></p><p>Werkstoffgruppen: 1.1, 1.2, 2.1 nach CEN ISO/TR 15608 und EN 1090-2 (2018), Tabelle 2 und 3</p><p></p><p>Auf Grundlage der Bestimmungen der oben genannten technischen Spezifikation wurden alle Anforderungen an das Schweißen erfüllt.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/en-1090-zertifizierte-betriebe />
+                return view('templates.basic')->with(['meta_title' => 'EN 1090 zertifizierte Betrieb – Klasse EXC3 Stahlbau', 'meta_description' => 'EN 1090 zertifizierte Betrieb ✓ Ausführungsklasse EXC3 nach EN 1090-2 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'EN 1090 zertifizierter Betrieb', 'seo1' => '<p>IRION ist ein nach EN 1090, Ausführungsklasse EXC3 zertifizierter Betrieb. </p><p></p><p>Das Schweißzertifikat WECE-STAHL-1090-2.00093.GSIFe.2019.002 wurde in Übereinstimmung mit EN 1090-1, Tabelle B.1 zum Schweißen von Stahltragwerken nach DIN EN 1090-2 vergeben.</p><p></p><p>Technische Spezifikation: EN 1090-2:2018</p><p></p><p>Ausführungsklasse: EXC3 nach EN 1090-2</p><p></p><p>Referenznummer für Schweißprozesse nach DIN EN ISO 40531: 135</p><p></p><p>Werkstoffgruppen: 1.1, 1.2, 2.1 nach CEN ISO/TR 15608 und EN 1090-2 (2018), Tabelle 2 und 3</p><p></p><p>Auf Grundlage der Bestimmungen der oben genannten technischen Spezifikation wurden alle Anforderungen an das Schweißen erfüllt.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/en-1090-zertifizierte-betriebe />
 ', 'submenu' => '', 'img_src' => 'en-1090-zertifizierte-betriebe.webp', 'img_title' => 'EN 1090 zertifizierte Betriebe', 'img_alt' => 'EN 1090 zertifizierte Betriebe']);
             });
 Route::get('/schweissunternehmen/konstante-schweissqualitaet', function () {
-                return view('templates.certificates')->with(['meta_title' => 'Konstante Schweißqualität – Nach DIN EN ISO 3834-2:2021', 'meta_description' => 'Konstante Schweißqualität ✓ Zertifiziert nach DIN EN ISO 3834-2:2021 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'Konstante Schweißqualität zertifiziert nach DIN EN ISO 3834-2:2021', 'seo1' => '<p>IRION steht für konstante Schweißqualität, zertifiziert durch DVS ZERT.</p><p></p><p></p><p>Zertifikat: D-ZE-16083-01-00-IS03834-2019.0005.002</p><p></p><p>Nachweis der schweißtechnischen Qualitätsanforderungen erbracht nach: DIN EN ISO 3834-2:2021</p><p></p><p>Anwendungsbereich: Schweißbaugruppen für die Fördertechnik und den Maschinenbau</p><p></p><p>Schweißprozesse: 135, 141 nach DIN EN ISO 4063</p><p></p><p>Grundwerkstoffe: 1.1, 1.2, 2.1, 8.1 nach CEN ISO/TR 15608</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/konstante-schweissqualitaet />
+                return view('templates.basic')->with(['meta_title' => 'Konstante Schweißqualität – Nach DIN EN ISO 3834-2:2021', 'meta_description' => 'Konstante Schweißqualität ✓ Zertifiziert nach DIN EN ISO 3834-2:2021 ☆ IRION ist Ihr zertifizierter Partner ➨ Jetzt informieren!', 'h1' => 'Konstante Schweißqualität zertifiziert nach DIN EN ISO 3834-2:2021', 'seo1' => '<p>IRION steht für konstante Schweißqualität, zertifiziert durch DVS ZERT.</p><p></p><p></p><p>Zertifikat: D-ZE-16083-01-00-IS03834-2019.0005.002</p><p></p><p>Nachweis der schweißtechnischen Qualitätsanforderungen erbracht nach: DIN EN ISO 3834-2:2021</p><p></p><p>Anwendungsbereich: Schweißbaugruppen für die Fördertechnik und den Maschinenbau</p><p></p><p>Schweißprozesse: 135, 141 nach DIN EN ISO 4063</p><p></p><p>Grundwerkstoffe: 1.1, 1.2, 2.1, 8.1 nach CEN ISO/TR 15608</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/konstante-schweissqualitaet />
 ', 'submenu' => '', 'img_src' => 'konstante-schweissqualitaet.webp', 'img_title' => 'konstante Schweißqualität', 'img_alt' => 'konstante Schweißqualität']);
             });
 Route::get('/schweissunternehmen/qualitaetssicherung-schweissen', function () {
-                return view('templates.certificates')->with(['meta_title' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'meta_description' => 'IRION steht für Qualitätssicherung beim Schweißen ✓ TÜV-zertifiziert nach ISO 9001:2015 ➨ Qualität von IRION seit 1926!', 'h1' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'seo1' => '<p>IRION steht für Qualitätssicherung beim Schweißen, zertifiziert durch den TÜV.</p><p></p><p>Bescheinigt durch: Die Zertifizierungsstelle der TÜV SÜD Management Service GmbH</p><p></p><p>Bescheinigt wird: Die Einführung eines Qualitätsmanagementsystems</p><p></p><p>Zertifiziert nach: ISO 9001:2015</p><p></p><p>Geltungsbereich: Herstellung und Vertrieb von Sonderanlagen, Vorrichtungen und Schweißkonstruktionen</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/qualitaetssicherung-schweissen />
+                return view('templates.basic')->with(['meta_title' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'meta_description' => 'IRION steht für Qualitätssicherung beim Schweißen ✓ TÜV-zertifiziert nach ISO 9001:2015 ➨ Qualität von IRION seit 1926!', 'h1' => 'Qualitätssicherung Schweißen – ISO 9001:2015 zertifiziert', 'seo1' => '<p>IRION steht für Qualitätssicherung beim Schweißen, zertifiziert durch den TÜV.</p><p></p><p>Bescheinigt durch: Die Zertifizierungsstelle der TÜV SÜD Management Service GmbH</p><p></p><p>Bescheinigt wird: Die Einführung eines Qualitätsmanagementsystems</p><p></p><p>Zertifiziert nach: ISO 9001:2015</p><p></p><p>Geltungsbereich: Herstellung und Vertrieb von Sonderanlagen, Vorrichtungen und Schweißkonstruktionen</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/qualitaetssicherung-schweissen />
 ', 'submenu' => '', 'img_src' => 'qualitaetssicherung-schweissen.webp', 'img_title' => 'Qualitätssicherung Schweißen', 'img_alt' => 'Qualitätssicherung Schweißen']);
+            });
+Route::get('/schweissunternehmen/qualitaetspolitik', function () {
+                return view('templates.quality-policy')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/qualitaetspolitik />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/management', function () {
                 return view('templates.management')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
@@ -666,6 +673,15 @@ Route::get('/us/welding-consulting', function () {
 ', 'submenu' => '', 'img_src' => 'welding-consulting.webp', 'img_title' => 'Welding consulting', 'img_alt' => 'Welding consulting']);
             });
 
+    Route::get('/impressum', function () {
+        return view('imprint');
+    });
+    Route::get('/datenschutz', function () {
+        return view('privacy');
+    });
+    Route::get('/agb', function () {
+        return view('terms');
+    });
     Route::get('/en/imprint', function () {
         return view('imprint');
     });
@@ -693,4 +709,45 @@ Route::get('/us/welding-consulting', function () {
         return response()->view('/404')->setStatusCode(404);
     });
 
+
+
+    Route::get('/kompetenzen', function(){ 
+        return Redirect::to('/praezisionsfertigung', 301); 
+    });
+    Route::get('/entwicklung', function(){ 
+        return Redirect::to('/praezisionsfertigung/mechanische-konstruktion', 301); 
+    });
+    Route::get('/zuschnitt', function(){ 
+        return Redirect::to('/praezisionsfertigung/praezisionsschneiden', 301); 
+    });
+    Route::get('/zerspanung', function(){ 
+        return Redirect::to('/praezisionsfertigung/praezisionszerspanung', 301); 
+    });
+    Route::get('/schweissen', function(){ 
+        return Redirect::to('/praezisionsfertigung/praezisionsschweissen', 301); 
+    });
+    Route::get('/reinigung', function(){ 
+        return Redirect::to('/praezisionsfertigung/industrielle-teilereinigung-dienstleistung', 301); 
+    });
+    Route::get('/waermebehandlung', function(){ 
+        return Redirect::to('/praezisionsfertigung/industrielle-waermebehandlung', 301); 
+    });
+    Route::get('/oberflaeche', function(){ 
+        return Redirect::to('/praezisionsfertigung/oberflaechenbeschichtung-stahl', 301); 
+    });
+    Route::get('/montage', function(){ 
+        return Redirect::to('/praezisionsfertigung/baugruppenmontage-maschinenbau', 301); 
+    });
+    Route::get('/unternehmen', function(){ 
+        return Redirect::to('/schweissunternehmen', 301); 
+    });
+    Route::get('/kontakt', function(){ 
+        return Redirect::to('/schweissberatung', 301); 
+    });
+    Route::get('/zertifikate', function(){ 
+        return Redirect::to('/schweissunternehmen/zertifikate', 301); 
+    });
+    Route::get('/qualitätspolitik', function(){ 
+        return Redirect::to('/schweissunternehmen/qualitätspolitik', 301); 
+    });
     
