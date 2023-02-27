@@ -14,6 +14,8 @@
     {{-- LANG --}}
     {!!$hreflang!!}
 @endif
+    <meta name="robots" content="noindex, follow">
+@endsection
 
 @section('content')
 <section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/bg-2.webp');">

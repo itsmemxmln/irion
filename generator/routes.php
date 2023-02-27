@@ -21,16 +21,29 @@
     Route::get('/', function () {
                 return view('templates.home')->with(['meta_title' => 'Schweißbaugruppen Hersteller – Irion Qualität seit 1926', 'meta_description' => 'Schweißbaugruppen Hersteller ✓ 30 bis 5.000 Stück ☆ Konstant hohe Qualität ☆ Verantwortungsbewusst ☆ Präzise ➨ Irion Qualität seit 1926!', 'h1' => 'Schweißbaugruppen Hersteller Irion', 'seo1' => 'Irion besteht seit 1929 und ist der Schweißbaugruppen Hersteller aus dem Schwarzwald. Unser zertifizierter Schweißfachbetrieb ist auf hochwertige Schweißbaugruppen von 30 bis 5.000 Stück spezialisiert. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/ />
 <link rel="alternate" hreflang="en-US" href=/us />
+<link rel="alternate" hreflang="x-default" href=/en />
+<link rel="alternate" hreflang="en" href=/en />
 ', 'submenu' => '', 'img_src' => 'schweissbaugruppen-hersteller.webp', 'img_title' => 'Schweißbaugruppen Hersteller Irion', 'img_alt' => 'Schweißbaugruppen Hersteller Irion']);
+            });
+Route::get('/en', function () {
+                return view('templates.home')->with(['meta_title' => 'Industrial welding company – Irion quality since 1926', 'meta_description' => 'Industrial welding company ✓ 30 to 5,000 parts ☆ Consistently high quality ☆ Responsible-minded ☆ Precision ➨ Irion quality since 1926!', 'h1' => 'Industrial welding company Irion', 'seo1' => 'Irion was founded in 1929 and is the industrial welding company from the Black Forest in Germany. Our certified welding company is specialised on welded assemblies from 30 to 5,000 parts. We put consistently high quality first, along with responsible-minded people and precision.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/ />
+<link rel="alternate" hreflang="en-US" href=/us />
+<link rel="alternate" hreflang="x-default" href=/en />
+<link rel="alternate" hreflang="en" href=/en />
+', 'submenu' => '', 'img_src' => 'industrial-welding-company.jpg', 'img_title' => 'Industrial welding company Irion', 'img_alt' => 'Industrial welding company Irion']);
             });
 Route::get('/us', function () {
                 return view('templates.home')->with(['meta_title' => 'Welding fabrication shop – Irion  quality since 1926', 'meta_description' => 'Welding fabrication shop ✓ 30 to 5,000 parts ☆ Consistently high quality ☆ Responsible-minded ☆ Precision ➨ Irion quality since 1926!', 'h1' => 'Welding fabrication shop Irion ', 'seo1' => 'Irion was founded in 1929 and is the welding fabrication shop from the Black Forest in Germany. Our certified welding company is specialised on welded assemblies and industrial metal fabrication from 30 to 5,000 parts. We put consistently high quality first, along with responsible-minded people and precision.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/ />
 <link rel="alternate" hreflang="en-US" href=/us />
+<link rel="alternate" hreflang="x-default" href=/en />
+<link rel="alternate" hreflang="en" href=/en />
 ', 'submenu' => '', 'img_src' => 'welding-fabrication-shop.webp', 'img_title' => 'Welding fabrication shop', 'img_alt' => 'Welding fabrication shop']);
             });
 Route::get('/praezisionsfertigung', function () {
                 return view('templates.praezisionsfertigung')->with(['meta_title' => 'Präzisionsfertigung – Präzisionsbearbeitung von Metall', 'meta_description' => 'Präzisionsfertigung von Hochleistungsprodukten seit 1926! ✓ Von der Entwicklung bis zur Montage ➨ Alle unsere Kompetenzen kennenlernen', 'h1' => 'Präzisionsfertigung', 'seo1' => 'IRION steht für Präzisionsfertigung in der Metallverarbeitung. Von der Entwicklung bis zur Montage nutzen wir zahlreiche Kompetenzen, um Ihr Hochleistungsprodukt herzustellen. Informieren Sie sich hier über die verschiedenen Prozesse in unserem Wertschöpfungsnetzwerk.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung />
 <link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer />
+<link rel="alternate" hreflang="x-default" href=/en/competences />
+<link rel="alternate" hreflang="en" href=/en/competences />
 ', 'submenu' => '<strong><a href="/praezisionsfertigung/mechanische-konstruktion">Mechanische Konstruktion </a></strong>
                                 <ul></ul><strong><a href="/praezisionsfertigung/roboterschweissen">Roboterschweißen </a></strong>
                                 <ul></ul><strong><a href="/praezisionsfertigung/praezisionsschneiden">Präzisionsschneiden </a></strong>
@@ -43,9 +56,28 @@ Route::get('/praezisionsfertigung', function () {
                                 <ul></ul><strong><a href="/praezisionsfertigung/baugruppenmontage-maschinenbau">Baugruppenmontage </a></strong>
                                 <ul></ul>', 'img_src' => 'praezisionsfertigung.webp', 'img_title' => 'Präzisionsfertigung', 'img_alt' => 'Präzisionsfertigung']);
             });
+Route::get('/en/competences', function () {
+                return view('templates.praezisionsfertigung')->with(['meta_title' => 'Precision manufacturer – Metal machining since 1926!', 'meta_description' => 'Precision manufacturer ✓ High-performance products made in Germany since 1926 ☆ From development to assembly ➨ All our competencies', 'h1' => 'Competences', 'seo1' => 'Irion is a precision manufacturer in metal processing. From development to assembly, we use numerous competencies to manufacture your high-performance product. Find out here about the various processes in our value network.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung />
+<link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer />
+<link rel="alternate" hreflang="x-default" href=/en/competences />
+<link rel="alternate" hreflang="en" href=/en/competences />
+', 'submenu' => '<strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul><strong><a href=""></a></strong>
+                                <ul></ul>', 'img_src' => 'precision-manufacturer.webp', 'img_title' => 'Precision manufacturer', 'img_alt' => 'Precision manufacturer']);
+            });
 Route::get('/us/precision-manufacturer', function () {
                 return view('templates.praezisionsfertigung')->with(['meta_title' => 'Precision manufacturer – Metal machining since 1926!', 'meta_description' => 'Precision manufacturer ✓ High-performance products made in Germany since 1926 ☆ From development to assembly ➨ All our competencies', 'h1' => 'Precision manufacturer ', 'seo1' => 'Irion is a precision manufacturer in metal processing. From development to assembly, we use numerous competencies to manufacture your high-performance product. Find out here about the various processes in our value network.', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung />
 <link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer />
+<link rel="alternate" hreflang="x-default" href=/en/competences />
+<link rel="alternate" hreflang="en" href=/en/competences />
 ', 'submenu' => '<strong><a href="/us/precision-manufacturer/mechanical-construction">Mechanical construction</a></strong>
                                 <ul></ul><strong><a href="/us/precision-manufacturer/robot-welding ">Robot welding </a></strong>
                                 <ul></ul><strong><a href="/us/precision-manufacturer/precision-cutting-metal">Precision cutting metal</a></strong>
@@ -615,11 +647,22 @@ Route::get('/us/steel-processing-company/steel-machining/press-brake-metal-formi
 Route::get('/schweissunternehmen', function () {
                 return view('templates.unternehmen')->with(['meta_title' => 'Schweißunternehmen – Qualität von IRION seit 1926!', 'meta_description' => 'Das Schweißunternehmen seit 1926 ✓ Unsere Partner ☆ Referenzen ☆ Historie ☆ Zahlen, Daten, Fakten ➨ Jetzt informieren!', 'h1' => 'Das Schweißunternehmen IRION', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
 <link rel="alternate" hreflang="en-US" href=/us/welding-company />
+<link rel="alternate" hreflang="x-default" href=/en/company />
+<link rel="alternate" hreflang="en" href=/en/company />
 ', 'submenu' => '', 'img_src' => 'schweissunternehmen.webp', 'img_title' => 'Schweißunternehmen', 'img_alt' => 'Schweißunternehmen']);
+            });
+Route::get('/en/company', function () {
+                return view('templates.unternehmen')->with(['meta_title' => 'Welding company Irion  – Quality from Germany since 1926! ', 'meta_description' => 'The welding company since 1926 ✓ Our partners ☆ References ☆ History ☆ Figures, data, facts ➨ Get all information here!', 'h1' => 'Company ', 'seo1' => '<p>For many years our welding company has been trusted…</p><p><ul><li>	Selected partners of the automotive industry</li><li>	Renowned steel and mechanical engineering companies</li><li>	Public institutions from art and culture</li><li>	Premium manufacturers from plant engineering & materials handling</li><li>		Leading manufacturers of agricultural and construction machinery</li></ul></p><p></p><p></p><p>History</p><p></p><p>The welding company was founded in 1926 by Mr. Matthäus Irion. In 1978, the Hahn family acquired Matthäus Irion  GmbH & Co. KG. From 1986, Eberhardt Hahn, who studied mechanical engineering, managed the company, and in 2018 the two industrial engineers and aeronautical engineers Bernd Fleissinger and Stefan Tschirk took over the welding company.</p><p></p><p>From 1979, the business area developed towards the production of transport and storage containers, primarily for the automotive industry. From the beginning of the 80s, the supply of the materials handling industry with components for their plants was added. Today, Irion  serves customers from the automotive, construction, agricultural, cultural, logistics, medical and food technology sectors with demanding welding-milling combinations in quantities ranging from 30 to 1,000 pieces.</p><p></p><p></p><p>References</p><p></p><p>Due to a consistently high level of quality, professional order processing and on-time delivery, we are always the first choice for our customers compared to our competitors.</p><p>An excerpt from our customer list, which includes many companies of distinction, is available upon request.</p><p></p><p>Numbers, data, facts</p><p></p><p>Currently Irion  GmbH employs 40 motivated people in administration and production. The production area is about 3500 sqm.</p><p>The machinery consists of welding robots as well as semi-mechanical welding machines for different arc welding processes, CNC controlled machines for drilling and milling, lathes, press brakes, bending machines and sawing machines as well as numerous manipulation machines.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
+<link rel="alternate" hreflang="en-US" href=/us/welding-company />
+<link rel="alternate" hreflang="x-default" href=/en/company />
+<link rel="alternate" hreflang="en" href=/en/company />
+', 'submenu' => '', 'img_src' => 'welding-company.webp', 'img_title' => 'Welding company', 'img_alt' => 'Welding company']);
             });
 Route::get('/us/welding-company', function () {
                 return view('templates.unternehmen')->with(['meta_title' => 'Welding company Irion  – Quality from Germany since 1926! ', 'meta_description' => 'The welding company since 1926 ✓ Our partners ☆ References ☆ History ☆ Figures, data, facts ➨ Get all information here!', 'h1' => 'Welding company Irion ', 'seo1' => '<p>For many years our welding company has been trusted…</p><p><ul><li>	Selected partners of the automotive industry</li><li>	Renowned steel and mechanical engineering companies</li><li>	Public institutions from art and culture</li><li>	Premium manufacturers from plant engineering & materials handling</li><li>		Leading manufacturers of agricultural and construction machinery</li></ul></p><p></p><p></p><p>History</p><p></p><p>The welding company was founded in 1926 by Mr. Matthäus Irion. In 1978, the Hahn family acquired Matthäus Irion  GmbH & Co. KG. From 1986, Eberhardt Hahn, who studied mechanical engineering, managed the company, and in 2018 the two industrial engineers and aeronautical engineers Bernd Fleissinger and Stefan Tschirk took over the welding company.</p><p></p><p>From 1979, the business area developed towards the production of transport and storage containers, primarily for the automotive industry. From the beginning of the 80s, the supply of the materials handling industry with components for their plants was added. Today, Irion  serves customers from the automotive, construction, agricultural, cultural, logistics, medical and food technology sectors with demanding welding-milling combinations in quantities ranging from 30 to 1,000 pieces.</p><p></p><p></p><p>References</p><p></p><p>Due to a consistently high level of quality, professional order processing and on-time delivery, we are always the first choice for our customers compared to our competitors.</p><p>An excerpt from our customer list, which includes many companies of distinction, is available upon request.</p><p></p><p>Numbers, data, facts</p><p></p><p>Currently Irion  GmbH employs 40 motivated people in administration and production. The production area is about 3500 sqm.</p><p>The machinery consists of welding robots as well as semi-mechanical welding machines for different arc welding processes, CNC controlled machines for drilling and milling, lathes, press brakes, bending machines and sawing machines as well as numerous manipulation machines.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
 <link rel="alternate" hreflang="en-US" href=/us/welding-company />
+<link rel="alternate" hreflang="x-default" href=/en/company />
+<link rel="alternate" hreflang="en" href=/en/company />
 ', 'submenu' => '', 'img_src' => 'welding-company.webp', 'img_title' => 'Welding company', 'img_alt' => 'Welding company']);
             });
 Route::get('#', function () {
@@ -651,11 +694,22 @@ Route::get('/schweissunternehmen/qualitaetspolitik', function () {
 Route::get('/management', function () {
                 return view('templates.management')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
 <link rel="alternate" hreflang="en-US" href=/us/management />
+<link rel="alternate" hreflang="x-default" href=/en/management />
+<link rel="alternate" hreflang="en" href=/en/management />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/en/management', function () {
+                return view('templates.management')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
+<link rel="alternate" hreflang="en-US" href=/us/management />
+<link rel="alternate" hreflang="x-default" href=/en/management />
+<link rel="alternate" hreflang="en" href=/en/management />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/us/management', function () {
                 return view('templates.management')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
 <link rel="alternate" hreflang="en-US" href=/us/management />
+<link rel="alternate" hreflang="x-default" href=/en/management />
+<link rel="alternate" hreflang="en" href=/en/management />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/karriere', function () {
@@ -665,11 +719,22 @@ Route::get('/karriere', function () {
 Route::get('/schweissberatung', function () {
                 return view('templates.kontakt')->with(['meta_title' => 'Schweißberatung – Kostenloses Erstgespräch bei IRION', 'meta_description' => 'Schweißberatung von IRION ✓ 30 Minuten kostenlose Schweißberatung ☆ Qualität von IRION seit 1926 ➨ Nehmen Sie jetzt Kontakt auf!', 'h1' => '30 Minuten kostenlose Schweißberatung', 'seo1' => 'Sie haben Fragen zum Thema Schweißen oder anderen Fachgebieten? Wir bieten Ihnen eine kostenlose Schweißberatung an. Nehmen Sie gleich Kontakt auf!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
 <link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
+<link rel="alternate" hreflang="x-default" href=/en/contact />
+<link rel="alternate" hreflang="en" href=/en/contact />
 ', 'submenu' => '', 'img_src' => 'schweissberatung.webp', 'img_title' => 'Schweißberatung', 'img_alt' => 'Schweißberatung']);
+            });
+Route::get('/en/contact', function () {
+                return view('templates.kontakt')->with(['meta_title' => 'Welding consulting – Free initial consultation at Irion ', 'meta_description' => 'Welding consulting from Irion  ✓ 30 minutes free welding advice ☆ Quality from Irion  since 1926 ➨ Get in touch now!', 'h1' => 'Contact', 'seo1' => 'Do you have questions about welding or other specialties? We offer you free welding consulting. Contact us right away!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
+<link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
+<link rel="alternate" hreflang="x-default" href=/en/contact />
+<link rel="alternate" hreflang="en" href=/en/contact />
+', 'submenu' => '', 'img_src' => 'welding-consulting.webp', 'img_title' => 'Welding consulting', 'img_alt' => 'Welding consulting']);
             });
 Route::get('/us/welding-consulting', function () {
                 return view('templates.kontakt')->with(['meta_title' => 'Welding consulting – Free initial consultation at Irion ', 'meta_description' => 'Welding consulting from Irion  ✓ 30 minutes free welding advice ☆ Quality from Irion  since 1926 ➨ Get in touch now!', 'h1' => '30 minutes free welding consulting 	', 'seo1' => 'Do you have questions about welding or other specialties? We offer you free welding consulting. Contact us right away!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
 <link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
+<link rel="alternate" hreflang="x-default" href=/en/contact />
+<link rel="alternate" hreflang="en" href=/en/contact />
 ', 'submenu' => '', 'img_src' => 'welding-consulting.webp', 'img_title' => 'Welding consulting', 'img_alt' => 'Welding consulting']);
             });
 

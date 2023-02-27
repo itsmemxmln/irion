@@ -28,7 +28,7 @@
     // Languages
     $de_file = file_get_contents('./de.json');
     $us_file = file_get_contents('./us.json');
-    $en_file = false;
+    $en_file = file_get_contents('./en.json');
 
     class Site {
         // Properties
@@ -268,14 +268,17 @@
 
     $de = json_decode($de_file, true);
     $us = json_decode($us_file, true);
+    $en = json_decode($en_file, true);
 
     $sites = array();
     $iUs = 0;
+    $iEn = 0;
 
 
     for ($iDe = 0; $iDe < count($de); $iDe++){
         $currDe = $de[$iDe];
         $currUs = $us[$iUs];
+        $currEn = $en[$iEn];
         $currIndex = $currDe["INDEX"];
         // echo "Preparing Index: ".$currIndex . "<br/>";
         if ($currIndex > 0){
@@ -287,6 +290,10 @@
             if ($currUs["INDEX"] == $currIndex){
                 $site->set_lang_item($currUs, "us");
                 $iUs ++;
+            }
+            if ($currEn["INDEX"] == $currIndex){
+                $site->set_lang_item($currEn, "en");
+                $iEn ++;
             }
             switch ($site->get_level()){
                 case 1:
@@ -318,13 +325,13 @@
         if (isset($site->children))
             foreach($site->children as $subsite){
                 $subsite->create_submenus();
-                foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
+                foreach ($subsite->get_available_langs() as $lang){ ## LANG LOOP
                     $blade = (in_array($subsite->blade, ["templates.certificates-index", "templates.quality-policy"])) ? $subsite->blade : $site->blade;
                     $routes .= create_route($subsite->$lang, $subsite->hreflang, $blade); # bug used as feature (blade from site not subsubsite)
                 }
                 if (isset($subsite->children))
                 foreach($subsite->children as $subsubsite){
-                    foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
+                    foreach ($subsubsite->get_available_langs() as $lang){ ## LANG LOOP
                         $blade = ($subsubsite->blade == "templates.certificates") ? $subsite->blade : $site->blade;
                         $routes .= create_route($subsubsite->$lang, $subsubsite->hreflang, $site->blade); # bug used as feature (blade from site not subsubsite)
                     }
@@ -353,30 +360,34 @@
                     $subsites = '';                
 
                     foreach($site->children as $subsite){
-                        if (!isset($subsite->children)) {
-                            $subsites .= '
-                            <li><a class="dropdown-item {{ Request::is(\''.$subsite->$lang->url_is().'\') ? \'active\' : \'\' }}"
-                                href="'.$subsite->$lang->url.'">'.$subsite->$lang->menu.'</a></li>';
-                        }else{
-                            $subsites .= '
-                            <li class="nav-item mx-2 dropdown">
-                                <a class="dropdown-item dropdown-toggle  {{ Request::is(\''.$subsite->$lang->url_is().'\') || Request::is(\''.$subsite->$lang->url_is().'/*\') ? \'active\' : \'\' }}" href="'.$subsite->$lang->url.'"
-                                    id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                    aria-expanded="false">
-                                    '.$subsite->$lang->menu.'
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                            ';
-
-                            foreach($subsite->children as $subsubsite){
+                        if (in_array($lang, $subsite->get_available_langs())){
+                            if (!isset($subsite->children)) {
                                 $subsites .= '
-                                <li><a class="dropdown-item {{ Request::is(\''.$subsubsite->$lang->url_is().'\') ? \'active\' : \'\' }}"
-                                        href="'.$subsubsite->$lang->url.'">
-                                        '.$subsubsite->$lang->menu.'</a></li>';
-                            }                         
-
-                            $subsites .= '</ul>
-                                    </li>';
+                                <li><a class="dropdown-item {{ Request::is(\''.$subsite->$lang->url_is().'\') ? \'active\' : \'\' }}"
+                                    href="'.$subsite->$lang->url.'">'.$subsite->$lang->menu.'</a></li>';
+                            }else{
+                                $subsites .= '
+                                <li class="nav-item mx-2 dropdown">
+                                    <a class="dropdown-item dropdown-toggle  {{ Request::is(\''.$subsite->$lang->url_is().'\') || Request::is(\''.$subsite->$lang->url_is().'/*\') ? \'active\' : \'\' }}" href="'.$subsite->$lang->url.'"
+                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                        aria-expanded="false">
+                                        '.$subsite->$lang->menu.'
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                ';
+    
+                                foreach($subsite->children as $subsubsite){                        
+                                    if (in_array($lang, $subsite->get_available_langs())){
+                                        $subsites .= '
+                                        <li><a class="dropdown-item {{ Request::is(\''.$subsubsite->$lang->url_is().'\') ? \'active\' : \'\' }}"
+                                                href="'.$subsubsite->$lang->url.'">
+                                                '.$subsubsite->$lang->menu.'</a></li>';
+                                    }
+                                }                         
+    
+                                $subsites .= '</ul>
+                                        </li>';
+                            }
                         }
                     }
                     $subsites .= '</ul>';

@@ -24,7 +24,6 @@
                 <ul class="list-unstyled text-small">
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}#services">{{ __("Leistungen") }}</a></li>
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("praezisionsfertigung") }}">{{ __("Präzisionsfertigung") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("zertifikate") }}">{{ __("Zertifikate") }}</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3">
@@ -32,7 +31,6 @@
                 <ul class="list-unstyled text-small">
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("unternehmen") }}">{{ __("Über Irion") }}</a></li>
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("management") }}">{{ __("Über das Management") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("karriere") }}">{{ __("Karriere") }}</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3">

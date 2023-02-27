@@ -8,12 +8,13 @@
     @section('description','We are constantly working on pushing technological boundaries. There is no run-of-the-mill with us. We combine knowledge with skills. We create added value that sets us apart from other providers and might be the reason for you to want to become our customer.')
 @endif
 
-
 @section('head')
 @if (isset($hreflang))
     {{-- LANG --}}
     {!!$hreflang!!}
 @endif
+    <meta name="robots" content="noindex, follow">
+@endsection
 
 @section('content')
 <section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/bg-2.webp');">

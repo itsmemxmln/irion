@@ -8,7 +8,7 @@
     {{-- LANG --}}
     {!!$hreflang!!}
 @endif
-
+    <meta name="robots" content="noindex, follow">
 @endsection
 
 @section('content')
