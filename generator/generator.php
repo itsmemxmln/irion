@@ -104,7 +104,7 @@
                         case 1:
                             $submenu = '';
                             foreach ($this->children as $child){
-                                $submenu .= '<strong><a href="'.$child->$lang->url.'">'.$child->$lang->menu.'</a></strong>
+                                $submenu .= '<strong><a class="mt-1" href="'.$child->$lang->url.'">'.$child->$lang->menu.'</a></strong>
                                 <ul>';
                                 if (isset($child->children)){
                                     foreach ($child->children as $inner_child){
@@ -244,7 +244,7 @@
             return $this->submenu;
         }
         function get_link(){
-            return '<li><a href="'.$this->url.'">'.$this->menu.'</a></li>';
+            return '<li class="my-4 my-lg-0"><a href="'.$this->url.'">'.$this->menu.'</a></li>';
         }
         function url_is(){
             if (strlen($this->url) <= 1){
@@ -332,8 +332,8 @@
                 if (isset($subsite->children))
                 foreach($subsite->children as $subsubsite){
                     foreach ($subsubsite->get_available_langs() as $lang){ ## LANG LOOP
-                        $blade = ($subsubsite->blade == "templates.certificates") ? $subsite->blade : $site->blade;
-                        $routes .= create_route($subsubsite->$lang, $subsubsite->hreflang, $site->blade); # bug used as feature (blade from site not subsubsite)
+                        $blade = ($subsubsite->blade == "templates.certificates") ? $subsubsite->blade : $site->blade;
+                        $routes .= create_route($subsubsite->$lang, $subsubsite->hreflang, $blade); # bug used as feature (blade from site not subsubsite)
                     }
                 } 
             }
