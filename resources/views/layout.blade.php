@@ -78,19 +78,24 @@
         @yield('content')
         <div class="ssb-btns-right animate__animated animate__fadeInRight">
             <div class="ssb-dark">
-                <a href="/{{ app()->getLocale() == "de" ? '' : 'en' }}" class="ssb-link" aria-label="Web">
+                {{-- <a href="/{{ app()->getLocale() == "de" ? '' : 'en' }}" class="ssb-link" aria-label="Web">
                     <div class="ssb-btn">
                         <i class="bi bi-house-fill mx-2"></i> <span>{{ __("Startseite") }}</span>
                     </div>
-                </a>
-                <a href="mailto:info@irion.de" class="ssb-link" aria-label="Email">
+                </a> --}}
+                <a href="mailto:bfleissinger@irion.de" class="ssb-link" aria-label="Email">
                     <div class="ssb-btn">
-                        <i class="bi bi-envelope-fill mx-2"></i> <span>info@irion.de</span>
+                        <i class="bi bi-envelope-fill mx-2"></i> <span>bfleissinger@irion.de</span>
                     </div>
                 </a>
-                <a href="tel:+4970531889950" class="ssb-link" aria-label="Tel">
+                <a href="tel:+49705318899524" class="ssb-link" aria-label="Tel">
                     <div class="ssb-btn">
-                        <i class="bi bi-telephone-fill mx-2"></i> <span>+49 7053 / 188 995-0</span>
+                        <i class="bi bi-telephone-fill mx-2"></i> <span>+49 7053 / 188 995-24</span>
+                    </div>
+                </a>
+                <a href="tel:+4916096447514" class="ssb-link" aria-label="Mobil">
+                    <div class="ssb-btn">
+                        <i class="bi bi-phone-fill mx-2"></i> <span>+49 160 9644 7514</span>
                     </div>
                 </a>
                 <a href="https://wa.me/4916096447514" target="_blank" rel="noopener noreferrer" class="ssb-link"
