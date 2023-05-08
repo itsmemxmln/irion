@@ -278,7 +278,7 @@
 @include('counter')
 
 <div class="px-4 py-5 my-5 text-center">
-    <span class="display-5 fw-bold"><span class="txt-rotate" data-period="2000" data-rotate='[ "{{ __("Präzise Schweißgruppen") }}", "{{ __("ab 30 Stück") }}", "{{ __("in hoher Qualität zu attraktiven Preisen!") }}" ]'></span></span>
+    <span class="display-5 fw-bold"><span class="txt-rotate" data-period="2000" data-rotate='[ "{{ __("Präzise Schweißgruppen") }}", "{{ __("ab 30 Stück") }}", "{{ __("in gleichbleibend hoher Qualität!") }}" ]'></span></span>
 </div>
 
 <section class="bg-light">
