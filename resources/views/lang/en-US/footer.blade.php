@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12 col-md-3 mb-3">
                 <img class="" src="/assets/img/logo.png" alt="Irion Logo" style="max-height: 70px; max-width: 80%;">
-                <p class="mt-4 footer-slogan">{{ __("Präzise Schweißgruppen") }} {{ __("ab 30 Stück") }} {{ __("in hoher Qualität zu attraktiven Preisen!") }}</p>
+                <p class="mt-4 footer-slogan">{{ __("Präzise Schweißgruppen") }} {{ __("ab 30 Stück") }} {{ __("in gleichbleibend hoher Qualität!") }}</p>
                 <div class="d-flex">
                     <a href="{{ url("/us") }}" class="lang-btn en-US" style="margin-right: 15px">
                         <img src="{{ url('assets/img/flags/us.webp') }}" height="20px" alt="us american">
