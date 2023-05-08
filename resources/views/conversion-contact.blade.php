@@ -20,7 +20,7 @@
                             <p><i class="bi bi-whatsapp"></i> <a href="https://wa.me/4916096447514">WhatsApp</a></p>
                         </div>
                         <p><a class="btn btn-outline-secondary rounded-0"
-                                href="vcard/fleissinger-vcard.vcf">{{ __("Visitenkarte")}} »</a> <a
+                                href="/vcard/fleissinger-vcard.vcf">{{ __("Visitenkarte")}} »</a> <a
                                 class="btn btn-outline-secondary rounded-0" target="_blank" rel="noopener noreferrer"
                                 aria-label="linkedin"
                                 href="https://www.linkedin.com/in/schwei%C3%9Fen"><i class="bi bi-linkedin"></i></a></p>

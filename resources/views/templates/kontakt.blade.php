@@ -107,7 +107,7 @@
                         <p><i class="bi bi-whatsapp"></i> <a href="https://wa.me/4916096447514">WhatsApp</a></p>
                        <!--  <p><i class="bi bi-phone"></i> +49 160 9644 7514</p> -->
                     </div>
-                    <p><a class="btn btn-outline-secondary rounded-0" href="vcard/fleissinger-vcard.vcf">{{ __("Visitenkarte")}} »</a> <a class="btn btn-outline-secondary rounded-0" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/schwei%C3%9Fen" aria-label="linkedin"><i class="bi bi-linkedin"></i></a></p>
+                    <p><a class="btn btn-outline-secondary rounded-0" href="/vcard/fleissinger-vcard.vcf">{{ __("Visitenkarte")}} »</a> <a class="btn btn-outline-secondary rounded-0" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/schwei%C3%9Fen" aria-label="linkedin"><i class="bi bi-linkedin"></i></a></p>
                     <a class="btn btn-outline-secondary rounded-0" href="https://calendly.com/fleissinger" target="_blank" rel="noopener noreferrer"><i class="bi bi-calendar-week"></i> {{ __("Termin vereinbaren") }}</a>
                </div>
             </div>

@@ -28,7 +28,7 @@
                 <p><i class="bi bi-geo-alt"></i> Station Teinach 21, 75385 Bad Teinach</p>
                 <p><i class="bi bi-printer"></i> Fax: +49 7053 188 995 29</p>
             </div>
-            <p><a class="btn btn-outline-secondary rounded-0" href="vcard/hahn-vcard.vcf">{{ __("Visitenkarte") }} »</a></p>
+            <p><a class="btn btn-outline-secondary rounded-0" href="/vcard/hahn-vcard.vcf">{{ __("Visitenkarte") }} »</a></p>
         </div>
         <div class="col-lg-4 mb-3 animate__animated animate__fadeInUp">
             <img src="{{ url('assets/img/fleissinger.webp') }}" alt="Fleissinger" class="bd-placeholder-img rounded-circle mb-3" width="190" height="190">
@@ -42,7 +42,7 @@
                 <p><i class="bi bi-printer"></i> Fax: +49 7053 188 995 29</p>
             </div>
             <p>
-                <a class="btn btn-outline-secondary rounded-0" href="vcard/fleissinger-vcard.vcf">{{ __("Visitenkarte")}} »</a>
+                <a class="btn btn-outline-secondary rounded-0" href="/vcard/fleissinger-vcard.vcf">{{ __("Visitenkarte")}} »</a>
                 <a class="btn btn-outline-secondary rounded-0" target="_blank" rel="noopener noreferrer" aria-label="wa" href="https://wa.me/4916096447514"><i class="bi bi-whatsapp"></i></a>
                 <a class="btn btn-outline-secondary rounded-0" target="_blank" rel="noopener noreferrer" aria-label="linkedin" href="https://www.linkedin.com/in/schwei%C3%9Fen"><i class="bi bi-linkedin"></i></a>
             </p>
@@ -60,7 +60,7 @@
                 <p><i class="bi bi-printer"></i> Fax: +49 7053 188 995 29</p>
             </div>
             <p>
-                <a class="btn btn-outline-secondary rounded-0" href="vcard/tschirk-vcard.vcf">{{ __("Visitenkarte")}} »</a>
+                <a class="btn btn-outline-secondary rounded-0" href="/vcard/tschirk-vcard.vcf">{{ __("Visitenkarte")}} »</a>
                 <a class="btn btn-outline-secondary rounded-0" target="_blank" rel="noopener noreferrer" aria-label="linkedin" href="https://www.linkedin.com/in/stefan-tschirk-53b5bb34/"><i class="bi bi-linkedin"></i></a>
             </p>
         </div>

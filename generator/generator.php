@@ -244,7 +244,7 @@
             return $this->submenu;
         }
         function get_link(){
-            return '<li class="my-4 my-lg-0"><a href="'.$this->url.'">'.$this->menu.'</a></li>';
+            return '<li class="my-4 my-lg-1"><a href="'.$this->url.'">'.$this->menu.'</a></li>';
         }
         function url_is(){
             if (strlen($this->url) <= 1){
