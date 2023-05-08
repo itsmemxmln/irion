@@ -6,7 +6,7 @@
 @section('head')
 @if (isset($hreflang))
     {{-- LANG --}}
-    <meta name="robots" content="noindex, follow">
+    {{-- <meta name="robots" content="index, follow"> --}}
     {!!$hreflang!!}
 @endif
 @endsection
