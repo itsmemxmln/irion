@@ -13,7 +13,7 @@
 
 
     "Startseite" : "Home",
-    "Präzisionsfertigung" : "Competences",
+    "Präzisionsfertigung" : "Precision manufacturing",
     "Leistungen" : "Services",
     "Zertifikate" : "Certificates",
     "Karriere" : "Career Opportunities",
@@ -40,7 +40,16 @@
     "Über Irion" : "About Irion",
     "Über das Management" : "About our management",
 
-
+    "/praezisionsfertigung/mechanische-konstruktion": "/en/precision-manufacturing/cad-engineering",
+    "/praezisionsfertigung/roboterschweissen": "/en/precision-manufacturing/automated-welding",
+    "/praezisionsfertigung/praezisionsschneiden": "/en/precision-manufacturing/metal-cutting-industry",
+    "/praezisionsfertigung/praezisionszerspanung": "/en/precision-manufacturing/precision-machining-services",
+    "/praezisionsfertigung/praezisionsschweissen": "/en/precision-manufacturing/precision-welding-services",
+    "/praezisionsfertigung/industrielle-teilereinigung-dienstleistung":"/en/precision-manufacturing/industrial-parts-cleaning-service",
+    "/praezisionsfertigung/industrielle-waermebehandlung": "/en/precision-manufacturing/steel-hardening-service",
+    "/praezisionsfertigung/oberflaechenbeschichtung-stahl": "/en/precision-manufacturing/metal-surface-treatment",
+    "/praezisionsfertigung/pvc-tauchbeschichtung": "/en/precision-manufacturing/plastic-dip-coating-for-metal",
+    "/praezisionsfertigung/baugruppenmontage-maschinenbau": "/en/precision-manufacturing/module-assembly",
 
 
     "Mehr erfahren" : "Learn more",
@@ -174,6 +183,8 @@
     "Nitrieren / Carbonitrieren" : "Nitriding / Carbonitriding",
     "Härten" : "Curing",
     "Vergüten" : "Tempering",
+
+    "PVC Tauchbeschichtung": "Plastic dip coating for metal",
 
 
 

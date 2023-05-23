@@ -30,6 +30,8 @@
     $us_file = file_get_contents('./us.json');
     $en_file = file_get_contents('./en.json');
 
+    $copy_files = true;
+
     class Site {
         // Properties
         public $index;
@@ -152,6 +154,22 @@
             if (isset($this->template_mapping) && isset($this->template_mapping[$this->de->url])){                
                 $this->blade = $this->template_mapping[$this->de->url];
                 echo " ==> ".$this->blade;
+            }
+        }
+        function copy_image(){
+            $src_dir = "../public/assets/img/landingpages/";
+            $dest_dir = "./copied_images/";
+
+            if (isset($this->de->img_src) && $this->de->img_src != '' && file_exists($src_dir.$this->de->img_src)){
+                echo "Hello World";
+                if(isset($this->en->img_src) && $this->en->img_src != '' && !file_exists($dest_dir."en/".$this->en->img_src)){
+                    echo $this->de->img_src." ==> ".$this->en->img_src."<br/>";
+                    copy($src_dir.$this->de->img_src, $dest_dir."en/".$this->en->img_src);                    
+                }
+                if(isset($this->us->img_src) && $this->us->img_src != '' && !file_exists($dest_dir."us/".$this->us->img_src)){
+                    echo $this->de->img_src." ==> ".$this->us->img_src."<br/>";
+                    copy($src_dir.$this->de->img_src, $dest_dir."us/".$this->us->img_src);                    
+                }
             }
         }
     }
@@ -446,5 +464,23 @@
 
         } else {
             print "Die Datei ".$file['file']." ist nicht schreibbar";
+        }
+    }
+
+    # Copy images
+    if ($copy_files){
+        echo "<h2>Copy Images</h2>";
+        foreach ($sites as $site){
+            $site->copy_image();
+            if (isset($site->children)) {
+                foreach($site->children as $subsite){
+                    $subsite->copy_image();
+                    if (isset($subsite->children)) {
+                        foreach($subsite->children as $subsubsite){
+                            $subsubsite->copy_image();
+                        }
+                    }
+                }
+            }
         }
     }

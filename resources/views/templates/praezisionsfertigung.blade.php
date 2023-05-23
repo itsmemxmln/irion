@@ -30,7 +30,7 @@
         </div>
     </div>
 </section>
-@if(Request::is('praezisionsfertigung') || Request::is('us/precision-manufacturer'))
+@if(Request::is('praezisionsfertigung') || Request::is('us/precision-manufacturer') || Request::is('en/precision-manufacturing'))
 <section class="container">
     <span class="span-h2 mt-5 text-center d-inline-block w-100">{{ __("Unser Wertschöpfungsnetzwerk")}}<br>- {{ __("die Garantie für Ihr Hochleistungsprodukt")}}!</span>
     <div class="leistungen">
