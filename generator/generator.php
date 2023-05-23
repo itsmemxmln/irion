@@ -6,6 +6,7 @@
     $template_mapping = [
         "/" => "templates.home",
         "/praezisionsfertigung" => "templates.praezisionsfertigung",
+        "/movwing" => "movwing",
         "/schweissunternehmen" => "templates.unternehmen",
         "/management" => "templates.management",
         "/metalltechnik-jobs" => "templates.karriere",
@@ -161,7 +162,6 @@
             $dest_dir = "./copied_images/";
 
             if (isset($this->de->img_src) && $this->de->img_src != '' && file_exists($src_dir.$this->de->img_src)){
-                echo "Hello World";
                 if(isset($this->en->img_src) && $this->en->img_src != '' && !file_exists($dest_dir."en/".$this->en->img_src)){
                     echo $this->de->img_src." ==> ".$this->en->img_src."<br/>";
                     copy($src_dir.$this->de->img_src, $dest_dir."en/".$this->en->img_src);                    
@@ -171,6 +171,16 @@
                     copy($src_dir.$this->de->img_src, $dest_dir."us/".$this->us->img_src);                    
                 }
             }
+        }
+        function childs_of_lang($lang){
+            foreach($this->children as $child){
+                if (isset($child->$lang)){
+                    echo "Test<br>";
+                    return true;
+                }
+            }
+            echo "Noneasd";
+            return false;
         }
     }
     class SiteLang {
@@ -344,7 +354,7 @@
             foreach($site->children as $subsite){
                 $subsite->create_submenus();
                 foreach ($subsite->get_available_langs() as $lang){ ## LANG LOOP
-                    $blade = (in_array($subsite->blade, ["templates.certificates-index", "templates.quality-policy"])) ? $subsite->blade : $site->blade;
+                    $blade = (in_array($subsite->blade, ["templates.certificates-index", "templates.quality-policy", "movwing"])) ? $subsite->blade : $site->blade;
                     $routes .= create_route($subsite->$lang, $subsite->hreflang, $blade); # bug used as feature (blade from site not subsubsite)
                 }
                 if (isset($subsite->children))
@@ -365,15 +375,19 @@
         $navbar[$lang] = "";
     } 
     foreach ($sites as $site){
-        if (!isset($site->children)) {
-            foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
+
+      foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
+
+        if (!isset($site->children) || !$site->childs_of_lang($lang)) {
+            // foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
                 $navbar[$lang] .= '
                 <li class="nav-item mx-2"><a href="'.$site->$lang->url.'"
                 class="fw-bold nav-link {{ Request::is(\''.$site->$lang->url_is().'\') ? \'active\' : \'\' }}" aria-current="page">'.$site->$lang->menu.'</a>
                 </li>';
-            }     
-        }else {
-            foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
+            // }
+        }
+        else {
+            // foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
                 $navbar[$lang] .= '<li class="nav-item mx-2 dropdown">';
                     $subsites = '';                
 
@@ -428,8 +442,11 @@
                     }
                     $navbar[$lang] .= $subsites;
                 $navbar[$lang] .= '</li>';
-            }  
+            // }  
         }
+
+      }
+
     }
 
 

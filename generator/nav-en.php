@@ -218,14 +218,7 @@
                 </li>
                 <li class="nav-item mx-2"><a href="/en/management"
                 class="fw-bold nav-link {{ Request::is('en/management') ? 'active' : '' }}" aria-current="page">Management</a>
-                </li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('en/welding-consulting') || Request::is('en/welding-consulting/*') ? 'active' : '' }}"
-                                        href="/en/welding-consulting" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Contact
-                                    </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item {{ Request::is('en/welding-consulting') ? 'active' : '' }}"
-                                href="/en/welding-consulting">Overview</a></li>
-                        <li>
-                            <hr class="dropdown-divider my-0">
-                        </li></ul></li>
+                </li>
+                <li class="nav-item mx-2"><a href="/en/welding-consulting"
+                class="fw-bold nav-link {{ Request::is('en/welding-consulting') ? 'active' : '' }}" aria-current="page">Contact</a>
+                </li>

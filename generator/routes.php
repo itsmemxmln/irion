@@ -1251,21 +1251,28 @@ Route::get('/schweissunternehmen', function () {
 <link rel="alternate" hreflang="en-US" href=/us/welding-company />
 <link rel="alternate" hreflang="x-default" href=/en/industrial-welding-services />
 <link rel="alternate" hreflang="en" href=/en/industrial-welding-services />
-', 'submenu' => '', 'img_src' => 'schweissunternehmen.webp', 'img_title' => 'Schweißunternehmen', 'img_alt' => 'Schweißunternehmen']);
+', 'submenu' => '<strong><a class="mt-1" href="/movwing">MovWing</a></strong>
+                                <ul></ul>', 'img_src' => 'schweissunternehmen.webp', 'img_title' => 'Schweißunternehmen', 'img_alt' => 'Schweißunternehmen']);
             });
 Route::get('/en/industrial-welding-services', function () {
                 return view('templates.unternehmen')->with(['meta_title' => 'Industrial welding services – Top quality from Germany', 'meta_description' => 'Industrial welding services since 1926 ✓ Our partners ☆ References ☆ History ☆ Figures, data, facts ➨ Get all information here!', 'h1' => 'Industrial welding services', 'seo1' => '<p>For many years, our industrial welding services have been trusted ...</p><p><ul><li>	Selected partners of the automotive industry</li><li>	Renowned steel and mechanical engineering companies</li><li>	Public institutions from art and culture</li><li>	Premium manufacturers from plant engineering & materials handling</li><li>		Leading manufacturers of agricultural and construction machinery</li></ul></p><p></p><p></p><p>History</p><p></p><p>The welding company was founded in 1926 by Mr. Matthäus Irion. In 1978, the Hahn family acquired Matthäus Irion GmbH & Co. KG. From 1986, Eberhardt Hahn, who studied mechanical engineering, managed the company, and in 2018 the two industrial engineers and aeronautical engineers Bernd Fleissinger and Stefan Tschirk took over the welding company.</p><p></p><p>From 1979, the business area developed towards the production of transport and storage containers, primarily for the automotive industry. From the beginning of the 80s, the supply of the materials handling industry with components for their plants was added. Today, Irion serves customers from the automotive, construction, agricultural, cultural, logistics, medical and food technology sectors with demanding welding-milling combinations in quantities ranging from 30 to 1.000 pieces.</p><p></p><p></p><p>References</p><p></p><p>Due to a consistently high level of quality, professional order processing and on-time delivery, we are always the first choice for our customers compared to our competitors.</p><p>An excerpt from our customer list, which includes many companies of distinction, is available upon request.</p><p></p><p>Numbers, data, facts</p><p></p><p>Currently Irion GmbH employs 40 motivated people in administration and production. The production area is about 3500 sqm.</p><p>The machinery consists of welding robots as well as semi-mechanical welding machines for different arc welding processes, CNC controlled machines for drilling and milling, lathes, press brakes, bending machines and sawing machines as well as numerous manipulation machines.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
 <link rel="alternate" hreflang="en-US" href=/us/welding-company />
 <link rel="alternate" hreflang="x-default" href=/en/industrial-welding-services />
 <link rel="alternate" hreflang="en" href=/en/industrial-welding-services />
-', 'submenu' => '', 'img_src' => 'industrial-welding-services.webp', 'img_title' => 'Industrial welding services', 'img_alt' => 'Industrial welding services']);
+', 'submenu' => '<strong><a class="mt-1" href=""></a></strong>
+                                <ul></ul>', 'img_src' => 'industrial-welding-services.webp', 'img_title' => 'Industrial welding services', 'img_alt' => 'Industrial welding services']);
             });
 Route::get('/us/welding-company', function () {
                 return view('templates.unternehmen')->with(['meta_title' => 'Welding company Irion  – Quality from Germany since 1926! ', 'meta_description' => 'The welding company since 1926 ✓ Our partners ☆ References ☆ History ☆ Figures, data, facts ➨ Get all information here!', 'h1' => 'Welding company Irion ', 'seo1' => '<p>For many years our welding company has been trusted…</p><p><ul><li>	Selected partners of the automotive industry</li><li>	Renowned steel and mechanical engineering companies</li><li>	Public institutions from art and culture</li><li>	Premium manufacturers from plant engineering & materials handling</li><li>		Leading manufacturers of agricultural and construction machinery</li></ul></p><p></p><p></p><p>History</p><p></p><p>The welding company was founded in 1926 by Mr. Matthäus Irion. In 1978, the Hahn family acquired Matthäus Irion  GmbH & Co. KG. From 1986, Eberhardt Hahn, who studied mechanical engineering, managed the company, and in 2018 the two industrial engineers and aeronautical engineers Bernd Fleissinger and Stefan Tschirk took over the welding company.</p><p></p><p>From 1979, the business area developed towards the production of transport and storage containers, primarily for the automotive industry. From the beginning of the 80s, the supply of the materials handling industry with components for their plants was added. Today, Irion  serves customers from the automotive, construction, agricultural, cultural, logistics, medical and food technology sectors with demanding welding-milling combinations in quantities ranging from 30 to 1,000 pieces.</p><p></p><p></p><p>References</p><p></p><p>Due to a consistently high level of quality, professional order processing and on-time delivery, we are always the first choice for our customers compared to our competitors.</p><p>An excerpt from our customer list, which includes many companies of distinction, is available upon request.</p><p></p><p>Numbers, data, facts</p><p></p><p>Currently Irion  GmbH employs 40 motivated people in administration and production. The production area is about 3500 sqm.</p><p>The machinery consists of welding robots as well as semi-mechanical welding machines for different arc welding processes, CNC controlled machines for drilling and milling, lathes, press brakes, bending machines and sawing machines as well as numerous manipulation machines.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
 <link rel="alternate" hreflang="en-US" href=/us/welding-company />
 <link rel="alternate" hreflang="x-default" href=/en/industrial-welding-services />
 <link rel="alternate" hreflang="en" href=/en/industrial-welding-services />
-', 'submenu' => '', 'img_src' => 'welding-company.webp', 'img_title' => 'Welding company', 'img_alt' => 'Welding company']);
+', 'submenu' => '<strong><a class="mt-1" href=""></a></strong>
+                                <ul></ul>', 'img_src' => 'welding-company.webp', 'img_title' => 'Welding company', 'img_alt' => 'Welding company']);
+            });
+Route::get('/movwing', function () {
+                return view('movwing')->with(['meta_title' => '', 'meta_description' => '', 'h1' => 'MovWing', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/movwing />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('#', function () {
                 return view('templates.basic')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
@@ -1316,19 +1323,9 @@ Route::get('/us/management', function () {
             });
 Route::get('/metalltechnik-jobs', function () {
                 return view('templates.karriere')->with(['meta_title' => 'Metalltechnik Jobs – Bad Teinach / Calw (Nordschwarzwald)', 'meta_description' => 'Metalltechnik Jobs in Bad Teinach / Calw im Nordschwarzwald ✓ Offene Stellenangebote ☆ Top Arbeitgeber ➨ Jetzt bei Irion bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs />
-<link rel="alternate" hreflang="x-default" href=/en/welding-consulting />
-<link rel="alternate" hreflang="en" href=/en/welding-consulting />
 ', 'submenu' => '<strong><a class="mt-1" href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/">Industriemechaniker Ausbildung</a></strong>
                                 <ul></ul><strong><a class="mt-1" href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/">Kauffrau für Büromanagement</a></strong>
                                 <ul></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
-            });
-Route::get('/en/welding-consulting', function () {
-                return view('templates.karriere')->with(['meta_title' => 'Welding consulting – Free initial consultation at Irion ', 'meta_description' => 'Welding consulting from Irion ✓ 30 minutes free welding advice ☆ Quality from Irion since 1926 ➨ Get in touch now!', 'h1' => '30 minutes free welding consulting 	', 'seo1' => 'Do you have questions about welding or other specialties? We offer you free welding consulting. Contact us right away!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs />
-<link rel="alternate" hreflang="x-default" href=/en/welding-consulting />
-<link rel="alternate" hreflang="en" href=/en/welding-consulting />
-', 'submenu' => '<strong><a class="mt-1" href=""></a></strong>
-                                <ul></ul><strong><a class="mt-1" href=""></a></strong>
-                                <ul></ul>', 'img_src' => 'welding-consulting.webp', 'img_title' => 'Welding consulting', 'img_alt' => 'Welding consulting']);
             });
 Route::get('/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/', function () {
                 return view('templates.karriere')->with(['meta_title' => 'Industriemechaniker Ausbildung – Bad Teinach / Calw', 'meta_description' => 'Ausbildung zum Industriemechaniker ✓ Ausbildungsplatz in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/ />
@@ -1341,11 +1338,22 @@ Route::get('/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad
 Route::get('/schweissberatung', function () {
                 return view('templates.kontakt')->with(['meta_title' => 'Schweißberatung – Kostenloses Erstgespräch bei IRION', 'meta_description' => 'Schweißberatung von IRION ✓ 30 Minuten kostenlose Schweißberatung ☆ Qualität von IRION seit 1926 ➨ Nehmen Sie jetzt Kontakt auf!', 'h1' => '30 Minuten kostenlose Schweißberatung', 'seo1' => 'Sie haben Fragen zum Thema Schweißen oder anderen Fachgebieten? Wir bieten Ihnen eine kostenlose Schweißberatung an. Nehmen Sie gleich Kontakt auf!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
 <link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
+<link rel="alternate" hreflang="x-default" href=/en/welding-consulting />
+<link rel="alternate" hreflang="en" href=/en/welding-consulting />
 ', 'submenu' => '', 'img_src' => 'schweissberatung.webp', 'img_title' => 'Schweißberatung', 'img_alt' => 'Schweißberatung']);
+            });
+Route::get('/en/welding-consulting', function () {
+                return view('templates.kontakt')->with(['meta_title' => 'Welding consulting – Free initial consultation at Irion ', 'meta_description' => 'Welding consulting from Irion ✓ 30 minutes free welding advice ☆ Quality from Irion since 1926 ➨ Get in touch now!', 'h1' => '30 minutes free welding consulting 	', 'seo1' => 'Do you have questions about welding or other specialties? We offer you free welding consulting. Contact us right away!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
+<link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
+<link rel="alternate" hreflang="x-default" href=/en/welding-consulting />
+<link rel="alternate" hreflang="en" href=/en/welding-consulting />
+', 'submenu' => '', 'img_src' => 'welding-consulting.webp', 'img_title' => 'Welding consulting', 'img_alt' => 'Welding consulting']);
             });
 Route::get('/us/welding-consulting', function () {
                 return view('templates.kontakt')->with(['meta_title' => 'Welding consulting – Free initial consultation at Irion ', 'meta_description' => 'Welding consulting from Irion  ✓ 30 minutes free welding advice ☆ Quality from Irion  since 1926 ➨ Get in touch now!', 'h1' => '30 minutes free welding consulting 	', 'seo1' => 'Do you have questions about welding or other specialties? We offer you free welding consulting. Contact us right away!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
 <link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
+<link rel="alternate" hreflang="x-default" href=/en/welding-consulting />
+<link rel="alternate" hreflang="en" href=/en/welding-consulting />
 ', 'submenu' => '', 'img_src' => 'welding-consulting.webp', 'img_title' => 'Welding consulting', 'img_alt' => 'Welding consulting']);
             });
 

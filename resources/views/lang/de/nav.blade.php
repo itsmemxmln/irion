@@ -212,10 +212,19 @@
                                                 <li><a class="dropdown-item {{ Request::is('stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen') ? 'active' : '' }}"
                                                         href="/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen">
                                                         Stahl kanten lassen</a></li></ul>
-                                                </li></ul></li>
-                        <li class="nav-item mx-2"><a href="/schweissunternehmen"
-                        class="fw-bold nav-link {{ Request::is('schweissunternehmen') ? 'active' : '' }}" aria-current="page">Unternehmen</a>
-                        </li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('#') || Request::is('#/*') ? 'active' : '' }}"
+                                                </li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('schweissunternehmen') || Request::is('schweissunternehmen/*') ? 'active' : '' }}"
+                                                href="/schweissunternehmen" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Unternehmen
+                                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item {{ Request::is('schweissunternehmen') ? 'active' : '' }}"
+                                        href="/schweissunternehmen">Übersicht</a></li>
+                                <li>
+                                    <hr class="dropdown-divider my-0">
+                                </li>
+                                        <li><a class="dropdown-item {{ Request::is('movwing') ? 'active' : '' }}"
+                                            href="/movwing">MovWing</a></li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('#') || Request::is('#/*') ? 'active' : '' }}"
                                                 href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Qualität
