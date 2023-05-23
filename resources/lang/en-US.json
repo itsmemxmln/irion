@@ -45,12 +45,14 @@
     "Über das Management" : "About our management",
 
     "/praezisionsfertigung/mechanische-konstruktion": "/us/precision-manufacturer/mechanical-construction",
+    "/praezisionsfertigung/roboterschweissen": "/us/precision-manufacturer/robot-welding",
     "/praezisionsfertigung/praezisionsschneiden": "/us/precision-manufacturer/precision-cutting-metal",
     "/praezisionsfertigung/praezisionszerspanung": "/us/precision-manufacturer/high-precision-machining",
     "/praezisionsfertigung/praezisionsschweissen": "/us/precision-manufacturer/precision-welding",
     "/praezisionsfertigung/industrielle-teilereinigung-dienstleistung":"/us/precision-manufacturer/industrial-parts-cleaning-service",
     "/praezisionsfertigung/industrielle-waermebehandlung": "/us/precision-manufacturer/industrial-heat-treatment",
     "/praezisionsfertigung/oberflaechenbeschichtung-stahl": "/us/precision-manufacturer/surface-treatment-steel",
+    "/praezisionsfertigung/pvc-tauchbeschichtung": "/us/precision-manufacturer/pvc-dip-coating",
     "/praezisionsfertigung/baugruppenmontage-maschinenbau": "/us/precision-manufacturer/assembly-of-components",
 
 
@@ -157,6 +159,8 @@
     "Wasserstrahl" : "Waterjet cutting",
     "Biegen / Kanten" : "Bending / Edging",
 
+    "Roboterschweißen": "Robot welding",
+
      "Präzisionsschweißen" :  "Precision welding",
     "MAG / MIG" : "MAG / MIG",
     "WIG" : "WIG",
@@ -182,6 +186,8 @@
     "Nitrieren / Carbonitrieren" : "Nitriding / Carbonitriding",
     "Härten" : "Curing",
     "Vergüten" : "Tempering",
+
+    "PVC Tauchbeschichtung": "PVC dip coating",
 
 
 

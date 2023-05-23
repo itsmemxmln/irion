@@ -12,9 +12,13 @@
 
 
 @section('content')
-<section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/home/skids/3.webp');">
-    <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">@if (isset($h1)){!!$h1!!}@endif</h1>
-</section>
+@if(isset($img_src) && $img_src != '' && file_exists(public_path("/assets/img/landingpages/".$img_src)))  {{-- Landing Image --}}
+    @include('templates.partial.landingimage')
+@else
+    <section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url('') }}/assets/img/home/skids/3.webp');">
+        <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">@if (isset($h1)){!!$h1!!}@endif</h1>
+    </section>
+@endif
 <section class="container">
     <div class="container my-5">
         <div class="row align-items-center rounded-0 border shadow-lg ">
@@ -32,7 +36,7 @@
     <div class="leistungen">
         <div class="row justify-content-center mt-5">
             <div class="card col-md-3 mb-5">
-                <img src="{{ url('assets/img/dev.webp') }}" class="card-img-top" alt="Konstruktion, Entwicklung, Berechnung, FMEA">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-mechanische-konstruktion.webp') }}" class="card-img-top" alt="Konstruktion, Entwicklung, Berechnung, FMEA">
                 <span class="card-header h5">{{ __("Mechanische Konstruktion" ) }}</span>
                 <div class="card-body">
                     <ul>
@@ -49,8 +53,24 @@
                     </div>
                 </div>
             </div>
+            
             <div class="card col-md-3 mb-5">
-                <img src="{{ url('assets/img/zuschnitt2.webp') }}" class="card-img-top" alt="CNC Schweißen">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-roboterschweissen.webp') }}" class="card-img-top" alt="CNC Schweißen">
+                <span class="card-header h5">{{ __( "Roboterschweißen") }}</span>
+                <div class="card-body">
+                    <ul>
+                        <li>{{ __("TODO!") }}</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/roboterschweissen')}}">{{ __("Mehr erfahren") }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-3 mb-5">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-praezisionsschneiden.webp') }}" class="card-img-top" alt="CNC Schweißen">
                 <span class="card-header h5">{{ __( "Präzisionsschneiden") }}</span>
                 <div class="card-body">
                     <ul>
@@ -67,7 +87,7 @@
                 </div>
             </div>
             <div class="card col-md-3 mb-5">
-                <img src="{{ url('assets/img/bg-5.webp') }}" class="card-img-top" alt="CNC Schweißen">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-praezisionszerspanung.webp') }}" class="card-img-top" alt="CNC Schweißen">
                 <span class="card-header h5">{{ __( "Präzisionszerspanung") }}</span>
                 <div class="card-body">
                     <ul>
@@ -84,7 +104,7 @@
                 </div>
             </div>
             <div class="card col-md-3 mb-5">
-                <img src="{{ url('assets/img/home/schweissbaugruppen/0.webp') }}" class="card-img-top" alt="MAG / MIG, WIG, Roboteranwendungen, Schweißnahtprüfung, Therm. / mech. Richten">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-praezisionsschweissen.webp') }}" class="card-img-top" alt="MAG / MIG, WIG, Roboteranwendungen, Schweißnahtprüfung, Therm. / mech. Richten">
                 <span class="card-header h5">{{ __( "Präzisionsschweißen") }}</span>
                 <div class="card-body">
                     <ul>
@@ -102,7 +122,7 @@
                 </div>
             </div>
             <div class="card col-md-3 mb-5">
-                <img src="{{ url('assets/img/clean.webp') }}" class="card-img-top" alt="CNC Schweißen">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-industrielle-teilereinigung-dienstleistung.webp') }}" class="card-img-top" alt="CNC Schweißen">
                 <span class="card-header h5">{{ __( "Industrielle Teilereinigung") }}</span>
                 <div class="card-body">
                     <ul>
@@ -118,7 +138,7 @@
                 </div>
             </div>
             <div class="card col-md-3 mb-5">
-                <img src="{{ url('assets/img/gluehen.webp') }}" class="card-img-top" alt="CNC Schweißen">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-industrielle-waermebehandlung.webp') }}" class="card-img-top" alt="CNC Schweißen">
                 <span class="card-header h5">{{ __( "Industrielle Wärmebehandlung") }}</span>
                 <div class="card-body">
                     <ul>
@@ -135,7 +155,7 @@
                 </div>                
             </div>
             <div class="card col-md-3 mb-5">
-                <img src="{{ url('assets/img/home/oberflaechen/1.webp') }}" class="card-img-top" alt="CNC Schweißen">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-oberflaechenbeschichtung-stahl.webp') }}" class="card-img-top" alt="CNC Schweißen">
                 <span class="card-header h5">{{ __( "Oberflächenbeschichtung") }}</span>
                 <div class="card-body">
                     <ul>
@@ -152,8 +172,24 @@
                     </div>
                 </div>
             </div>
+
             <div class="card col-md-3 mb-5">
-                <img src="{{ url('assets/img/home/foerdertechnik/0.webp') }}" class="card-img-top" alt="Vorrichtungsbau, Projektspezifische, getaktete Flusslinien, Pressen, Elektrik, Pneumatik">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-pvc-tauchbeschichtung.webp') }}" class="card-img-top" alt="CNC Schweißen">
+                <span class="card-header h5">{{ __( "PVC Tauchbeschichtung") }}</span>
+                <div class="card-body">
+                    <ul>
+                        <li>{{ __("TODO!") }}</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        <a class="btn btn-primary my-2 stretched-link" href="{{__('/praezisionsfertigung/pvc-tauchbeschichtung')}}">{{ __("Mehr erfahren") }}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-md-3 mb-5">
+                <img src="{{ url('assets/img/praezisionsfertigung/praezisionsfertigung-baugruppenmontage-maschinenbau.webp') }}" class="card-img-top" alt="Vorrichtungsbau, Projektspezifische, getaktete Flusslinien, Pressen, Elektrik, Pneumatik">
                 <span class="card-header h5">{{ __( "Baugruppenmontage") }}</span>
                 <div class="card-body">
                     <ul>

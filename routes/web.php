@@ -137,7 +137,7 @@ Route::get('/us/precision-manufacturer/robot-welding ', function () {
 Route::get('/praezisionsfertigung/praezisionsschneiden', function () {
                 return view('templates.praezisionsfertigung')->with(['meta_title' => 'Präzisionsschneiden in der Metallverarbeitung seit 1926 ', 'meta_description' => 'Präzisionsschneiden für Ihr Hochleistungsprodukt ✓ Verschiedene Materialien ☆ Zahlreiche Techniken ➨ Jetzt Informieren!', 'h1' => 'Präzisionsschneiden in der Metallverarbeitung', 'seo1' => '<p>Die Basis unserer Produkte ist das Präzisionsschneiden von Metallteilen aus Stahl und Edelstahl, sowie CADCAM gefräste Stahl- und Edelstahlteile. Ebenso gesägte Profile aus Stahl und Edelstahl. Wir erstellen Laserteile, Biegeteile, Laserbiegeteile, Kantteile oder Laserkantteile. </p> <p>Je nach Dicke und Wärmeeinbringung verarbeiten wir wie folgt: <ul> <li>Konventioneller Zuschnitt / Sägen / gesägte Profile bis 250mm</li> <li>Laserschneiden bis 25mm</li> <li>Biegeteile bis 25mm</li> <li>Laserbiegeteile bis 25mm</li> <li>Laserkantteile bis 25mm</li> <li>Kantteile bis 25mm</li> </ul> </p> <p>Die Basisdimensionen der Teile, hergestellt aus Laserschneiden, Biegen, Kanten, Laserkantteile und Laserbiegeteile sind Rohlinge aus 6m x 4m mit einer Dicke von bis zu 150 mm. Die übliche Dicke beträgt 40mm.</p> <p>Durch unsere Schweißkompetenz, gewährleistet durch unsere hausinternen Schweißfachingenieure, als auch Schweißfachpersonen, bearbeiten wir mit unserem jährlich zertifizierten Fachpersonal nach ISO 3834, ISO 1090 ECX-2 & EXC-3 (Execution Class 2 und Execution Class 3) auch Feinkornbaustahl S460, S690, S960 und viele mehr.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/praezisionsfertigung/praezisionsschneiden />
 <link rel="alternate" hreflang="en-US" href=/us/precision-manufacturer/precision-cutting-metal />
-', 'submenu' => '', 'img_src' => 'Präzisionsschneiden.webp', 'img_title' => 'Präzisionsschneiden', 'img_alt' => 'Präzisionsschneiden']);
+', 'submenu' => '', 'img_src' => 'praezisionsschneiden.webp', 'img_title' => 'Präzisionsschneiden', 'img_alt' => 'Präzisionsschneiden']);
             });
 Route::get('/us/precision-manufacturer/precision-cutting-metal', function () {
                 return view('templates.praezisionsfertigung')->with(['meta_title' => 'Precision cutting metal – At Irion  in Germany since 1926', 'meta_description' => 'Precision cutting metal for your high-performance product ✓ Various materials ☆ Numerous techniques ➨ All information here!', 'h1' => 'Precision cutting metal', 'seo1' => '<p>The basis of our products is precision cutting metal of steel and stainless steel parts, as well as CADCAM milled steel and stainless steel parts. Also sawed profiles made of steel and stainless steel. We create laser parts, bent parts, laser bent parts, edged parts or laser edged parts.
@@ -346,7 +346,7 @@ Route::get('/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstrae
 </p><p>
 </p><p>Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Sonderladungsträger von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger />
 <link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction/special-load-carriers />
-', 'submenu' => '', 'img_src' => 'hersteller-sonderladungstraeger.webp', 'img_title' => 'Sonderladungsträger ', 'img_alt' => 'Sonderladungsträger ']);
+', 'submenu' => '', 'img_src' => 'sonderladungstraeger.webp', 'img_title' => 'Sonderladungsträger ', 'img_alt' => 'Sonderladungsträger ']);
             });
 Route::get('/us/welding-fabrications/skid-construction/special-load-carriers', function () {
                 return view('templates.basic')->with(['meta_title' => 'Customized special load carriers from the manufacturer', 'meta_description' => 'Special load carriers manufacturer ✓ 30 to 5,000 pieces ☆ Automotive industry ☆ Logistics ☆ Production ➨ Customized load carriers	', 'h1' => 'Special load carriers', 'seo1' => '<p>Irion is a manufacturer for high quality special load carriers.
@@ -1152,8 +1152,18 @@ Route::get('/us/management', function () {
 <link rel="alternate" hreflang="en" href=/en/management />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/karriere', function () {
-                return view('templates.karriere')->with(['meta_title' => 'Ihre Karriere bei der Irion GmbH', 'meta_description' => 'Wir arbeiten mit Leidenschaft an der Sache. Leidenschaft ist unser Antrieb und die Wurzel für Innovationen. Wir lieben was wir tun und bilden deshalb unsere Mitarbeiter selbst aus. Im technischen Detail liegt oft der Schlüssel zum Erfolg – wir meistern es und setzen es um.', 'h1' => 'Karriere', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/karriere />
+Route::get('/metalltechnik-jobs', function () {
+                return view('templates.basic')->with(['meta_title' => 'Metalltechnik Jobs – Bad Teinach / Calw (Nordschwarzwald)', 'meta_description' => 'Metalltechnik Jobs in Bad Teinach / Calw im Nordschwarzwald ✓ Offene Stellenangebote ☆ Top Arbeitgeber ➨ Jetzt bei Irion bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs />
+', 'submenu' => '<strong><a class="mt-1" href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/">Industriemechaniker Ausbildung</a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/">Kauffrau für Büromanagement</a></strong>
+                                <ul></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/', function () {
+                return view('templates.basic')->with(['meta_title' => 'Industriemechaniker Ausbildung – Bad Teinach / Calw', 'meta_description' => 'Ausbildung zum Industriemechaniker ✓ Ausbildungsplatz in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/ />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/', function () {
+                return view('templates.basic')->with(['meta_title' => 'Kauffrau für Büromanagement Stellenangebot – Bad Teinach', 'meta_description' => 'Stellenangebot Kauffrau für Büromanagement ✓ Job in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/ />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/schweissberatung', function () {

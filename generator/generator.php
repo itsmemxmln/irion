@@ -8,7 +8,7 @@
         "/praezisionsfertigung" => "templates.praezisionsfertigung",
         "/schweissunternehmen" => "templates.unternehmen",
         "/management" => "templates.management",
-        "/karriere" => "templates.karriere",
+        "/metalltechnik-jobs" => "templates.karriere",
         "/schweissberatung" => "templates.kontakt",
         "/schweissunternehmen/zertifikate" => "templates.certificates-index",
         "/schweissunternehmen/qualitaetspolitik" => "templates.quality-policy",

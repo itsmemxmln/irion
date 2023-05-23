@@ -31,7 +31,7 @@
                 <ul class="list-unstyled text-small">
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="/schweissunternehmen">{{ __("Über Irion") }}</a></li>
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="/management">{{ __("Über das Management") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/karriere">{{ __("Karriere") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/metalltechnik-jobs">{{ __("Karriere") }}</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3">

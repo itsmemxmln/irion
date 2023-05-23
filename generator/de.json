@@ -81,7 +81,7 @@
       "Länge_1": 119,
       "H1 Überschrift": "Präzisionsschneiden in der Metallverarbeitung",
       "SEO-Text oben anfügen": "<p>Die Basis unserer Produkte ist das Präzisionsschneiden von Metallteilen aus Stahl und Edelstahl, sowie CADCAM gefräste Stahl- und Edelstahlteile. Ebenso gesägte Profile aus Stahl und Edelstahl. Wir erstellen Laserteile, Biegeteile, Laserbiegeteile, Kantteile oder Laserkantteile. </p> <p>Je nach Dicke und Wärmeeinbringung verarbeiten wir wie folgt: <ul> <li>Konventioneller Zuschnitt / Sägen / gesägte Profile bis 250mm</li> <li>Laserschneiden bis 25mm</li> <li>Biegeteile bis 25mm</li> <li>Laserbiegeteile bis 25mm</li> <li>Laserkantteile bis 25mm</li> <li>Kantteile bis 25mm</li> </ul> </p> <p>Die Basisdimensionen der Teile, hergestellt aus Laserschneiden, Biegen, Kanten, Laserkantteile und Laserbiegeteile sind Rohlinge aus 6m x 4m mit einer Dicke von bis zu 150 mm. Die übliche Dicke beträgt 40mm.</p> <p>Durch unsere Schweißkompetenz, gewährleistet durch unsere hausinternen Schweißfachingenieure, als auch Schweißfachpersonen, bearbeiten wir mit unserem jährlich zertifizierten Fachpersonal nach ISO 3834, ISO 1090 ECX-2 & EXC-3 (Execution Class 2 und Execution Class 3) auch Feinkornbaustahl S460, S690, S960 und viele mehr.</p>",
-      "Bild Dateiname": "Präzisionsschneiden.webp",
+      "Bild Dateiname": "praezisionsschneiden.webp",
       "Bild Image-Title": "Präzisionsschneiden",
       "Bild Alt-Text": "Präzisionsschneiden"
     },
@@ -295,7 +295,7 @@
       "Länge_1": 129,
       "H1 Überschrift": "Sonderladungsträger ",
       "SEO-Text oben anfügen": "Irion ist ein Hersteller für hochwertige Sonderladungsträger.\r\nUnsere Ladungsträger und Montageträger sind spezielle Industrietechnik Transportgestelle für die Automobilindustrie oder werden in der Logistik, Instandhaltung und Produktion eingesetzt.\r\n\r\nUnser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Sonderladungsträger von 30 bis 5.000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
-      "Bild Dateiname": "hersteller-sonderladungstraeger.webp",
+      "Bild Dateiname": "sonderladungstraeger.webp",
       "Bild Image-Title": "Sonderladungsträger ",
       "Bild Alt-Text": "Sonderladungsträger "
     },
@@ -1087,10 +1087,41 @@
     {
       "INDEX": 80000,
       "Menü 1. Ebene": "Karriere",
-      "URL": "/karriere",
-      "Meta Title\r\n<=57 Zeichen": "Ihre Karriere bei der Irion GmbH",
-      "Meta Description\r\n<=137 Zeichen": "Wir arbeiten mit Leidenschaft an der Sache. Leidenschaft ist unser Antrieb und die Wurzel für Innovationen. Wir lieben was wir tun und bilden deshalb unsere Mitarbeiter selbst aus. Im technischen Detail liegt oft der Schlüssel zum Erfolg – wir meistern es und setzen es um.",
-      "H1 Überschrift": "Karriere"
+      "Suchbegriff": "Metalltechnik Jobs ",
+      "Suchvolumen": 90,
+      "Verwandter Suchbegriff": "Jobs Metallverarbeitung",
+      "Suchvolumen_1": 90,
+      "URL": "/metalltechnik-jobs",
+      "Meta Title\r\n<=57 Zeichen": "Metalltechnik Jobs – Bad Teinach / Calw (Nordschwarzwald)",
+      "Länge": 57,
+      "Meta Description\r\n<=137 Zeichen": "Metalltechnik Jobs in Bad Teinach / Calw im Nordschwarzwald ✓ Offene Stellenangebote ☆ Top Arbeitgeber ➨ Jetzt bei Irion bewerben!",
+      "Länge_1": 130
+    },
+    {
+      "INDEX": 80100,
+      "Menü 2. Ebene": "Industriemechaniker Ausbildung",
+      "Suchbegriff": "Industriemechaniker Ausbildung ",
+      "Suchvolumen": 3350,
+      "Verwandter Suchbegriff": "Ausbildung Industriemechaniker ",
+      "Suchvolumen_1": 1650,
+      "URL": "/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/",
+      "Meta Title\r\n<=57 Zeichen": "Industriemechaniker Ausbildung – Bad Teinach / Calw",
+      "Länge": 51,
+      "Meta Description\r\n<=137 Zeichen": "Ausbildung zum Industriemechaniker ✓ Ausbildungsplatz in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!",
+      "Länge_1": 130
+    },
+    {
+      "INDEX": 80200,
+      "Menü 2. Ebene": "Kauffrau für Büromanagement",
+      "Suchbegriff": "Kauffrau für Büromanagement Stellenangebote ",
+      "Suchvolumen": 1000,
+      "Verwandter Suchbegriff": "Stellenangebote Kauffrau für Büromanagement ",
+      "Suchvolumen_1": 500,
+      "URL": "/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/",
+      "Meta Title\r\n<=57 Zeichen": "Kauffrau für Büromanagement Stellenangebot – Bad Teinach",
+      "Länge": 56,
+      "Meta Description\r\n<=137 Zeichen": "Stellenangebot Kauffrau für Büromanagement ✓ Job in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!",
+      "Länge_1": 125
     },
     {
       "INDEX": 90000,

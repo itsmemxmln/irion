@@ -11,9 +11,13 @@
 @endsection
 
 @section('content')
-<section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('{{ url('') }}/assets/img/about-company.webp');">
-    <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">@if(isset($h1)) {{$h1}} @endif</h1>
-</section>
+@if(isset($img_src) && $img_src != '' && file_exists(public_path("/assets/img/landingpages/".$img_src)))  {{-- Landing Image --}}
+    @include('templates.partial.landingimage')
+@else
+    <section class="page-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('{{ url('') }}/assets/img/about-company.webp');">
+        <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">@if(isset($h1)) {{$h1}} @endif</h1>
+    </section>
+@endif
 <section class="container mt-5">
     <span class="span-h2 text-center w-100 d-inline-block">{{ __("Vom Schwarzwald in die Welt")}}</span>
     <hr>

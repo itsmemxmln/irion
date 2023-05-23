@@ -147,6 +147,8 @@
     "Wasserstrahl" : "Waterjet cutting",
     "Biegen / Kanten" : "Bending / Edging",
 
+    "Roboterschweißen": "Robot welding",
+    
      "Präzisionsschweißen" :  "Precision welding",
     "MAG / MIG" : "MAG / MIG",
     "WIG" : "WIG",
