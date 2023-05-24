@@ -59,7 +59,9 @@
                 <span class="card-header h5">{{ __( "Roboterschweißen") }}</span>
                 <div class="card-body">
                     <ul>
-                        <li>{{ __("TODO!") }}</li>
+                        <li>{{ __("Automatisiertes Schweißen") }}</li>
+                        <li>{{ __("High-Tech-Roboter") }}</li>
+                        <li>{{ __("Computergesteuerte Offline-Simulation") }}</li>
                     </ul>
                 </div>
                 <div class="card-footer">
@@ -178,7 +180,9 @@
                 <span class="card-header h5">{{ __( "PVC Tauchbeschichtung") }}</span>
                 <div class="card-body">
                     <ul>
-                        <li>{{ __("TODO!") }}</li>
+                        <li>{{ __("Für verschiede Metallteile") }}</li>
+                        <li>{{ __("Maßgeschneiderte Lösungen") }}</li>
+                        <li>{{ __("Individuelle Beschichtungen") }}</li>
                     </ul>
                 </div>
                 <div class="card-footer">

@@ -157,6 +157,9 @@
     "Biegen / Kanten" : "Bending / Edging",
 
     "Roboterschweißen": "Robot welding",
+    "Automatisiertes Schweißen": "Automated welding",
+    "High-Tech-Roboter": "High-tech robots",
+    "Computergesteuerte Offline-Simulation": "Computerized offline simulation",
     
      "Präzisionsschweißen" :  "Precision welding",
     "MAG / MIG" : "MAG / MIG",
@@ -185,8 +188,9 @@
     "Vergüten" : "Tempering",
 
     "PVC Tauchbeschichtung": "Plastic dip coating for metal",
-
-
+    "Für verschiede Metallteile": "For various metal parts",
+    "Maßgeschneiderte Lösungen": "Tailor-made solutions",
+    "Individuelle Beschichtungen": "Individual coatings",
 
 
     "Jetzt anfragen!" : "Start request",

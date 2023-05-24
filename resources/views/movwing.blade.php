@@ -13,9 +13,10 @@
 @endsection
 
 @section('content')
-<section class="page-banner"
-    style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('{{ url('') }}/assets/img/about-company.webp');">
-    <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">MovWing</h1>
+<section class="page-banner landingimage"
+    style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))">
+    <img src="{{ url('') }}/assets/img/landingpages/schweissbaugruppen-hersteller-1920px.webp" style="z-index:-1">
+    <h1 class="position-absolute text-center text-white fw-bold animate__animated animate__zoomIn">MovWing</h1>
 </section>
 <section class="container mt-5">
     <span class="span-h2 text-center w-100 d-inline-block">Studie zum „echten aktiven Sitzen beim Arbeiten“ verbunden

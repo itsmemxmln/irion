@@ -318,11 +318,30 @@ strong a {
     justify-content: center;
     align-items: center;
     background-attachment: fixed !important;
+    overflow: hidden;
+}
+.page-banner.landingimage {
+    height: auto;
+    max-height: 700px;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed !important;
+    overflow: hidden;
+}
+.page-banner.landingimage img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
     .page-banner {
         height: 250px;
+    }
+    .page-banner.landingimage {
+        max-height: 250px;
     }
 }
 
