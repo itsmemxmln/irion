@@ -30,6 +30,17 @@
             </div>
         </div>
     </div>
+    @if (isset($seo2) && $seo2 != '')
+        <div class="container my-5">
+            <div class="row align-items-center rounded-0 border shadow-lg ">
+                <div class="col-lg-12 p-5 center">
+                    <p style="text-align:center">
+                        {!!$seo2!!}
+                    </p>
+                </div>
+            </div>
+        </div>
+    @endif
 </section>
 @if(Request::is('praezisionsfertigung') || Request::is('us/precision-manufacturer'))
 <section class="container">
