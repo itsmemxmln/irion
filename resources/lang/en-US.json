@@ -44,6 +44,7 @@
     "Über Irion" : "About Irion",
     "Über das Management" : "About our management",
 
+    "/praezisionsfertigung": "/us/precision-manufacturer",
     "/praezisionsfertigung/mechanische-konstruktion": "/us/precision-manufacturer/mechanical-construction",
     "/praezisionsfertigung/roboterschweissen": "/us/precision-manufacturer/robot-welding",
     "/praezisionsfertigung/praezisionsschneiden": "/us/precision-manufacturer/precision-cutting-metal",
@@ -55,6 +56,7 @@
     "/praezisionsfertigung/pvc-tauchbeschichtung": "/us/precision-manufacturer/pvc-dip-coating",
     "/praezisionsfertigung/baugruppenmontage-maschinenbau": "/us/precision-manufacturer/assembly-of-components",
 
+    "/schweissberatung": "/us/welding-consulting",
 
     "Mehr erfahren" : "Learn more",
 

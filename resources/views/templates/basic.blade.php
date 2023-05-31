@@ -27,6 +27,10 @@
                 <p style="text-align:center">
                     @if (isset($seo1)){!!$seo1!!}@endif
                 </p>
+
+                @if (isset($submenu))
+                    {!!$submenu!!}
+                @endif
             </div>
         </div>
     </div>

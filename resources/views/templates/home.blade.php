@@ -18,8 +18,8 @@
             <div class="carousel-item landing-carousel-item active">
                 <img src="{{ url('assets/img') . "/" .  __("schweissbaugruppen-hersteller") . ".webp" }}" class="d-block w-100 landing-carousel-img" alt="{{ __("schweissbaugruppen-hersteller") }}">
                 <div class="container">
-                    <div class="carousel-caption text-end animate__animated animate__fadeInRight">
-                        <h1 class="h1 fw-bold" style="font-size: 1.9rem;">@if (isset($h1)){{$h1}}@endif</h1>
+                    <div class="carousel-caption text-center text-md-end animate__animated animate__fadeInRight">
+                        <h1 class="h1 fw-bold" style="font-size: 1.9rem;">@if (isset($h1)){!!$h1!!}@endif</h1>
                     </div>
                 </div>
             </div>
@@ -270,7 +270,7 @@
 </section>
 
 <div class="my-5 text-center">
-    <a href="{{ app()->getLocale() == "de" ? url("praezisionsfertigung") : url("en/competences") }}" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold rounded-0">{{ __("Unsere Kompetenzen")}}</a>
+    <a href="{{ __("/praezisionsfertigung") }}" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold rounded-0">{{ __("Unsere Kompetenzen")}}</a>
 </div>
 
 <!-- @include('contact-now') -->
@@ -291,8 +291,8 @@
                 <h2 class="display-5 fw-bold lh-1 mb-3">{{ __("Wir können mehr!")}}</h2>
                 <p class="lead" align="justify">{{ __("Wir arbeiten ständig an der Verschiebung technologischer Grenzen. Bei uns gibt es kein 0815. Wir verbinden Wissen mit Können. Wir schaffen Mehrwerte, die uns von anderen Anbietern unterscheiden und für Sie der Grund sein könnte, unser Kunde werden zu wollen.")}}</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="{{ app()->getLocale() == "de" ? '' : 'en/' }}{{ __("praezisionsfertigung") }}" class="btn btn-dark btn-lg px-4 me-md-2 rounded-0">{{ __("Präzisionsfertigung")}}</a>
-                    <a href="{{ app()->getLocale() == "de" ? '' : 'en/' }}{{ __("kontakt") }}" class="btn btn-outline-secondary btn-lg px-4 rounded-0">{{ __("Kontakt aufnehmen")}}</a>
+                    <a href="{{ __("/praezisionsfertigung") }}" class="btn btn-dark btn-lg px-4 me-md-2 rounded-0">{{ __("Präzisionsfertigung")}}</a>
+                    <a href="{{ __("/schweissberatung") }}" class="btn btn-outline-secondary btn-lg px-4 rounded-0">{{ __("Kontakt aufnehmen")}}</a>
                 </div>
             </div>
         </div>

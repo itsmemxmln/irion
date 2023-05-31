@@ -100,4 +100,14 @@
     Route::get('/qualitätspolitik', function(){ 
         return Redirect::to('/schweissunternehmen/qualitätspolitik', 301); 
     });
+
+    Route::get('/en/competences', function(){ 
+        return Redirect::to('/en/precision-manufacturing', 301); 
+    });
+    Route::get('/en/contact', function(){ 
+        return Redirect::to('/en/welding-consulting', 301); 
+    });
+    Route::get('/en/industrial-welding-services', function(){ 
+        return Redirect::to('/praezisionsfertigung', 301); 
+    });
     ";

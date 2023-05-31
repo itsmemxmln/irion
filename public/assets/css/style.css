@@ -11,6 +11,8 @@ h1 {
     font-style: normal;
     font-display: swap;
     letter-spacing: 0.2em !important;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 span.span-h2 {
     text-align: center;
