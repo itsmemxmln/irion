@@ -1981,16 +1981,6 @@ Route::get('/us/management', function () {
             });
 Route::get('/metalltechnik-jobs', function () {
                 return view('templates.karriere')->with(['meta_title' => 'Metalltechnik Jobs – Bad Teinach / Calw (Nordschwarzwald)', 'meta_description' => 'Metalltechnik Jobs in Bad Teinach / Calw im Nordschwarzwald ✓ Offene Stellenangebote ☆ Top Arbeitgeber ➨ Jetzt bei Irion bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs />
-', 'submenu' => '<strong><a class="mt-1" href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/">Industriemechaniker Ausbildung</a></strong>
-                                <ul></ul><strong><a class="mt-1" href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/">Kauffrau für Büromanagement</a></strong>
-                                <ul></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
-            });
-Route::get('/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/', function () {
-                return view('templates.karriere')->with(['meta_title' => 'Industriemechaniker Ausbildung – Bad Teinach / Calw', 'meta_description' => 'Ausbildung zum Industriemechaniker ✓ Ausbildungsplatz in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/ />
-', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
-            });
-Route::get('/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/', function () {
-                return view('templates.karriere')->with(['meta_title' => 'Kauffrau für Büromanagement Stellenangebot – Bad Teinach', 'meta_description' => 'Stellenangebot Kauffrau für Büromanagement ✓ Job in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/ />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/schweissberatung', function () {
