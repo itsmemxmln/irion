@@ -306,7 +306,7 @@
     "Suchvolumen \r\ngesamt": 90,
     "Verwandter Suchbegriff": "lifting equipment company\r\nlifting equipment services",
     "Suchvolumen\r\ngesamt": "60\r\n90",
-    "URL": "/welded-construction/manufactured-lifting-equipment ",
+    "URL": "/welded-construction/manufactured-lifting-equipment",
     "Meta Title\r\n<=57 Zeichen": "Manufactured lifting equipment – In Germany since 1926!",
     "Länge": 55,
     "Meta Description\r\n<=137 Zeichen": "Manufactured lifting equipment ✓ Pallets ☆ Racks ☆ Cross beams ➨ Load handling equipment and container construction with steel! ",
@@ -428,7 +428,7 @@
     "Suchvolumen \r\ngesamt": 50,
     "Verwandter Suchbegriff": "Stacking racks",
     "Suchvolumen\r\ngesamt": 100,
-    "URL": "/welded-construction/manufactured-lifting-equipment /metal-stacking-racks",
+    "URL": "/welded-construction/manufactured-lifting-equipment/metal-stacking-racks",
     "Meta Title\r\n<=57 Zeichen": "Metal stacking racks – Made in Germany since 1926!",
     "Länge": 50,
     "Meta Description\r\n<=137 Zeichen": "Industrial metal stacking racks ✓ 30 to 5.000 pieces ☆ Consistently high quality ☆ Responsible ☆ Precise ➨ Custom steel racks!",
@@ -513,7 +513,7 @@
   },
   {
     "INDEX": 30304,
-    "Menü 3. Ebene": "US Product conveyor system",
+    "Menü 3. Ebene": "Product conveyor system",
     "Suchbegriff": "Product conveyor system",
     "Suchvolumen \r\ngesamt": 10,
     "URL": "/welded-construction/welding-mechanical-engineering/product-conveyor-system",
@@ -529,7 +529,7 @@
   },
   {
     "INDEX": 30400,
-    "Menü 2. Ebene": "US Transportation systems",
+    "Menü 2. Ebene": "Transportation systems",
     "Suchbegriff": "Transportation systems",
     "Suchvolumen \r\ngesamt": 250,
     "URL": "/welded-construction/transportation-systems",
@@ -545,7 +545,7 @@
   },
   {
     "INDEX": 30401,
-    "Menü 3. Ebene": "US Mobile lifting platforms",
+    "Menü 3. Ebene": "Mobile lifting platforms",
     "Suchbegriff": "Mobile lifting platforms",
     "Suchvolumen \r\ngesamt": 70,
     "URL": "/welded-construction/transportation-systems/mobile-lifting-platforms",
@@ -997,6 +997,7 @@
     "Menü 1. Ebene": "Management",
     "Suchbegriff": "noindex",
     "URL": "/management",
+    "Meta Title\r\n<=57 Zeichen": "Management",
     "Länge": 0,
     "Länge_1": 0
   },

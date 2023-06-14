@@ -61,7 +61,7 @@
                                                 Special load carriers</a></li></ul>
                                         </li>
                                 <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/manufactured-lifting-equipment ') || Request::is('en/welded-construction/manufactured-lifting-equipment /*') ? 'active' : '' }}" href="/en/welded-construction/manufactured-lifting-equipment "
+                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/manufactured-lifting-equipment') || Request::is('en/welded-construction/manufactured-lifting-equipment/*') ? 'active' : '' }}" href="/en/welded-construction/manufactured-lifting-equipment"
                                         id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
                                         aria-expanded="false">
                                         Manufactured lifting equipment
@@ -86,8 +86,8 @@
                                         <li><a class="dropdown-item {{ Request::is('en/welded-construction/manufactured-lifting-equipment/pallet-stillages') ? 'active' : '' }}"
                                                 href="/en/welded-construction/manufactured-lifting-equipment/pallet-stillages">
                                                 Pallet stillages</a></li>
-                                        <li><a class="dropdown-item {{ Request::is('en/welded-construction/manufactured-lifting-equipment /metal-stacking-racks') ? 'active' : '' }}"
-                                                href="/en/welded-construction/manufactured-lifting-equipment /metal-stacking-racks">
+                                        <li><a class="dropdown-item {{ Request::is('en/welded-construction/manufactured-lifting-equipment/metal-stacking-racks') ? 'active' : '' }}"
+                                                href="/en/welded-construction/manufactured-lifting-equipment/metal-stacking-racks">
                                                 Metal stacking racks</a></li></ul>
                                         </li>
                                 <li class="nav-item mx-2 dropdown">
@@ -109,19 +109,19 @@
                                                 Truck bodies manufacturers</a></li>
                                         <li><a class="dropdown-item {{ Request::is('en/welded-construction/welding-mechanical-engineering/product-conveyor-system') ? 'active' : '' }}"
                                                 href="/en/welded-construction/welding-mechanical-engineering/product-conveyor-system">
-                                                US Product conveyor system</a></li></ul>
+                                                Product conveyor system</a></li></ul>
                                         </li>
                                 <li class="nav-item mx-2 dropdown">
                                     <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/transportation-systems') || Request::is('en/welded-construction/transportation-systems/*') ? 'active' : '' }}" href="/en/welded-construction/transportation-systems"
                                         id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
                                         aria-expanded="false">
-                                        US Transportation systems
+                                        Transportation systems
                                     </a>
                                     <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
                                 
                                         <li><a class="dropdown-item {{ Request::is('en/welded-construction/transportation-systems/mobile-lifting-platforms') ? 'active' : '' }}"
                                                 href="/en/welded-construction/transportation-systems/mobile-lifting-platforms">
-                                                US Mobile lifting platforms</a></li>
+                                                Mobile lifting platforms</a></li>
                                         <li><a class="dropdown-item {{ Request::is('en/welded-construction/transportation-systems/heavy-duty-platform-truck') ? 'active' : '' }}"
                                                 href="/en/welded-construction/transportation-systems/heavy-duty-platform-truck">
                                                 Heavy duty platform truck</a></li>
