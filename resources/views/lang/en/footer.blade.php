@@ -23,7 +23,7 @@
                 <p class="h5">{{ __("Präzisionsfertigung") }}</p>
                 <ul class="list-unstyled text-small">
                     <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}#services">{{ __("Leistungen") }}</a></li>
-                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("praezisionsfertigung") }}">{{ __("Präzisionsfertigung") }}</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="{{ url('en') }}/{{ __("precision-manufacturing") }}">{{ __("Präzisionsfertigung") }}</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3">

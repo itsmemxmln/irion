@@ -31,24 +31,6 @@
 </head>
 
 <body>
-    @if (session()->get('locale') == "en" && strpos(substr(Request::server('HTTP_ACCEPT_LANGUAGE'), 0, 5), "de") !==
-    false)
-    <div class="alert alert-secondary alert-dismissible fade show rounded-0 mb-0 text-center" role="alert">
-        <img src="{{ url('assets/img/flags/de.webp') }}" height="19px" class="mx-1" alt="de"><strong>Unsere Webseite ist
-            auch auf deutsch verfügbar!</strong> <a href="{{ url("/") }}" class="alert-link text-primary">Zur deutschen
-            Version</a>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    @endif
-    @if (session()->get('locale') == "de" && strpos(substr(Request::server('HTTP_ACCEPT_LANGUAGE'), 0, 8), "en-US") !==
-    false)
-    <div class="alert alert-secondary alert-dismissible fade show rounded-0 mb-0 text-center" role="alert">
-        <img src="{{ url('assets/img/flags/us.webp') }}" height="19px" class="mx-1" alt="en"><strong>Our website is also
-            available in English!</strong> <a href="{{ url("/us") }}" class="alert-link text-primary">To the English
-            version</a>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    @endif
     <div class="d-flex text-center d-none d-lg-block">
         <a href="/">
             <img class="header-logo mt-3 mb-3" src="{{ url('assets/img/irion-logo.webp') }}"
