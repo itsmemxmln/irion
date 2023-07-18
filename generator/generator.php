@@ -16,6 +16,8 @@
         "/schweissunternehmen/en-1090-zertifizierte-betriebe" => "templates.certificates",
         "/schweissunternehmen/konstante-schweissqualitaet" => "templates.certificates",
         "/schweissunternehmen/qualitaetssicherung-schweissen" => "templates.certificates", 
+        "/sites/schweissbaugruppen-fertigung-in-deutschland" => "templates.site", 
+        "/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa" => "templates.site", 
     ];
     $nav_submenu_text = [
         "de" => "Übersicht",
@@ -31,7 +33,7 @@
     $us_file = file_get_contents('./us.json');
     $en_file = file_get_contents('./en.json');
 
-    $copy_files = true;
+    $copy_files = false;
 
     class Site {
         // Properties
@@ -111,7 +113,9 @@
                                 <ul>';
                                 if (isset($child->children)){
                                     foreach ($child->children as $inner_child){
-                                        $submenu .= $inner_child->$lang->get_link();
+                                        if (in_array($lang, $inner_child->get_available_langs())){
+                                            $submenu .= $inner_child->$lang->get_link();
+                                        }
                                     }
                                 }
                                 $submenu .= '</ul>';
@@ -272,6 +276,9 @@
             return $this->submenu;
         }
         function get_link(){
+            if($this->url == "#"){
+                return '<li class="my-4 my-lg-1">'.$this->menu.'</li>';
+            }
             return '<li class="my-4 my-lg-1"><a href="'.$this->url.'">'.$this->menu.'</a></li>';
         }
         function url_is(){
@@ -354,13 +361,14 @@
             foreach($site->children as $subsite){
                 $subsite->create_submenus();
                 foreach ($subsite->get_available_langs() as $lang){ ## LANG LOOP
-                    $blade = (in_array($subsite->blade, ["templates.certificates-index", "templates.quality-policy", "movwing"])) ? $subsite->blade : $site->blade;
+                    $blade = (in_array($subsite->blade, ["templates.certificates-index", "templates.quality-policy", "movwing", "templates.management", "templates.kontakt"])) ? $subsite->blade : $site->blade;
+                    
                     $routes .= create_route($subsite->$lang, $subsite->hreflang, $blade); # bug used as feature (blade from site not subsubsite)
                 }
                 if (isset($subsite->children))
                 foreach($subsite->children as $subsubsite){
                     foreach ($subsubsite->get_available_langs() as $lang){ ## LANG LOOP
-                        $blade = ($subsubsite->blade == "templates.certificates") ? $subsubsite->blade : $site->blade;
+                        $blade = (in_array($subsubsite->blade ,["templates.certificates", "templates.site"])) ? $subsubsite->blade : $site->blade;
                         $routes .= create_route($subsubsite->$lang, $subsubsite->hreflang, $blade); # bug used as feature (blade from site not subsubsite)
                     }
                 } 
@@ -380,10 +388,17 @@
 
         if (!isset($site->children) || !$site->childs_of_lang($lang)) {
             // foreach ($site->get_available_langs() as $lang){ ## LANG LOOP
-                $navbar[$lang] .= '
-                <li class="nav-item mx-2"><a href="'.$site->$lang->url.'"
-                class="fw-bold nav-link {{ Request::is(\''.$site->$lang->url_is().'\') ? \'active\' : \'\' }}" aria-current="page">'.$site->$lang->menu.'</a>
-                </li>';
+                if($site->$lang->url == "#"){
+                    $navbar[$lang] .= '
+                    <li class="nav-item mx-2"><span 
+                    class="fw-bold nav-link {{ Request::is(\''.$site->$lang->url_is().'\') ? \'active\' : \'\' }}" aria-current="page">'.$site->$lang->menu.'</span>
+                    </li>';
+                }else {
+                    $navbar[$lang] .= '
+                    <li class="nav-item mx-2"><a href="'.$site->$lang->url.'"
+                    class="fw-bold nav-link {{ Request::is(\''.$site->$lang->url_is().'\') ? \'active\' : \'\' }}" aria-current="page">'.$site->$lang->menu.'</a>
+                    </li>';
+                }
             // }
         }
         else {
@@ -398,15 +413,27 @@
                                 <li><a class="dropdown-item {{ Request::is(\''.$subsite->$lang->url_is().'\') ? \'active\' : \'\' }}"
                                     href="'.$subsite->$lang->url.'">'.$subsite->$lang->menu.'</a></li>';
                             }else{
-                                $subsites .= '
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is(\''.$subsite->$lang->url_is().'\') || Request::is(\''.$subsite->$lang->url_is().'/*\') ? \'active\' : \'\' }}" href="'.$subsite->$lang->url.'"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        '.$subsite->$lang->menu.'
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                ';
+                                if ($subsite->$lang->url == "#"){
+                                    $subsites .= '
+                                    <li class="nav-item mx-2 dropdown">
+                                        <span class="dropdown-item dropdown-toggle  {{ Request::is(\''.$subsite->$lang->url_is().'\') || Request::is(\''.$subsite->$lang->url_is().'/*\') ? \'active\' : \'\' }}"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            '.$subsite->$lang->menu.'
+                                        </span>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    ';
+                                }else {
+                                    $subsites .= '
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is(\''.$subsite->$lang->url_is().'\') || Request::is(\''.$subsite->$lang->url_is().'/*\') ? \'active\' : \'\' }}" href="'.$subsite->$lang->url.'"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            '.$subsite->$lang->menu.'
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    ';
+                                }
     
                                 foreach($subsite->children as $subsubsite){                        
                                     if (in_array($lang, $subsite->get_available_langs())){

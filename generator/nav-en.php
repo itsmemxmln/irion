@@ -1,7 +1,7 @@
 
-                <li class="nav-item mx-2"><a href="/en"
-                class="fw-bold nav-link {{ Request::is('en') ? 'active' : '' }}" aria-current="page">Homepage</a>
-                </li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('en/precision-manufacturing') || Request::is('en/precision-manufacturing/*') ? 'active' : '' }}"
+                    <li class="nav-item mx-2"><a href="/en"
+                    class="fw-bold nav-link {{ Request::is('en') ? 'active' : '' }}" aria-current="page">Homepage</a>
+                    </li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('en/precision-manufacturing') || Request::is('en/precision-manufacturing/*') ? 'active' : '' }}"
                                         href="/en/precision-manufacturing" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Precision manufacturing
@@ -42,14 +42,14 @@
                         <li>
                             <hr class="dropdown-divider my-0">
                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/skid-system') || Request::is('en/welded-construction/skid-system/*') ? 'active' : '' }}" href="/en/welded-construction/skid-system"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Skid system
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/skid-system') || Request::is('en/welded-construction/skid-system/*') ? 'active' : '' }}" href="/en/welded-construction/skid-system"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Skid system
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('en/welded-construction/skid-system/skid-automotive') ? 'active' : '' }}"
                                                 href="/en/welded-construction/skid-system/skid-automotive">
                                                 Skid Automotive</a></li>
@@ -60,14 +60,14 @@
                                                 href="/en/welded-construction/skid-system/special-load-carriers">
                                                 Special load carriers</a></li></ul>
                                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/manufactured-lifting-equipment') || Request::is('en/welded-construction/manufactured-lifting-equipment/*') ? 'active' : '' }}" href="/en/welded-construction/manufactured-lifting-equipment"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Manufactured lifting equipment
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/manufactured-lifting-equipment') || Request::is('en/welded-construction/manufactured-lifting-equipment/*') ? 'active' : '' }}" href="/en/welded-construction/manufactured-lifting-equipment"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Manufactured lifting equipment
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('en/welded-construction/manufactured-lifting-equipment/steel-pallets-manufacturers') ? 'active' : '' }}"
                                                 href="/en/welded-construction/manufactured-lifting-equipment/steel-pallets-manufacturers">
                                                 Steel pallets manufacturers</a></li>
@@ -90,14 +90,14 @@
                                                 href="/en/welded-construction/manufactured-lifting-equipment/metal-stacking-racks">
                                                 Metal stacking racks</a></li></ul>
                                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/welding-mechanical-engineering') || Request::is('en/welded-construction/welding-mechanical-engineering/*') ? 'active' : '' }}" href="/en/welded-construction/welding-mechanical-engineering"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Welding mechanical engineering
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/welding-mechanical-engineering') || Request::is('en/welded-construction/welding-mechanical-engineering/*') ? 'active' : '' }}" href="/en/welded-construction/welding-mechanical-engineering"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Welding mechanical engineering
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('en/welded-construction/welding-mechanical-engineering/lifting-platform') ? 'active' : '' }}"
                                                 href="/en/welded-construction/welding-mechanical-engineering/lifting-platform">
                                                 Lifting platform</a></li>
@@ -111,14 +111,14 @@
                                                 href="/en/welded-construction/welding-mechanical-engineering/product-conveyor-system">
                                                 Product conveyor system</a></li></ul>
                                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/transportation-systems') || Request::is('en/welded-construction/transportation-systems/*') ? 'active' : '' }}" href="/en/welded-construction/transportation-systems"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Transportation systems
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('en/welded-construction/transportation-systems') || Request::is('en/welded-construction/transportation-systems/*') ? 'active' : '' }}" href="/en/welded-construction/transportation-systems"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Transportation systems
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('en/welded-construction/transportation-systems/mobile-lifting-platforms') ? 'active' : '' }}"
                                                 href="/en/welded-construction/transportation-systems/mobile-lifting-platforms">
                                                 Mobile lifting platforms</a></li>
@@ -153,14 +153,14 @@
                         <li>
                             <hr class="dropdown-divider my-0">
                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('en/steel-processing-company/laser-cutting-service') || Request::is('en/steel-processing-company/laser-cutting-service/*') ? 'active' : '' }}" href="/en/steel-processing-company/laser-cutting-service"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Laser cutting service
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('en/steel-processing-company/laser-cutting-service') || Request::is('en/steel-processing-company/laser-cutting-service/*') ? 'active' : '' }}" href="/en/steel-processing-company/laser-cutting-service"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Laser cutting service
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('en/steel-processing-company/laser-cutting-service/sheet-metal-cutting') ? 'active' : '' }}"
                                                 href="/en/steel-processing-company/laser-cutting-service/sheet-metal-cutting">
                                                 Sheet metal cutting</a></li>
@@ -189,14 +189,14 @@
                                                 href="/en/steel-processing-company/laser-cutting-service/electrical-steel-cutting">
                                                 Electrical steel cutting</a></li></ul>
                                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('en/steel-processing-company/steel-machining') || Request::is('en/steel-processing-company/steel-machining/*') ? 'active' : '' }}" href="/en/steel-processing-company/steel-machining"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Steel machining
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('en/steel-processing-company/steel-machining') || Request::is('en/steel-processing-company/steel-machining/*') ? 'active' : '' }}" href="/en/steel-processing-company/steel-machining"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Steel machining
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('en/steel-processing-company/steel-machining/welding-manufacturer') ? 'active' : '' }}"
                                                 href="/en/steel-processing-company/steel-machining/welding-manufacturer">
                                                 Welding manufacturer</a></li>
@@ -212,13 +212,33 @@
                                         <li><a class="dropdown-item {{ Request::is('en/steel-processing-company/steel-machining/press-brake-tooling') ? 'active' : '' }}"
                                                 href="/en/steel-processing-company/steel-machining/press-brake-tooling">
                                                 Press brake tooling</a></li></ul>
-                                        </li></ul></li>
-                <li class="nav-item mx-2"><a href="/en/industrial-welding-services"
-                class="fw-bold nav-link {{ Request::is('en/industrial-welding-services') ? 'active' : '' }}" aria-current="page">Industrial welding services</a>
-                </li>
-                <li class="nav-item mx-2"><a href="/en/management"
-                class="fw-bold nav-link {{ Request::is('en/management') ? 'active' : '' }}" aria-current="page">Management</a>
-                </li>
-                <li class="nav-item mx-2"><a href="/en/welding-consulting"
-                class="fw-bold nav-link {{ Request::is('en/welding-consulting') ? 'active' : '' }}" aria-current="page">Contact</a>
-                </li>
+                                        </li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('en/industrial-welding-services') || Request::is('en/industrial-welding-services/*') ? 'active' : '' }}"
+                                        href="/en/industrial-welding-services" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Company
+                                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item {{ Request::is('en/industrial-welding-services') ? 'active' : '' }}"
+                                href="/en/industrial-welding-services">Overview</a></li>
+                        <li>
+                            <hr class="dropdown-divider my-0">
+                        </li>
+                                <li><a class="dropdown-item {{ Request::is('en/management') ? 'active' : '' }}"
+                                    href="/en/management">Management</a></li>
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('en#') || Request::is('en#/*') ? 'active' : '' }}" href="/en#"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Sites
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
+                                        <li><a class="dropdown-item {{ Request::is('en/sites/welding-company-germany') ? 'active' : '' }}"
+                                                href="/en/sites/welding-company-germany">
+                                                Germany</a></li>
+                                        <li><a class="dropdown-item {{ Request::is('en/sites/welding-abroad') ? 'active' : '' }}"
+                                                href="/en/sites/welding-abroad">
+                                                Bosnia</a></li></ul>
+                                        </li>
+                                <li><a class="dropdown-item {{ Request::is('en/welding-consulting') ? 'active' : '' }}"
+                                    href="/en/welding-consulting">Contact</a></li></ul></li>

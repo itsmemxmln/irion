@@ -976,9 +976,10 @@
     "Bild Image-Title": "Press brake tooling",
     "Bild Alt-Text": "Press brake tooling"
   },
+
   {
-    "INDEX": 50000,
-    "Menü 1. Ebene": "Industrial welding services",
+    "INDEX": 60000,
+    "Menü 1. Ebene": "Company",
     "Suchbegriff": "Industrial welding services",
     "Suchvolumen \r\ngesamt": 100,
     "URL": "/industrial-welding-services",
@@ -993,7 +994,7 @@
     "Bild Alt-Text": "Industrial welding services"
   },
   {
-    "INDEX": 70000,
+    "INDEX": 60100,
     "Menü 1. Ebene": "Management",
     "Suchbegriff": "noindex",
     "URL": "/management",
@@ -1002,7 +1003,41 @@
     "Länge_1": 0
   },
   {
-    "INDEX": 90000,
+    "INDEX": 60300,
+    "Menü 2. Ebene": "Sites",
+    "Suchbegriff": "kein Content, leere URL, noindex",
+    "URL": "#",
+    "Länge": 0,
+    "Länge_1": 0
+  },
+  {
+    "INDEX": 60301,
+    "Menü 3. Ebene": "Germany",
+    "Suchbegriff": "Welding company in Germany <10\r\nwelder in germany 10\r\nwelder germany 10",
+    "Verwandter Suchbegriff": "Welding Germany 10\r\nGerman Welding 10\r\nWelding in Germany 10\r\nlaser welding germany 10",
+    "URL": "/sites/welding-company-germany",
+    "Meta Title\r\n<=57 Zeichen": "Welding company – Welder in Germany - Baden-Württemberg",
+    "Länge": 55,
+    "Meta Description\r\n<=137 Zeichen": "Welding company Irion ✓ High quality since 1926 ☆ MIG and TIG welding ☆ Precision manufacturing ➨ Welder in Germany - Baden-Württemberg!",
+    "Länge_1": 136,
+    "H1 Überschrift": "Irion – Welding company in Germany - Baden-Württemberg",
+    "SEO-Text oben anfügen": "We are Irion, your welding company from the the North of Black Forest (Baden-Württemberg / Germany)!\r\n\r\nOur welders and robots focus on MIG and TIG welding, precision manufacturing and heavy-duty welding constructions.\r\n\r\nSince 1926, we have attached great importance to consistently high quality."
+  },
+  {
+    "INDEX": 60302,
+    "Menü 3. Ebene": "Bosnia",
+    "Suchbegriff": "welding abroad 20",
+    "Verwandter Suchbegriff": "low cost production 100\r\nmanufacturing in eastern europe 20\r\ncheap welding 350\r\nproduction abroad 30\r\nmanufacturing abroad 30\r\ncheap production 20\r\n",
+    "URL": "/sites/welding-abroad",
+    "Meta Title\r\n<=57 Zeichen": "Welding abroad – Manufacturing in Eastern Europe - Bosnia",
+    "Länge": 57,
+    "Meta Description\r\n<=137 Zeichen": "Welding abroad ✓ Low cost production ☆ 300 to 5.000 pieces ☆ German project management ➨ Manufacturing in Eastern Europe - Bosnia!",
+    "Länge_1": 130,
+    "H1 Überschrift": "Irion – Welding abroad in Eastern Europe - Bosnia",
+    "SEO-Text oben anfügen": "We are Irion, the welding company for precision!\r\n\r\nOur welding company in Bosnia focuses on low cost production and reasonable welding in contract manufacturing of weldments and inhouse engineerd weldments from 300 to 5.000 pieces.\r\n\r\nWith Irion you achieve your steel weldments being manufactured abroad and simultaneously benefit from German project management with a personal contact person securing german quality. Manufacturing in Eastern Europe offers you reasonable production costs with consistently high quality.\r\n\r\nIrion offers precision manufacturing since 1926 by experienced welders supported by hightech robot systems up to 10 axis covering 6m part length "
+  },
+  {
+    "INDEX": 60400,
     "Menü 1. Ebene": "Contact",
     "Suchbegriff": "Welding consulting",
     "Suchvolumen \r\ngesamt": 70,

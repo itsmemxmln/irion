@@ -21,7 +21,6 @@
 @endif
 
 <section class="container">
-    @if ((isset($seo1) && $seo1 != "" ) || (isset($submenu) && $submenu != "" ))
     <div class="container my-5">
         <div class="row align-items-center rounded-0 border shadow-lg ">
             <div class="col-lg-12 p-5 center">
@@ -35,12 +34,11 @@
             </div>
         </div>
     </div>
-    @endif
     @if (isset($seo2) && $seo2 != '')
         <div class="container my-5">
             <div class="row align-items-center rounded-0 border shadow-lg ">
                 <div class="col-lg-12 p-5 center">
-                    <p>
+                    <p style="text-align:center">
                         {!!$seo2!!}
                     </p>
                 </div>

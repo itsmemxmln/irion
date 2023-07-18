@@ -1,7 +1,7 @@
 
-                <li class="nav-item mx-2"><a href="/"
-                class="fw-bold nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page">Startseite</a>
-                </li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('praezisionsfertigung') || Request::is('praezisionsfertigung/*') ? 'active' : '' }}"
+                    <li class="nav-item mx-2"><a href="/"
+                    class="fw-bold nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page">Startseite</a>
+                    </li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('praezisionsfertigung') || Request::is('praezisionsfertigung/*') ? 'active' : '' }}"
                                         href="/praezisionsfertigung" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Präzisionsfertigung 
@@ -42,14 +42,14 @@
                         <li>
                             <hr class="dropdown-divider my-0">
                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('schweisskonstruktionen/skid-anlagenbau') || Request::is('schweisskonstruktionen/skid-anlagenbau/*') ? 'active' : '' }}" href="/schweisskonstruktionen/skid-anlagenbau"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Skid Anlagenbau
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('schweisskonstruktionen/skid-anlagenbau') || Request::is('schweisskonstruktionen/skid-anlagenbau/*') ? 'active' : '' }}" href="/schweisskonstruktionen/skid-anlagenbau"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Skid Anlagenbau
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie') ? 'active' : '' }}"
                                                 href="/schweisskonstruktionen/skid-anlagenbau/skid-automobilindustrie">
                                                 Skid Automobilindustrie</a></li>
@@ -60,14 +60,14 @@
                                                 href="/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstraeger">
                                                 Sonderladungsträger</a></li></ul>
                                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('schweisskonstruktionen/lastaufnahmemittel-hersteller') || Request::is('schweisskonstruktionen/lastaufnahmemittel-hersteller/*') ? 'active' : '' }}" href="/schweisskonstruktionen/lastaufnahmemittel-hersteller"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Lastaufnahmemittel
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('schweisskonstruktionen/lastaufnahmemittel-hersteller') || Request::is('schweisskonstruktionen/lastaufnahmemittel-hersteller/*') ? 'active' : '' }}" href="/schweisskonstruktionen/lastaufnahmemittel-hersteller"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Lastaufnahmemittel
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastpaletten-stahl') ? 'active' : '' }}"
                                                 href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/schwerlastpaletten-stahl">
                                                 Schwerlastpaletten</a></li>
@@ -90,14 +90,14 @@
                                                 href="/schweisskonstruktionen/lastaufnahmemittel-hersteller/stapelgestelle-hersteller">
                                                 Stapelgestelle</a></li></ul>
                                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('schweisskonstruktionen/maschinenbau') || Request::is('schweisskonstruktionen/maschinenbau/*') ? 'active' : '' }}" href="/schweisskonstruktionen/maschinenbau"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Maschinenbau
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('schweisskonstruktionen/maschinenbau') || Request::is('schweisskonstruktionen/maschinenbau/*') ? 'active' : '' }}" href="/schweisskonstruktionen/maschinenbau"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Maschinenbau
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller') ? 'active' : '' }}"
                                                 href="/schweisskonstruktionen/maschinenbau/scherenhubtische-hersteller">
                                                 Scherenhubtische</a></li>
@@ -111,14 +111,14 @@
                                                 href="/schweisskonstruktionen/maschinenbau/werkstuecktraegersysteme">
                                                 Werkstückträgersysteme</a></li></ul>
                                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('schweisskonstruktionen/transportsysteme-produktion') || Request::is('schweisskonstruktionen/transportsysteme-produktion/*') ? 'active' : '' }}" href="/schweisskonstruktionen/transportsysteme-produktion"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Transportsysteme
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('schweisskonstruktionen/transportsysteme-produktion') || Request::is('schweisskonstruktionen/transportsysteme-produktion/*') ? 'active' : '' }}" href="/schweisskonstruktionen/transportsysteme-produktion"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Transportsysteme
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('schweisskonstruktionen/transportsysteme-produktion/buehnenwagen') ? 'active' : '' }}"
                                                 href="/schweisskonstruktionen/transportsysteme-produktion/buehnenwagen">
                                                 Bühnenwagen</a></li>
@@ -153,14 +153,14 @@
                         <li>
                             <hr class="dropdown-divider my-0">
                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('stahlverarbeitung/stahlteile-lasern-lassen') || Request::is('stahlverarbeitung/stahlteile-lasern-lassen/*') ? 'active' : '' }}" href="/stahlverarbeitung/stahlteile-lasern-lassen"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Stahlteile lasern lassen
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('stahlverarbeitung/stahlteile-lasern-lassen') || Request::is('stahlverarbeitung/stahlteile-lasern-lassen/*') ? 'active' : '' }}" href="/stahlverarbeitung/stahlteile-lasern-lassen"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Stahlteile lasern lassen
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt') ? 'active' : '' }}"
                                                 href="/stahlverarbeitung/stahlteile-lasern-lassen/stahlblech-zuschnitt">
                                                 Stahlblech Zuschnitt</a></li>
@@ -189,14 +189,14 @@
                                                 href="/stahlverarbeitung/stahlteile-lasern-lassen/elektroblech-zuschnitt">
                                                 Elektroblech Zuschnitt</a></li></ul>
                                         </li>
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('stahlverarbeitung/stahlbearbeitung') || Request::is('stahlverarbeitung/stahlbearbeitung/*') ? 'active' : '' }}" href="/stahlverarbeitung/stahlbearbeitung"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Stahlbearbeitung
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                    <li class="nav-item mx-2 dropdown">
+                                        <a class="dropdown-item dropdown-toggle  {{ Request::is('stahlverarbeitung/stahlbearbeitung') || Request::is('stahlverarbeitung/stahlbearbeitung/*') ? 'active' : '' }}" href="/stahlverarbeitung/stahlbearbeitung"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Stahlbearbeitung
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('stahlverarbeitung/stahlbearbeitung/stahl-schweissen-lassen') ? 'active' : '' }}"
                                                 href="/stahlverarbeitung/stahlbearbeitung/stahl-schweissen-lassen">
                                                 Stahl schweißen lassen</a></li>
@@ -212,7 +212,21 @@
                                         <li><a class="dropdown-item {{ Request::is('stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen') ? 'active' : '' }}"
                                                 href="/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen">
                                                 Stahl kanten lassen</a></li></ul>
-                                        </li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('schweissunternehmen') || Request::is('schweissunternehmen/*') ? 'active' : '' }}"
+                                        </li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('metalltechnik-jobs/') || Request::is('metalltechnik-jobs//*') ? 'active' : '' }}"
+                                        href="/metalltechnik-jobs/" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Karriere
+                                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs/') ? 'active' : '' }}"
+                                href="/metalltechnik-jobs/">Übersicht</a></li>
+                        <li>
+                            <hr class="dropdown-divider my-0">
+                        </li>
+                                <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/') ? 'active' : '' }}"
+                                    href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/">Industriemechaniker Ausbildung</a></li>
+                                <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/') ? 'active' : '' }}"
+                                    href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/">Kauffrau für Büromanagement</a></li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('schweissunternehmen') || Request::is('schweissunternehmen/*') ? 'active' : '' }}"
                                         href="/schweissunternehmen" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Unternehmen
@@ -223,21 +237,16 @@
                         <li>
                             <hr class="dropdown-divider my-0">
                         </li>
-                                <li><a class="dropdown-item {{ Request::is('movwing') ? 'active' : '' }}"
-                                    href="/movwing">MovWing</a></li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('#') || Request::is('#/*') ? 'active' : '' }}"
-                                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Qualität
-                                    </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li class="nav-item mx-2 dropdown">
-                                    <a class="dropdown-item dropdown-toggle  {{ Request::is('schweissunternehmen/zertifikate') || Request::is('schweissunternehmen/zertifikate/*') ? 'active' : '' }}" href="/schweissunternehmen/zertifikate"
-                                        id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
-                                        aria-expanded="false">
-                                        Zertifikate
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
-                                
+                                <li><a class="dropdown-item {{ Request::is('management') ? 'active' : '' }}"
+                                    href="/management">Management</a></li>
+                                    <li class="nav-item mx-2 dropdown">
+                                        <span class="dropdown-item dropdown-toggle  {{ Request::is('#') || Request::is('#/*') ? 'active' : '' }}"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Qualität
+                                        </span>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
                                         <li><a class="dropdown-item {{ Request::is('schweissunternehmen/en-1090-zertifizierte-betriebe') ? 'active' : '' }}"
                                                 href="/schweissunternehmen/en-1090-zertifizierte-betriebe">
                                                 DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li>
@@ -248,14 +257,20 @@
                                                 href="/schweissunternehmen/qualitaetssicherung-schweissen">
                                                 ISO 9001:2015</a></li></ul>
                                         </li>
-                                <li><a class="dropdown-item {{ Request::is('schweissunternehmen/qualitaetspolitik') ? 'active' : '' }}"
-                                    href="/schweissunternehmen/qualitaetspolitik">Qualitätspolitik</a></li></ul></li>
-                <li class="nav-item mx-2"><a href="/management"
-                class="fw-bold nav-link {{ Request::is('management') ? 'active' : '' }}" aria-current="page">Management</a>
-                </li>
-                <li class="nav-item mx-2"><a href="/metalltechnik-jobs"
-                class="fw-bold nav-link {{ Request::is('metalltechnik-jobs') ? 'active' : '' }}" aria-current="page">Karriere</a>
-                </li>
-                <li class="nav-item mx-2"><a href="/schweissberatung"
-                class="fw-bold nav-link {{ Request::is('schweissberatung') ? 'active' : '' }}" aria-current="page">Kontakt</a>
-                </li>
+                                    <li class="nav-item mx-2 dropdown">
+                                        <span class="dropdown-item dropdown-toggle  {{ Request::is('#') || Request::is('#/*') ? 'active' : '' }}"
+                                            id="navbarDropdown1" role="button1" data-bs-toggle="dropdown1"
+                                            aria-expanded="false">
+                                            Standorte
+                                        </span>
+                                        <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
+                                    
+                                        <li><a class="dropdown-item {{ Request::is('sites/schweissbaugruppen-fertigung-in-deutschland') ? 'active' : '' }}"
+                                                href="/sites/schweissbaugruppen-fertigung-in-deutschland">
+                                                Deutschland</a></li>
+                                        <li><a class="dropdown-item {{ Request::is('sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa') ? 'active' : '' }}"
+                                                href="/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa">
+                                                Bosnien</a></li></ul>
+                                        </li>
+                                <li><a class="dropdown-item {{ Request::is('schweissberatung') ? 'active' : '' }}"
+                                    href="/schweissberatung">Kontakt</a></li></ul></li>

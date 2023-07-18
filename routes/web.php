@@ -586,7 +586,7 @@ Route::get('/schweisskonstruktionen/skid-anlagenbau/hersteller-sonderladungstrae
 <link rel="alternate" hreflang="en-US" href=/us/welding-fabrications/skid-construction/special-load-carriers />
 <link rel="alternate" hreflang="x-default" href=/en/welded-construction/skid-system/special-load-carriers />
 <link rel="alternate" hreflang="en" href=/en/welded-construction/skid-system/special-load-carriers />
-', 'submenu' => '', 'img_src' => 'sonderladungstraeger.webp', 'img_title' => 'Sonderladungsträger ', 'img_alt' => 'Sonderladungsträger ']);
+', 'submenu' => '', 'img_src' => 'hersteller-sonderladungstraeger.webp', 'img_title' => 'Sonderladungsträger ', 'img_alt' => 'Sonderladungsträger ']);
             });
 Route::get('/en/welded-construction/skid-system/special-load-carriers', function () {
                 return view('templates.basic')->with(['meta_title' => 'Customised special load carriers from the manufacturer', 'meta_description' => 'Special load carriers manufacturer ✓ 30 to 5.000 pieces ☆ Automotive industry ☆ Logistics ☆ Production ➨ customised load carriers	', 'h1' => 'Special load carriers', 'seo1' => '<p>Irion is a manufacturer for high quality special load carriers.
@@ -1835,12 +1835,29 @@ Route::get('/us/steel-processing-company/steel-machining/press-brake-metal-formi
 <link rel="alternate" hreflang="en" href=/en/steel-processing-company/steel-machining/press-brake-tooling />
 ', 'submenu' => '', 'img_src' => 'press-brake-metal-forming.webp', 'img_title' => 'Press brake metal forming', 'img_alt' => 'Press brake metal forming']);
             });
+Route::get('/metalltechnik-jobs/', function () {
+                return view('templates.basic')->with(['meta_title' => 'Metalltechnik Jobs – Bad Teinach / Calw (Nordschwarzwald)', 'meta_description' => 'Metalltechnik Jobs in Bad Teinach / Calw im Nordschwarzwald ✓ Offene Stellenangebote ☆ Top Arbeitgeber ➨ Jetzt bei Irion bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/ />
+', 'submenu' => '<strong><a class="mt-1" href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/">Industriemechaniker Ausbildung</a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/">Kauffrau für Büromanagement</a></strong>
+                                <ul></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/', function () {
+                return view('templates.basic')->with(['meta_title' => 'Industriemechaniker Ausbildung – Bad Teinach / Calw', 'meta_description' => 'Ausbildung zum Industriemechaniker ✓ Ausbildungsplatz in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/ />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/', function () {
+                return view('templates.basic')->with(['meta_title' => 'Kauffrau für Büromanagement Stellenangebot – Bad Teinach', 'meta_description' => 'Stellenangebot Kauffrau für Büromanagement ✓ Job in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/ />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
 Route::get('/schweissunternehmen', function () {
-                return view('templates.unternehmen')->with(['meta_title' => 'Schweißunternehmen – Qualität von IRION seit 1926!', 'meta_description' => 'Das Schweißunternehmen seit 1926 ✓ Unsere Partner ☆ Referenzen ☆ Historie ☆ Zahlen, Daten, Fakten ➨ Jetzt informieren!', 'h1' => 'Das Schweißunternehmen IRION', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
+                return view('templates.unternehmen')->with(['meta_title' => 'Schweißunternehmen – Qualität von IRION seit 1926!', 'meta_description' => 'Das Schweißunternehmen seit 1926 ✓ Unsere Partner ☆ Referenzen ☆ Historie ☆ Zahlen, Daten, Fakten ➨ Jetzt informieren!', 'h1' => 'Das Schweißunternehmen IRION', 'seo1' => 'Text im Word-Dokument "SEO-Text Schweißunternehmen"', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen />
 <link rel="alternate" hreflang="en-US" href=/us/welding-company />
 <link rel="alternate" hreflang="x-default" href=/en/industrial-welding-services />
 <link rel="alternate" hreflang="en" href=/en/industrial-welding-services />
-', 'submenu' => '<strong><a class="mt-1" href="/movwing">MovWing</a></strong>
+', 'submenu' => '<strong><a class="mt-1" href="/management">Management</a></strong>
+                                <ul></ul><strong><a class="mt-1" href="#">Qualität</a></strong>
+                                <ul><li class="my-4 my-lg-1"><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></li></ul><strong><a class="mt-1" href="#">Standorte</a></strong>
+                                <ul><li class="my-4 my-lg-1"><a href="/sites/schweissbaugruppen-fertigung-in-deutschland">Deutschland</a></li><li class="my-4 my-lg-1"><a href="/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa">Bosnien</a></li></ul><strong><a class="mt-1" href="/schweissberatung">Kontakt</a></strong>
                                 <ul></ul>', 'img_src' => 'schweissunternehmen.webp', 'img_title' => 'Schweißunternehmen', 'img_alt' => 'Schweißunternehmen']);
             });
 Route::get('/en/industrial-welding-services', function () {
@@ -1867,7 +1884,10 @@ Route::get('/en/industrial-welding-services', function () {
 <link rel="alternate" hreflang="en-US" href=/us/welding-company />
 <link rel="alternate" hreflang="x-default" href=/en/industrial-welding-services />
 <link rel="alternate" hreflang="en" href=/en/industrial-welding-services />
-', 'submenu' => '<strong><a class="mt-1" href=""></a></strong>
+', 'submenu' => '<strong><a class="mt-1" href="/en/management">Management</a></strong>
+                                <ul></ul><strong><a class="mt-1" href=""></a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/en#">Sites</a></strong>
+                                <ul><li class="my-4 my-lg-1"><a href="/en/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/en/sites/welding-abroad">Bosnia</a></li></ul><strong><a class="mt-1" href="/en/welding-consulting">Contact</a></strong>
                                 <ul></ul>', 'img_src' => 'industrial-welding-services.webp', 'img_title' => 'Industrial welding services', 'img_alt' => 'Industrial welding services']);
             });
 Route::get('/us/welding-company', function () {
@@ -1894,21 +1914,35 @@ Route::get('/us/welding-company', function () {
 <link rel="alternate" hreflang="en-US" href=/us/welding-company />
 <link rel="alternate" hreflang="x-default" href=/en/industrial-welding-services />
 <link rel="alternate" hreflang="en" href=/en/industrial-welding-services />
-', 'submenu' => '<strong><a class="mt-1" href=""></a></strong>
+', 'submenu' => '<strong><a class="mt-1" href="/us/management">Management</a></strong>
+                                <ul></ul><strong><a class="mt-1" href=""></a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/us#">Sites</a></strong>
+                                <ul><li class="my-4 my-lg-1"><a href="/us/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/us/sites/welding-in-eastern-europe">Bosnia</a></li></ul><strong><a class="mt-1" href="/us/welding-consulting">Contact</a></strong>
                                 <ul></ul>', 'img_src' => 'welding-company.webp', 'img_title' => 'Welding company', 'img_alt' => 'Welding company']);
             });
-Route::get('/movwing', function () {
-                return view('movwing')->with(['meta_title' => '', 'meta_description' => '', 'h1' => 'MovWing', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/movwing />
+Route::get('/management', function () {
+                return view('templates.management')->with(['meta_title' => 'Management', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
+<link rel="alternate" hreflang="en-US" href=/us/management />
+<link rel="alternate" hreflang="x-default" href=/en/management />
+<link rel="alternate" hreflang="en" href=/en/management />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/en/management', function () {
+                return view('templates.management')->with(['meta_title' => 'Management', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
+<link rel="alternate" hreflang="en-US" href=/us/management />
+<link rel="alternate" hreflang="x-default" href=/en/management />
+<link rel="alternate" hreflang="en" href=/en/management />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/us/management', function () {
+                return view('templates.management')->with(['meta_title' => 'Management', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
+<link rel="alternate" hreflang="en-US" href=/us/management />
+<link rel="alternate" hreflang="x-default" href=/en/management />
+<link rel="alternate" hreflang="en" href=/en/management />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('#', function () {
-                return view('templates.basic')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
-', 'submenu' => '<strong><a class="mt-1" href="/schweissunternehmen/zertifikate">Zertifikate</a></strong>
-                                <ul><li class="my-4 my-lg-1"><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></li></ul><strong><a class="mt-1" href="/schweissunternehmen/qualitaetspolitik">Qualitätspolitik</a></strong>
-                                <ul></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
-            });
-Route::get('/schweissunternehmen/zertifikate', function () {
-                return view('templates.certificates-index')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/zertifikate />
+                return view('templates.unternehmen')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
 ', 'submenu' => '<strong>Beispiele</strong><ul><li class="my-4 my-lg-1"><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></li></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/schweissunternehmen/en-1090-zertifizierte-betriebe', function () {
@@ -1954,33 +1988,97 @@ Route::get('/schweissunternehmen/qualitaetssicherung-schweissen', function () {
 </p><p>Geltungsbereich: Herstellung und Vertrieb von Sonderanlagen, Vorrichtungen und Schweißkonstruktionen</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/qualitaetssicherung-schweissen />
 ', 'submenu' => '', 'img_src' => 'qualitaetssicherung-schweissen.webp', 'img_title' => 'Qualitätssicherung Schweißen', 'img_alt' => 'Qualitätssicherung Schweißen']);
             });
-Route::get('/schweissunternehmen/qualitaetspolitik', function () {
-                return view('templates.quality-policy')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissunternehmen/qualitaetspolitik />
+Route::get('#', function () {
+                return view('templates.unternehmen')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
+<link rel="alternate" hreflang="en-US" href=/us# />
+<link rel="alternate" hreflang="x-default" href=/en# />
+<link rel="alternate" hreflang="en" href=/en# />
+', 'submenu' => '<strong>Beispiele</strong><ul><li class="my-4 my-lg-1"><a href="/sites/schweissbaugruppen-fertigung-in-deutschland">Deutschland</a></li><li class="my-4 my-lg-1"><a href="/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa">Bosnien</a></li></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/en#', function () {
+                return view('templates.unternehmen')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
+<link rel="alternate" hreflang="en-US" href=/us# />
+<link rel="alternate" hreflang="x-default" href=/en# />
+<link rel="alternate" hreflang="en" href=/en# />
+', 'submenu' => '<strong>Examples</strong><ul><li class="my-4 my-lg-1"><a href="/en/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/en/sites/welding-abroad">Bosnia</a></li></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/us#', function () {
+                return view('templates.unternehmen')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
+<link rel="alternate" hreflang="en-US" href=/us# />
+<link rel="alternate" hreflang="x-default" href=/en# />
+<link rel="alternate" hreflang="en" href=/en# />
+', 'submenu' => '<strong>Examples</strong><ul><li class="my-4 my-lg-1"><a href="/us/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/us/sites/welding-in-eastern-europe">Bosnia</a></li></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/sites/schweissbaugruppen-fertigung-in-deutschland', function () {
+                return view('templates.site')->with(['meta_title' => 'Schweißbaugruppen Fertigung in Deutschland – Lohnfertiger', 'meta_description' => 'Schweißbaugruppen ✓ Lohnfertiger seit 1926 ☆ Maschinenbau ☆ Gleichbleibend hohe Qualität ➨ Fertigung in Deutschland - Baden-Württemberg!', 'h1' => 'Irion – Schweißbaugruppen Fertigung in Deutschland', 'seo1' => '<p>Wir sind Irion, Ihre Schweißbaugruppen-Experten mit hochwertiger Fertigung in Deutschland (Nordschwarzwald / Baden-Württemberg)!
+</p><p> 
+</p><p>Unsere Schweißer haben sich auf Schutzgasschweißen, Präzisionsfertigung und Schwerlastkonstruktionen für den Anlagen- & Maschinenbau spezialisiert. Unterstützt werden unsere Mitarbeiter von hochautomatisierten Schweißrobotern mit 10 Achsen auf 7m Länge. Lasern und Kanten zählt ebenfalls zu unserem Kompetenzfeld.
+</p><p> 
+</p><p>Als Lohnfertiger als auch Entwicklungsfertiger legen wir seit 1926 Wert auf gleichbleibend hohe Qualität.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/schweissbaugruppen-fertigung-in-deutschland />
+<link rel="alternate" hreflang="en-US" href=/us/sites/welding-company-germany />
+<link rel="alternate" hreflang="x-default" href=/en/sites/welding-company-germany />
+<link rel="alternate" hreflang="en" href=/en/sites/welding-company-germany />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/management', function () {
-                return view('templates.management')->with(['meta_title' => 'Management', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
-<link rel="alternate" hreflang="en-US" href=/us/management />
-<link rel="alternate" hreflang="x-default" href=/en/management />
-<link rel="alternate" hreflang="en" href=/en/management />
+Route::get('/en/sites/welding-company-germany', function () {
+                return view('templates.site')->with(['meta_title' => 'Welding company – Welder in Germany - Baden-Württemberg', 'meta_description' => 'Welding company Irion ✓ High quality since 1926 ☆ MIG and TIG welding ☆ Precision manufacturing ➨ Welder in Germany - Baden-Württemberg!', 'h1' => 'Irion – Welding company in Germany - Baden-Württemberg', 'seo1' => '<p>We are Irion, your welding company from the the North of Black Forest (Baden-Württemberg / Germany)!
+</p><p>
+</p><p>Our welders and robots focus on MIG and TIG welding, precision manufacturing and heavy-duty welding constructions.
+</p><p>
+</p><p>Since 1926, we have attached great importance to consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/schweissbaugruppen-fertigung-in-deutschland />
+<link rel="alternate" hreflang="en-US" href=/us/sites/welding-company-germany />
+<link rel="alternate" hreflang="x-default" href=/en/sites/welding-company-germany />
+<link rel="alternate" hreflang="en" href=/en/sites/welding-company-germany />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/en/management', function () {
-                return view('templates.management')->with(['meta_title' => 'Management', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
-<link rel="alternate" hreflang="en-US" href=/us/management />
-<link rel="alternate" hreflang="x-default" href=/en/management />
-<link rel="alternate" hreflang="en" href=/en/management />
+Route::get('/us/sites/welding-company-germany', function () {
+                return view('templates.site')->with(['meta_title' => 'Welding company – Welder in Germany - Baden-Württemberg', 'meta_description' => 'Welding company Irion ✓ High quality since 1926 ☆ MIG and TIG welding ☆ Precision manufacturing ➨ Welder in Germany - Baden-Württemberg!', 'h1' => 'Irion – Welding company in Germany - Baden-Württemberg', 'seo1' => '<p>We are Irion, your welding company from the the North of Black Forest (Baden-Württemberg / Germany)!
+</p><p>
+</p><p>Our welders and robots focus on MIG and TIG welding, precision manufacturing and heavy-duty welding constructions.
+</p><p>
+</p><p>Since 1926, we have attached great importance to consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/schweissbaugruppen-fertigung-in-deutschland />
+<link rel="alternate" hreflang="en-US" href=/us/sites/welding-company-germany />
+<link rel="alternate" hreflang="x-default" href=/en/sites/welding-company-germany />
+<link rel="alternate" hreflang="en" href=/en/sites/welding-company-germany />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/us/management', function () {
-                return view('templates.management')->with(['meta_title' => 'Management', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/management />
-<link rel="alternate" hreflang="en-US" href=/us/management />
-<link rel="alternate" hreflang="x-default" href=/en/management />
-<link rel="alternate" hreflang="en" href=/en/management />
+Route::get('/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa', function () {
+                return view('templates.site')->with(['meta_title' => 'Auslandsfertigung – Produktionsverlagerung nach Osteuropa', 'meta_description' => 'Auslandsfertigung ✓ Schweißbaugruppen ☆ Präzision ☆ Deutsches Projektmanagement ➨ Produktionsverlagerung nach Osteuropa - Bosnien!', 'h1' => 'Auslandsfertigung – Produktionsverlagerung nach Osteuropa - Bosnien', 'seo1' => '<p>Wir sind Irion, der Schweißbetrieb für Präzision!
+</p><p> 
+</p><p>Unsere Auslandsfertigung in Bosnien hat als Niedriglohnland den Schwerpunkt auf preiswerten Schweißbaugruppen in der Lohnfertigung von Schweißteilen und Schweißkonstruktionen von 300 bis 5.000 Stück.
+</p><p> 
+</p><p>Mit Irion können Sie Ihre Stahlkonstruktionen im Ausland fertigen lassen und gleichzeitig ein deutsches Projektmanagement mit persönlichem Ansprechpartner nutzen. Die Produktionsverlagerung nach Osteuropa bietet Ihnen preiswerte Produktionskosten bei gleichbleibend hoher Qualität und Verlässlichkeit.
+</p><p> 
+</p><p>Irion bietet Präzisionsfertigung seit 1926 durch erfahrene Schweißer unterstützt durch hochautomatisierte Robotertechnologie!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
+<link rel="alternate" hreflang="en-US" href=/us/sites/welding-in-eastern-europe />
+<link rel="alternate" hreflang="x-default" href=/en/sites/welding-abroad />
+<link rel="alternate" hreflang="en" href=/en/sites/welding-abroad />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/metalltechnik-jobs', function () {
-                return view('templates.karriere')->with(['meta_title' => 'Metalltechnik Jobs – Bad Teinach / Calw (Nordschwarzwald)', 'meta_description' => 'Metalltechnik Jobs in Bad Teinach / Calw im Nordschwarzwald ✓ Offene Stellenangebote ☆ Top Arbeitgeber ➨ Jetzt bei Irion bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs />
+Route::get('/en/sites/welding-abroad', function () {
+                return view('templates.site')->with(['meta_title' => 'Welding abroad – Manufacturing in Eastern Europe - Bosnia', 'meta_description' => 'Welding abroad ✓ Low cost production ☆ 300 to 5.000 pieces ☆ German project management ➨ Manufacturing in Eastern Europe - Bosnia!', 'h1' => 'Irion – Welding abroad in Eastern Europe - Bosnia', 'seo1' => '<p>We are Irion, the welding company for precision!
+</p><p>
+</p><p>Our welding company in Bosnia focuses on low cost production and reasonable welding in contract manufacturing of weldments and inhouse engineerd weldments from 300 to 5.000 pieces.
+</p><p>
+</p><p>With Irion you achieve your steel weldments being manufactured abroad and simultaneously benefit from German project management with a personal contact person securing german quality. Manufacturing in Eastern Europe offers you reasonable production costs with consistently high quality.
+</p><p>
+</p><p>Irion offers precision manufacturing since 1926 by experienced welders supported by hightech robot systems up to 10 axis covering 6m part length </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
+<link rel="alternate" hreflang="en-US" href=/us/sites/welding-in-eastern-europe />
+<link rel="alternate" hreflang="x-default" href=/en/sites/welding-abroad />
+<link rel="alternate" hreflang="en" href=/en/sites/welding-abroad />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
+Route::get('/us/sites/welding-in-eastern-europe', function () {
+                return view('templates.site')->with(['meta_title' => 'Welding in Eastern Europe - Bosnia – Manufacturing abroad', 'meta_description' => 'Welding in Eastern Europe - Bosnia ✓ Low cost production ☆ 300 to 5,000 pieces ☆ German project management ➨ Manufacturing abroad!', 'h1' => 'Irion – Welding abroad in Eastern Europe - Bosnia', 'seo1' => '<p>We are Irion, the welding company for precision!
+</p><p>
+</p><p>Our welding company in Bosnia focuses on low cost production and reasonable welding in contract manufacturing of weldments and inhouse engineerd weldments from 300 to 5,000 pieces.
+</p><p>
+</p><p>With Irion you achieve your steel weldments being manufactured abroad and simultaneously benefit from German project management with a personal contact person securing german quality. Manufacturing in Eastern Europe offers you reasonable production costs with consistently high quality.
+</p><p>
+</p><p>Irion offers precision manufacturing since 1926 by experienced welders supported by hightech robot systems up to 10 axis covering 6m part length </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
+<link rel="alternate" hreflang="en-US" href=/us/sites/welding-in-eastern-europe />
+<link rel="alternate" hreflang="x-default" href=/en/sites/welding-abroad />
+<link rel="alternate" hreflang="en" href=/en/sites/welding-abroad />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/schweissberatung', function () {
