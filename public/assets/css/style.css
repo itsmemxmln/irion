@@ -13,6 +13,7 @@ h1 {
     letter-spacing: 0.2em !important;
     overflow-wrap: break-word;
     hyphens: auto;
+    padding: 0 20%;
 }
 span.span-h2 {
     text-align: center;
@@ -46,6 +47,9 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 1000px) {
+    h1 {
+        padding: 0 5%;
+    }
     .navbar {
         padding: 0;
     }

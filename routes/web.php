@@ -1857,7 +1857,8 @@ Route::get('/schweissunternehmen', function () {
 ', 'submenu' => '<strong><a class="mt-1" href="/management">Management</a></strong>
                                 <ul></ul><strong><a class="mt-1" href="#">Qualität</a></strong>
                                 <ul><li class="my-4 my-lg-1"><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></li></ul><strong><a class="mt-1" href="#">Standorte</a></strong>
-                                <ul><li class="my-4 my-lg-1"><a href="/sites/schweissbaugruppen-fertigung-in-deutschland">Deutschland</a></li><li class="my-4 my-lg-1"><a href="/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa">Bosnien</a></li></ul><strong><a class="mt-1" href="/schweissberatung">Kontakt</a></strong>
+                                <ul><li class="my-4 my-lg-1"><a href="/standorte/schweissbaugruppen-fertigung-in-deutschland">Deutschland</a></li><li class="my-4 my-lg-1"><a href="/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa">Bosnien</a></li></ul><strong><a class="mt-1" href="/schweissberatung">Kontakt</a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/movwing">MovWing</a></strong>
                                 <ul></ul>', 'img_src' => 'schweissunternehmen.webp', 'img_title' => 'Schweißunternehmen', 'img_alt' => 'Schweißunternehmen']);
             });
 Route::get('/en/industrial-welding-services', function () {
@@ -1888,6 +1889,7 @@ Route::get('/en/industrial-welding-services', function () {
                                 <ul></ul><strong><a class="mt-1" href=""></a></strong>
                                 <ul></ul><strong><a class="mt-1" href="/en#">Sites</a></strong>
                                 <ul><li class="my-4 my-lg-1"><a href="/en/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/en/sites/welding-abroad">Bosnia</a></li></ul><strong><a class="mt-1" href="/en/welding-consulting">Contact</a></strong>
+                                <ul></ul><strong><a class="mt-1" href=""></a></strong>
                                 <ul></ul>', 'img_src' => 'industrial-welding-services.webp', 'img_title' => 'Industrial welding services', 'img_alt' => 'Industrial welding services']);
             });
 Route::get('/us/welding-company', function () {
@@ -1918,6 +1920,7 @@ Route::get('/us/welding-company', function () {
                                 <ul></ul><strong><a class="mt-1" href=""></a></strong>
                                 <ul></ul><strong><a class="mt-1" href="/us#">Sites</a></strong>
                                 <ul><li class="my-4 my-lg-1"><a href="/us/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/us/sites/welding-in-eastern-europe">Bosnia</a></li></ul><strong><a class="mt-1" href="/us/welding-consulting">Contact</a></strong>
+                                <ul></ul><strong><a class="mt-1" href=""></a></strong>
                                 <ul></ul>', 'img_src' => 'welding-company.webp', 'img_title' => 'Welding company', 'img_alt' => 'Welding company']);
             });
 Route::get('/management', function () {
@@ -1993,7 +1996,7 @@ Route::get('#', function () {
 <link rel="alternate" hreflang="en-US" href=/us# />
 <link rel="alternate" hreflang="x-default" href=/en# />
 <link rel="alternate" hreflang="en" href=/en# />
-', 'submenu' => '<strong>Beispiele</strong><ul><li class="my-4 my-lg-1"><a href="/sites/schweissbaugruppen-fertigung-in-deutschland">Deutschland</a></li><li class="my-4 my-lg-1"><a href="/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa">Bosnien</a></li></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+', 'submenu' => '<strong>Beispiele</strong><ul><li class="my-4 my-lg-1"><a href="/standorte/schweissbaugruppen-fertigung-in-deutschland">Deutschland</a></li><li class="my-4 my-lg-1"><a href="/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa">Bosnien</a></li></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/en#', function () {
                 return view('templates.unternehmen')->with(['meta_title' => '', 'meta_description' => '', 'h1' => '', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=# />
@@ -2009,12 +2012,12 @@ Route::get('/us#', function () {
 <link rel="alternate" hreflang="en" href=/en# />
 ', 'submenu' => '<strong>Examples</strong><ul><li class="my-4 my-lg-1"><a href="/us/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/us/sites/welding-in-eastern-europe">Bosnia</a></li></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/sites/schweissbaugruppen-fertigung-in-deutschland', function () {
+Route::get('/standorte/schweissbaugruppen-fertigung-in-deutschland', function () {
                 return view('templates.site')->with(['meta_title' => 'Schweißbaugruppen Fertigung in Deutschland – Lohnfertiger', 'meta_description' => 'Schweißbaugruppen ✓ Lohnfertiger seit 1926 ☆ Maschinenbau ☆ Gleichbleibend hohe Qualität ➨ Fertigung in Deutschland - Baden-Württemberg!', 'h1' => 'Irion – Schweißbaugruppen Fertigung in Deutschland', 'seo1' => '<p>Wir sind Irion, Ihre Schweißbaugruppen-Experten mit hochwertiger Fertigung in Deutschland (Nordschwarzwald / Baden-Württemberg)!
 </p><p> 
 </p><p>Unsere Schweißer haben sich auf Schutzgasschweißen, Präzisionsfertigung und Schwerlastkonstruktionen für den Anlagen- & Maschinenbau spezialisiert. Unterstützt werden unsere Mitarbeiter von hochautomatisierten Schweißrobotern mit 10 Achsen auf 7m Länge. Lasern und Kanten zählt ebenfalls zu unserem Kompetenzfeld.
 </p><p> 
-</p><p>Als Lohnfertiger als auch Entwicklungsfertiger legen wir seit 1926 Wert auf gleichbleibend hohe Qualität.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/schweissbaugruppen-fertigung-in-deutschland />
+</p><p>Als Lohnfertiger als auch Entwicklungsfertiger legen wir seit 1926 Wert auf gleichbleibend hohe Qualität.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/standorte/schweissbaugruppen-fertigung-in-deutschland />
 <link rel="alternate" hreflang="en-US" href=/us/sites/welding-company-germany />
 <link rel="alternate" hreflang="x-default" href=/en/sites/welding-company-germany />
 <link rel="alternate" hreflang="en" href=/en/sites/welding-company-germany />
@@ -2025,7 +2028,7 @@ Route::get('/en/sites/welding-company-germany', function () {
 </p><p>
 </p><p>Our welders and robots focus on MIG and TIG welding, precision manufacturing and heavy-duty welding constructions.
 </p><p>
-</p><p>Since 1926, we have attached great importance to consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/schweissbaugruppen-fertigung-in-deutschland />
+</p><p>Since 1926, we have attached great importance to consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/standorte/schweissbaugruppen-fertigung-in-deutschland />
 <link rel="alternate" hreflang="en-US" href=/us/sites/welding-company-germany />
 <link rel="alternate" hreflang="x-default" href=/en/sites/welding-company-germany />
 <link rel="alternate" hreflang="en" href=/en/sites/welding-company-germany />
@@ -2036,20 +2039,20 @@ Route::get('/us/sites/welding-company-germany', function () {
 </p><p>
 </p><p>Our welders and robots focus on MIG and TIG welding, precision manufacturing and heavy-duty welding constructions.
 </p><p>
-</p><p>Since 1926, we have attached great importance to consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/schweissbaugruppen-fertigung-in-deutschland />
+</p><p>Since 1926, we have attached great importance to consistently high quality.</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/standorte/schweissbaugruppen-fertigung-in-deutschland />
 <link rel="alternate" hreflang="en-US" href=/us/sites/welding-company-germany />
 <link rel="alternate" hreflang="x-default" href=/en/sites/welding-company-germany />
 <link rel="alternate" hreflang="en" href=/en/sites/welding-company-germany />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa', function () {
+Route::get('/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa', function () {
                 return view('templates.site')->with(['meta_title' => 'Auslandsfertigung – Produktionsverlagerung nach Osteuropa', 'meta_description' => 'Auslandsfertigung ✓ Schweißbaugruppen ☆ Präzision ☆ Deutsches Projektmanagement ➨ Produktionsverlagerung nach Osteuropa - Bosnien!', 'h1' => 'Auslandsfertigung – Produktionsverlagerung nach Osteuropa - Bosnien', 'seo1' => '<p>Wir sind Irion, der Schweißbetrieb für Präzision!
 </p><p> 
 </p><p>Unsere Auslandsfertigung in Bosnien hat als Niedriglohnland den Schwerpunkt auf preiswerten Schweißbaugruppen in der Lohnfertigung von Schweißteilen und Schweißkonstruktionen von 300 bis 5.000 Stück.
 </p><p> 
 </p><p>Mit Irion können Sie Ihre Stahlkonstruktionen im Ausland fertigen lassen und gleichzeitig ein deutsches Projektmanagement mit persönlichem Ansprechpartner nutzen. Die Produktionsverlagerung nach Osteuropa bietet Ihnen preiswerte Produktionskosten bei gleichbleibend hoher Qualität und Verlässlichkeit.
 </p><p> 
-</p><p>Irion bietet Präzisionsfertigung seit 1926 durch erfahrene Schweißer unterstützt durch hochautomatisierte Robotertechnologie!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
+</p><p>Irion bietet Präzisionsfertigung seit 1926 durch erfahrene Schweißer unterstützt durch hochautomatisierte Robotertechnologie!</p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
 <link rel="alternate" hreflang="en-US" href=/us/sites/welding-in-eastern-europe />
 <link rel="alternate" hreflang="x-default" href=/en/sites/welding-abroad />
 <link rel="alternate" hreflang="en" href=/en/sites/welding-abroad />
@@ -2062,7 +2065,7 @@ Route::get('/en/sites/welding-abroad', function () {
 </p><p>
 </p><p>With Irion you achieve your steel weldments being manufactured abroad and simultaneously benefit from German project management with a personal contact person securing german quality. Manufacturing in Eastern Europe offers you reasonable production costs with consistently high quality.
 </p><p>
-</p><p>Irion offers precision manufacturing since 1926 by experienced welders supported by hightech robot systems up to 10 axis covering 6m part length </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
+</p><p>Irion offers precision manufacturing since 1926 by experienced welders supported by hightech robot systems up to 10 axis covering 6m part length </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
 <link rel="alternate" hreflang="en-US" href=/us/sites/welding-in-eastern-europe />
 <link rel="alternate" hreflang="x-default" href=/en/sites/welding-abroad />
 <link rel="alternate" hreflang="en" href=/en/sites/welding-abroad />
@@ -2075,7 +2078,7 @@ Route::get('/us/sites/welding-in-eastern-europe', function () {
 </p><p>
 </p><p>With Irion you achieve your steel weldments being manufactured abroad and simultaneously benefit from German project management with a personal contact person securing german quality. Manufacturing in Eastern Europe offers you reasonable production costs with consistently high quality.
 </p><p>
-</p><p>Irion offers precision manufacturing since 1926 by experienced welders supported by hightech robot systems up to 10 axis covering 6m part length </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
+</p><p>Irion offers precision manufacturing since 1926 by experienced welders supported by hightech robot systems up to 10 axis covering 6m part length </p>', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa />
 <link rel="alternate" hreflang="en-US" href=/us/sites/welding-in-eastern-europe />
 <link rel="alternate" hreflang="x-default" href=/en/sites/welding-abroad />
 <link rel="alternate" hreflang="en" href=/en/sites/welding-abroad />
@@ -2101,6 +2104,10 @@ Route::get('/us/welding-consulting', function () {
 <link rel="alternate" hreflang="x-default" href=/en/welding-consulting />
 <link rel="alternate" hreflang="en" href=/en/welding-consulting />
 ', 'submenu' => '', 'img_src' => 'welding-consulting.webp', 'img_title' => 'Welding consulting', 'img_alt' => 'Welding consulting']);
+            });
+Route::get('/movwing', function () {
+                return view('movwing')->with(['meta_title' => '', 'meta_description' => '', 'h1' => 'MovWing', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/movwing />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 
     Route::get('/impressum', function () {
@@ -2190,3 +2197,4 @@ Route::get('/us/welding-consulting', function () {
     Route::get('/en/company', function(){ 
         return Redirect::to('/industrial-welding-services', 301); 
     });
+    

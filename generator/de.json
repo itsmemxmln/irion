@@ -1131,7 +1131,7 @@
       "Menü 3. Ebene": "Deutschland",
       "Suchbegriff": "Schweißbaugruppen 200",
       "Verwandter Suchbegriff": "schweißen deutschland 10\r\nFertigung in Deutschland 10\r\nfertigungsbetrieb 30\r\nlohnfertigung maschinenbau 100\r\nlohnfertiger 150\r\nauftragsfertigung 250",
-      "URL": "/sites/schweissbaugruppen-fertigung-in-deutschland",
+      "URL": "/standorte/schweissbaugruppen-fertigung-in-deutschland",
       "Meta Title\r\n<=57 Zeichen": "Schweißbaugruppen Fertigung in Deutschland – Lohnfertiger",
       "Länge": 57,
       "Meta Description\r\n<=137 Zeichen": "Schweißbaugruppen ✓ Lohnfertiger seit 1926 ☆ Maschinenbau ☆ Gleichbleibend hohe Qualität ➨ Fertigung in Deutschland - Baden-Württemberg!",
@@ -1144,7 +1144,7 @@
       "Menü 3. Ebene": "Bosnien",
       "Suchbegriff": "auslandsfertigung 10\r\nProduktionsverlagerung nach Osteuropa 10",
       "Verwandter Suchbegriff": "\r\nProduktionsverlagerung 90\r\nproduktionsverlagerung in niedriglohnländer 10\r\nProduktionsverlagerung ins Ausland 50\r\nAuslandsproduktion 10\r\nproduktion im ausland 20\r\nim ausland produzieren lassen 10\r\nproduktion osteuropa 10\r\nniedriglohnländer europa 10\r\nniedriglohnländer europa 150\r\nlohnfertigung fräsen 100\r\nlohnfertigung drehteile 50",
-      "URL": "/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa",
+      "URL": "/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa",
       "Meta Title\r\n<=57 Zeichen": "Auslandsfertigung – Produktionsverlagerung nach Osteuropa",
       "Länge": 57,
       "Meta Description\r\n<=137 Zeichen": "Auslandsfertigung ✓ Schweißbaugruppen ☆ Präzision ☆ Deutsches Projektmanagement ➨ Produktionsverlagerung nach Osteuropa - Bosnien!",
@@ -1154,6 +1154,12 @@
     },
     {
       "INDEX": 60400,
+      "Menü 2. Ebene": "MovWing",
+      "URL": "/movwing",
+      "H1 Überschrift": "MovWing"
+    },
+    {
+      "INDEX": 60500,
       "Menü 2. Ebene": "Kontakt",
       "Suchbegriff": "Schweißberatung",
       "Suchvolumen": 50,

@@ -265,12 +265,14 @@
                                         </span>
                                         <ul class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown1">
                                     
-                                        <li><a class="dropdown-item {{ Request::is('sites/schweissbaugruppen-fertigung-in-deutschland') ? 'active' : '' }}"
-                                                href="/sites/schweissbaugruppen-fertigung-in-deutschland">
+                                        <li><a class="dropdown-item {{ Request::is('standorte/schweissbaugruppen-fertigung-in-deutschland') ? 'active' : '' }}"
+                                                href="/standorte/schweissbaugruppen-fertigung-in-deutschland">
                                                 Deutschland</a></li>
-                                        <li><a class="dropdown-item {{ Request::is('sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa') ? 'active' : '' }}"
-                                                href="/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa">
+                                        <li><a class="dropdown-item {{ Request::is('standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa') ? 'active' : '' }}"
+                                                href="/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa">
                                                 Bosnien</a></li></ul>
                                         </li>
+                                <li><a class="dropdown-item {{ Request::is('movwing') ? 'active' : '' }}"
+                                    href="/movwing">MovWing</a></li>
                                 <li><a class="dropdown-item {{ Request::is('schweissberatung') ? 'active' : '' }}"
                                     href="/schweissberatung">Kontakt</a></li></ul></li>

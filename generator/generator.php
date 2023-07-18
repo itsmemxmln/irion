@@ -16,8 +16,8 @@
         "/schweissunternehmen/en-1090-zertifizierte-betriebe" => "templates.certificates",
         "/schweissunternehmen/konstante-schweissqualitaet" => "templates.certificates",
         "/schweissunternehmen/qualitaetssicherung-schweissen" => "templates.certificates", 
-        "/sites/schweissbaugruppen-fertigung-in-deutschland" => "templates.site", 
-        "/sites/auslandsfertigung-produktionsverlagerung-nach-osteuropa" => "templates.site", 
+        "/standorte/schweissbaugruppen-fertigung-in-deutschland" => "templates.site", 
+        "/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa" => "templates.site", 
     ];
     $nav_submenu_text = [
         "de" => "Übersicht",
