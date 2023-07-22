@@ -21,24 +21,57 @@
         <h1 class="text-center text-white fw-bold animate__animated animate__zoomIn">@if(isset($h1)) {{$h1}} @endif</h1>
     </section>
 @endif
-<section class="container my-5">
-    <h2 class="h4">{{ __("Wir stellen ein (Voll-/Teilzeit)") }}</h2>
-    <ul>
-        <li>ZerspanungsmechanikerIn CNC/CADCAM - <strong>Ausbildung</strong> (m/w/d)</li>
-        <li>FacharbeiterIn für Metalltechnik - <strong>Ausbildung</strong> (m/w/d)</li>
-        <li>IndustriemechanikerIn – <strong>Ausbildung</strong> (m/w/d)</li>
-        <li>ZerspanungsmechanikerIn CNC/CADCAM (m/w/d)</li>
-        <li>FacharbeiterIn für Metalltechnik (m/w/d)</li>
-        <li>IndustriemechanikerIn (m/w/d)</li>
-        <li>Konstrukteur / Projektkoordinator (m/w/d)</li>
-        <li>TechnikerIn Arbeitsvorbereitung (m/w/d)</li>
-        <li>Bürofachkraft (m/w/d)</li>
-        <li>ProjektleiterIn Stahl/Maschinenbau (m/w/d)</li>
-        <li>LKW FahrerIn (m/w/d)</li>
-        <li>SchutzgasschweißerIn (WIG/MIG/MAG) (m/w/d)</li>
-        <li>LackiererIn (m/w/d)</li>
-    </ul>
-    <p>{{ __("Bitte senden Sie Ihre aussagekräftigen Bewerbungsunterlagen an: info@irion.de oder besuchen Sie uns doch kurzfristig persönlich.") }}</p>
+
+<section class="container">
+    @if ((isset($seo1) && $seo1 != "" ) || (isset($submenu) && $submenu != "" ))
+    <div class="container my-5">
+        <div class="row align-items-center rounded-0 border shadow-lg ">
+            <div class="col-lg-12 p-5 center">
+                <p style="text-align:center">
+                    @if (isset($seo1)){!!$seo1!!}@endif
+                </p>
+
+                @if (isset($submenu))
+                    {!!$submenu!!}
+                @endif
+            </div>
+        </div>
+    </div>
+    @endif
+
+
+    <div class="container my-5 border shadow-lg p-5">
+        <h2 class="h4">{{ __("Wir stellen ein (Voll-/Teilzeit)") }}</h2>
+        <ul>
+            <li>ZerspanungsmechanikerIn CNC/CADCAM - <strong>Ausbildung</strong> (m/w/d)</li>
+            <li>FacharbeiterIn für Metalltechnik - <strong>Ausbildung</strong> (m/w/d)</li>
+            <li>IndustriemechanikerIn – <strong>Ausbildung</strong> (m/w/d)</li>
+            <li>ZerspanungsmechanikerIn CNC/CADCAM (m/w/d)</li>
+            <li>FacharbeiterIn für Metalltechnik (m/w/d)</li>
+            <li>IndustriemechanikerIn (m/w/d)</li>
+            <li>Konstrukteur / Projektkoordinator (m/w/d)</li>
+            <li>TechnikerIn Arbeitsvorbereitung (m/w/d)</li>
+            <li>Bürofachkraft (m/w/d)</li>
+            <li>ProjektleiterIn Stahl/Maschinenbau (m/w/d)</li>
+            <li>LKW FahrerIn (m/w/d)</li>
+            <li>SchutzgasschweißerIn (WIG/MIG/MAG) (m/w/d)</li>
+            <li>LackiererIn (m/w/d)</li>
+        </ul>
+        <p>{{ __("Bitte senden Sie Ihre aussagekräftigen Bewerbungsunterlagen an: info@irion.de oder besuchen Sie uns doch kurzfristig persönlich.") }}</p>
+    </div>
+
+
+    @if (isset($seo2) && $seo2 != '')
+        <div class="container my-5">
+            <div class="row align-items-center rounded-0 border shadow-lg ">
+                <div class="col-lg-12 p-5 center">
+                    <p>
+                        {!!$seo2!!}
+                    </p>
+                </div>
+            </div>
+        </div>
+    @endif
 </section>
 
 <section class="container my-5">

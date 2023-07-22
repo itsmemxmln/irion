@@ -212,21 +212,21 @@
                                         <li><a class="dropdown-item {{ Request::is('stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen') ? 'active' : '' }}"
                                                 href="/stahlverarbeitung/stahlbearbeitung/stahl-kanten-lassen">
                                                 Stahl kanten lassen</a></li></ul>
-                                        </li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('metalltechnik-jobs/') || Request::is('metalltechnik-jobs//*') ? 'active' : '' }}"
-                                        href="/metalltechnik-jobs/" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        </li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('metalltechnik-jobs') || Request::is('metalltechnik-jobs/*') ? 'active' : '' }}"
+                                        href="/metalltechnik-jobs" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Karriere
                                     </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs/') ? 'active' : '' }}"
-                                href="/metalltechnik-jobs/">Übersicht</a></li>
+                        <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs') ? 'active' : '' }}"
+                                href="/metalltechnik-jobs">Übersicht</a></li>
                         <li>
                             <hr class="dropdown-divider my-0">
                         </li>
-                                <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/') ? 'active' : '' }}"
-                                    href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/">Industriemechaniker Ausbildung</a></li>
-                                <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/') ? 'active' : '' }}"
-                                    href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/">Kauffrau für Büromanagement</a></li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('schweissunternehmen') || Request::is('schweissunternehmen/*') ? 'active' : '' }}"
+                                <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald') ? 'active' : '' }}"
+                                    href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald">Industriemechaniker Ausbildung</a></li>
+                                <li><a class="dropdown-item {{ Request::is('metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald') ? 'active' : '' }}"
+                                    href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald">Kauffrau für Büromanagement</a></li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('schweissunternehmen') || Request::is('schweissunternehmen/*') ? 'active' : '' }}"
                                         href="/schweissunternehmen" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Unternehmen

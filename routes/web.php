@@ -1835,18 +1835,18 @@ Route::get('/us/steel-processing-company/steel-machining/press-brake-metal-formi
 <link rel="alternate" hreflang="en" href=/en/steel-processing-company/steel-machining/press-brake-tooling />
 ', 'submenu' => '', 'img_src' => 'press-brake-metal-forming.webp', 'img_title' => 'Press brake metal forming', 'img_alt' => 'Press brake metal forming']);
             });
-Route::get('/metalltechnik-jobs/', function () {
-                return view('templates.basic')->with(['meta_title' => 'Metalltechnik Jobs – Bad Teinach / Calw (Nordschwarzwald)', 'meta_description' => 'Metalltechnik Jobs in Bad Teinach / Calw im Nordschwarzwald ✓ Offene Stellenangebote ☆ Top Arbeitgeber ➨ Jetzt bei Irion bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/ />
-', 'submenu' => '<strong><a class="mt-1" href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/">Industriemechaniker Ausbildung</a></strong>
-                                <ul></ul><strong><a class="mt-1" href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/">Kauffrau für Büromanagement</a></strong>
+Route::get('/metalltechnik-jobs', function () {
+                return view('templates.karriere')->with(['meta_title' => 'Metalltechnik Jobs – Bad Teinach / Calw (Nordschwarzwald)', 'meta_description' => 'Metalltechnik Jobs in Bad Teinach / Calw im Nordschwarzwald ✓ Offene Stellenangebote ☆ Top Arbeitgeber ➨ Jetzt bei Irion bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs />
+', 'submenu' => '<strong><a class="mt-1" href="/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald">Industriemechaniker Ausbildung</a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald">Kauffrau für Büromanagement</a></strong>
                                 <ul></ul>', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/', function () {
-                return view('templates.basic')->with(['meta_title' => 'Industriemechaniker Ausbildung – Bad Teinach / Calw', 'meta_description' => 'Ausbildung zum Industriemechaniker ✓ Ausbildungsplatz in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald/ />
+Route::get('/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald', function () {
+                return view('templates.karriere')->with(['meta_title' => 'Industriemechaniker Ausbildung – Bad Teinach / Calw', 'meta_description' => 'Ausbildung zum Industriemechaniker ✓ Ausbildungsplatz in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
-Route::get('/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/', function () {
-                return view('templates.basic')->with(['meta_title' => 'Kauffrau für Büromanagement Stellenangebot – Bad Teinach', 'meta_description' => 'Stellenangebot Kauffrau für Büromanagement ✓ Job in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald/ />
+Route::get('/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald', function () {
+                return view('templates.karriere')->with(['meta_title' => 'Kauffrau für Büromanagement Stellenangebot – Bad Teinach', 'meta_description' => 'Stellenangebot Kauffrau für Büromanagement ✓ Job in Bad Teinach / Calw im Nordschwarzwald ☆ Top Arbeitgeber ➨ Jetzt bewerben!', 'h1' => '', 'seo1' => '', 'seo2' => 'Ist der Job in der Nähe? <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>', 'hreflang' => '<link rel="alternate" hreflang="de" href=/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 Route::get('/schweissunternehmen', function () {
@@ -1857,8 +1857,8 @@ Route::get('/schweissunternehmen', function () {
 ', 'submenu' => '<strong><a class="mt-1" href="/management">Management</a></strong>
                                 <ul></ul><strong><a class="mt-1" href="#">Qualität</a></strong>
                                 <ul><li class="my-4 my-lg-1"><a href="/schweissunternehmen/en-1090-zertifizierte-betriebe">DIN EN 1090-2:2018 EXC3 nach EN 1090-2</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/konstante-schweissqualitaet">DIN EN ISO 3834-2:2021</a></li><li class="my-4 my-lg-1"><a href="/schweissunternehmen/qualitaetssicherung-schweissen">ISO 9001:2015</a></li></ul><strong><a class="mt-1" href="#">Standorte</a></strong>
-                                <ul><li class="my-4 my-lg-1"><a href="/standorte/schweissbaugruppen-fertigung-in-deutschland">Deutschland</a></li><li class="my-4 my-lg-1"><a href="/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa">Bosnien</a></li></ul><strong><a class="mt-1" href="/schweissberatung">Kontakt</a></strong>
-                                <ul></ul><strong><a class="mt-1" href="/movwing">MovWing</a></strong>
+                                <ul><li class="my-4 my-lg-1"><a href="/standorte/schweissbaugruppen-fertigung-in-deutschland">Deutschland</a></li><li class="my-4 my-lg-1"><a href="/standorte/auslandsfertigung-produktionsverlagerung-nach-osteuropa">Bosnien</a></li></ul><strong><a class="mt-1" href="/movwing">MovWing</a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/schweissberatung">Kontakt</a></strong>
                                 <ul></ul>', 'img_src' => 'schweissunternehmen.webp', 'img_title' => 'Schweißunternehmen', 'img_alt' => 'Schweißunternehmen']);
             });
 Route::get('/en/industrial-welding-services', function () {
@@ -1888,8 +1888,8 @@ Route::get('/en/industrial-welding-services', function () {
 ', 'submenu' => '<strong><a class="mt-1" href="/en/management">Management</a></strong>
                                 <ul></ul><strong><a class="mt-1" href=""></a></strong>
                                 <ul></ul><strong><a class="mt-1" href="/en#">Sites</a></strong>
-                                <ul><li class="my-4 my-lg-1"><a href="/en/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/en/sites/welding-abroad">Bosnia</a></li></ul><strong><a class="mt-1" href="/en/welding-consulting">Contact</a></strong>
-                                <ul></ul><strong><a class="mt-1" href=""></a></strong>
+                                <ul><li class="my-4 my-lg-1"><a href="/en/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/en/sites/welding-abroad">Bosnia</a></li></ul><strong><a class="mt-1" href=""></a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/en/welding-consulting">Contact</a></strong>
                                 <ul></ul>', 'img_src' => 'industrial-welding-services.webp', 'img_title' => 'Industrial welding services', 'img_alt' => 'Industrial welding services']);
             });
 Route::get('/us/welding-company', function () {
@@ -1919,8 +1919,8 @@ Route::get('/us/welding-company', function () {
 ', 'submenu' => '<strong><a class="mt-1" href="/us/management">Management</a></strong>
                                 <ul></ul><strong><a class="mt-1" href=""></a></strong>
                                 <ul></ul><strong><a class="mt-1" href="/us#">Sites</a></strong>
-                                <ul><li class="my-4 my-lg-1"><a href="/us/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/us/sites/welding-in-eastern-europe">Bosnia</a></li></ul><strong><a class="mt-1" href="/us/welding-consulting">Contact</a></strong>
-                                <ul></ul><strong><a class="mt-1" href=""></a></strong>
+                                <ul><li class="my-4 my-lg-1"><a href="/us/sites/welding-company-germany">Germany</a></li><li class="my-4 my-lg-1"><a href="/us/sites/welding-in-eastern-europe">Bosnia</a></li></ul><strong><a class="mt-1" href=""></a></strong>
+                                <ul></ul><strong><a class="mt-1" href="/us/welding-consulting">Contact</a></strong>
                                 <ul></ul>', 'img_src' => 'welding-company.webp', 'img_title' => 'Welding company', 'img_alt' => 'Welding company']);
             });
 Route::get('/management', function () {
@@ -2084,6 +2084,10 @@ Route::get('/us/sites/welding-in-eastern-europe', function () {
 <link rel="alternate" hreflang="en" href=/en/sites/welding-abroad />
 ', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
+Route::get('/movwing', function () {
+                return view('movwing')->with(['meta_title' => '', 'meta_description' => '', 'h1' => 'MovWing', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/movwing />
+', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
+            });
 Route::get('/schweissberatung', function () {
                 return view('templates.kontakt')->with(['meta_title' => 'Schweißberatung – Kostenloses Erstgespräch bei IRION', 'meta_description' => 'Schweißberatung von IRION ✓ 30 Minuten kostenlose Schweißberatung ☆ Qualität von IRION seit 1926 ➨ Nehmen Sie jetzt Kontakt auf!', 'h1' => '30 Minuten kostenlose Schweißberatung', 'seo1' => 'Sie haben Fragen zum Thema Schweißen oder anderen Fachgebieten? Wir bieten Ihnen eine kostenlose Schweißberatung an. Nehmen Sie gleich Kontakt auf!', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/schweissberatung />
 <link rel="alternate" hreflang="en-US" href=/us/welding-consulting />
@@ -2104,10 +2108,6 @@ Route::get('/us/welding-consulting', function () {
 <link rel="alternate" hreflang="x-default" href=/en/welding-consulting />
 <link rel="alternate" hreflang="en" href=/en/welding-consulting />
 ', 'submenu' => '', 'img_src' => 'welding-consulting.webp', 'img_title' => 'Welding consulting', 'img_alt' => 'Welding consulting']);
-            });
-Route::get('/movwing', function () {
-                return view('movwing')->with(['meta_title' => '', 'meta_description' => '', 'h1' => 'MovWing', 'seo1' => '', 'seo2' => '', 'hreflang' => '<link rel="alternate" hreflang="de" href=/movwing />
-', 'submenu' => '', 'img_src' => '', 'img_title' => '', 'img_alt' => '']);
             });
 
     Route::get('/impressum', function () {
