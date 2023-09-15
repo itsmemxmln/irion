@@ -12,7 +12,7 @@ h1 {
     font-display: swap;
     letter-spacing: 0.2em !important;
     overflow-wrap: break-word;
-    hyphens: auto;
+    /* hyphens: auto; */
     padding: 0 20%;
 }
 span.span-h2 {
@@ -372,10 +372,9 @@ strong a {
     right: 0;
     padding: 0;
     margin: 0;
-    z-index: 1600 !important;
+    z-index: 10 !important;
     position: fixed;
     top: 31%;
-    z-index: 1;
     background-color: rgba(109, 109, 109, 0.7);
     color: #fff !important;
     list-style: none outside;

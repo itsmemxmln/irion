@@ -25,42 +25,42 @@
     <h2 class="h2 mt-5 text-center">{{ __("Unser Wertschöpfungsnetzwerk")}}<br>- {{ __("die Garantie für Ihr Hochleistungsprodukt")}}!</h2>
     <div id="certificates" class="row justify-content-center mt-5">
         <div class="card col-md-3 col-6 mb-5 animate__animated animate__fadeIn">
-            <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('assets/certificates/en-1090-zertifizierte-betriebe.webp.pdf') }}">
+            <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('schweissunternehmen/en-1090-zertifizierte-betriebe') }}">
                 <i class="bi bi-eye"></i>
                 <img src="{{ url('assets/certificates/en-1090-zertifizierte-betriebe.webp') }}" class="card-img-top cert-preview" alt="CNC Schweißen">
             </a>
         </div>
-        @if (app()->getLocale() == "de")
+        {{-- @if (app()->getLocale() == "de") --}}
         <div class="card col-md-3 col-6 mb-5 animate__animated animate__fadeIn">
-            <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('assets/certificates/konstante-schweissqualitaet.webp.pdf') }}">
+            <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('schweissunternehmen/konstante-schweissqualitaet') }}">
                 <i class="bi bi-eye"></i>
                 <img src="{{ url('assets/certificates/konstante-schweissqualitaet.webp') }}" class="card-img-top cert-preview" alt="CNC Schweißen">
             </a>
         </div>
-        @else
+        {{-- @else
         <div class="card col-md-3 col-6 mb-5 animate__animated animate__fadeIn">
             <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('assets/certificates/DIN_EN_ISO_3834-2_2021_Zertifikat_2022-2025-englisch.pdf') }}">
                 <i class="bi bi-eye"></i>
                 <img src="{{ url('assets/certificates/DIN_EN_ISO_3834-2_2021_Zertifikat_2022-2025-englisch-cover.webp') }}" class="card-img-top cert-preview" alt="CNC Schweißen">
             </a>
         </div>
-        @endif
+        @endif --}}
         <!-- TÜV Zertifikat -->
-        @if (app()->getLocale() == "de")
+        {{-- @if (app()->getLocale() == "de") --}}
         <div class="card col-md-3 col-6 mb-5 animate__animated animate__fadeIn">
-            <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('assets/certificates/qualitaetssicherung-schweissen.webp.pdf') }}">
+            <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('schweissunternehmen/qualitaetssicherung-schweissen') }}">
                 <i class="bi bi-eye"></i>
                 <img src="{{ url('assets/certificates/qualitaetssicherung-schweissen.webp') }}" class="card-img-top" alt="CNC Schweißen">
             </a>
         </div>
-        @else
+        {{-- @else
         <div class="card col-md-3 col-6 mb-5 animate__animated animate__fadeIn">
             <a class="btn btn-primary btn-lg rounded-0" target="_blank" href="{{ url('assets/certificates/en-ISO-9001-2015-Certificate-2019-2022.pdf') }}">
                 <i class="bi bi-eye"></i>
                 <img src="{{ url('assets/certificates/en-ISO-9001-2015-Certificate-2019-2022-cover.webp') }}" class="card-img-top" alt="CNC Schweißen">
             </a>
         </div>
-        @endif
+        @endif --}}
     </div>
     <div class="text-center animate__animated animate__fadeInUp">
         <img src="{{ url('assets/certificates/iso-9001.png') }}" alt="TüV ISO 9001" height="250px" width="250px">
