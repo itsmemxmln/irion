@@ -9,7 +9,10 @@
         "/movwing" => "movwing",
         "/schweissunternehmen" => "templates.unternehmen",
         "/management" => "templates.management",
-        "/metalltechnik-jobs" => "templates.karriere",
+        "/metalltechnik-jobs/industriemechaniker-ausbildung-bad-teinach-nordschwarzwald" => "templates.karriere-detail",
+        "/metalltechnik-jobs/kauffrau-fuer-bueromanagement-stellenangebot-bad-teinach-nordschwarzwald" => "templates.karriere-detail",
+        "/metalltechnik-jobs/schweisser-jobs-bad-teinach-nordschwarzwald" => "templates.karriere-detail",
+        "/metalltechnik-jobs/assistentin-der-geschaeftsfuehrung-stellenangebot-bad-teinach-nordschwarzwald" => "templates.karriere-detail",
         "/metalltechnik-jobs" => "templates.karriere",
         "/schweissberatung" => "templates.kontakt",
         "/schweissunternehmen/zertifikate" => "templates.certificates-index",
@@ -26,7 +29,8 @@
         "us" => "Overview"
     ];
     $nav_submenu_text_excludes = [
-        "Qualität"
+        "Qualität",
+        "Career"
     ];
 
     // Languages
@@ -194,6 +198,7 @@
         public $h1;
         public $seo1;
         public $seo2;
+        public $script;
         public $meta_title;
         public $meta_description;
         public $img_src;
@@ -212,6 +217,7 @@
             $this->h1 = $item["H1 Überschrift"];
             $this->seo1 = $this->sanitize_string($item["SEO-Text oben anfügen"]);
             $this->seo2 = isset($item["SEO-Text unten anfügen"]) ? $this->sanitize_string($item["SEO-Text unten anfügen"]) : null;
+            $this->script = $item["GoogleForJobs"];
             $this->meta_title = $item["Meta Title\r\n<=57 Zeichen"];
             $this->meta_description = $item["Meta Description\r\n<=137 Zeichen"]; 
             $this->img_src = $item["Bild Dateiname"];
@@ -295,7 +301,7 @@
         if ($item->url != ""){
             return 
             "Route::get('".$item->url."', function () {
-                return view('".$blade."')->with(['meta_title' => '".$item->meta_title."', 'meta_description' => '".$item->meta_description."', 'h1' => '".$item->h1."', 'seo1' => '".$item->seo1."', 'seo2' => '".$item->seo2."', 'hreflang' => '".$hreflang."', 'submenu' => '".$item->get_submenu()."', 'img_src' => '".$item->img_src."', 'img_title' => '".$item->img_title."', 'img_alt' => '".$item->img_alt."']);
+                return view('".$blade."')->with(['meta_title' => '".$item->meta_title."', 'meta_description' => '".$item->meta_description."', 'h1' => '".$item->h1."', 'seo1' => '".$item->seo1."', 'seo2' => '".$item->seo2."', 'script' => '".$item->script."', 'hreflang' => '".$hreflang."', 'submenu' => '".$item->get_submenu()."', 'img_src' => '".$item->img_src."', 'img_title' => '".$item->img_title."', 'img_alt' => '".$item->img_alt."']);
             });\n";            
         }
         return "";
@@ -362,7 +368,7 @@
             foreach($site->children as $subsite){
                 $subsite->create_submenus();
                 foreach ($subsite->get_available_langs() as $lang){ ## LANG LOOP
-                    $blade = (in_array($subsite->blade, ["templates.certificates-index", "templates.quality-policy", "movwing", "templates.management", "templates.kontakt"])) ? $subsite->blade : $site->blade;
+                    $blade = (in_array($subsite->blade, ["templates.certificates-index", "templates.quality-policy", "movwing", "templates.management", "templates.kontakt", "templates.karriere-detail"])) ? $subsite->blade : $site->blade;
                     
                     $routes .= create_route($subsite->$lang, $subsite->hreflang, $blade); # bug used as feature (blade from site not subsubsite)
                 }
@@ -460,7 +466,7 @@
                     $navbar[$lang] .= '
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">';
                     // add header (first link with fllowing hr)
-                    if (!in_array($site->de->menu, $nav_submenu_text_excludes)){
+                    if (!in_array($site->$lang->menu, $nav_submenu_text_excludes)){
                         $navbar[$lang] .= '
                         <li><a class="dropdown-item {{ Request::is(\''.$site->$lang->url_is().'\') ? \'active\' : \'\' }}"
                                 href="'.$site->$lang->url.'">'.$nav_submenu_text[$lang].'</a></li>

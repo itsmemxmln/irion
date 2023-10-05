@@ -1,7 +1,7 @@
 <section>
     <div class="container my-5">
         <div class="row align-items-center rounded-0 border shadow-lg">
-            <div class="col-lg-7 p-5 animate__animated animate__fadeInRight">
+            <div class="col-lg-7 p-5 animate__animated animate__fadeInRight" id="contact">
                 <p class="h2">{{ __("Fragen Sie unverbindlich an!") }}</p>
                 <p class="p">{{ __("Irion besteht seit 1926 und ist der Schweißbaugruppen Hersteller aus dem Schwarzwald.") }}</p>
                 <p class="h4">{{ __("Ihr Ansprechpartner") }}</p>

@@ -286,5 +286,13 @@
     "Schreiben Sie das Wort 'Mensch' in das nachfolgende Feld." : "Write the word 'human' in the box below.",
     "Abschicken" : "Send message",
 
-    "Alle Rechte vorbehalten" : "All rights reserved"
+    "Alle Rechte vorbehalten" : "All rights reserved",
+
+    "career.about-irion": "Irion has been in existence since 1929 and is an owner-managed industrial company from the Black Forest. Our speciality is machined and coated welded assemblies (from 30 to 5000 pieces) incl. mech. & electr. assembly as well as integration. Robot welding, maintenance, machined, painted and hardened welded parts. We stand for consistently high quality, responsibility and precision. Currently, IRION GmbH employs about 40 motivated employees in administration and production. The production area is more than 3500 sqm. We take social responsibility. Acting in an environmentally friendly way is a matter of course for us. We generate over 60% of our required electricity ourselves from renewable energy and supply an additional 200 households.",
+    "career.distance-irion-h2": "Is the job nearby?",
+    "career.distance-irion": "Public transport system in walking distance (50m). Trains to Calw, Wildberg, Nagold, Bad Liebenzell, Pforzheim, Hirsau, Eutingen, Horb. . (savings up to 500€  per car each month) <ul> <li>72213 Altensteig: car 23 min | train 30 min | bike 1 h 04 min</li> <li>75378 Bad Liebenzell: car 22 min | train 22 min | bike 46 min</li> <li>71034 Böblingen: car 29 min | train 43 min | bike 1 h 21 min</li> <li>75365 Calw: car 7 min | train 7 min | bike 17 min</li> <li>71083 Herrenberg: car 23 min | train 31 min | bike 1 h 04 min</li> <li>71063 Sindelfingen: car 29 min | train 43 min | bike 1 h 24 min</li> <li>72218 Wildberg: car 10 min | train 12 min | bike 30 min</li> </ul>",
+
+    "career.contact-h2": "We look forward to meeting you",
+    "career.contact-h2-polite": "We look forward to meeting you",
+    "career.contact": "If you’re interested get in contact with Bernd Fleissinger."
 }

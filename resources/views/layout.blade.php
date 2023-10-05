@@ -59,7 +59,7 @@
     <div class="main-content">
         @yield('content')
         <div class="ssb-btns-right animate__animated animate__fadeInRight">
-            <div class="ssb-dark">
+            <div class="ssb-dark"> 
                 {{-- <a href="/{{ app()->getLocale() == "de" ? '' : 'en' }}" class="ssb-link" aria-label="Web">
                     <div class="ssb-btn">
                         <i class="bi bi-house-fill mx-2"></i> <span>{{ __("Startseite") }}</span>

@@ -212,7 +212,14 @@
                                         <li><a class="dropdown-item {{ Request::is('en/steel-processing-company/steel-machining/press-brake-tooling') ? 'active' : '' }}"
                                                 href="/en/steel-processing-company/steel-machining/press-brake-tooling">
                                                 Press brake tooling</a></li></ul>
-                                        </li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('en/industrial-welding-services') || Request::is('en/industrial-welding-services/*') ? 'active' : '' }}"
+                                        </li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('en#') || Request::is('en#/*') ? 'active' : '' }}"
+                                        href="/en#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Career
+                                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item {{ Request::is('en/welding-jobs-in-germany-for-english-speakers-bad-teinach-black-forest') ? 'active' : '' }}"
+                                    href="/en/welding-jobs-in-germany-for-english-speakers-bad-teinach-black-forest">Welder</a></li></ul></li><li class="nav-item mx-2 dropdown"><a class="nav-link fw-bold dropdown-toggle {{ Request::is('en/industrial-welding-services') || Request::is('en/industrial-welding-services/*') ? 'active' : '' }}"
                                         href="/en/industrial-welding-services" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Company
