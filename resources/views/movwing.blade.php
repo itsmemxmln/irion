@@ -30,6 +30,9 @@
     <div class="my-5 text-center">
         <a href="/assets/movWing/studie_movwig.pdf" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold rounded-0">Jetzt PDF
             Herunterladen</a>
+        <a href="https://franz-in-motion.de" target="_blank" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold rounded-0">
+            Zum Online Shop
+        </a>
     </div>
     <div class="row">
         <div class="col-md-6 p-md-5">
