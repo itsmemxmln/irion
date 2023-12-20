@@ -281,7 +281,7 @@
 </section>
 
 <div class="my-5 text-center">
-    <a href="{{ app()->getLocale() == "de" ? url("kompetenzen") : url("en/competences") }}" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold rounded-0">{{ __("Unsere Kompetenzen")}}</a>
+    <a href="{{ app()->getLocale() == "de" ? url("praezisionsfertigung") : url("en/competences") }}" class="btn btn-dark btn-lg px-4 me-md-2 fw-bold rounded-0">{{ __("Unsere Kompetenzen")}}</a>
 </div>
 
 <!-- @include('contact-now') -->
@@ -289,7 +289,7 @@
 @include('counter')
 
 <div class="px-4 py-5 my-5 text-center">
-    <span class="display-5 fw-bold"><span class="txt-rotate" data-period="2000" data-rotate='[ "{{ __("Präzise Schweißgruppen") }}", "{{ __("ab 30 Stück") }}", "{{ __("in hoher Qualität zu attraktiven Preisen!") }}" ]'></span></span>
+    <span class="display-5 fw-bold"><span class="txt-rotate" data-period="2000" data-rotate='[ "{{ __("Präzise Schweißgruppen") }}", "{{ __("ab 30 Stück") }}", "{{ __("in gleichbleibend hoher Qualität!") }}" ]'></span></span>
 </div>
 
 <section class="bg-light">
@@ -302,7 +302,7 @@
                 <h2 class="display-5 fw-bold lh-1 mb-3">{{ __("Wir können mehr!")}}</h2>
                 <p class="lead" align="justify">{{ __("Wir arbeiten ständig an der Verschiebung technologischer Grenzen. Bei uns gibt es kein 0815. Wir verbinden Wissen mit Können. Wir schaffen Mehrwerte, die uns von anderen Anbietern unterscheiden und für Sie der Grund sein könnte, unser Kunde werden zu wollen.")}}</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="{{ app()->getLocale() == "de" ? '' : 'en/' }}{{ __("kompetenzen") }}" class="btn btn-dark btn-lg px-4 me-md-2 rounded-0">{{ __("Kompetenzen")}}</a>
+                    <a href="{{ app()->getLocale() == "de" ? '' : 'en/' }}{{ __("praezisionsfertigung") }}" class="btn btn-dark btn-lg px-4 me-md-2 rounded-0">{{ __("Präzisionsfertigung")}}</a>
                     <a href="{{ app()->getLocale() == "de" ? '' : 'en/' }}{{ __("kontakt") }}" class="btn btn-outline-secondary btn-lg px-4 rounded-0">{{ __("Kontakt aufnehmen")}}</a>
                 </div>
             </div>

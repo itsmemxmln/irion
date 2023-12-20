@@ -1,0 +1,218 @@
+{
+    "weldingWirePerYear": "2000",
+
+
+
+
+
+    "competences.title": "Kompetenzen / Leistungen der Irion GmbH",
+    "competences.seo": "IRION steht für Präzisionsfertigung in der Metallverarbeitung. Von der Entwicklung bis zur Montage nutzen wir zahlreiche Kompetenzen, um Ihr Hochleistungsprodukt herzustellen. Informieren Sie sich hier über die verschiedenen Prozesse in unserem Wertschöpfungsnetzwerk.",
+
+
+     
+    "welding-fabrications.title": "Schweißkonstruktionen – Schweißteile Fertigung seit 1926",
+    "welding-fabrications.h1": "Schweißkonstruktionen",
+    "welding-fabrications.seo": "Irion steht seit 1926 für Schweißkonstruktionen in konstant hoher Qualität wie Skids, Lastaufnahmemittel, Maschinenbau- und Stahlbaukonstruktionen sowie Transportsysteme für die Produktion und Industrie Ersatzteile. Unsere Schweißteile Fertigung ist dabei spezialisiert auf das Projektgeschäft von 30 bis 5000 Stück.",
+
+    "welding-fabrications.skid-construction.title": "Skid Anlagenbau – Skid System Fertigung für die Industrie",
+    "welding-fabrications.skid-construction.h1": "Skid Anlagenbau",
+    "welding-fabrications.skid-construction.seo": "Irion bietet den Skid Anlagenbau für die Automobilindustrie sowie individuelle Transfersysteme und Sonderladungsträger für die Industrie. Wir fertigen Ihr maßgeschneidertes Skid System im Projektgeschäft von 30 bis 5000 Stück in konstant hoher Qualität.",
+
+    "welding-fabrications.skid-construction.skid-automotive.title":"Skid Automobilindustrie – Skid Fördertechnik Automotive",
+    "welding-fabrications.skid-construction.skid-automotive.h1":"Skid Automobilindustrie",
+    "welding-fabrications.skid-construction.skid-automotive.seo":"Irion bietet Skid Systeme für die Automobilindustrie. Die Karosserietransportgestelle sind beispielsweise für die spezifischen Anforderungen im Automobil Rohbau und in Lackstraßen ausgelegt. Beipspiele wären Rohbauskids, Tauchskids zur KTL Lackierung, Lackierskids oder eine Skidprüfelehre. <br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Skid Fördertechnik für Automotive von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.1": "Fertigung unter Berücksichtigung mechanischer und metallurgischer Aspekte",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.2": "Verschmutzungsresistenz",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.3": "Temperaturbeständigkeit",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.4": "Lasten > 1.000 kg",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.5": "getaktete Montage, Demontage, Wartung",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.6": "Einzelteileanzahl bis ca. 150 Positionen",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.7": "Größe > 5 m",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.8": "Genauigkeit +/- 0,1 mm",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.9": "Eindeutige Identifizierung",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.10": "Mechanisch und elektronisch",
+    "welding-fabrications.skid-construction.skid-automotive.seoLower.11": "Fertigungslose bis über 1.000 Stück",
+
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.title": "Fördertechnik Automobilindustrie – Transfersysteme",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.h1": "Fördertechnik Automobilindustrie",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seo": "Irion bietet Fördertechnik Systeme für die Automobilindustrie. Beispiele für diese Werkstückträger Transportsysteme sind Sitzgehänge, Türskids, Pendelförderer EHB oder Inline Werkstückträger für HV-Batterien. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Transfersysteme für Automotive von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.1": "Fertigung unter Berücksichtigung mechanischer und metallurgischer Aspekte (auch Beschichtung)",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.2": "Verschmutzungsresistenz",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.3": "Temperaturbeständigkeit",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.4": "Lasten ~ 300 kg",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.5": "getaktete Montage, Demontage, Wartung",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.6": "Einzelteileanzahl bis ca. 300 Positionen",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.7": "Größe ca. 2-5m",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.8": "Genauigkeit +/- 0,1 mm",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.9": "Eindeutige Identifizierung",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.10": "Mechanisch und elektronisch",
+    "welding-fabrications.skid-construction.conveyor-systems-automotive.seoLower.11": "Fertigungslose bis ca. 3.000 Stück",
+
+    "welding-fabrications.skid-construction.special-load-carriers.title":"Maßgeschneiderte Sonderladungsträger vom Hersteller",
+    "welding-fabrications.skid-construction.special-load-carriers.h1":"Sonderladungsträger",
+    "welding-fabrications.skid-construction.special-load-carriers.seo":"Irion ist ein Hersteller für hochwertige Sonderladungsträger. Unsere Ladungsträger und Montageträger sind spezielle Industrietechnik Transportgestelle für die Automobilindustrie oder werden in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Sonderladungsträger von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    
+    "welding-fabrications.lifting-eq-ma.title":"Lastaufnahmemittel Hersteller und Behälterbau mit Stahl",
+    "welding-fabrications.lifting-eq-ma.h1":"Lastaufnahmemittel Hersteller",
+    "welding-fabrications.lifting-eq-ma.seo":"Irion ist ein Hersteller für hochwertige Lastaufnahmemittel bis hin zum Behälterbau.<br><br> Unsere Spezialitäten sind Stahlkonstruktionen für Schwerlast wie Paletten, Behälter, Traversen, Unterstellböcke oder Gestelle für die Industrie. Wir fertigen Ihr maßgeschneidertes Lastaufnahmemittel im Projektgeschäft von 30 bis 5000 Stück in konstant hoher Qualität.",
+
+    "welding-fabrications.lifting-eq-ma.heavy-duty-steel-pallets-manufacturers.title":"Schwerlastpaletten aus Stahl – Stahlpaletten Hersteller",
+    "welding-fabrications.lifting-eq-ma.heavy-duty-steel-pallets-manufacturers.h1":"Schwerlastpaletten aus Stahl",
+    "welding-fabrications.lifting-eq-ma.heavy-duty-steel-pallets-manufacturers.seo":"Irion ist ein Hersteller für hochwertige Schwerlastpaletten aus Stahl. Unsere Stahlpaletten erfüllen die speziellen Anforderungen der Industrie und werden in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Schwerlastpaletten von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    
+    "welding-fabrications.lifting-eq-ma.industrial-metal-bins.title":"Industriebehälter Metall – Industriecontainer Hersteller",
+    "welding-fabrications.lifting-eq-ma.industrial-metal-bins.h1":"Industriebehälter aus Metall",
+    "welding-fabrications.lifting-eq-ma.industrial-metal-bins.seo":"Irion ist ein Hersteller für hochwertige Industriebehälter aus Metall. Unsere Behältertechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Industriecontainer aus Stahl von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    
+    "welding-fabrications.lifting-eq-ma.transport-bins.title":"Transportbehälter Metall – Lagerbehälter Hersteller",
+    "welding-fabrications.lifting-eq-ma.transport-bins.h1":"Transportbehälter aus Metall",
+    "welding-fabrications.lifting-eq-ma.transport-bins.seo":"Irion ist ein Hersteller für hochwertige Transportbehälter aus Metall. Unsere Behältertechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Lagerbehälter aus Stahl von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.lifting-eq-ma.steel-cross-beams.title":"Schwerlasttraversen – Hebetechnik Hersteller",
+    "welding-fabrications.lifting-eq-ma.steel-cross-beams.h1":"Schwerlasttraversen",
+    "welding-fabrications.lifting-eq-ma.steel-cross-beams.seo":"Irion ist ein Hersteller für hochwertige Schwerlasttraversen aus Stahl. Unsere Hebetechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Traversen aus Stahl von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.lifting-eq-ma.heavy-duty-stands.title":"Schwerlastböcke Hersteller – Schwerlast Unterstellböcke",
+    "welding-fabrications.lifting-eq-ma.heavy-duty-stands.h1":"Schwerlastböcke",
+    "welding-fabrications.lifting-eq-ma.heavy-duty-stands.seo":"Irion ist ein Hersteller für hochwertige Schwerlastböcke aus Stahl. Unsere Fertigungstechnik erfüllt anspruchsvolle Anforderungen und wird im Maschinenbau und Anlagenbau eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Schwerlast Unterstellböcke für die Industrie von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.lifting-eq-ma.post-pallets.title":"Rungengestelle Hersteller – Rungenpaletten aus Metall",
+    "welding-fabrications.lifting-eq-ma.post-pallets.h1":"Rungengestelle Hersteller",
+    "welding-fabrications.lifting-eq-ma.post-pallets.seo":"Irion ist ein Hersteller für hochwertige Rungengestelle aus Metall. Unsere Fertigungstechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Lagerhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Rungenpaletten aus Stahl von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.lifting-eq-ma.metal-stacking-racks.title":"Stapelgestelle Hersteller – Stapelpaletten aus Metall",
+    "welding-fabrications.lifting-eq-ma.metal-stacking-racks.h1":"Stapelgestelle Hersteller",
+    "welding-fabrications.lifting-eq-ma.metal-stacking-racks.seo":"Irion ist ein Hersteller für hochwertige Stapelgestelle aus Metall. Unsere Fertigungstechnik erfüllt die speziellen Anforderungen der Industrie und wird in der Logistik, Lagerhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Stapelpaletten aus Stahl von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.welded-steel-constr.title":"Schweißkonstruktionen Maschinenbau – Stahlbaukonstruktionen",
+    "welding-fabrications.welded-steel-constr.h1":"Schweißkonstruktionen für den Maschinenbau",
+    "welding-fabrications.welded-steel-constr.seo":"Irion bietet hochwertige Schweißkonstruktionen für den Maschinenbau und Anlagenbau. <br><br> Unsere Spezialitäten sind Scherenhubtische, Schweißgestelle, Grundrahmen oder Fahrzeugaufbauten und Werkstückträgersysteme für die Industrie. Wir fertigen maßgeschneiderte Stahlbaukonstruktionen im Projektgeschäft von 30 bis 5000 Stück in konstant hoher Qualität.",
+
+    "welding-fabrications.welded-steel-constr.scissor-lift-table-manufacturers.title":"Scherenhubtische Hersteller – Schwerlasthubtische",
+    "welding-fabrications.welded-steel-constr.scissor-lift-table-manufacturers.h1":"Scherenhubtische Hersteller",
+    "welding-fabrications.welded-steel-constr.scissor-lift-table-manufacturers.seo":"Irion ist ein Hersteller für hochwertige Scherenhubtische aus Stahl. Unsere Hubtische erfüllen die speziellen Anforderungen der Industrie wie unterschiedliche Gewichtsklassen wie 1.000 kg, 2.000 kg oder mehr als auch fahrbare Varianten. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Schwerlasthubtische von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.welded-steel-constr.welded-racks.title":"Schweißgestelle – Stahlrahmenkonstruktionen Hersteller",
+    "welding-fabrications.welded-steel-constr.welded-racks.h1":"Schweißgestelle Hersteller",
+    "welding-fabrications.welded-steel-constr.welded-racks.seo":"Irion ist ein Hersteller für hochwertige Schweißgestelle aus Stahl. Unsere Stahlgestelle erfüllen die speziellen Anforderungen der Industrie und werden in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Stahlrahmenkonstruktionen von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.welded-steel-constr.commercial-vehicle-bodies.title":"Fahrzeugaufbauten Hersteller – Nutzfahrzeugaufbauten",
+    "welding-fabrications.welded-steel-constr.commercial-vehicle-bodies.h1":"Fahrzeugaufbauten Hersteller",
+    "welding-fabrications.welded-steel-constr.commercial-vehicle-bodies.seo":"Irion ist ein Hersteller für hochwertige Fahrzeugaufbauten aus Stahl. Wir bieten Spezialaufbauten als auch typische Aufbauten, wie den Pritschenaufbau, Kofferaufbau, Kipperaufbau oder Kranaufbau. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Nutzfahrzeugaufbauten. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.welded-steel-constr.product-conveyor-system.title":"Werkstückträgersysteme – Werkstückträger Transportsystem",
+    "welding-fabrications.welded-steel-constr.product-conveyor-system.h1":"Werkstückträgersysteme",
+    "welding-fabrications.welded-steel-constr.product-conveyor-system.seo":"Irion ist ein Hersteller für hochwertige Werkstückträgersysteme aus Stahl. Unsere Transportsysteme erfüllen die speziellen Anforderungen der Industrie und werden in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb liefert Ihr maßgeschneidertes Werkstückträger Transportsystem. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.transp-syst.title":"Transportsysteme Produktion – Intralogistik Fördertechnik",
+    "welding-fabrications.transp-syst.h1":"Transportsysteme Produktion",
+    "welding-fabrications.transp-syst.seo":"Irion bietet hochwertige Transportsysteme für Produktionsbetriebe. <br><br> Unsere Spezialitäten sind Bühnenwagen, Schwerlast Transportwagen sowie mechanische Teile für eine Elektrohängebahn, Power and Free Förderer, Kreiskettenförderer, Unterflurschleppkettenförderer oder fahrerlose Transportsysteme für die Industrie. Wir liefern maßgeschneiderte Intralogistik Fördertechnik in konstant hoher Qualität.",
+
+    "welding-fabrications.transp-syst.mobile-lifting-platforms.title":"Bühnenwagen – Fahrbare Hebebühnen Hersteller",
+    "welding-fabrications.transp-syst.mobile-lifting-platforms.h1":"Bühnenwagen",
+    "welding-fabrications.transp-syst.mobile-lifting-platforms.seo":"Irion ist ein Hersteller für hochwertige Bühnenwagen aus Stahl. Unsere Wagen erfüllen die speziellen Anforderungen der Industrie und werden in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte fahrbare Hebebühnen von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.transp-syst.heavy-duty-platform-trolley.title":"Schwerlast Plattformwagen – Transportwagen Industrie",
+    "welding-fabrications.transp-syst.heavy-duty-platform-trolley.h1":"Schwerlast Plattformwagen",
+    "welding-fabrications.transp-syst.heavy-duty-platform-trolley.seo":"Irion ist ein Hersteller für hochwertige Schwerlast Plattformwagen aus Stahl. Unsere Wagen erfüllen anspruchsvolle Anforderungen und werden in der Logistik, Instandhaltung und Produktion eingesetzt. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte Industrie Transportwagen von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.transp-syst.electric-monorail.title":"Elektrohängebahn Komponenten – Mechanische Teile Hersteller",
+    "welding-fabrications.transp-syst.electric-monorail.h1":"Elektrohängebahn Komponenten – Mechanische Teile Hersteller",
+    "welding-fabrications.transp-syst.electric-monorail.seo":"Irion ist ein Hersteller für hochwertige Elektrohängebahn Komponenten aus Stahl. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.transp-syst.power-and-free-conveyors.title":"Power and Free Förderer Komponenten – Teile Hersteller",
+    "welding-fabrications.transp-syst.power-and-free-conveyors.h1":"Power and Free Förderer Komponenten – Mechanische Teile Hersteller",
+    "welding-fabrications.transp-syst.power-and-free-conveyors.seo":"Irion ist ein Hersteller für hochwertige Power and Free Förderer Komponenten aus Stahl. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. Irion bietet hochwertige Transportsysteme für Produktionsbetriebe.",
+
+    "welding-fabrications.transp-syst.chain-conveyor-parts.title": "Kreiskettenförderer Komponenten – Teile Hersteller",
+    "welding-fabrications.transp-syst.chain-conveyor-parts.h1": "Kreiskettenförderer Komponenten – Mechanische Teile Hersteller",
+    "welding-fabrications.transp-syst.chain-conveyor-parts.seo": "Irion ist ein Hersteller für hochwertige Kreiskettenförderer Komponenten aus Stahl. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile für Kreisförderer in der Intralogistik von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.transp-syst.underfloor-drag-chain-conveyor.title":"Unterflurschleppkettenförderer Komponenten – Hersteller",
+    "welding-fabrications.transp-syst.underfloor-drag-chain-conveyor.h1":"Unterflurschleppkettenförderer Komponenten – Mechanische Teile Hersteller",
+    "welding-fabrications.transp-syst.underfloor-drag-chain-conveyor.seo":"Irion ist ein Hersteller für hochwertige Unterflurschleppkettenförderer Komponenten aus Stahl. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.transp-syst.automated-guided-vehicle-manufacturers.title": "Fahrerlose Transportsysteme Komponenten – Mechanische Teile Hersteller",
+    "welding-fabrications.transp-syst.automated-guided-vehicle-manufacturers.h1": "Fahrerlose Transportsysteme Komponenten – Mechanische Teile Hersteller",
+    "welding-fabrications.transp-syst.automated-guided-vehicle-manufacturers.seo": "Irion ist ein Hersteller für hochwertige Komponenten für fahrerlose Transportsysteme aus Stahl. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+
+    "welding-fabrications.conveyor-accessories-spare-parts.title":"Fördertechnik Zubehör und Ersatzteile vom Hersteller",
+    "welding-fabrications.conveyor-accessories-spare-parts.h1":"Fördertechnik Zubehör und Ersatzteile – Mechanische Teile Hersteller",
+    "welding-fabrications.conveyor-accessories-spare-parts.seo":"Irion ist ein Hersteller für hochwertiges Fördertechnik Zubehör und Ersatzteile aus Stahl. <br><br> Unser zertifizierter Schweißfachbetrieb fertigt maßgeschneiderte mechanische Teile in der Intralogistik von 30 bis 5000 Stück. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision.",
+    
+    "steel-processing.title": "Stahlverarbeitung in Deutschland seit 1926 – Firma Irion",
+    "steel-processing.h1": "Stahlverarbeitung",
+    "steel-processing.seo": "Die Firma Irion bietet seit 1926 präzise Stahlverarbeitung in Deutschland. An unserem Standort im Schwarzwald können Stahlteile im Volumen von 100 bis 500.000 im Projektgeschäft produziert werden. Dabei bieten wir industrielle Stahlbearbeitung nach Maß bis hin zur Möglichkeit Stahlteile in gleichbleibend hoher Qualität lasern zu lassen.",
+
+    "steel-processing.laser-cut.title": "Stahlteile lasern lassen – Laserteile aus Stahl",
+    "steel-processing.laser-cut.h1": "Stahlteile lasern lassen",
+    "steel-processing.laser-cut.seo": "Irion bietet hochwertige Industrie Laserteile aus Stahl. <br><br> Sie können Stahlteile lasern lassen, wie Stahlblech, Stahlplatten, Edelstahl, Schwarzblech, Grobblech, Federstahl, Werkzeugstahl, Winkelstahl oder Elektroblech. <br><br> Wir lasern Stahl im Projektgeschäft ab 100 bis 500.000 Stück in konstant hoher Qualität. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+
+    "steel-processing.laser-cut.steel-sheet.title": "Stahlblech Zuschnitt nach Maß – Stahlblech lasern lassen",
+    "steel-processing.laser-cut.steel-sheet.h1": "Stahlblech Zuschnitt",
+    "steel-processing.laser-cut.steel-sheet.seo": "Irion bietet einen hochwertigen Stahlblech Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Stahlblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Stahlblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+
+    "steel-processing.laser-cut.steel-plate.title": "Stahlplatten Zuschnitt – Stahlplatten lasern lassen",
+    "steel-processing.laser-cut.steel-plate.h1": "Stahlplatten Zuschnitt",
+    "steel-processing.laser-cut.steel-plate.seo": "Irion bietet einen hochwertigen Stahlplatten Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Stahlplatten gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Stahlplatten in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.stainless-steel.title": "Edelstahl Zuschnitt nach Maß – Edelstahl lasern lassen",
+    "steel-processing.laser-cut.stainless-steel.h1": "Edelstahl Zuschnitt",
+    "steel-processing.laser-cut.stainless-steel.seo": "Irion bietet einen hochwertigen Edelstahl Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Edelstahl gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Edelstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.black-sheet-metal.title": "Schwarzblech Zuschnitt – Schwarzblech lasern lassen",
+    "steel-processing.laser-cut.black-sheet-metal.h1": "Schwarzblech Zuschnitt",
+    "steel-processing.laser-cut.black-sheet-metal.seo": "Irion bietet einen hochwertigen Schwarzblech Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Schwarzblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Schwarzblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.thick-sheet.h1": "Grobblech Zuschnitt nach Maß – Grobblech lasern lassen",
+    "steel-processing.laser-cut.thick-sheet.title": "Grobblech Zuschnitt",
+    "steel-processing.laser-cut.thick-sheet.seo": "Irion bietet einen hochwertigen Grobblech Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Grobblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Grobblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.spring-steel.title": "Federstahl Zuschnitt nach Maß – Federstahl lasern lassen",
+    "steel-processing.laser-cut.spring-steel.h1": "Federstahl Zuschnitt",
+    "steel-processing.laser-cut.spring-steel.seo": "Irion bietet einen hochwertigen Federstahl Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Federstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Federstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.tool-steel.title": "Werkzeugstahl Zuschnitt – Werkzeugstahl lasern lassen",
+    "steel-processing.laser-cut.tool-steel.h1": "Werkzeugstahl Zuschnitt",
+    "steel-processing.laser-cut.tool-steel.seo": "Irion bietet einen hochwertigen Werkzeugstahl Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Werkzeugstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Werkzeugstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.angle-cutting.title": "Winkelstahl Zuschnitt – Winkelstahl lasern lassen",
+    "steel-processing.laser-cut.angle-cutting.h1": "Winkelstahl Zuschnitt",
+    "steel-processing.laser-cut.angle-cutting.seo": "Irion bietet einen hochwertigen Winkelstahl Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Winkelstählen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Winkelstahl in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+    
+    "steel-processing.laser-cut.electrical-cutting.title": "Elektroblech Zuschnitt – Elektroblech lasern lassen",
+    "steel-processing.laser-cut.electrical-cutting.h1": "Elektroblech Zuschnitt",
+    "steel-processing.laser-cut.electrical-cutting.seo": "Irion bietet einen hochwertigen Elektroblech Zuschnitt nach Maß. <br><br> Nicht nur beim Laserzuschnitt von Elektroblechen gehen wir gerne auf Ihre individuellen Wünsche ein. Sie können bei uns im Haus auch gleich schweißen, biegen, kanten und fräsen lassen. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Bei Irion können Sie Elektroblech in großen Mengen lasern lassen. Wir arbeiten im Projektgeschäft ab 100 bis 500.000 Stück. Die mögliche Dicke beträgt 1 mm bis 25 mm. Die maximale Größe der Metallfläche beträgt 1,5 m x 3,0 m.",
+
+    "steel-processing.steel-machining.title": "Stahlbearbeitung in Deutschland seit 1926 – Firma Irion",
+    "steel-processing.steel-machining.h1": "Stahlbearbeitung",
+    "steel-processing.steel-machining.seo": "Die Firma Irion bietet seit 1926 präzise Stahlbearbeitung in Deutschland. Sie können Stahlteile in großer Fertigungstiefe bearbeiten lassen, wie schweißen, schneiden, biegen, fräsen oder abkanten in Lohnfertigung. <br><br> Unsere Fertigung erfüllt die speziellen Anforderungen der Industrie mit konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. <br><br> Benötigen Sie darüber hinaus weitere Metallbearbeitung oder Oberflächenveredelung kümmern wir uns um eine zufriedenstellende Lösung mit ausgewählten Kooperationspartnern.",
+        
+    "steel-processing.steel-machining.welding-business.title": "Stahl schweißen lassen – Schweißbetrieb aus Deutschland",
+    "steel-processing.steel-machining.welding-business.h1": "Stahl schweißen lassen",
+    "steel-processing.steel-machining.welding-business.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Schweißbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl schweißen lassen ab 30 bis 5000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+        
+    "steel-processing.steel-machining.steel-cutting-services.title": "Stahl schneiden lassen – Laserschneidbetrieb Deutschland",
+    "steel-processing.steel-machining.steel-cutting-services.h1": "Stahl schneiden lassen",
+    "steel-processing.steel-machining.steel-cutting-services.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Laserschneidbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl schneiden lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+        
+    "steel-processing.steel-machining.steel-bending-services.title": "Stahl biegen lassen – Biegebetrieb aus Deutschland",
+    "steel-processing.steel-machining.steel-bending-services.h1": "Stahl biegen lassen",
+    "steel-processing.steel-machining.steel-bending-services.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Biegebetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl biegen lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+        
+    "steel-processing.steel-machining.steel-miling.title": "Stahl fräsen lassen – Zerspanungsbetrieb aus Deutschland",
+    "steel-processing.steel-machining.steel-miling.h1": "Stahl fräsen lassen",
+    "steel-processing.steel-machining.steel-miling.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Zerspanungsbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl fräsen lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+        
+    "steel-processing.steel-machining.brake-forming.title": "Stahl kanten lassen – Kantbetrieb aus Deutschland",
+    "steel-processing.steel-machining.brake-forming.h1": "Stahl kanten lassen",
+    "steel-processing.steel-machining.brake-forming.seo": "Irion gibt es bereits seit 1926. Wir sind ein erfahrener Kantbetrieb aus Deutschland, genauer gesagt aus dem Schwarzwald. Unser Sitz ist Bad Teinach, das liegt in der Nähe von Städten wie Stuttgart, Pforzheim und Tübingen. <br><br> Bei uns können Sie Stahl kanten lassen ab 100 bis 500.000 Stück. Wir handeln verantwortungsbewusst und legen wert auf präzises Arbeiten und konstant hohe Qualität!",
+
+    "career.about-irion": "Irion besteht seit 1929 und ist ein eigentümergeführtes Industrieunternehmen aus dem Schwarzwald. Unsere Spezialität sind zerspante und beschichtete Schweißbaugruppen (von 30 bis 5.000 Stück) inkl. mech. & elektr. Montage sowie IBN. Roboterschweißen, Wartung, zerspante, lackierte und gehärtete Schweißteile. Wir stehen für konstant hohe Qualität, Verantwortungsbewusstsein und Präzision. Aktuell beschäftigt die IRION GmbH etwa 40 motivierte Köpfe in Verwaltung und Produktion. Die Produktionsfläche beträgt über 3.500 qm. Wir übernehmen gesellschaftliche Verantwortung. Umweltgerechtes Handeln ist für uns selbstverständlich. So erzeugen wir zum Beispiel über 60% unseres benötigten Stroms selbst aus erneuerbarer Energie und versorgen zusätzlich 200 Haushalte.",
+    "career.distance-irion-h2": "Ist der Job in der Nähe?",
+    "career.distance-irion": "Wir bieten eine Anbindung an die Kulturbahn „Hermann Hesse Bahn“ (Pforzheim-Horb) mit direkten Verbindungen nach Calw, Wildberg, Nagold, Bad Liebenzell, Pforzheim, Hirsau, Eutingen, Horb. (Einsparung von bis 500€ möglich durch den Wegfall eines eigenen Fahrzeugs) <ul> <li>72213 Altensteig: Auto 23 min | Bahn 30 Min | Rad 1 h 04 min</li> <li>75378 Bad Liebenzell: Auto 22 min | Bahn 22 Min | Rad 46 min</li> <li>71034 Böblingen: Auto 29 min | Bahn 43 Min | Rad 1 h 21 min</li> <li>75365 Calw: Auto 7 min | Bahn 7 Min | Rad 17 min</li> <li>71083 Herrenberg: Auto 23 min | Bahn 31 Min | Rad 1 h 04 min</li> <li>71063 Sindelfingen: Auto 29 min | Bahn 43 Min | Rad 1 h 24 min</li> <li>72218 Wildberg: Auto 10 min | Bahn 12 Min | Rad 30 min</li> </ul>",
+
+    "career.contact-h2": "Wir freuen uns darauf, Dich kennenzulernen!",
+    "career.contact-h2-polite": "Wir freuen uns darauf, Sie kennenzulernen!",
+    "career.contact": "Der direkte Ansprechpartner für Fragen rund um die Stellenausschreibungen ist Herr Bernd Fleissinger."
+}
