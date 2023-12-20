@@ -11,8 +11,15 @@ h1 {
     font-style: normal;
     font-display: swap;
     letter-spacing: 0.2em !important;
+    overflow-wrap: break-word;
+    /* hyphens: auto; */
+    padding: 0 20%;
 }
-
+span.span-h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24pt;
+}
 *:focus {
     outline: 0 none !important;
     border-color: inherit;
@@ -40,6 +47,9 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 1000px) {
+    h1 {
+        padding: 0 5%;
+    }
     .navbar {
         padding: 0;
     }
@@ -314,11 +324,30 @@ strong a {
     justify-content: center;
     align-items: center;
     background-attachment: fixed !important;
+    overflow: hidden;
+}
+.page-banner.landingimage {
+    height: auto;
+    max-height: 700px;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed !important;
+    overflow: hidden;
+}
+.page-banner.landingimage img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
     .page-banner {
         height: 250px;
+    }
+    .page-banner.landingimage {
+        max-height: 250px;
     }
 }
 
@@ -343,10 +372,9 @@ strong a {
     right: 0;
     padding: 0;
     margin: 0;
-    z-index: 1600 !important;
+    z-index: 10 !important;
     position: fixed;
     top: 31%;
-    z-index: 1;
     background-color: rgba(109, 109, 109, 0.7);
     color: #fff !important;
     list-style: none outside;

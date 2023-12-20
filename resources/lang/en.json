@@ -5,15 +5,15 @@
     "agb" : "terms",
     "karriere" : "career",
     "management" : "management",
-    "unternehmen" : "company",
+    "unternehmen" : "industrial-welding-services",
     "zertifikate" : "certificates",
-    "kompetenzen" : "competences",
-
+    "präzisionsfertigung" : "competences",
+    "praezisionsfertigung": "competences",
 
 
 
     "Startseite" : "Home",
-    "Kompetenzen" : "Competences",
+    "Präzisionsfertigung" : "Precision manufacturing",
     "Leistungen" : "Services",
     "Zertifikate" : "Certificates",
     "Karriere" : "Career Opportunities",
@@ -40,8 +40,19 @@
     "Über Irion" : "About Irion",
     "Über das Management" : "About our management",
 
+    "/praezisionsfertigung": "/en/precision-manufacturing",
+    "/praezisionsfertigung/mechanische-konstruktion": "/en/precision-manufacturing/cad-engineering",
+    "/praezisionsfertigung/roboterschweissen": "/en/precision-manufacturing/automated-welding",
+    "/praezisionsfertigung/praezisionsschneiden": "/en/precision-manufacturing/metal-cutting-industry",
+    "/praezisionsfertigung/praezisionszerspanung": "/en/precision-manufacturing/precision-machining-services",
+    "/praezisionsfertigung/praezisionsschweissen": "/en/precision-manufacturing/precision-welding-services",
+    "/praezisionsfertigung/industrielle-teilereinigung-dienstleistung":"/en/precision-manufacturing/industrial-parts-cleaning-service",
+    "/praezisionsfertigung/industrielle-waermebehandlung": "/en/precision-manufacturing/steel-hardening-service",
+    "/praezisionsfertigung/oberflaechenbeschichtung-stahl": "/en/precision-manufacturing/metal-surface-treatment",
+    "/praezisionsfertigung/pvc-tauchbeschichtung": "/en/precision-manufacturing/plastic-dip-coating-for-metal",
+    "/praezisionsfertigung/baugruppenmontage-maschinenbau": "/en/precision-manufacturing/module-assembly",
 
-
+    "/schweissberatung": "/en/welding-consulting",
 
     "Mehr erfahren" : "Learn more",
     "Fragen Sie unverbindlich an!" : "Contact us!",
@@ -58,7 +69,7 @@
     "auf der Webseite der Irion GmbH" : "on the website of Irion GmbH",
     "Präzise Schweißgruppen" : "High quality welding assemblies",
     "ab 30 Stück" : "from 30 to 1,000 pieces and more",
-    "in hoher Qualität zu attraktiven Preisen!" : "for best price and quality!",
+    "in gleichbleibend hoher Qualität!" : "for best price and quality!",
 
 
     "Präzision aus Metall" : "Precision made of metal",
@@ -115,65 +126,73 @@
 
 
 
-    "Kompetenzen / Leistungen der Irion GmbH" : "Competences / Services of Irion GmbH",
+    "competences.title" : "Competences / Services of Irion GmbH",
     "Unsere Kompetenzen" : "Our competences",
     "Unser Wertschöpfungsnetzwerk" : "Our value network",
     "die Garantie für Ihr Hochleistungsprodukt" : "a guarantee for your high-performance product",
 
 
-    "Entwicklung" : "Development",
+    "Mechanische Konstruktion"  :  "CAD engineering",
     "Konstruktion": "Construction",
     "Konstruktionsoptimierung" : "Construction optimization",
     "Berechnung" : "Calculation",
     "CE-Dokumentation" : "CE documentation",
     "FMEA" : "FMEA",
 
-    "Montage" : "Assembly",
+     "Baugruppenmontage" :  "Module assembly",
     "Vorrichtungsbau" : "Fixture construction",
     "Projektspezifische, getaktete Montage, Demontage, Wartung" : "Project-specific, clocked assembly, disassembly, maintenance",
     "Flusslinien" : "Flux lines",
     "Pressen" : "Pressing",
     "Elektrik, Pneumatik" : "Electrics, pneumatics",
 
-    "Reinigen" : "Cleaning",
+     "Industrielle Teilereinigung" :  "Industrial parts cleaning service",
     "Entlacken" : "Paint stripping",
     "Sandstrahlen" : "Sandblasting",
     "Gleitschleifen / Trowalisieren" : "Vibratory grinding / barrel finishing",
 
-    "Zuschnitt" : "Cutting",
+     "Präzisionsschneiden" :  "Metal cutting industry",
     "Konventioneller Zuschnitt" : "Conventional cutting",
     "Laserschnitt" : "Laser cutting",
     "Brennschnitt" : "Flame cutting",
     "Wasserstrahl" : "Waterjet cutting",
     "Biegen / Kanten" : "Bending / Edging",
 
-    "Schweißen" : "Welding",
+    "Roboterschweißen": "Robot welding",
+    "Automatisiertes Schweißen": "Automated welding",
+    "High-Tech-Roboter": "High-tech robots",
+    "Computergesteuerte Offline-Simulation": "Computerized offline simulation",
+    
+     "Präzisionsschweißen" :  "Precision welding services",
     "MAG / MIG" : "MAG / MIG",
     "WIG" : "WIG",
     "Roboteranwendungen" : "Robotic applications",
     "Schweißnahtprüfung" : "Weld inspection",
     "Therm. / mech. Richten" : "Therm. / mech. straightening",
 
-    "Oberfläche" : "Surface",
+     "Oberflächenbeschichtung" :  "Metal surface treatment",
     "Nasslack" : "Wet coating",
     "Pulverbeschichten" : "Powder coating",
     "KTL" : "KTL",
     "Öl" : "Oil",
     "Schutzwachs" : "Protective wax",
 
-    "Zerspanung" : "Machining",
+     "Präzisionszerspanung" :  "Precision machining services",
     "CNC-Fräsen" : "CNC milling",
     "CNC-Drehen" : "CNC turning",
     "Alle Dimensionen" : "All proportions",
     "3-/4-/5-Achsenbearbeitung" : "3-/4-/5-axis machining",
 
-    "Wärmebehandlung" : "Thermal treatment",
+     "Industrielle Wärmebehandlung" :  "Steel hardening service",
     "Glühen" : "Annealing",
     "Nitrieren / Carbonitrieren" : "Nitriding / Carbonitriding",
     "Härten" : "Curing",
     "Vergüten" : "Tempering",
 
-
+    "PVC Tauchbeschichtung": "Plastic dip coating for metal",
+    "Für verschiede Metallteile": "For various metal parts",
+    "Maßgeschneiderte Lösungen": "Tailor-made solutions",
+    "Individuelle Beschichtungen": "Individual coatings",
 
 
     "Jetzt anfragen!" : "Start request",
@@ -193,7 +212,7 @@
 
     "Vom Schwarzwald in die Welt" : "From the Black Forest out into the world",
 
-    "Jahrelang vertrauen uns…" : "Long term relationships",
+    "Jahrelang vertrauen unserem Schweißunternehmen…" : "Long term relationships",
     "Ausgewählte Partner der Automobilindustrie" : "Selected partners of the automotive industry",
     "Renommierte Stahl- und Maschinenbauer" : "Mechanical engineering manufacturers",
     "Öffentliche Einrichtungen aus Kunst und Kultur" : "Public art and culture institutions",
@@ -201,7 +220,7 @@
     "Führende Land- und Baumaschinenhersteller" : "Leading agricultural and construction machinery manufacturers",
 
     "Historie" : "History",
-    "Gegründet 1926 durch Herrn Matthäus Irion akquirierte Familie Hahn im Jahre 1978 die Matthäus Irion GmbH & Co. KG. Ab 1986 führte der studierte Maschinenbauer Eberhardt Hahn das Unternehmen, 2018 übernahmen die beiden Wirtschaftsingenieure und Flugtechniker Bernd Fleissinger und Stefan Tschirk das Unternehmen." : "The company was founded by Matthäus Irion in 1926 and then acquired by the Hahn family in 1978. In 1986, the graduate mechanical engineer Eberhardt Hahn took over the company in its entirety. Since 2018, the industrial and aeronautical engineers Bernd Fleissinger and Stefan Tschirk own IRION to 100%.",
+    "Gegründet wurde das Schweißunternehmen 1926 durch Herrn Matthäus Irion. Die Familie Hahn akquirierte im Jahre 1978 die Matthäus Irion GmbH & Co. KG. Ab 1986 führte der studierte Maschinenbauer Eberhardt Hahn das Unternehmen, 2018 übernahmen die beiden Wirtschaftsingenieure und Flugtechniker Bernd Fleissinger und Stefan Tschirk das Schweißunternehmen." : "The company was founded by Matthäus Irion in 1926 and then acquired by the Hahn family in 1978. In 1986, the graduate mechanical engineer Eberhardt Hahn took over the company in its entirety. Since 2018, the industrial and aeronautical engineers Bernd Fleissinger and Stefan Tschirk own IRION to 100%.",
     "Ab 1979 entwickelte sich der Geschäftsbereich hin zur Fertigung von Transport- und Lagerbehältern vorwiegend für die Fahrzeugindustrie. Ab Anfang der 80er Jahre kam die Belieferung der Fördertechnik-Industrie mit Komponenten für deren Anlagen hinzu. Heute bedient IRION Kunden aus den Bereichen Automotive, Bau, Agrar Kultur, Logistik, Medizin- und Lebensmitteltechnik mit anforderungsvollen Schweiß-Fräs Kombinationen in Stückzahl von 30 bis 1.000 Stück." : "As of 1979, the business division developed into the manufacture of transport and storage containers, primarily for the automotive industry. From the early 1980s onwards, the conveyor technology industry was supplied with components for their systems as well. Today IRION serves customers from all over the world with sophisticated welded assemblies including medical, automotive, agricultural, logistics, nutrion, cultural, mechanical und civil engineering applications with lot sizes from up to 1.000 pieces.",
 
     "Referenzen" : "References",
@@ -267,5 +286,13 @@
     "Schreiben Sie das Wort 'Mensch' in das nachfolgende Feld." : "Write the word 'human' in the box below.",
     "Abschicken" : "Send message",
 
-    "Alle Rechte vorbehalten" : "All rights reserved"
+    "Alle Rechte vorbehalten" : "All rights reserved",
+
+    "career.about-irion": "Irion has been in existence since 1929 and is an owner-managed industrial company from the Black Forest. Our speciality is machined and coated welded assemblies (from 30 to 5000 pieces) incl. mech. & electr. assembly as well as integration. Robot welding, maintenance, machined, painted and hardened welded parts. We stand for consistently high quality, responsibility and precision. Currently, IRION GmbH employs about 40 motivated employees in administration and production. The production area is more than 3500 sqm. We take social responsibility. Acting in an environmentally friendly way is a matter of course for us. We generate over 60% of our required electricity ourselves from renewable energy and supply an additional 200 households.",
+    "career.distance-irion-h2": "Is the job nearby?",
+    "career.distance-irion": "Public transport system in walking distance (50m). Trains to Calw, Wildberg, Nagold, Bad Liebenzell, Pforzheim, Hirsau, Eutingen, Horb. . (savings up to 500€  per car each month) <ul> <li>72213 Altensteig: car 23 min | train 30 min | bike 1 h 04 min</li> <li>75378 Bad Liebenzell: car 22 min | train 22 min | bike 46 min</li> <li>71034 Böblingen: car 29 min | train 43 min | bike 1 h 21 min</li> <li>75365 Calw: car 7 min | train 7 min | bike 17 min</li> <li>71083 Herrenberg: car 23 min | train 31 min | bike 1 h 04 min</li> <li>71063 Sindelfingen: car 29 min | train 43 min | bike 1 h 24 min</li> <li>72218 Wildberg: car 10 min | train 12 min | bike 30 min</li> </ul>",
+
+    "career.contact-h2": "We look forward to meeting you",
+    "career.contact-h2-polite": "We look forward to meeting you",
+    "career.contact": "If you’re interested get in contact with Bernd Fleissinger."
 }
